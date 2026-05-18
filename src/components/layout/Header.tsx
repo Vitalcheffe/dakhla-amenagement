@@ -80,7 +80,7 @@ export function Header({ locale }: { locale: string }) {
 
             {/* Mobile Menu */}
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger asChild className="lg:hidden">
+              <SheetTrigger className="lg:hidden">
                 <Button variant="ghost" size="icon" aria-label="Menu">
                   <Menu className="h-5 w-5 text-navy" />
                 </Button>

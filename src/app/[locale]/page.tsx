@@ -57,26 +57,24 @@ export default function HomePage() {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-steel hover:bg-steel/90 text-white font-medium px-8"
-              >
-                <Link href={`/${locale}/products`}>
+              <Link href={`/${locale}/products`}>
+                <Button
+                  size="lg"
+                  className="bg-steel hover:bg-steel/90 text-white font-medium px-8"
+                >
                   {t('hero.cta')}
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 font-medium px-8"
-              >
-                <Link href={`/${locale}/process`}>
+                </Button>
+              </Link>
+              <Link href={`/${locale}/process`}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white/30 text-white hover:bg-white/10 font-medium px-8"
+                >
                   {t('hero.ctaSecondary')}
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </FadeIn>
         </div>
@@ -137,12 +135,12 @@ export default function HomePage() {
           </StaggerContainer>
           <FadeIn delay={0.3}>
             <div className="mt-8 text-center">
-              <Button asChild variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white">
-                <Link href={`/${locale}/products`}>
+              <Link href={`/${locale}/products`}>
+                <Button variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white">
                   {t('hero.cta')}
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </FadeIn>
         </div>
@@ -211,16 +209,15 @@ export default function HomePage() {
               {t('cta.subtitle')}
             </p>
             <div className="mt-8">
-              <Button
-                asChild
-                size="lg"
-                className="bg-steel hover:bg-steel/90 text-white font-medium px-10"
-              >
-                <Link href={`/${locale}/contact`}>
+              <Link href={`/${locale}/contact`}>
+                <Button
+                  size="lg"
+                  className="bg-steel hover:bg-steel/90 text-white font-medium px-10"
+                >
                   {t('cta.button')}
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </FadeIn>
         </div>
