@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "process": "Fabrication",
+    "products": "Produits",
+    "quality": "Qualité",
+    "sustainability": "Développement Durable",
+    "careers": "Carrières",
+    "investors": "Investisseurs",
+    "news": "Actualités",
+    "contact": "Contact",
+    "legal": "Mentions Légales"
+  },
+  "hero": {
+    "title": "Le Ciment de Confiance du Sud Marocain",
+    "subtitle": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure",
+    "cta": "Découvrir nos produits",
+    "ctaSecondary": "Notre processus"
+  },
+  "stats": {
+    "capacity": "100 000",
+    "capacityUnit": "tonnes/an",
+    "capacityLabel": "Capacité de production",
+    "since": "2018",
+    "sinceLabel": "En activité depuis",
+    "capital": "30,1M",
+    "capitalUnit": "DHS",
+    "capitalLabel": "Capital social",
+    "employees": "85+",
+    "employeesLabel": "Collaborateurs"
+  },
+  "homeProducts": {
+    "title": "Nos Produits",
+    "subtitle": "Une gamme complète de ciments pour tous vos projets de construction",
+    "cpj35": {
+      "name": "CPJ 35",
+      "desc": "Ciment Portland composé pour maçonnerie et enduits courants"
+    },
+    "cpj45": {
+      "name": "CPJ 45",
+      "desc": "Ciment Portland composé pour béton armé et ouvrages courants"
+    },
+    "cpa42_5": {
+      "name": "CPA 42.5",
+      "desc": "Ciment Portland artificiel pour ouvrages exigeants et préfabrication"
+    },
+    "cpj55": {
+      "name": "CPJ 55",
+      "desc": "Ciment Portland composé haute résistance pour travaux spéciaux"
+    }
+  },
+  "cta": {
+    "title": "Un projet ? Parlons-en.",
+    "subtitle": "Contactez notre équipe commerciale pour obtenir un devis personnalisé ou des conseils techniques.",
+    "button": "Nous contacter"
+  },
+  "about": {
+    "title": "À Propos de Dakhla Aménagement",
+    "subtitle": "Un acteur majeur de l'industrie cimentière au Sud du Maroc",
+    "history": {
+      "title": "Notre Histoire",
+      "p1": "Dakhla Aménagement S.A. est une Société Anonyme créée en 2015 par des investisseurs mauritaniens visionnaires, avec la conviction que la région de Dakhla avait besoin d'une infrastructure cimentière moderne pour soutenir son développement rapide.",
+      "p2": "En 2018, notre centre de broyage de clinker à Lassargua a démarré ses opérations, marquant le début d'une nouvelle ère pour la construction dans le Sud marocain. Avec une capacité de 100 000 tonnes par an, nous répondons à la demande croissante de matériaux de construction de qualité."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "text": "Produire, conditionner et commercialiser des matériaux de construction de qualité supérieure, en contribuant au développement économique et social de la région de Dakhla-Oued Ed-Dahab, tout en respectant les normes environnementales les plus strictes."
+    },
+    "values": {
+      "title": "Nos Valeurs",
+      "quality": {
+        "name": "Qualité",
+        "desc": "Des produits conformes aux normes internationales, testés dans notre laboratoire interne."
+      },
+      "integrity": {
+        "name": "Intégrité",
+        "desc": "Une gouvernance transparente et des pratiques commerciales éthiques."
+      },
+      "innovation": {
+        "name": "Innovation",
+        "desc": "Investissement continu dans nos procédés pour améliorer performance et durabilité."
+      },
+      "community": {
+        "name": "Engagement Local",
+        "desc": "Création d'emplois locaux et soutien au développement de la région."
+      }
+    },
+    "legal": {
+      "title": "Informations Légales",
+      "form": "Société Anonyme (S.A.)",
+      "rc": "RC : 7207",
+      "ice": "ICE : 001726721000031",
+      "if": "IF : 46377920",
+      "capital": "Capital social : 30 100 000 DHS",
+      "hq": "Siège social : Angle rue Lagouira, Av. El Walae, Dakhla, Maroc",
+      "investors": "Actionnariat : 100% investisseurs mauritaniens"
+    }
+  },
+  "process": {
+    "title": "Notre Processus de Fabrication",
+    "subtitle": "De la matière première au produit fini, découvrez chaque étape de notre processus de broyage de clinker",
+    "step1": {
+      "title": "Réception du Clinker",
+      "desc": "Le clinker est réceptionné et stocké dans nos installations de Lassargua. Nous assurons un contrôle qualité rigoureux à chaque livraison, vérifiant la composition chimique et les propriétés physiques du matériau brut."
+    },
+    "step2": {
+      "title": "Broyage & Dosage",
+      "desc": "Le clinker est finement broyé dans nos broyeurs à boulets haute performance. Le dosage précis des ajouts (gypse, calcaire, cendres) garantit les caractéristiques spécifiques de chaque type de ciment."
+    },
+    "step3": {
+      "title": "Contrôle Qualité",
+      "desc": "Chaque lot est soumis à des tests exhaustifs dans notre laboratoire : résistance à la compression, finesse de broyage, temps de prise, et chaleur d'hydratation. Aucun produit ne quitte l'usine sans certificat de conformité."
+    },
+    "step4": {
+      "title": "Conditionnement & Expédition",
+      "desc": "Le ciment est conditionné en sacs de 50 kg ou expédié en vrac. Notre logistique optimisée assure une livraison rapide et fiable sur tout le territoire du Sud marocain et au-delà."
+    }
+  },
+  "products": {
+    "title": "Nos Produits",
+    "subtitle": "Une gamme complète de ciments pour répondre à tous les besoins de construction",
+    "cpj35": {
+      "name": "CPJ 35",
+      "full": "Ciment Portland Composé 35",
+      "desc": "Ciment destiné aux travaux de maçonnerie courante, enduits intérieurs et extérieurs, et mortiers de pose. Idéal pour les projets résidentiels et les travaux de second œuvre.",
+      "specs": {
+        "resistance": "35 MPa (28 jours)",
+        "fineness": "≥ 300 m²/kg",
+        "setting": "Début ≥ 60 min",
+        "use": "Maçonnerie, enduits, mortiers"
+      }
+    },
+    "cpj45": {
+      "name": "CPJ 45",
+      "full": "Ciment Portland Composé 45",
+      "desc": "Ciment polyvalent pour béton armé, dallages et ouvrages courants de génie civil. Le choix de référence pour la majorité des projets de construction.",
+      "specs": {
+        "resistance": "45 MPa (28 jours)",
+        "fineness": "≥ 320 m²/kg",
+        "setting": "Début ≥ 60 min",
+        "use": "Béton armé, dallages, ouvrages courants"
+      }
+    },
+    "cpa42_5": {
+      "name": "CPA 42.5",
+      "full": "Ciment Portland Artificiel 42.5",
+      "desc": "Ciment de haute performance pour ouvrages exigeants, préfabrication et travaux en milieu agressif. Résistance initiale élevée permettant un décoffrage rapide.",
+      "specs": {
+        "resistance": "42.5 MPa (28 jours)",
+        "fineness": "≥ 350 m²/kg",
+        "setting": "Début ≥ 45 min",
+        "use": "Préfabrication, ouvrages exigeants"
+      }
+    },
+    "cpj55": {
+      "name": "CPJ 55",
+      "full": "Ciment Portland Composé 55",
+      "desc": "Ciment à haute résistance pour travaux spéciaux, fondations profondes et ouvrages de génie civil soumis à des contraintes mécaniques élevées.",
+      "specs": {
+        "resistance": "55 MPa (28 jours)",
+        "fineness": "≥ 380 m²/kg",
+        "setting": "Début ≥ 45 min",
+        "use": "Génie civil, fondations, travaux spéciaux"
+      }
+    },
+    "packaging": "Conditionnement : Sacs 50 kg | Vrac",
+    "standards": "Conforme aux normes NM 10.1.004 / EN 197-1"
+  },
+  "quality": {
+    "title": "Qualité & Certifications",
+    "subtitle": "L'excellence au cœur de chaque sac de ciment",
+    "lab": {
+      "title": "Notre Laboratoire",
+      "text": "Notre laboratoire interne, équipé des technologies les plus avancées, réalise des analyses chimiques et physiques à chaque étape du processus de fabrication. De la réception des matières premières à l'expédition du produit fini, aucun détail n'est laissé au hasard."
+    },
+    "standards": {
+      "title": "Normes & Conformité",
+      "nm": {
+        "name": "NM 10.1.004",
+        "desc": "Norme marocaine définissant les spécifications des ciments Portland"
+      },
+      "en": {
+        "name": "EN 197-1",
+        "desc": "Norme européenne pour la composition et les spécifications des ciments courants"
+      },
+      "iso": {
+        "name": "ISO 9001",
+        "desc": "Système de management de la qualité — Certification en cours"
+      }
+    },
+    "tests": {
+      "title": "Tests Effectués",
+      "chemical": "Analyse chimique (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
+      "physical": "Résistance à la compression (7 et 28 jours)",
+      "fineness": "Finesse de broyage (surface Blaine)",
+      "setting": "Temps de prise (début et fin)",
+      "expansion": "Stabilité / Expansion",
+      "heat": "Chaleur d'hydratation"
+    }
+  },
+  "sustainability": {
+    "title": "Développement Durable",
+    "subtitle": "Construire l'avenir en préservant notre environnement",
+    "environment": {
+      "title": "Respect de l'Environnement",
+      "text": "Dakhla Aménagement s'engage à minimiser son impact environnemental. Notre centre de broyage utilise des technologies d'efficacité énergétique avancées, avec un système de filtration des émissions respectant les normes les plus strictes. Nous optimisons constamment notre consommation énergétique et réduisons notre empreinte carbone.",
+      "items": {
+        "emissions": "Filtration des émissions — Normes MARHP",
+        "energy": "Optimisation énergétique continue",
+        "water": "Recyclage des eaux de process",
+        "waste": "Gestion responsable des déchets industriels"
+      }
+    },
+    "social": {
+      "title": "Responsabilité Sociale",
+      "text": "Nous sommes fiers de contribuer au développement de la région de Dakhla par la création d'emplois locaux et le soutien aux communautés environnantes.",
+      "items": {
+        "jobs": "85+ emplois directs créés localement",
+        "training": "Programmes de formation continue",
+        "local": "Approvisionnement local privilégié",
+        "community": "Soutien aux projets communautaires"
+      }
+    }
+  },
+  "careers": {
+    "title": "Carrières",
+    "subtitle": "Rejoignez une équipe ambitieuse et contribuez au développement du Sud Marocain",
+    "culture": {
+      "title": "Notre Culture",
+      "text": "Chez Dakhla Aménagement, nous valorisons l'esprit d'équipe, l'excellence technique et l'engagement. Nous offrons un environnement de travail stimulant où chaque collaborateur peut développer ses compétences et contribuer à des projets concrets qui façonnent l'avenir de la région."
+    },
+    "benefits": {
+      "title": "Avantages",
+      "health": "Couverture médicale complète",
+      "training": "Formation continue",
+      "career": "Évolution de carrière",
+      "environment": "Environnement sécuritaire"
+    },
+    "openings": {
+      "title": "Postes Ouverts",
+      "job1": {
+        "title": "Ingénieur Procédé",
+        "type": "CDI",
+        "location": "Lassargua, Dakhla"
+      },
+      "job2": {
+        "title": "Technicien Laboratoire",
+        "type": "CDI",
+        "location": "Lassargua, Dakhla"
+      },
+      "job3": {
+        "title": "Responsable Logistique",
+        "type": "CDI",
+        "location": "Dakhla"
+      },
+      "job4": {
+        "title": "Opérateur de Production",
+        "type": "CDI",
+        "location": "Lassargua, Dakhla"
+      }
+    },
+    "apply": "Postuler",
+    "sendCv": "Envoyez votre CV à : recrutement@dakhla-amenagement.ma"
+  },
+  "investors": {
+    "title": "Espace Investisseurs",
+    "subtitle": "Gouvernance transparente et performance durable",
+    "governance": {
+      "title": "Gouvernance",
+      "text": "Dakhla Aménagement S.A. est dirigée par un Conseil d'Administration composé de professionnels expérimentés, garantissant une gestion rigoureuse et transparente de l'entreprise.",
+      "board": "Conseil d'Administration",
+      "ceo": "Directeur Général",
+      "cfo": "Directeur Financier",
+      "coo": "Directeur des Opérations"
+    },
+    "financial": {
+      "title": "Données Financières",
+      "capital": "Capital social : 30 100 000 DHS",
+      "shares": "Nombre d'actions : 30 100",
+      "parValue": "Valeur nominale : 1 000 DHS",
+      "ownership": "Actionnariat : 100% investisseurs mauritaniens"
+    },
+    "keyFigures": {
+      "title": "Chiffres Clés",
+      "capacity": "Capacité : 100 000 T/an",
+      "revenue": "Chiffre d'affaires en croissance continue",
+      "market": "Marché : Sud Marocain & Mauritanie",
+      "investment": "Investissement initial : 200+ MDHS"
+    }
+  },
+  "news": {
+    "title": "Actualités",
+    "subtitle": "Les dernières nouvelles de Dakhla Aménagement",
+    "readMore": "Lire la suite",
+    "article1": {
+      "title": "Dakhla Aménagement franchit le cap des 50 000 tonnes produites en 2024",
+      "date": "15 Janvier 2025",
+      "excerpt": "L'année 2024 a été marquée par une production record pour notre centre de broyage, démontrant la fiabilité de nos installations et l'engagement de nos équipes."
+    },
+    "article2": {
+      "title": "Nouveau partenariat pour l'approvisionnement de la région de Dakhla-Oued Ed-Dahab",
+      "date": "20 Novembre 2024",
+      "excerpt": "Un accord stratégique a été signé pour garantir l'approvisionnement en clinker de qualité, renforçant notre capacité à répondre à la demande locale."
+    },
+    "article3": {
+      "title": "Programme de certification ISO 9001 : les avancées",
+      "date": "5 Septembre 2024",
+      "excerpt": "Notre démarche de certification ISO 9001 progresse conformément au calendrier prévu, témoignant de notre engagement qualité."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes à votre écoute",
+    "address": {
+      "title": "Adresse",
+      "line1": "Angle rue Lagouira, Av. El Walae",
+      "line2": "Dakhla, Maroc"
+    },
+    "site": {
+      "title": "Site de Production",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Maroc"
+    },
+    "phone": "Téléphone",
+    "email": "Email",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer",
+      "success": "Message envoyé avec succès !",
+      "subjects": {
+        "commercial": "Demande commerciale",
+        "technical": "Support technique",
+        "careers": "Recrutement",
+        "other": "Autre"
+      }
+    }
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "company": {
+      "title": "Éditeur du Site",
+      "name": "Dakhla Aménagement S.A.",
+      "form": "Société Anonyme au capital de 30 100 000 DHS",
+      "rc": "Registre du Commerce : 7207",
+      "ice": "Identifiant Commun de l'Entreprise : 001726721000031",
+      "if": "Identifiant Fiscal : 46377920",
+      "hq": "Siège social : Angle rue Lagouira, Av. El Walae, Dakhla, Maroc"
+    },
+    "director": {
+      "title": "Direction de la Publication",
+      "text": "Le Directeur de la Publication est le Président du Conseil d'Administration de Dakhla Aménagement S.A."
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "text": "Ce site est hébergé sur des serveurs sécurisés conformes aux réglementations en vigueur."
+    },
+    "ip": {
+      "title": "Propriété Intellectuelle",
+      "text": "L'ensemble des contenus de ce site (textes, images, logos, marques) est la propriété exclusive de Dakhla Aménagement S.A. Toute reproduction, même partielle, est interdite sans autorisation préalable écrite."
+    },
+    "privacy": {
+      "title": "Protection des Données Personnelles",
+      "text": "Conformément à la loi 09-08 relative à la protection des personnes physiques à l'égard du traitement des données à caractère personnel, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, contactez-nous à : contact@dakhla-amenagement.ma"
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "Ce site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies."
+    }
+  },
+  "footer": {
+    "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction.",
+    "quickLinks": "Liens Rapides",
+    "contact": "Contact",
+    "legal": "Mentions Légales",
+    "rights": "Tous droits réservés.",
+    "madeIn": "Fait au Maroc"
+  }
+}

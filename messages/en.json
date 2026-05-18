@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "process": "Manufacturing",
+    "products": "Products",
+    "quality": "Quality",
+    "sustainability": "Sustainability",
+    "careers": "Careers",
+    "investors": "Investors",
+    "news": "News",
+    "contact": "Contact",
+    "legal": "Legal Notice"
+  },
+  "hero": {
+    "title": "The Trusted Cement of Southern Morocco",
+    "subtitle": "Clinker grinding center — Production, packaging and marketing of premium construction materials",
+    "cta": "Discover our products",
+    "ctaSecondary": "Our process"
+  },
+  "stats": {
+    "capacity": "100,000",
+    "capacityUnit": "tonnes/year",
+    "capacityLabel": "Production capacity",
+    "since": "2018",
+    "sinceLabel": "Operating since",
+    "capital": "30.1M",
+    "capitalUnit": "MAD",
+    "capitalLabel": "Share capital",
+    "employees": "85+",
+    "employeesLabel": "Employees"
+  },
+  "homeProducts": {
+    "title": "Our Products",
+    "subtitle": "A complete range of cements for all your construction projects",
+    "cpj35": {
+      "name": "CPJ 35",
+      "desc": "Composite Portland cement for common masonry and plastering"
+    },
+    "cpj45": {
+      "name": "CPJ 45",
+      "desc": "Composite Portland cement for reinforced concrete and common works"
+    },
+    "cpa42_5": {
+      "name": "CPA 42.5",
+      "desc": "Artificial Portland cement for demanding structures and precasting"
+    },
+    "cpj55": {
+      "name": "CPJ 55",
+      "desc": "High-strength composite Portland cement for specialized works"
+    }
+  },
+  "cta": {
+    "title": "Have a project? Let's talk.",
+    "subtitle": "Contact our sales team for a custom quote or technical advice.",
+    "button": "Contact us"
+  },
+  "about": {
+    "title": "About Dakhla Aménagement",
+    "subtitle": "A major player in the cement industry in Southern Morocco",
+    "history": {
+      "title": "Our History",
+      "p1": "Dakhla Aménagement S.A. is a public limited company founded in 2015 by visionary Mauritanian investors, with the conviction that the Dakhla region needed modern cement infrastructure to support its rapid development.",
+      "p2": "In 2018, our clinker grinding center in Lassargua began operations, marking the beginning of a new era for construction in Southern Morocco. With a capacity of 100,000 tonnes per year, we meet the growing demand for quality construction materials."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To produce, package and market premium construction materials, contributing to the economic and social development of the Dakhla-Oued Ed-Dahab region, while respecting the strictest environmental standards."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": {
+        "name": "Quality",
+        "desc": "Products conforming to international standards, tested in our in-house laboratory."
+      },
+      "integrity": {
+        "name": "Integrity",
+        "desc": "Transparent governance and ethical business practices."
+      },
+      "innovation": {
+        "name": "Innovation",
+        "desc": "Continuous investment in our processes to improve performance and sustainability."
+      },
+      "community": {
+        "name": "Local Commitment",
+        "desc": "Creating local jobs and supporting regional development."
+      }
+    },
+    "legal": {
+      "title": "Legal Information",
+      "form": "Public Limited Company (S.A.)",
+      "rc": "RC: 7207",
+      "ice": "ICE: 001726721000031",
+      "if": "IF: 46377920",
+      "capital": "Share capital: 30,100,000 MAD",
+      "hq": "Headquarters: Corner of Lagouira St., El Walae Ave., Dakhla, Morocco",
+      "investors": "Shareholding: 100% Mauritanian investors"
+    }
+  },
+  "process": {
+    "title": "Our Manufacturing Process",
+    "subtitle": "From raw material to finished product, discover each step of our clinker grinding process",
+    "step1": {
+      "title": "Clinker Reception",
+      "desc": "Clinker is received and stored at our Lassargua facility. We ensure rigorous quality control at every delivery, verifying the chemical composition and physical properties of the raw material."
+    },
+    "step2": {
+      "title": "Grinding & Dosing",
+      "desc": "Clinker is finely ground in our high-performance ball mills. Precise dosing of additives (gypsum, limestone, fly ash) guarantees the specific characteristics of each cement type."
+    },
+    "step3": {
+      "title": "Quality Control",
+      "desc": "Each batch undergoes exhaustive testing in our laboratory: compressive strength, fineness, setting time, and heat of hydration. No product leaves the plant without a certificate of conformity."
+    },
+    "step4": {
+      "title": "Packaging & Shipping",
+      "desc": "Cement is packaged in 50 kg bags or shipped in bulk. Our optimized logistics ensure fast and reliable delivery across Southern Morocco and beyond."
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "A complete range of cements to meet all construction needs",
+    "cpj35": {
+      "name": "CPJ 35",
+      "full": "Composite Portland Cement 35",
+      "desc": "Cement for common masonry, interior and exterior plastering, and bedding mortars. Ideal for residential projects and finishing works.",
+      "specs": {
+        "resistance": "35 MPa (28 days)",
+        "fineness": "≥ 300 m²/kg",
+        "setting": "Initial ≥ 60 min",
+        "use": "Masonry, plastering, mortars"
+      }
+    },
+    "cpj45": {
+      "name": "CPJ 45",
+      "full": "Composite Portland Cement 45",
+      "desc": "Versatile cement for reinforced concrete, floor slabs and common civil engineering works. The benchmark choice for most construction projects.",
+      "specs": {
+        "resistance": "45 MPa (28 days)",
+        "fineness": "≥ 320 m²/kg",
+        "setting": "Initial ≥ 60 min",
+        "use": "Reinforced concrete, slabs, common works"
+      }
+    },
+    "cpa42_5": {
+      "name": "CPA 42.5",
+      "full": "Artificial Portland Cement 42.5",
+      "desc": "High-performance cement for demanding structures, precasting and work in aggressive environments. High early strength allows rapid formwork removal.",
+      "specs": {
+        "resistance": "42.5 MPa (28 days)",
+        "fineness": "≥ 350 m²/kg",
+        "setting": "Initial ≥ 45 min",
+        "use": "Precasting, demanding structures"
+      }
+    },
+    "cpj55": {
+      "name": "CPJ 55",
+      "full": "Composite Portland Cement 55",
+      "desc": "High-strength cement for specialized works, deep foundations and civil engineering structures subject to high mechanical stress.",
+      "specs": {
+        "resistance": "55 MPa (28 days)",
+        "fineness": "≥ 380 m²/kg",
+        "setting": "Initial ≥ 45 min",
+        "use": "Civil engineering, foundations, specialized works"
+      }
+    },
+    "packaging": "Packaging: 50 kg bags | Bulk",
+    "standards": "Compliant with NM 10.1.004 / EN 197-1 standards"
+  },
+  "quality": {
+    "title": "Quality & Certifications",
+    "subtitle": "Excellence at the heart of every bag of cement",
+    "lab": {
+      "title": "Our Laboratory",
+      "text": "Our in-house laboratory, equipped with the most advanced technologies, performs chemical and physical analyses at every stage of the manufacturing process. From raw material reception to finished product shipment, no detail is left to chance."
+    },
+    "standards": {
+      "title": "Standards & Compliance",
+      "nm": {
+        "name": "NM 10.1.004",
+        "desc": "Moroccan standard defining specifications for Portland cements"
+      },
+      "en": {
+        "name": "EN 197-1",
+        "desc": "European standard for composition and specifications of common cements"
+      },
+      "iso": {
+        "name": "ISO 9001",
+        "desc": "Quality management system — Certification in progress"
+      }
+    },
+    "tests": {
+      "title": "Tests Performed",
+      "chemical": "Chemical analysis (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
+      "physical": "Compressive strength (7 and 28 days)",
+      "fineness": "Grinding fineness (Blaine surface)",
+      "setting": "Setting time (initial and final)",
+      "expansion": "Stability / Expansion",
+      "heat": "Heat of hydration"
+    }
+  },
+  "sustainability": {
+    "title": "Sustainability",
+    "subtitle": "Building the future while preserving our environment",
+    "environment": {
+      "title": "Environmental Respect",
+      "text": "Dakhla Aménagement is committed to minimizing its environmental impact. Our grinding center uses advanced energy efficiency technologies, with an emission filtration system that meets the strictest standards. We constantly optimize our energy consumption and reduce our carbon footprint.",
+      "items": {
+        "emissions": "Emission filtration — MARHP standards",
+        "energy": "Continuous energy optimization",
+        "water": "Process water recycling",
+        "waste": "Responsible industrial waste management"
+      }
+    },
+    "social": {
+      "title": "Social Responsibility",
+      "text": "We are proud to contribute to the development of the Dakhla region through local job creation and support for surrounding communities.",
+      "items": {
+        "jobs": "85+ direct local jobs created",
+        "training": "Continuous training programs",
+        "local": "Preferred local sourcing",
+        "community": "Support for community projects"
+      }
+    }
+  },
+  "careers": {
+    "title": "Careers",
+    "subtitle": "Join an ambitious team and contribute to the development of Southern Morocco",
+    "culture": {
+      "title": "Our Culture",
+      "text": "At Dakhla Aménagement, we value teamwork, technical excellence and commitment. We offer a stimulating work environment where every employee can develop their skills and contribute to concrete projects that shape the future of the region."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "health": "Comprehensive medical coverage",
+      "training": "Continuous training",
+      "career": "Career development",
+      "environment": "Safe work environment"
+    },
+    "openings": {
+      "title": "Open Positions",
+      "job1": {
+        "title": "Process Engineer",
+        "type": "Permanent",
+        "location": "Lassargua, Dakhla"
+      },
+      "job2": {
+        "title": "Laboratory Technician",
+        "type": "Permanent",
+        "location": "Lassargua, Dakhla"
+      },
+      "job3": {
+        "title": "Logistics Manager",
+        "type": "Permanent",
+        "location": "Dakhla"
+      },
+      "job4": {
+        "title": "Production Operator",
+        "type": "Permanent",
+        "location": "Lassargua, Dakhla"
+      }
+    },
+    "apply": "Apply",
+    "sendCv": "Send your CV to: recrutement@dakhla-amenagement.ma"
+  },
+  "investors": {
+    "title": "Investor Relations",
+    "subtitle": "Transparent governance and sustainable performance",
+    "governance": {
+      "title": "Governance",
+      "text": "Dakhla Aménagement S.A. is led by a Board of Directors composed of experienced professionals, ensuring rigorous and transparent management of the company.",
+      "board": "Board of Directors",
+      "ceo": "Chief Executive Officer",
+      "cfo": "Chief Financial Officer",
+      "coo": "Chief Operations Officer"
+    },
+    "financial": {
+      "title": "Financial Data",
+      "capital": "Share capital: 30,100,000 MAD",
+      "shares": "Number of shares: 30,100",
+      "parValue": "Nominal value: 1,000 MAD",
+      "ownership": "Shareholding: 100% Mauritanian investors"
+    },
+    "keyFigures": {
+      "title": "Key Figures",
+      "capacity": "Capacity: 100,000 T/year",
+      "revenue": "Continuously growing revenue",
+      "market": "Market: Southern Morocco & Mauritania",
+      "investment": "Initial investment: 200+ M MAD"
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest news from Dakhla Aménagement",
+    "readMore": "Read more",
+    "article1": {
+      "title": "Dakhla Aménagement surpasses 50,000 tonnes produced in 2024",
+      "date": "January 15, 2025",
+      "excerpt": "The year 2024 was marked by record production for our grinding center, demonstrating the reliability of our facilities and the commitment of our teams."
+    },
+    "article2": {
+      "title": "New partnership for supplying the Dakhla-Oued Ed-Dahab region",
+      "date": "November 20, 2024",
+      "excerpt": "A strategic agreement was signed to guarantee the supply of quality clinker, strengthening our capacity to meet local demand."
+    },
+    "article3": {
+      "title": "ISO 9001 certification program: progress update",
+      "date": "September 5, 2024",
+      "excerpt": "Our ISO 9001 certification process is progressing according to the planned schedule, demonstrating our quality commitment."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help",
+    "address": {
+      "title": "Address",
+      "line1": "Corner of Lagouira St., El Walae Ave.",
+      "line2": "Dakhla, Morocco"
+    },
+    "site": {
+      "title": "Production Site",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Morocco"
+    },
+    "phone": "Phone",
+    "email": "Email",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "success": "Message sent successfully!",
+      "subjects": {
+        "commercial": "Commercial inquiry",
+        "technical": "Technical support",
+        "careers": "Recruitment",
+        "other": "Other"
+      }
+    }
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "company": {
+      "title": "Website Publisher",
+      "name": "Dakhla Aménagement S.A.",
+      "form": "Public limited company with capital of 30,100,000 MAD",
+      "rc": "Trade Register: 7207",
+      "ice": "Common Enterprise Identifier: 001726721000031",
+      "if": "Tax Identifier: 46377920",
+      "hq": "Headquarters: Corner of Lagouira St., El Walae Ave., Dakhla, Morocco"
+    },
+    "director": {
+      "title": "Publication Director",
+      "text": "The Publication Director is the Chairman of the Board of Directors of Dakhla Aménagement S.A."
+    },
+    "hosting": {
+      "title": "Hosting",
+      "text": "This website is hosted on secure servers compliant with applicable regulations."
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "text": "All content on this site (texts, images, logos, trademarks) is the exclusive property of Dakhla Aménagement S.A. Any reproduction, even partial, is prohibited without prior written authorization."
+    },
+    "privacy": {
+      "title": "Personal Data Protection",
+      "text": "In accordance with Law 09-08 on the protection of individuals regarding personal data processing, you have the right to access, rectify and delete data concerning you. To exercise this right, contact us at: contact@dakhla-amenagement.ma"
+    },
+    "cookies": {
+      "title": "Cookies",
+      "text": "This website uses cookies to improve your browsing experience. You can configure your browser to refuse cookies."
+    }
+  },
+  "footer": {
+    "description": "Clinker grinding center — Production, packaging and marketing of construction materials.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "legal": "Legal Notice",
+    "rights": "All rights reserved.",
+    "madeIn": "Made in Morocco"
+  }
+}
