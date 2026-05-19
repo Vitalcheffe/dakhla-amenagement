@@ -1,28 +1,28 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
 const projectImages = [
-  '/images/dakhla-aerial.jpg',
-  '/images/construction-site.jpg',
-  '/images/solar-industrial.jpg',
-  '/images/factory-exterior.jpg',
+  '/images/projects/residential-construction.png',
+  '/images/projects/infrastructure-road.png',
+  '/images/projects/port-construction.png',
+  '/images/projects/school-construction.png',
+  '/images/projects/villa-construction.png',
 ];
 
 export default function RealisationsPage() {
   const t = useTranslations();
-  const params = useParams();
 
   const projects = [
     { key: 'project1', image: projectImages[0] },
     { key: 'project2', image: projectImages[1] },
     { key: 'project3', image: projectImages[2] },
     { key: 'project4', image: projectImages[3] },
+    { key: 'project5', image: projectImages[4] },
   ];
 
   return (
@@ -40,6 +40,7 @@ export default function RealisationsPage() {
                       src={project.image}
                       alt={t(`realisations.${project.key}.title`)}
                       fill
+                      quality={90}
                       className="object-cover"
                     />
                   </div>

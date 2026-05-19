@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Award, Shield, Users } from 'lucide-react';
+import { ArrowRight, Award, Shield, Users, Microscope } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
@@ -37,7 +37,7 @@ export default function AProposPage() {
     <>
       <PageHero title={t('about.title')} subtitle={t('about.subtitle')} sectionCounter="/03" />
 
-      {/* History Section */}
+      {/* History Section — with factory aerial image */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -65,9 +65,10 @@ export default function AProposPage() {
             <ScrollReveal delay={0.1}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/factory-exterior.jpg"
+                  src="/images/factory/factory-aerial.png"
                   alt={t('about.history.title')}
                   fill
+                  quality={90}
                   className="object-cover"
                 />
               </div>
@@ -76,8 +77,61 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Technology & Quality — Control room image */}
       <section className="py-16 md:py-24 bg-[#F7F8FA]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <ScrollReveal>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/factory/control-room.png"
+                  alt="Salle de contrôle — Technologie de pointe Dakhla Aménagement"
+                  fill
+                  quality={90}
+                  className="object-cover"
+                />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-6">
+                  {locale === 'fr' ? 'Technologie de Pointe' : 'Cutting-Edge Technology'}
+                </h2>
+                <p className="text-[#1A1A2E]/70 leading-relaxed mb-6">
+                  {locale === 'fr'
+                    ? 'Notre centre de broyage est équipé des technologies les plus avancées en matière d\'automatisation et de contrôle qualité. Un système de supervision en temps réel garantit la conformité permanente de notre production.'
+                    : 'Our grinding center is equipped with the most advanced automation and quality control technologies. A real-time supervision system ensures permanent compliance of our production.'}
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 bg-white rounded-xl p-4">
+                    <div className="w-10 h-10 rounded-full bg-[#1B3A5C]/10 flex items-center justify-center">
+                      <Microscope className="w-5 h-5 text-[#1B3A5C]" />
+                    </div>
+                    <div>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">
+                        {locale === 'fr' ? 'Contrôle qualité en continu' : 'Continuous quality control'}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-white rounded-xl p-4">
+                    <div className="w-10 h-10 rounded-full bg-[#1B3A5C]/10 flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-[#1B3A5C]" />
+                    </div>
+                    <div>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">
+                        {locale === 'fr' ? 'Supervision automatisée 24/7' : 'Automated supervision 24/7'}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
             <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-10 text-center">{t('about.values.title')}</h2>
@@ -98,29 +152,49 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Certifications */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* Certifications — with lab image */}
+      <section className="py-16 md:py-24 bg-[#F7F8FA]">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
             <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-10 text-center">{t('about.certifications.title')}</h2>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {certs.map((cert, i) => (
-              <ScrollReveal key={cert.key} delay={i * 0.1}>
-                <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl p-6 text-center">
-                  <div className="w-16 h-16 rounded-full bg-[#1B3A5C]/5 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-bold text-sm text-[#1B3A5C]">{t(`about.certifications.${cert.key}.name`)}</span>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Lab image */}
+            <ScrollReveal>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/lab/lab-compression-test.png"
+                  alt="Laboratoire — Essai de compression Dakhla Aménagement"
+                  fill
+                  quality={90}
+                  className="object-cover"
+                />
+              </div>
+            </ScrollReveal>
+
+            {/* Certification cards */}
+            <ScrollReveal delay={0.1}>
+              <div className="grid grid-cols-1 gap-4">
+                {certs.map((cert) => (
+                  <div key={cert.key} className="card-lift bg-white border border-[#E5E7EB] rounded-2xl p-5 flex items-center gap-4">
+                    <div className="w-14 h-14 rounded-xl bg-[#1B3A5C]/5 flex items-center justify-center shrink-0">
+                      <span className="font-bold text-xs text-[#1B3A5C]">{t(`about.certifications.${cert.key}.name`)}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-[#1B3A5C]">{t(`about.certifications.${cert.key}.name`)}</h3>
+                      <p className="text-sm text-[#6B7280]">{t(`about.certifications.${cert.key}.desc`)}</p>
+                    </div>
                   </div>
-                  <p className="text-sm text-[#6B7280]">{t(`about.certifications.${cert.key}.desc`)}</p>
-                </div>
-              </ScrollReveal>
-            ))}
+                ))}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       {/* Team */}
-      <section className="py-16 md:py-24 bg-[#F7F8FA]">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollReveal>
@@ -128,7 +202,7 @@ export default function AProposPage() {
                 <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-6">{t('about.team.title')}</h2>
                 <p className="text-[#1A1A2E]/70 leading-relaxed">{t('about.team.text')}</p>
                 <div className="mt-8 space-y-4">
-                  <div className="flex items-center gap-3 bg-white rounded-xl p-4">
+                  <div className="flex items-center gap-3 bg-[#F7F8FA] rounded-xl p-4">
                     <div className="w-10 h-10 rounded-full bg-[#1B3A5C] flex items-center justify-center">
                       <Users className="w-5 h-5 text-white" />
                     </div>
@@ -142,9 +216,10 @@ export default function AProposPage() {
             <ScrollReveal delay={0.1}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/sustainability.jpg"
+                  src="/images/factory/factory-interior.png"
                   alt={t('about.team.title')}
                   fill
+                  quality={90}
                   className="object-cover"
                 />
               </div>

@@ -8,10 +8,10 @@ import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
 const stepImages = [
-  '/images/factory-exterior.jpg',
-  '/images/grinding-process.jpg',
-  '/images/quality-lab.jpg',
-  '/images/cement-bags.jpg',
+  '/images/process/step1-clinker-reception.png',
+  '/images/process/step2-grinding.png',
+  '/images/process/step3-dosing-lab.png',
+  '/images/process/step4-packaging.png',
 ];
 
 const stepIcons = [Factory, Beaker, Package, Truck];
@@ -60,6 +60,7 @@ export default function ProcessusPage() {
                           src={stepImages[i]}
                           alt={step.title}
                           fill
+                          quality={90}
                           className="object-cover"
                         />
                       </div>

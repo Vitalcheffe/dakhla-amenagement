@@ -50,7 +50,7 @@ export default function HomePage() {
       {/* ====== HERO — Full-Screen Background Video ====== */}
       <HeroVideo
         src="/videos/hero.mp4"
-        poster="/images/factory-exterior.jpg"
+        poster="/images/factory/factory-exterior.png"
         overlay="dark"
         height="h-[100dvh]"
         parallax={true}
@@ -132,9 +132,10 @@ export default function HomePage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
-                    src="/images/cement-bags.jpg"
+                    src="/images/products/cpj45-bags.png"
                     alt={t('products.cpj45.full')}
                     fill
+                    quality={90}
                     className="object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-[#E8B84B] text-[#1A1A2E] text-xs font-bold px-3 py-1 rounded-full">
@@ -184,9 +185,10 @@ export default function HomePage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
-                    src="/images/factory-exterior.jpg"
+                    src="/images/products/cpj55-bags.png"
                     alt={t('products.cpj55.full')}
                     fill
+                    quality={90}
                     className="object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-[#6B7280] text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -267,13 +269,19 @@ export default function HomePage() {
 
           {/* Process images */}
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {['factory-exterior.jpg', 'grinding-process.jpg', 'quality-lab.jpg', 'cement-bags.jpg'].map((img, i) => (
+            {[
+              { src: '/images/process/step1-clinker-reception.png', alt: processSteps[0].title },
+              { src: '/images/process/step2-grinding.png', alt: processSteps[1].title },
+              { src: '/images/process/step3-dosing-lab.png', alt: processSteps[2].title },
+              { src: '/images/process/step4-packaging.png', alt: processSteps[3].title },
+            ].map((img, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                   <Image
-                    src={`/images/${img}`}
-                    alt={processSteps[i].title}
+                    src={img.src}
+                    alt={img.alt}
                     fill
+                    quality={90}
                     className="object-cover"
                   />
                 </div>
@@ -283,9 +291,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ====== KEY NUMBERS SECTION (white bg) ====== */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+      {/* ====== KEY NUMBERS SECTION (with factory background) ====== */}
+      <section className="py-20 md:py-28 relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/factory/factory-silos.png"
+            alt="Dakhla Aménagement factory silos"
+            fill
+            quality={90}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-white/90" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
           <ScrollReveal>
             <div className="text-center mb-14">
               <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em]">
@@ -297,7 +316,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 lg:p-8 text-center card-lift">
+                <div className="bg-white/80 backdrop-blur-sm border border-[#E5E7EB] rounded-2xl p-6 lg:p-8 text-center card-lift">
                   <div className="text-3xl sm:text-4xl font-bold text-[#1B3A5C]">
                     <CountUp end={stat.value} suffix={stat.suffix} />
                   </div>
@@ -329,9 +348,20 @@ export default function HomePage() {
         </div>
       </HeroVideo>
 
-      {/* ====== CTA SECTION (navy bg) ====== */}
+      {/* ====== CTA SECTION (navy bg with factory aerial) ====== */}
       <section className="bg-[#1B3A5C] py-20 md:py-28 relative overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/factory/factory-aerial.png"
+            alt="Aerial view of Dakhla Aménagement plant"
+            fill
+            quality={90}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#1B3A5C]/85" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white tracking-[-0.02em] leading-[1.1]">
               {t('cta.title')}

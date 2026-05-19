@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
+import Image from 'next/image';
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal } from '@/components/shared/Animations';
@@ -10,8 +10,6 @@ import { PageHero } from '@/components/shared/PageHero';
 
 export default function ContactPage() {
   const t = useTranslations();
-  const params = useParams();
-  const locale = (params?.locale as string) || 'fr';
   const [formState, setFormState] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
   const [sent, setSent] = useState(false);
 
@@ -23,6 +21,18 @@ export default function ContactPage() {
   return (
     <>
       <PageHero title={t('contact.title')} subtitle={t('contact.subtitle')} sectionCounter="/07" />
+
+      {/* Hero image bar */}
+      <section className="relative h-48 md:h-64 -mt-4">
+        <Image
+          src="/images/factory/factory-exterior.png"
+          alt="Usine Dakhla Aménagement — Cimenterie de Dakhla"
+          fill
+          quality={90}
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
+      </section>
 
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
@@ -163,13 +173,22 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="bg-[#F7F8FA] rounded-2xl p-6 text-center">
-                  <div className="h-48 bg-[#E5E7EB] rounded-xl flex items-center justify-center">
-                    <div className="text-center">
-                      <MapPin className="w-8 h-8 text-[#1B3A5C] mx-auto mb-2" />
-                      <p className="text-sm text-[#6B7280]">Dakhla, Maroc</p>
-                      <p className="text-xs text-[#6B7280] mt-1">23.6814° N, 15.9597° W</p>
+                {/* Map placeholder with factory image overlay */}
+                <div className="relative bg-[#F7F8FA] rounded-2xl overflow-hidden">
+                  <div className="relative h-56">
+                    <Image
+                      src="/images/factory/factory-exterior.png"
+                      alt="Usine Dakhla Aménagement"
+                      fill
+                      quality={80}
+                      className="object-cover opacity-30"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <MapPin className="w-8 h-8 text-[#1B3A5C] mx-auto mb-2" />
+                        <p className="text-sm font-semibold text-[#1B3A5C]">Dakhla, Maroc</p>
+                        <p className="text-xs text-[#6B7280] mt-1">23.6814° N, 15.9597° W</p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -15,11 +15,12 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PageHero } from '@/components/shared/PageHero';
+import Image from 'next/image';
 import jsPDF from 'jspdf';
 
 // ─── PRICING ENGINE ────────────────────────────────────────────
 
-const BASE_PRICES: Record<string, number> = { cpj45: 950, cpj55: 1100 };
+const BASE_PRICES: Record<string, number> = { cpj45: 1500, cpj55: 1600 };
 const VOLUME_DISCOUNTS = [
   { min: 500, discount: 0.15 },
   { min: 100, discount: 0.12 },
@@ -727,6 +728,7 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
       price: BASE_PRICES.cpj45,
       gradient: 'from-[#1B3A5C] to-[#2D5F8A]',
       accentColor: '#E8B84B',
+      image: '/images/products/cpj45-bags.png',
     },
     {
       key: 'cpj55',
@@ -738,6 +740,7 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
       price: BASE_PRICES.cpj55,
       gradient: 'from-[#0F2337] to-[#1B3A5C]',
       accentColor: '#C1272D',
+      image: '/images/products/cpj55-bags.png',
     },
   ];
 
@@ -755,7 +758,7 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
       <div>
         <label className="block text-sm font-semibold text-[#1B3A5C] mb-4">{t('quote.step2.cementType')}</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {products.map(({ key, badge, desc, label, strength, use, price, gradient, accentColor }) => {
+          {products.map(({ key, badge, desc, label, strength, use, price, gradient, accentColor, image }) => {
             const isSelected = quote.cementType === key;
             return (
               <motion.button
@@ -770,8 +773,17 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
                 }`}
                 style={isSelected ? { borderColor: accentColor, boxShadow: `0 0 0 2px white, 0 0 0 4px ${accentColor}` } : undefined}
               >
-                {/* Gradient background */}
-                <div className={`bg-gradient-to-br ${gradient} p-6 pb-4`}>
+                {/* Gradient background with product image */}
+                <div className={`bg-gradient-to-br ${gradient} p-6 pb-4 relative`}>
+                  {/* Background product image */}
+                  <div className="absolute inset-0 opacity-20">
+                    <Image
+                      src={image}
+                      alt={`${key} cement bags`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                   {/* Badges */}
                   <div className="flex items-center gap-2 mb-4">
                     <span className="inline-block px-2.5 py-1 bg-white/15 backdrop-blur-sm text-white text-[10px] font-bold rounded-full tracking-wide border border-white/20">
@@ -1870,6 +1882,18 @@ export default function DevisPage() {
   return (
     <>
       <PageHero title={t('quote.title')} subtitle={t('quote.subtitle')} sectionCounter="/05" />
+
+      {/* Subtle hero image bar */}
+      <section className="relative h-36 md:h-48 -mt-4">
+        <Image
+          src="/images/factory/factory-aerial.png"
+          alt="Usine Dakhla Aménagement — Vue aérienne"
+          fill
+          quality={80}
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
+      </section>
 
       <section className="py-12 md:py-20 relative overflow-hidden">
         {/* Subtle background pattern */}

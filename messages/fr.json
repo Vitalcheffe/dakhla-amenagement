@@ -399,6 +399,11 @@
       "title": "Lycée Al Khawarizmi",
       "desc": "Construction du nouveau lycée avec fourniture de ciment CPJ 45 pour la maçonnerie et les enduits.",
       "location": "Centre-ville Dakhla"
+    },
+    "project5": {
+      "title": "Villas Résidence Al Baraka",
+      "desc": "Construction d'un ensemble de villas haut standing avec fourniture de ciment CPJ 45 pour les fondations et la maçonnerie.",
+      "location": "Quartier Al Baraka, Dakhla"
     }
   },
   "contact": {
