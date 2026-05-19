@@ -20,28 +20,28 @@
   "products": {
     "title": "Our Products",
     "subtitle": "A range of cements adapted to all your construction projects",
-    "cpj42": {
-      "name": "CPJ 42.5",
-      "full": "Composite Portland Cement 42.5",
-      "desc": "High-quality versatile cement for reinforced concrete, floor slabs and common civil engineering works. The benchmark choice for most construction projects in Morocco.",
+    "cpj45": {
+      "name": "CPJ 45",
+      "full": "Composite Portland Cement 45",
+      "desc": "High strength cement for reinforced concrete, floor slabs and civil engineering works. The benchmark choice for demanding projects in Morocco.",
       "badge": "Best-seller",
       "specs": {
-        "resistance": "42.5 MPa (28 days)",
+        "resistance": "45 MPa (28 days)",
         "fineness": "≥ 350 m²/kg",
         "setting": "Initial ≥ 45 min",
-        "use": "Reinforced concrete, slabs, common works"
+        "use": "Reinforced concrete, Infrastructure"
       }
     },
-    "cpj32": {
-      "name": "CPJ 32.5",
-      "full": "Composite Portland Cement 32.5",
-      "desc": "Cement for common masonry, interior and exterior plastering, and bedding mortars. Ideal for residential projects and finishing works.",
-      "badge": "Economical",
+    "cpj55": {
+      "name": "CPJ 55",
+      "full": "Composite Portland Cement 55",
+      "desc": "Ultra high strength cement for major civil engineering works and large infrastructure projects. Exceptional performance for the most demanding construction sites.",
+      "badge": "High Performance",
       "specs": {
-        "resistance": "32.5 MPa (28 days)",
-        "fineness": "≥ 300 m²/kg",
-        "setting": "Initial ≥ 60 min",
-        "use": "Masonry, plastering, mortars"
+        "resistance": "55 MPa (28 days)",
+        "fineness": "≥ 400 m²/kg",
+        "setting": "Initial ≥ 45 min",
+        "use": "Civil engineering, Major works"
       }
     },
     "learnMore": "Learn more",
@@ -189,17 +189,23 @@
       "sacs50Desc": "Standard packaging",
       "bigBag": "Big Bag",
       "bigBagDesc": "Industrial packaging",
-      "cpj42": "CPJ 42.5",
-      "cpj42Badge": "CEM II 45",
-      "cpj42Desc": "High strength — Reinforced concrete",
-      "cpj32": "CPJ 32.5",
-      "cpj32Badge": "CEM II 32.5",
-      "cpj32Desc": "Economical — Masonry",
+      "cpj45": "CPJ 45",
+      "cpj45Badge": "CEM II 45",
+      "cpj45Desc": "High strength — Reinforced concrete & Infrastructure",
+      "cpj45Strength": "45 MPa",
+      "cpj45Use": "Reinforced concrete, Infrastructure",
+      "cpj55": "CPJ 55",
+      "cpj55Badge": "CEM I 55",
+      "cpj55Desc": "Ultra strength — Major civil engineering works",
+      "cpj55Strength": "55 MPa",
+      "cpj55Use": "Civil engineering, Major works",
       "volumeDiscount": "Volume discount",
       "nextTier": "Next tier",
       "tonsUntil": "tonnes until",
       "bestSeller": "Best-seller",
-      "economical": "Economical"
+      "economical": "Economical",
+      "popular": "Popular",
+      "highPerformance": "High Performance"
     },
     "step3": {
       "title": "Delivery & Timeline",
@@ -303,7 +309,13 @@
     "successSubtitle": "Our sales team will contact you within 24 hours",
     "successQuote": "Your quote number",
     "downloadPdf": "Download PDF",
-    "sendWhatsApp": "Send via WhatsApp"
+    "sendWhatsApp": "Send via WhatsApp",
+    "savings": "Savings",
+    "perMonth": "/month est.",
+    "successWhatNext": "What's next?",
+    "successStep1": "Quote validation",
+    "successStep2": "Email confirmation",
+    "successStep3": "Delivery within 24-72h"
   },
   "blog": {
     "title": "Blog",
@@ -321,7 +333,7 @@
     "articles": {
       "article1": {
         "title": "How to choose the right cement for your construction project",
-        "excerpt": "CPJ 42.5 or CPJ 32.5? Discover the essential criteria for selecting the right cement for your project, from strength to usage conditions.",
+        "excerpt": "CPJ 45 or CPJ 55? Discover the essential criteria for selecting the right cement for your project, from strength to usage conditions.",
         "date": "January 15, 2026",
         "category": "Technical Advice"
       },
@@ -370,12 +382,12 @@
     "subtitle": "Discover our projects and contributions to the development of Southern Morocco",
     "project1": {
       "title": "Dakhla Marina Residences",
-      "desc": "Supply of CPJ 42.5 cement for the construction of a 120-unit residential complex by the sea.",
+      "desc": "Supply of CPJ 45 cement for the construction of a 120-unit residential complex by the sea.",
       "location": "Dakhla Marina"
     },
     "project2": {
       "title": "National Road N1 — Dakhla Section",
-      "desc": "Cement supply for bridges and foundations of the new road section.",
+      "desc": "CPJ 55 cement supply for bridges and foundations of the new road section.",
       "location": "RN1, South of Dakhla"
     },
     "project3": {
@@ -385,7 +397,7 @@
     },
     "project4": {
       "title": "Al Khawarizmi High School",
-      "desc": "Construction of the new high school with supply of CPJ 32.5 cement for masonry and plastering.",
+      "desc": "Construction of the new high school with supply of CPJ 45 cement for masonry and plastering.",
       "location": "Downtown Dakhla"
     }
   },
@@ -458,8 +470,8 @@
     "company": "Company",
     "resources": "Resources",
     "contactTitle": "Contact",
-    "cpj42": "CPJ 42.5",
-    "cpj32": "CPJ 32.5",
+    "cpj45": "CPJ 45",
+    "cpj55": "CPJ 55",
     "about": "About",
     "process": "Our Process",
     "realisations": "Projects",

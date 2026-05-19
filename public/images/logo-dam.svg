@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" fill="none">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B3A5C"/>
+      <stop offset="100%" stop-color="#0F2440"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B84B"/>
+      <stop offset="100%" stop-color="#C9A03E"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B3A5C"/>
+      <stop offset="100%" stop-color="#0F2440"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield shape -->
+  <path d="M50 8 L82 20 L82 52 C82 70 68 84 50 92 C32 84 18 70 18 52 L18 20 Z" 
+        fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="2.5"/>
+  
+  <!-- Inner shield accent line -->
+  <path d="M50 14 L76 24 L76 52 C76 66 64 78 50 86 C36 78 24 66 24 52 L24 24 Z" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- DA Monogram -->
+  <text x="50" y="58" text-anchor="middle" fill="url(#goldGrad)" 
+        font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="32" letter-spacing="2">DA</text>
+  
+  <!-- Small gold line under DA -->
+  <line x1="36" y1="66" x2="64" y2="66" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Company name -->
+  <text x="100" y="38" fill="#1B3A5C" 
+        font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="22" letter-spacing="3">DAKHLA</text>
+  <text x="100" y="62" fill="#1B3A5C" 
+        font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="22" letter-spacing="3">AMÉNAGEMENT</text>
+  
+  <!-- Tagline -->
+  <text x="100" y="80" fill="#6B7280" 
+        font-family="Arial,Helvetica,sans-serif" font-weight="medium" font-size="9" letter-spacing="4">CIMENT DE QUALITÉ</text>
+  
+  <!-- Gold accent line -->
+  <line x1="100" y1="86" x2="310" y2="86" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.4"/>
+</svg>

@@ -20,28 +20,28 @@
   "products": {
     "title": "Nos Produits",
     "subtitle": "Une gamme de ciments adaptée à tous vos projets de construction",
-    "cpj42": {
-      "name": "CPJ 42.5",
-      "full": "Ciment Portland Composé 42.5",
-      "desc": "Ciment polyvalent de haute qualité pour béton armé, dallages et ouvrages courants de génie civil. Le choix de référence pour la majorité des projets de construction au Maroc.",
+    "cpj45": {
+      "name": "CPJ 45",
+      "full": "Ciment Portland Composé 45",
+      "desc": "Ciment haute résistance pour béton armé, dallages et ouvrages de génie civil. Le choix de référence pour les projets exigeants au Maroc.",
       "badge": "Best-seller",
       "specs": {
-        "resistance": "42.5 MPa (28 jours)",
+        "resistance": "45 MPa (28 jours)",
         "fineness": "≥ 350 m²/kg",
         "setting": "Début ≥ 45 min",
-        "use": "Béton armé, dallages, ouvrages courants"
+        "use": "Béton armé, Infrastructure"
       }
     },
-    "cpj32": {
-      "name": "CPJ 32.5",
-      "full": "Ciment Portland Composé 32.5",
-      "desc": "Ciment destiné aux travaux de maçonnerie courante, enduits intérieurs et extérieurs, et mortiers de pose. Idéal pour les projets résidentiels et les travaux de second œuvre.",
-      "badge": "Économique",
+    "cpj55": {
+      "name": "CPJ 55",
+      "full": "Ciment Portland Composé 55",
+      "desc": "Ciment ultra haute résistance pour grands ouvrages de génie civil et projets d'infrastructure majeurs. Performance exceptionnelle pour les chantiers les plus exigeants.",
+      "badge": "Haute Performance",
       "specs": {
-        "resistance": "32.5 MPa (28 jours)",
-        "fineness": "≥ 300 m²/kg",
-        "setting": "Début ≥ 60 min",
-        "use": "Maçonnerie, enduits, mortiers"
+        "resistance": "55 MPa (28 jours)",
+        "fineness": "≥ 400 m²/kg",
+        "setting": "Début ≥ 45 min",
+        "use": "Génie civil, Grands ouvrages"
       }
     },
     "learnMore": "En savoir plus",
@@ -189,17 +189,23 @@
       "sacs50Desc": "Conditionnement standard",
       "bigBag": "Big Bag",
       "bigBagDesc": "Conditionnement industriel",
-      "cpj42": "CPJ 42.5",
-      "cpj42Badge": "CEM II 45",
-      "cpj42Desc": "Haute résistance — Béton armé",
-      "cpj32": "CPJ 32.5",
-      "cpj32Badge": "CEM II 32.5",
-      "cpj32Desc": "Économique — Maçonnerie",
+      "cpj45": "CPJ 45",
+      "cpj45Badge": "CEM II 45",
+      "cpj45Desc": "Haute résistance — Béton armé & Infrastructure",
+      "cpj45Strength": "45 MPa",
+      "cpj45Use": "Béton armé, Infrastructure",
+      "cpj55": "CPJ 55",
+      "cpj55Badge": "CEM I 55",
+      "cpj55Desc": "Ultra résistance — Grands ouvrages & Génie civil",
+      "cpj55Strength": "55 MPa",
+      "cpj55Use": "Génie civil, Grands ouvrages",
       "volumeDiscount": "Remise volume",
       "nextTier": "Prochain palier",
       "tonsUntil": "tonnes avant",
       "bestSeller": "Best-seller",
-      "economical": "Économique"
+      "economical": "Économique",
+      "popular": "Populaire",
+      "highPerformance": "Haute Performance"
     },
     "step3": {
       "title": "Livraison & Délai",
@@ -303,7 +309,13 @@
     "successSubtitle": "Notre équipe commerciale vous contactera sous 24h",
     "successQuote": "Votre numéro de devis",
     "downloadPdf": "Télécharger le PDF",
-    "sendWhatsApp": "Envoyer par WhatsApp"
+    "sendWhatsApp": "Envoyer par WhatsApp",
+    "savings": "Économie",
+    "perMonth": "/mois estimé",
+    "successWhatNext": "Et maintenant ?",
+    "successStep1": "Validation du devis",
+    "successStep2": "Confirmation par email",
+    "successStep3": "Livraison sous 24-72h"
   },
   "blog": {
     "title": "Blog",
@@ -321,7 +333,7 @@
     "articles": {
       "article1": {
         "title": "Comment choisir le bon ciment pour votre projet de construction",
-        "excerpt": "CPJ 42.5 ou CPJ 32.5 ? Découvrez les critères essentiels pour sélectionner le ciment adapté à votre projet, de la résistance aux conditions d'utilisation.",
+        "excerpt": "CPJ 45 ou CPJ 55 ? Découvrez les critères essentiels pour sélectionner le ciment adapté à votre projet, de la résistance aux conditions d'utilisation.",
         "date": "15 Janvier 2026",
         "category": "Conseils techniques"
       },
@@ -370,12 +382,12 @@
     "subtitle": "Découvrez nos projets et contributions au développement du Sud Marocain",
     "project1": {
       "title": "Résidences Dakhla Marina",
-      "desc": "Fourniture de ciment CPJ 42.5 pour la construction d'un complexe résidentiel de 120 unités en bord de mer.",
+      "desc": "Fourniture de ciment CPJ 45 pour la construction d'un complexe résidentiel de 120 unités en bord de mer.",
       "location": "Dakhla Marina"
     },
     "project2": {
       "title": "Route Nationale N1 — Tronçon Dakhla",
-      "desc": "Approvisionnement en ciment pour les ouvrages d'art et les fondations du nouveau tronçon routier.",
+      "desc": "Approvisionnement en ciment CPJ 55 pour les ouvrages d'art et les fondations du nouveau tronçon routier.",
       "location": "RN1, Sud de Dakhla"
     },
     "project3": {
@@ -385,7 +397,7 @@
     },
     "project4": {
       "title": "Lycée Al Khawarizmi",
-      "desc": "Construction du nouveau lycée avec fourniture de ciment CPJ 32.5 pour la maçonnerie et les enduits.",
+      "desc": "Construction du nouveau lycée avec fourniture de ciment CPJ 45 pour la maçonnerie et les enduits.",
       "location": "Centre-ville Dakhla"
     }
   },
@@ -449,7 +461,7 @@
     },
     "cookies": {
       "title": "Cookies",
-      "text": "Ce site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies."
+      "text": "Ce site utilise cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies."
     }
   },
   "footer": {
@@ -458,8 +470,8 @@
     "company": "Entreprise",
     "resources": "Ressources",
     "contactTitle": "Contact",
-    "cpj42": "CPJ 42.5",
-    "cpj32": "CPJ 32.5",
+    "cpj45": "CPJ 45",
+    "cpj55": "CPJ 55",
     "about": "À Propos",
     "process": "Notre Processus",
     "realisations": "Réalisations",

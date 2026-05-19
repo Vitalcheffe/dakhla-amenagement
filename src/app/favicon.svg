@@ -1,15 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
   <defs>
-    <clipPath id="shield">
-      <path d="M16 2L4 8v8c0 7.5 5.1 14.2 12 16 6.9-1.8 12-8.5 12-16V8L16 2z"/>
-    </clipPath>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B3A5C"/>
+      <stop offset="100%" stop-color="#0F2440"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8B84B"/>
+      <stop offset="100%" stop-color="#C9A03E"/>
+    </linearGradient>
   </defs>
-  <!-- Shield background -->
-  <path d="M16 2L4 8v8c0 7.5 5.1 14.2 12 16 6.9-1.8 12-8.5 12-16V8L16 2z" fill="#1B3A5C"/>
-  <!-- D letter -->
-  <path d="M9 10h3c2.8 0 4.5 1.8 4.5 5s-1.7 5-4.5 5H9V10zm2 1.8v6.4h1c1.8 0 2.5-1.2 2.5-3.2s-.7-3.2-2.5-3.2h-1z" fill="#FFFFFF"/>
-  <!-- A letter -->
-  <path d="M18 20l3.2-10h2.1l3.2 10h-2.1l-.6-2h-3.1l-.6 2H18zm2.8-3.7h2.1L22 13.3l-1.2 3z" fill="#FFFFFF"/>
-  <!-- Gold accent line -->
-  <rect x="9" y="24" width="14" height="1.5" rx="0.75" fill="#E8B84B"/>
+  
+  <!-- Shield shape -->
+  <path d="M16 2 L28 6 L28 16 C28 23 22 28 16 31 C10 28 4 23 4 16 L4 6 Z" 
+        fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="1"/>
+  
+  <!-- Inner shield accent -->
+  <path d="M16 4 L26 7.5 L26 16 C26 22 21 27 16 29 C11 27 6 22 6 16 L6 7.5 Z" 
+        fill="none" stroke="url(#goldGrad)" stroke-width="0.4" opacity="0.5"/>
+  
+  <!-- DA Monogram -->
+  <text x="16" y="20" text-anchor="middle" fill="url(#goldGrad)" 
+        font-family="Arial,sans-serif" font-weight="bold" font-size="10" letter-spacing="0.5">DA</text>
+  
+  <!-- Gold line under DA -->
+  <line x1="11" y1="22" x2="21" y2="22" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.6"/>
 </svg>

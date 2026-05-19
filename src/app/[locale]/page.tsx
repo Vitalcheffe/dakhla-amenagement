@@ -127,40 +127,40 @@ export default function HomePage() {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* CPJ 42.5 */}
+            {/* CPJ 45 */}
             <ScrollReveal delay={0.1}>
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
                     src="/images/cement-bags.jpg"
-                    alt={t('products.cpj42.full')}
+                    alt={t('products.cpj45.full')}
                     fill
                     className="object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-[#E8B84B] text-[#1A1A2E] text-xs font-bold px-3 py-1 rounded-full">
-                    {t('products.cpj42.badge')}
+                    {t('products.cpj45.badge')}
                   </div>
                 </div>
                 <div className="p-6 md:p-8">
-                  <h3 className="text-2xl font-bold text-[#1B3A5C]">{t('products.cpj42.name')}</h3>
-                  <p className="text-sm text-[#6B7280] mt-1">{t('products.cpj42.full')}</p>
-                  <p className="mt-4 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj42.desc')}</p>
+                  <h3 className="text-2xl font-bold text-[#1B3A5C]">{t('products.cpj45.name')}</h3>
+                  <p className="text-sm text-[#6B7280] mt-1">{t('products.cpj45.full')}</p>
+                  <p className="mt-4 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj45.desc')}</p>
                   <div className="mt-6 grid grid-cols-2 gap-3">
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.resistance')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.resistance')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.resistance')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.fineness')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.fineness')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.fineness')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.setting')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.setting')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.setting')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.use')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.use')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.use')}</p>
                     </div>
                   </div>
                   <div className="mt-6 flex items-center gap-4">
@@ -179,40 +179,40 @@ export default function HomePage() {
               </div>
             </ScrollReveal>
 
-            {/* CPJ 32.5 */}
+            {/* CPJ 55 */}
             <ScrollReveal delay={0.2}>
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
                     src="/images/factory-exterior.jpg"
-                    alt={t('products.cpj32.full')}
+                    alt={t('products.cpj55.full')}
                     fill
                     className="object-cover"
                   />
                   <div className="absolute top-4 right-4 bg-[#6B7280] text-white text-xs font-bold px-3 py-1 rounded-full">
-                    {t('products.cpj32.badge')}
+                    {t('products.cpj55.badge')}
                   </div>
                 </div>
                 <div className="p-6 md:p-8">
-                  <h3 className="text-2xl font-bold text-[#1B3A5C]">{t('products.cpj32.name')}</h3>
-                  <p className="text-sm text-[#6B7280] mt-1">{t('products.cpj32.full')}</p>
-                  <p className="mt-4 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj32.desc')}</p>
+                  <h3 className="text-2xl font-bold text-[#1B3A5C]">{t('products.cpj55.name')}</h3>
+                  <p className="text-sm text-[#6B7280] mt-1">{t('products.cpj55.full')}</p>
+                  <p className="mt-4 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj55.desc')}</p>
                   <div className="mt-6 grid grid-cols-2 gap-3">
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.resistance')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.resistance')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.resistance')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.fineness')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.fineness')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.fineness')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.setting')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.setting')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.setting')}</p>
                     </div>
                     <div className="bg-[#F7F8FA] rounded-lg p-3">
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.use')}</span>
-                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.use')}</p>
+                      <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.use')}</p>
                     </div>
                   </div>
                   <div className="mt-6 flex items-center gap-4">

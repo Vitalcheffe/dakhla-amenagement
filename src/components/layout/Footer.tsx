@@ -14,18 +14,14 @@ export function Footer({ locale }: { locale: string }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div className="mb-6">
               <Image
-                src="/images/logo-dam.png"
+                src="/images/logo-dam.svg"
                 alt="Dakhla Aménagement"
-                width={36}
-                height={36}
-                className="rounded-md"
+                width={180}
+                height={44}
+                className="h-9 w-auto"
               />
-              <div className="flex flex-col">
-                <span className="text-sm font-bold tracking-[0.1em] text-[#1B3A5C] leading-none">DAKHLA AMÉNAGEMENT</span>
-                <span className="text-[9px] font-medium tracking-[0.2em] text-[#6B7280] uppercase leading-none mt-0.5">CIMENT DE QUALITÉ</span>
-              </div>
             </div>
             <p className="text-sm text-[#6B7280] leading-relaxed max-w-xs">
               {t('description')}
@@ -38,12 +34,12 @@ export function Footer({ locale }: { locale: string }) {
             <ul className="space-y-2.5">
               <li>
                 <Link href={`/${locale}/produits`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
-                  {t('cpj42')}
+                  {t('cpj45')}
                 </Link>
               </li>
               <li>
                 <Link href={`/${locale}/produits`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
-                  {t('cpj32')}
+                  {t('cpj55')}
                 </Link>
               </li>
               <li>

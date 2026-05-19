@@ -43,24 +43,16 @@ export function Header({ locale }: { locale: string }) {
     } ${scrolled ? 'shadow-sm' : ''}`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-3">
+          {/* Logo — SVG contains shield + company name */}
+          <Link href={`/${locale}`} className="flex items-center gap-2">
             <Image
-              src="/images/logo-dam.png"
+              src="/images/logo-dam.svg"
               alt="Dakhla Aménagement"
-              width={36}
-              height={36}
-              className="rounded-md"
+              width={180}
+              height={44}
+              className="h-9 md:h-10 w-auto"
               priority
             />
-            <div className="flex flex-col">
-              <span className={`text-sm font-bold tracking-[0.1em] leading-none transition-colors duration-300 ${
-                isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
-              }`}>DAKHLA AMÉNAGEMENT</span>
-              <span className={`text-[9px] font-medium tracking-[0.2em] uppercase leading-none mt-0.5 transition-colors duration-300 ${
-                isHome && !scrolled ? 'text-white/50' : 'text-[#6B7280]'
-              }`}>CIMENT DE QUALITÉ</span>
-            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -122,16 +114,13 @@ export function Header({ locale }: { locale: string }) {
               <SheetContent side="right" className="w-80 bg-white p-0">
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex items-center justify-between p-6 border-b border-[#E5E7EB]">
-                  <div className="flex items-center gap-2">
-                    <Image
-                      src="/images/logo-dam.png"
-                      alt="Dakhla Aménagement"
-                      width={36}
-                      height={36}
-                      className="rounded-md"
-                    />
-                    <span className="text-sm font-bold tracking-[0.1em] text-[#1B3A5C]">DAKHLA AMÉNAGEMENT</span>
-                  </div>
+                  <Image
+                    src="/images/logo-dam.svg"
+                    alt="Dakhla Aménagement"
+                    width={160}
+                    height={40}
+                    className="h-8 w-auto"
+                  />
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
                     <X className="h-5 w-5" />
                   </Button>

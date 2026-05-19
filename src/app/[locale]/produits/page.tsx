@@ -18,7 +18,7 @@ export default function ProduitsPage() {
     <>
       <PageHero title={t('products.title')} subtitle={t('products.subtitle')} sectionCounter="/01" />
 
-      {/* CPJ 42.5 — Full detail */}
+      {/* CPJ 45 — Full detail */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -26,20 +26,20 @@ export default function ProduitsPage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/cement-bags.jpg"
-                  alt={t('products.cpj42.full')}
+                  alt={t('products.cpj45.full')}
                   fill
                   className="object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-[#E8B84B] text-[#1A1A2E] text-xs font-bold px-3 py-1 rounded-full">
-                  {t('products.cpj42.badge')}
+                  {t('products.cpj45.badge')}
                 </div>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1B3A5C]">{t('products.cpj42.name')}</h2>
-                <p className="text-[#6B7280] mt-1">{t('products.cpj42.full')}</p>
-                <p className="mt-6 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj42.desc')}</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1B3A5C]">{t('products.cpj45.name')}</h2>
+                <p className="text-[#6B7280] mt-1">{t('products.cpj45.full')}</p>
+                <p className="mt-6 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj45.desc')}</p>
 
                 {/* Specs Table */}
                 <div className="mt-8 bg-[#F7F8FA] rounded-xl p-6">
@@ -47,19 +47,19 @@ export default function ProduitsPage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.resistance')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.resistance')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.resistance')}</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.fineness')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.fineness')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.fineness')}</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.setting')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.setting')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.setting')}</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.use')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj42.specs.use')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.use')}</span>
                     </div>
                   </div>
                 </div>
@@ -77,33 +77,33 @@ export default function ProduitsPage() {
         </div>
       </section>
 
-      {/* CPJ 32.5 — Full detail */}
+      {/* CPJ 55 — Full detail */}
       <section className="py-16 md:py-24 bg-[#F7F8FA]">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <ScrollReveal delay={0.1}>
               <div className="order-2 lg:order-1">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1B3A5C]">{t('products.cpj32.name')}</h2>
-                <p className="text-[#6B7280] mt-1">{t('products.cpj32.full')}</p>
-                <p className="mt-6 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj32.desc')}</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1B3A5C]">{t('products.cpj55.name')}</h2>
+                <p className="text-[#6B7280] mt-1">{t('products.cpj55.full')}</p>
+                <p className="mt-6 text-[#1A1A2E]/70 leading-relaxed">{t('products.cpj55.desc')}</p>
 
                 <div className="mt-8 bg-white rounded-xl p-6">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.resistance')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.resistance')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.resistance')}</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.fineness')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.fineness')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.fineness')}</span>
                     </div>
                     <div className="flex items-center justify-between border-b border-[#E5E7EB] pb-3">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.setting')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.setting')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.setting')}</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-[#6B7280]">{t('products.specLabels.use')}</span>
-                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj32.specs.use')}</span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.use')}</span>
                     </div>
                   </div>
                 </div>
@@ -121,12 +121,12 @@ export default function ProduitsPage() {
               <div className="order-1 lg:order-2 relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/factory-exterior.jpg"
-                  alt={t('products.cpj32.full')}
+                  alt={t('products.cpj55.full')}
                   fill
                   className="object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-[#6B7280] text-white text-xs font-bold px-3 py-1 rounded-full">
-                  {t('products.cpj32.badge')}
+                  {t('products.cpj55.badge')}
                 </div>
               </div>
             </ScrollReveal>

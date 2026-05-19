@@ -35,7 +35,13 @@ export function HeroVideo({
   const opacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
 
   useEffect(() => {
-    setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    const mql = window.matchMedia('(max-width: 768px)');
+    const handler = (e: MediaQueryListEvent | MediaQueryList) => {
+      setIsMobile(e.matches);
+    };
+    handler(mql);
+    mql.addEventListener('change', handler);
+    return () => mql.removeEventListener('change', handler);
   }, []);
 
   const enableParallax = parallax && !isMobile;
