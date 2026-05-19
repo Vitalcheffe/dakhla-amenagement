@@ -1,0 +1,16 @@
+{
+  "name": "Dakhla Aménagement — Ciment de Qualité",
+  "short_name": "DAM",
+  "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1B3A5C",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

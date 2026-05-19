@@ -2,21 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ciment DAM | Dakhla Aménagement — Ciment de Qualité au Sud Marocain",
-  description: "Cimenterie Dakhla, Broyage Ciment Sud Maroc, Dakhla Aménagement, Ciment B2B. Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
+  title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
+  description: "Dakhla Aménagement SA — Centre de broyage de clinker. Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc. CPJ 42.5, CPJ 32.5.",
+  metadataBase: new URL('https://www.ciment-dam.com'),
   keywords: [
     "ciment",
     "Dakhla",
     "Maroc",
+    "cimenterie",
     "broyage clinker",
-    "matériaux construction",
-    "CPJ",
-    "CPA",
-    "DAM ECOShield",
-    "ciment vert",
-    "Ciment DAM",
+    "CPJ 42.5",
+    "CPJ 32.5",
     "Dakhla Aménagement",
+    "matériaux construction",
+    "ciment Maroc",
   ],
+  openGraph: {
+    title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
+    description: "Centre de broyage de clinker — Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc.",
+    url: "https://www.ciment-dam.com",
+    siteName: "Dakhla Aménagement S.A.",
+    locale: "fr_MA",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

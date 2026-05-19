@@ -163,19 +163,19 @@ export function VideoModal({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0A0A0A]/95 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-[#1B3A5C]/95 backdrop-blur-sm"
       onClick={onClose}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="relative w-full max-w-4xl mx-4 aspect-video bg-[#0A0A0A] rounded-xl overflow-hidden"
+        className="relative w-full max-w-4xl mx-4 aspect-video bg-[#1B3A5C] rounded-xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#0A0A0A]/80 text-white hover:bg-[#0A0A0A] transition-colors"
+          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#1B3A5C]/80 text-white hover:bg-[#1B3A5C] transition-colors"
           aria-label="Close"
         >
           ✕

@@ -3,86 +3,113 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-const footerNavItems = [
-  { key: 'about', href: '/about' },
-  { key: 'solutions', href: '/solutions' },
-  { key: 'sustainability', href: '/sustainability' },
-  { key: 'medias', href: '/medias' },
-  { key: 'careers', href: '/careers' },
-  { key: 'investors', href: '/investors' },
-  { key: 'contact', href: '/contact' },
-];
-
 export function Footer({ locale }: { locale: string }) {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
 
   return (
-    <footer className="bg-[#0A0A0A] text-white">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
+    <footer className="bg-white border-t border-[#E5E7EB]">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                <span className="text-[#0A0A0A] font-mono font-bold text-sm">D</span>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-9 h-9 bg-[#1B3A5C] rounded-md flex items-center justify-center">
+                <span className="text-white font-bold text-sm">DA</span>
               </div>
-              <div>
-                <span className="text-sm font-bold tracking-[0.15em]">DAM</span>
-                <span className="text-[8px] tracking-[0.25em] text-white/40 ml-2">CIMENT</span>
+              <div className="flex flex-col">
+                <span className="text-sm font-bold tracking-[0.1em] text-[#1B3A5C] leading-none">DAKHLA AMÉNAGEMENT</span>
+                <span className="text-[9px] font-medium tracking-[0.2em] text-[#6B7280] uppercase leading-none mt-0.5">CIMENT DE QUALITÉ</span>
               </div>
             </div>
-            <p className="text-sm text-white/50 leading-relaxed max-w-xs">
+            <p className="text-sm text-[#6B7280] leading-relaxed max-w-xs">
               {t('description')}
             </p>
           </div>
 
-          {/* Navigation */}
+          {/* Products Column */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('company')}</h4>
+            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-[#1B3A5C] mb-4">{t('products')}</h4>
             <ul className="space-y-2.5">
-              {footerNavItems.map((item) => (
-                <li key={item.key}>
-                  <Link
-                    href={`/${locale}${item.href}`}
-                    className="text-sm text-white/50 hover:text-white transition-colors"
-                  >
-                    {tNav(item.key)}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href={`/${locale}/produits`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('cpj42')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/produits`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('cpj32')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/processus`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('process')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/devis`} className="text-sm text-[#C1272D] hover:text-[#C1272D]/80 font-medium transition-colors">
+                  {tNav('quote')}
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Company Column */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('contact')}</h4>
-            <ul className="space-y-2.5 text-sm text-white/50">
-              <li>Angle rue Lagouira, Av. El Walae</li>
-              <li>Dakhla, Maroc</li>
-              <li>contact@dakhla-amenagement.ma</li>
-              <li>+212 5XX-XXXXXX</li>
+            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-[#1B3A5C] mb-4">{t('company')}</h4>
+            <ul className="space-y-2.5">
+              <li>
+                <Link href={`/${locale}/a-propos`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('about')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/realisations`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('realisations')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/blog`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('blog')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/mentions-legales`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('legal')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/mentions-legales`} className="text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors">
+                  {t('privacy')}
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Contact Column */}
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('legal')}</h4>
-            <ul className="space-y-2.5 text-sm text-white/50">
-              <li>RC: 7207</li>
-              <li>ICE: 001726721000031</li>
-              <li>IF: 46377920</li>
-              <li>{t('capital')}</li>
+            <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-[#1B3A5C] mb-4">{t('contactTitle')}</h4>
+            <ul className="space-y-2.5 text-sm text-[#6B7280]">
+              <li>{t('address')}</li>
+              <li>
+                <a href="mailto:contact@dakhla-amenagement.ma" className="hover:text-[#1B3A5C] transition-colors">
+                  {t('email')}
+                </a>
+              </li>
+              <li>
+                <a href="tel:+2125XXXXXXXX" className="hover:text-[#1B3A5C] transition-colors">
+                  {t('phone')}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30">&copy; 2026 Dakhla Aménagement S.A. {t('rights')}</p>
+        <div className="border-t border-[#E5E7EB] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-[#6B7280]">{t('copyright')} {t('rights')}</p>
           <div className="flex items-center gap-6">
-            <Link href={`/${locale}/legal`} className="text-xs text-white/30 hover:text-white/60 transition-colors">{tNav('legal')}</Link>
-            <Link href={`/${locale}/sitemap`} className="text-xs text-white/30 hover:text-white/60 transition-colors">{tNav('sitemap')}</Link>
-            <span className="text-xs text-white/30">{t('madeIn')}</span>
+            <Link href={`/${locale}/mentions-legales`} className="text-xs text-[#6B7280] hover:text-[#1B3A5C] transition-colors">{t('legal')}</Link>
+            <Link href={`/${locale}/mentions-legales`} className="text-xs text-[#6B7280] hover:text-[#1B3A5C] transition-colors">{t('privacy')}</Link>
           </div>
         </div>
       </div>

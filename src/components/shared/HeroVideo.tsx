@@ -41,17 +41,17 @@ export function HeroVideo({
   const enableParallax = parallax && !isMobile;
 
   const overlayClasses = {
-    dark: 'bg-black/50',
-    navy: 'bg-[#0A0A0A]/60',
-    'gradient-bottom': 'bg-gradient-to-t from-black/80 via-black/30 to-transparent',
-    'gradient-left': 'bg-gradient-to-r from-[#0A0A0A]/90 via-[#0A0A0A]/50 to-transparent',
+    dark: 'bg-[#1B3A5C]/50',
+    navy: 'bg-[#1B3A5C]/60',
+    'gradient-bottom': 'bg-gradient-to-t from-[#1B3A5C]/80 via-[#1B3A5C]/30 to-transparent',
+    'gradient-left': 'bg-gradient-to-r from-[#1B3A5C]/90 via-[#1B3A5C]/50 to-transparent',
   };
 
   return (
     <motion.section
       ref={ref}
       style={enableParallax ? { opacity } : undefined}
-      className={`relative ${height} overflow-hidden bg-[#0A0A0A] ${className}`}
+      className={`relative ${height} overflow-hidden bg-[#1B3A5C] ${className}`}
     >
       <motion.div
         style={enableParallax ? { scale } : undefined}
@@ -63,7 +63,7 @@ export function HeroVideo({
               src={poster}
               alt="Background"
               fill
-              className="object-cover"
+              className="object-cover poster-fallback"
               priority
             />
           </div>

@@ -8,8 +8,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-space-mono);
-  --font-heading: var(--font-space-mono);
+  --font-mono: var(--font-inter);
+  --font-heading: var(--font-inter);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -40,18 +40,14 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
 
-  /* DAM Brand Colors — Palantir/harchcorp dark minimal */
-  --color-navy: #0A0A0A;
-  --color-steel: #0F4C75;
-  --color-warm-gray: #6B7280;
-  --color-light-gray: #F5F5F5;
-  --color-anthracite: #0A0A0A;
-  --color-acier: #6B7280;
-  --color-bleu-ocean: #0F4C75;
-  --color-vert-energie: #2ECC71;
-  --color-gris-clair: #F5F5F5;
-  --color-bordeaux: #8B2252;
-  --color-eco: #2ECC71;
+  /* DAM Brand Colors — Professional Corporate */
+  --color-navy: #1B3A5C;
+  --color-rouge: #C1272D;
+  --color-or: #E8B84B;
+  --color-surface: #F7F8FA;
+  --color-text-deep: #1A1A2E;
+  --color-text-light: #6B7280;
+  --color-border-light: #E5E7EB;
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -64,37 +60,37 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #0A0A0A;
+  --foreground: #1A1A2E;
   --card: #FFFFFF;
-  --card-foreground: #0A0A0A;
+  --card-foreground: #1A1A2E;
   --popover: #FFFFFF;
-  --popover-foreground: #0A0A0A;
-  --primary: #0A0A0A;
+  --popover-foreground: #1A1A2E;
+  --primary: #1B3A5C;
   --primary-foreground: #FFFFFF;
-  --secondary: #F5F5F5;
-  --secondary-foreground: #0A0A0A;
-  --muted: #F5F5F5;
+  --secondary: #F7F8FA;
+  --secondary-foreground: #1A1A2E;
+  --muted: #F7F8FA;
   --muted-foreground: #6B7280;
-  --accent: #0F4C75;
+  --accent: #1B3A5C;
   --accent-foreground: #FFFFFF;
-  --destructive: #DC2626;
-  --border: #E5E5E5;
-  --input: #E5E5E5;
-  --ring: #0A0A0A;
-  --chart-1: #0A0A0A;
-  --chart-2: #0F4C75;
+  --destructive: #C1272D;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #1B3A5C;
+  --chart-1: #1B3A5C;
+  --chart-2: #C1272D;
   --chart-3: #6B7280;
-  --chart-4: #2ECC71;
-  --chart-5: #8B2252;
-  --radius: 0.375rem;
-  --sidebar: #0A0A0A;
-  --sidebar-foreground: #FFFFFF;
-  --sidebar-primary: #0A0A0A;
+  --chart-4: #E8B84B;
+  --chart-5: #1A1A2E;
+  --radius: 0.5rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A2E;
+  --sidebar-primary: #1B3A5C;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #6B7280;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E5E5E5;
-  --sidebar-ring: #0A0A0A;
+  --sidebar-accent: #F7F8FA;
+  --sidebar-accent-foreground: #1A1A2E;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #1B3A5C;
 }
 
 @layer base {
@@ -102,14 +98,15 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-foreground;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
   }
   h1, h2, h3 {
-    font-family: var(--font-space-mono), monospace;
+    font-family: var(--font-inter), sans-serif;
+    font-weight: 700;
   }
 }
 
@@ -118,7 +115,7 @@
   width: 6px;
 }
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #F7F8FA;
   border-radius: 3px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
@@ -126,12 +123,12 @@
   border-radius: 3px;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #0F4C75;
+  background: #1B3A5C;
 }
 
-/* Section counter style (Palantir-like) */
+/* Section counter style (corporate blue) */
 .section-counter {
-  @apply text-xs font-mono text-black/30 tracking-wider;
+  @apply text-xs font-mono text-[#1B3A5C]/30 tracking-wider;
 }
 
 /* Pill button style */
@@ -139,10 +136,10 @@
   @apply px-4 py-2 text-[13px] font-medium rounded-full transition-all duration-300;
 }
 .pill-btn-active {
-  @apply bg-[#0A0A0A] text-white;
+  @apply bg-[#1B3A5C] text-white;
 }
 .pill-btn-inactive {
-  @apply bg-white text-black/60 hover:bg-black/5 hover:text-black/80 border border-border;
+  @apply bg-white text-[#1A1A2E]/60 hover:bg-[#1B3A5C]/5 hover:text-[#1B3A5C] border border-[#E5E7EB];
 }
 
 /* Scroll reveal animation */
@@ -158,7 +155,7 @@
 
 /* Video hero overlay gradient */
 .hero-overlay {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(27,58,92,0.5) 0%, rgba(27,58,92,0.3) 50%, rgba(27,58,92,0.6) 100%);
 }
 
 /* Card hover lift */
@@ -167,7 +164,7 @@
 }
 .card-lift:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(27,58,92,0.08);
 }
 
 /* Ken Burns zoom effect for hero images */
@@ -202,20 +199,6 @@
   }
 }
 
-/* ECOShield green glow effect */
-@keyframes green-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(46, 204, 113, 0.15);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(46, 204, 113, 0.3);
-  }
-}
-
-.eco-glow {
-  animation: green-glow 3s ease-in-out infinite;
-}
-
 /* Scroll indicator bounce */
 @keyframes scroll-bounce {
   0%, 100% {
@@ -232,7 +215,7 @@
 
 /* Heading gradient effect */
 .heading-gradient {
-  background: linear-gradient(135deg, #2ECC71, #0F4C75);
+  background: linear-gradient(135deg, #1B3A5C, #E8B84B);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

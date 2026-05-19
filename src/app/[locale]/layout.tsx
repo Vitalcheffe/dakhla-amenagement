@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -10,13 +10,6 @@ import { Footer } from '@/components/layout/Footer';
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: '--font-space-mono',
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   display: 'swap',
 });
 
@@ -36,29 +29,31 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased`}>
+    <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <head>
+        <meta name="theme-color" content="#1B3A5C" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Corporation",
-              "name": "Ciment DAM - Dakhla Aménagement S.A.",
-              "url": "https://ciment-dam.com",
-              "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
+              "name": "Dakhla Aménagement S.A.",
+              "url": "https://www.ciment-dam.com",
+              "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Angle rue Lagouira, Av. El Walae",
+                "streetAddress": "Quartier Lassargua, 1 et 1 angle rue Lagouira, Avenue El Walae",
                 "addressLocality": "Dakhla",
                 "addressCountry": "MA"
               },
-              "foundingDate": "2015"
+              "foundingDate": "2015",
+              "industry": "Cement Manufacturing"
             }),
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-white text-foreground font-sans">
+      <body className="min-h-full flex flex-col bg-white text-[#1A1A2E] font-sans">
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           <main className="flex-1">{children}</main>
