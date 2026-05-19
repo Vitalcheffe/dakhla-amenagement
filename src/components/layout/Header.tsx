@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Menu, X, Globe, ArrowRight } from 'lucide-react';
@@ -44,13 +45,14 @@ export function Header({ locale }: { locale: string }) {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center gap-3">
-            <div className={`w-9 h-9 rounded-md flex items-center justify-center transition-colors duration-300 ${
-              isHome && !scrolled ? 'bg-white' : 'bg-[#1B3A5C]'
-            }`}>
-              <span className={`font-bold text-sm transition-colors duration-300 ${
-                isHome && !scrolled ? 'text-[#1B3A5C]' : 'text-white'
-              }`}>DA</span>
-            </div>
+            <Image
+              src="/images/logo-dam.png"
+              alt="Dakhla Aménagement"
+              width={36}
+              height={36}
+              className="rounded-md"
+              priority
+            />
             <div className="flex flex-col">
               <span className={`text-sm font-bold tracking-[0.1em] leading-none transition-colors duration-300 ${
                 isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
@@ -121,9 +123,13 @@ export function Header({ locale }: { locale: string }) {
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex items-center justify-between p-6 border-b border-[#E5E7EB]">
                   <div className="flex items-center gap-2">
-                    <div className="w-9 h-9 bg-[#1B3A5C] rounded-md flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">DA</span>
-                    </div>
+                    <Image
+                      src="/images/logo-dam.png"
+                      alt="Dakhla Aménagement"
+                      width={36}
+                      height={36}
+                      className="rounded-md"
+                    />
                     <span className="text-sm font-bold tracking-[0.1em] text-[#1B3A5C]">DAKHLA AMÉNAGEMENT</span>
                   </div>
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
