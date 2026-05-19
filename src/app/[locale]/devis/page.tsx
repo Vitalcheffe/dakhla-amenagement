@@ -728,7 +728,7 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
       price: BASE_PRICES.cpj45,
       gradient: 'from-[#1B3A5C] to-[#2D5F8A]',
       accentColor: '#E8B84B',
-      image: '/images/products/cpj45-bags.png',
+      image: '/images/products/cpj45-bags.jpg',
     },
     {
       key: 'cpj55',
@@ -740,7 +740,7 @@ function StepProductQuantity({ quote, updateQuote, t }: { quote: QuoteData; upda
       price: BASE_PRICES.cpj55,
       gradient: 'from-[#0F2337] to-[#1B3A5C]',
       accentColor: '#C1272D',
-      image: '/images/products/cpj55-bags.png',
+      image: '/images/products/cpj55-bags.jpg',
     },
   ];
 
@@ -1886,7 +1886,7 @@ export default function DevisPage() {
       {/* Subtle hero image bar */}
       <section className="relative h-36 md:h-48 -mt-4">
         <Image
-          src="/images/factory/factory-aerial.png"
+          src="/images/factory/factory-aerial.jpg"
           alt="Usine Dakhla Aménagement — Vue aérienne"
           fill
           quality={80}

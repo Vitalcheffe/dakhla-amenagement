@@ -25,7 +25,7 @@ export default function ContactPage() {
       {/* Hero image bar */}
       <section className="relative h-48 md:h-64 -mt-4">
         <Image
-          src="/images/factory/factory-exterior.png"
+          src="/images/factory/factory-exterior.jpg"
           alt="Usine Dakhla Aménagement — Cimenterie de Dakhla"
           fill
           quality={90}
@@ -177,7 +177,7 @@ export default function ContactPage() {
                 <div className="relative bg-[#F7F8FA] rounded-2xl overflow-hidden">
                   <div className="relative h-56">
                     <Image
-                      src="/images/factory/factory-exterior.png"
+                      src="/images/factory/factory-exterior.jpg"
                       alt="Usine Dakhla Aménagement"
                       fill
                       quality={80}

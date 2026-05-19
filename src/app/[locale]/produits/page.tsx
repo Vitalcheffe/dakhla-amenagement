@@ -25,7 +25,7 @@ export default function ProduitsPage() {
             <ScrollReveal>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/products/cpj45-bags.png"
+                  src="/images/products/cpj45-bags.jpg"
                   alt={t('products.cpj45.full')}
                   fill
                   quality={90}
@@ -121,7 +121,7 @@ export default function ProduitsPage() {
             <ScrollReveal>
               <div className="order-1 lg:order-2 relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/products/cpj55-bags.png"
+                  src="/images/products/cpj55-bags.jpg"
                   alt={t('products.cpj55.full')}
                   fill
                   quality={90}
@@ -158,7 +158,7 @@ export default function ProduitsPage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-52">
                   <Image
-                    src="/images/products/bulk-cement-truck.png"
+                    src="/images/products/bulk-cement-truck.jpg"
                     alt="Bulk cement tanker truck for delivery"
                     fill
                     quality={90}
@@ -190,7 +190,7 @@ export default function ProduitsPage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-52">
                   <Image
-                    src="/images/products/cpj45-bags.png"
+                    src="/images/products/cpj45-bags.jpg"
                     alt="Cement bags 50 kg on pallets"
                     fill
                     quality={90}
@@ -220,7 +220,7 @@ export default function ProduitsPage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-52">
                   <Image
-                    src="/images/factory/warehouse.png"
+                    src="/images/factory/warehouse.jpg"
                     alt="Big Bag industrial cement packaging"
                     fill
                     quality={90}
@@ -255,7 +255,7 @@ export default function ProduitsPage() {
             <ScrollReveal>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/products/cement-powder-closeup.png"
+                  src="/images/products/cement-powder-closeup.jpg"
                   alt="Ciment Portland — Qualité et finesse du ciment DAM"
                   fill
                   quality={90}

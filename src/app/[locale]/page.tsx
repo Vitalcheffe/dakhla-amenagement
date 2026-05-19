@@ -50,7 +50,7 @@ export default function HomePage() {
       {/* ====== HERO — Full-Screen Background Video ====== */}
       <HeroVideo
         src="/videos/hero.mp4"
-        poster="/images/factory/factory-exterior.png"
+        poster="/images/factory/factory-exterior.jpg"
         overlay="dark"
         height="h-[100dvh]"
         parallax={true}
@@ -132,7 +132,7 @@ export default function HomePage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
-                    src="/images/products/cpj45-bags.png"
+                    src="/images/products/cpj45-bags.jpg"
                     alt={t('products.cpj45.full')}
                     fill
                     quality={90}
@@ -185,7 +185,7 @@ export default function HomePage() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
                 <div className="relative h-56 md:h-64">
                   <Image
-                    src="/images/products/cpj55-bags.png"
+                    src="/images/products/cpj55-bags.jpg"
                     alt={t('products.cpj55.full')}
                     fill
                     quality={90}
@@ -270,10 +270,10 @@ export default function HomePage() {
           {/* Process images */}
           <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { src: '/images/process/step1-clinker-reception.png', alt: processSteps[0].title },
-              { src: '/images/process/step2-grinding.png', alt: processSteps[1].title },
-              { src: '/images/process/step3-dosing-lab.png', alt: processSteps[2].title },
-              { src: '/images/process/step4-packaging.png', alt: processSteps[3].title },
+              { src: '/images/process/step1-clinker-reception.jpg', alt: processSteps[0].title },
+              { src: '/images/process/step2-grinding.jpg', alt: processSteps[1].title },
+              { src: '/images/process/step3-dosing-lab.jpg', alt: processSteps[2].title },
+              { src: '/images/process/step4-packaging.jpg', alt: processSteps[3].title },
             ].map((img, i) => (
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
@@ -296,7 +296,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/factory/factory-silos.png"
+            src="/images/factory/factory-silos.jpg"
             alt="Dakhla Aménagement factory silos"
             fill
             quality={90}
@@ -353,7 +353,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/factory/factory-aerial.png"
+            src="/images/factory/factory-aerial.jpg"
             alt="Aerial view of Dakhla Aménagement plant"
             fill
             quality={90}

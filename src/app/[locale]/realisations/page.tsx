@@ -7,11 +7,11 @@ import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
 const projectImages = [
-  '/images/projects/residential-construction.png',
-  '/images/projects/infrastructure-road.png',
-  '/images/projects/port-construction.png',
-  '/images/projects/school-construction.png',
-  '/images/projects/villa-construction.png',
+  '/images/projects/residential-construction.jpg',
+  '/images/projects/infrastructure-road.jpg',
+  '/images/projects/port-construction.jpg',
+  '/images/projects/school-construction.jpg',
+  '/images/projects/villa-construction.jpg',
 ];
 
 export default function RealisationsPage() {

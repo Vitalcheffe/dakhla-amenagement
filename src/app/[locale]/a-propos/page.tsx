@@ -65,7 +65,7 @@ export default function AProposPage() {
             <ScrollReveal delay={0.1}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/factory/factory-aerial.png"
+                  src="/images/factory/factory-aerial.jpg"
                   alt={t('about.history.title')}
                   fill
                   quality={90}
@@ -84,7 +84,7 @@ export default function AProposPage() {
             <ScrollReveal>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/factory/control-room.png"
+                  src="/images/factory/control-room.jpg"
                   alt="Salle de contrôle — Technologie de pointe Dakhla Aménagement"
                   fill
                   quality={90}
@@ -164,7 +164,7 @@ export default function AProposPage() {
             <ScrollReveal>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/lab/lab-compression-test.png"
+                  src="/images/lab/lab-compression-test.jpg"
                   alt="Laboratoire — Essai de compression Dakhla Aménagement"
                   fill
                   quality={90}
@@ -216,7 +216,7 @@ export default function AProposPage() {
             <ScrollReveal delay={0.1}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/factory/factory-interior.png"
+                  src="/images/factory/factory-interior.jpg"
                   alt={t('about.team.title')}
                   fill
                   quality={90}

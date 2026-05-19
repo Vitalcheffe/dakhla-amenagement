@@ -8,10 +8,10 @@ import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
 const stepImages = [
-  '/images/process/step1-clinker-reception.png',
-  '/images/process/step2-grinding.png',
-  '/images/process/step3-dosing-lab.png',
-  '/images/process/step4-packaging.png',
+  '/images/process/step1-clinker-reception.jpg',
+  '/images/process/step2-grinding.jpg',
+  '/images/process/step3-dosing-lab.jpg',
+  '/images/process/step4-packaging.jpg',
 ];
 
 const stepIcons = [Factory, Beaker, Package, Truck];
