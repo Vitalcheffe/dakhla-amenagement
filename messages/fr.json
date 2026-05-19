@@ -66,7 +66,36 @@
       "use": "Usage"
     },
     "packaging": "Conditionnement : Sacs 50 kg | Vrac | Big Bag",
-    "standards": "Conforme aux normes NM 10.1.004 / EN 197-1"
+    "standards": "Conforme aux normes NM 10.1.004 / EN 197-1",
+    "clinker": {
+      "title": "Clinker — Notre Matière Première",
+      "desc": "Le clinker est le composant principal de notre ciment. Importé des meilleures cimenteries, il garantit la qualité et la résistance de nos produits finis. Notre centre de broyage transforme cette matière première brute en ciment de qualité supérieure.",
+      "feature1Title": "Qualité certifiée",
+      "feature1Desc": "Chaque livraison de clinker est analysée en laboratoire pour garantir sa conformité chimique et physique",
+      "feature2Title": "Broyage haute performance",
+      "feature2Desc": "Nos broyeurs à boulets assurent une finesse de broyage optimale pour des performances mécaniques supérieures",
+      "feature3Title": "Disponibilité garantie",
+      "feature3Desc": "Un stock permanent de clinker nous permet d'assurer une production continue et des délais de livraison courts",
+      "cta": "Demander une offre clinker"
+    },
+    "wizard": {
+      "title": "Quel ciment choisir ?",
+      "subtitle": "Répondez à 2 questions pour trouver le ciment adapté à votre projet",
+      "step1Question": "Quel type de projet construisez-vous ?",
+      "step1Residential": "Résidentiel (villa, immeuble)",
+      "step1Commercial": "Commercial (bureau, commerce)",
+      "step1Infrastructure": "Infrastructure (route, pont)",
+      "step1Industrial": "Industriel (usine, entrepôt)",
+      "step2Question": "Quel niveau de charge le béton devra-t-il supporter ?",
+      "step2Light": "Légère (cloisons, enduits, dallages)",
+      "step2Medium": "Moyenne (planchers, poutres, fondations courantes)",
+      "step2Heavy": "Lourde (fondations profondes, ouvrages d'art, ports)",
+      "resultTitle": "Notre recommandation",
+      "cpj45Recommend": "Le CPJ 45 est idéal pour votre projet. Sa résistance de 45 MPa couvre la majorité des besoins résidentiels et commerciaux, tout en offrant un excellent rapport qualité-prix.",
+      "cpj55Recommend": "Le CPJ 55 est le choix recommandé pour votre projet. Sa résistance supérieure de 55 MPa garantit la durabilité des ouvrages soumis à des charges importantes.",
+      "back": "Question précédente",
+      "restart": "Recommencer le questionnaire"
+    }
   },
   "process": {
     "title": "Notre Processus de Fabrication",

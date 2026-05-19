@@ -66,7 +66,36 @@
       "use": "Use"
     },
     "packaging": "Packaging: 50 kg bags | Bulk | Big Bag",
-    "standards": "Compliant with NM 10.1.004 / EN 197-1 standards"
+    "standards": "Compliant with NM 10.1.004 / EN 197-1 standards",
+    "clinker": {
+      "title": "Clinker — Our Raw Material",
+      "desc": "Clinker is the main component of our cement. Sourced from the best cement plants, it guarantees the quality and resistance of our finished products. Our grinding center transforms this raw material into superior quality cement.",
+      "feature1Title": "Certified quality",
+      "feature1Desc": "Each clinker delivery is analyzed in the laboratory to guarantee its chemical and physical compliance",
+      "feature2Title": "High-performance grinding",
+      "feature2Desc": "Our ball mills ensure optimal grinding fineness for superior mechanical performance",
+      "feature3Title": "Guaranteed availability",
+      "feature3Desc": "A permanent stock of clinker allows us to ensure continuous production and short delivery times",
+      "cta": "Request a clinker offer"
+    },
+    "wizard": {
+      "title": "Which cement to choose?",
+      "subtitle": "Answer 2 questions to find the right cement for your project",
+      "step1Question": "What type of project are you building?",
+      "step1Residential": "Residential (villa, building)",
+      "step1Commercial": "Commercial (office, retail)",
+      "step1Infrastructure": "Infrastructure (road, bridge)",
+      "step1Industrial": "Industrial (factory, warehouse)",
+      "step2Question": "What load level will the concrete need to support?",
+      "step2Light": "Light (partitions, plastering, flooring)",
+      "step2Medium": "Medium (slabs, beams, standard foundations)",
+      "step2Heavy": "Heavy (deep foundations, bridges, ports)",
+      "resultTitle": "Our recommendation",
+      "cpj45Recommend": "CPJ 45 is ideal for your project. Its 45 MPa resistance covers most residential and commercial needs while offering excellent value for money.",
+      "cpj55Recommend": "CPJ 55 is the recommended choice for your project. Its superior 55 MPa resistance guarantees the durability of structures subjected to heavy loads.",
+      "back": "Previous question",
+      "restart": "Restart the questionnaire"
+    }
   },
   "process": {
     "title": "Our Manufacturing Process",

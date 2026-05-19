@@ -4,7 +4,8 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Package, Truck, Container } from 'lucide-react';
+import { ArrowRight, CheckCircle, Package, Truck, Container, Mountain, HelpCircle, Building2, Home, Waves } from 'lucide-react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
@@ -13,6 +14,9 @@ export default function ProduitsPage() {
   const t = useTranslations();
   const params = useParams();
   const locale = (params?.locale as string) || 'fr';
+
+  const [wizardStep, setWizardStep] = useState(0);
+  const [wizardAnswers, setWizardAnswers] = useState<string[]>([]);
 
   const comparisonRows = [
     { feature: 'resistance', val45: 'resistanceVal45', val55: 'resistanceVal55' },
@@ -382,6 +386,227 @@ export default function ProduitsPage() {
                   ))}
                 </tbody>
               </table>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ====== CLINKER SECTION ====== */}
+      <section className="py-16 md:py-24 bg-[#F7F8FA]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <ScrollReveal>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <Image
+                  src="/images/process/step1-clinker-reception.jpg"
+                  alt="Clinker — Matière première de haute qualité"
+                  fill
+                  quality={90}
+                  className="object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-[#1B3A5C] text-white text-xs font-bold px-3 py-1 rounded-full">
+                  Clinker
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-[#1B3A5C]/10 flex items-center justify-center">
+                    <Mountain className="w-6 h-6 text-[#1B3A5C]" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C]">
+                    {t('products.clinker.title')}
+                  </h2>
+                </div>
+                <p className="text-[#1A1A2E]/70 leading-relaxed mb-6">
+                  {t('products.clinker.desc')}
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#E8B84B] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.clinker.feature1Title')}</span>
+                      <p className="text-xs text-[#6B7280] mt-0.5">{t('products.clinker.feature1Desc')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#E8B84B] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.clinker.feature2Title')}</span>
+                      <p className="text-xs text-[#6B7280] mt-0.5">{t('products.clinker.feature2Desc')}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-[#E8B84B] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="text-sm font-semibold text-[#1B3A5C]">{t('products.clinker.feature3Title')}</span>
+                      <p className="text-xs text-[#6B7280] mt-0.5">{t('products.clinker.feature3Desc')}</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6">
+                  <Link href={`/${locale}/devis`}>
+                    <Button className="bg-[#1B3A5C] text-white hover:bg-[#1B3A5C]/90 font-semibold rounded-full px-6">
+                      {t('products.clinker.cta')} <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* ====== PRODUCT WIZARD ====== */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-[800px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-10">
+              <div className="w-14 h-14 rounded-xl bg-[#E8B84B]/15 flex items-center justify-center mx-auto mb-4">
+                <HelpCircle className="w-7 h-7 text-[#E8B84B]" />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C]">
+                {t('products.wizard.title')}
+              </h2>
+              <p className="mt-3 text-[#6B7280]">
+                {t('products.wizard.subtitle')}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <div className="bg-[#F7F8FA] border border-[#E5E7EB] rounded-2xl p-6 md:p-8">
+              {/* Progress indicator */}
+              <div className="flex items-center justify-center gap-2 mb-8">
+                {[0, 1, 2].map((step) => (
+                  <div key={step} className="flex items-center gap-2">
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all ${
+                      wizardStep === step
+                        ? 'bg-[#1B3A5C] text-white'
+                        : wizardStep > step
+                          ? 'bg-[#E8B84B] text-[#1A1A2E]'
+                          : 'bg-[#E5E7EB] text-[#6B7280]'
+                    }`}>
+                      {wizardStep > step ? '✓' : step + 1}
+                    </div>
+                    {step < 2 && (
+                      <div className={`w-12 h-0.5 ${wizardStep > step ? 'bg-[#E8B84B]' : 'bg-[#E5E7EB]'}`} />
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Step 1: Project type */}
+              {wizardStep === 0 && (
+                <div>
+                  <h3 className="text-lg font-bold text-[#1B3A5C] mb-4 text-center">
+                    {t('products.wizard.step1Question')}
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {[
+                      { key: 'residential', icon: Home, color: '#1B3A5C' },
+                      { key: 'commercial', icon: Building2, color: '#C1272D' },
+                      { key: 'infrastructure', icon: Waves, color: '#0E7490' },
+                      { key: 'industrial', icon: Mountain, color: '#7C3AED' },
+                    ].map((opt) => (
+                      <button
+                        key={opt.key}
+                        onClick={() => {
+                          setWizardAnswers([opt.key]);
+                          setWizardStep(1);
+                        }}
+                        className={`flex items-center gap-3 p-4 rounded-xl border-2 transition-all hover:shadow-md ${
+                          wizardAnswers[0] === opt.key
+                            ? 'border-[#1B3A5C] bg-[#1B3A5C]/5'
+                            : 'border-[#E5E7EB] bg-white hover:border-[#1B3A5C]/30'
+                        }`}
+                      >
+                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: `${opt.color}15` }}>
+                          <opt.icon className="w-5 h-5" style={{ color: opt.color }} />
+                        </div>
+                        <span className="text-sm font-semibold text-[#1B3A5C]">
+                          {t(`products.wizard.step1${opt.key.charAt(0).toUpperCase() + opt.key.slice(1)}`)}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Step 2: Load requirements */}
+              {wizardStep === 1 && (
+                <div>
+                  <h3 className="text-lg font-bold text-[#1B3A5C] mb-4 text-center">
+                    {t('products.wizard.step2Question')}
+                  </h3>
+                  <div className="space-y-3">
+                    {['light', 'medium', 'heavy'].map((opt) => (
+                      <button
+                        key={opt}
+                        onClick={() => {
+                          setWizardAnswers([wizardAnswers[0], opt]);
+                          setWizardStep(2);
+                        }}
+                        className="w-full flex items-center gap-3 p-4 rounded-xl border-2 border-[#E5E7EB] bg-white hover:border-[#1B3A5C]/30 transition-all hover:shadow-md"
+                      >
+                        <span className="text-sm font-semibold text-[#1B3A5C]">
+                          {t(`products.wizard.step2${opt.charAt(0).toUpperCase() + opt.slice(1)}`)}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                  <button
+                    onClick={() => setWizardStep(0)}
+                    className="mt-4 text-xs text-[#6B7280] hover:text-[#1B3A5C] transition-colors"
+                  >
+                    ← {t('products.wizard.back')}
+                  </button>
+                </div>
+              )}
+
+              {/* Step 3: Recommendation */}
+              {wizardStep === 2 && (
+                <div className="text-center">
+                  <h3 className="text-lg font-bold text-[#1B3A5C] mb-2">
+                    {t('products.wizard.resultTitle')}
+                  </h3>
+                  <div className="mt-4 bg-white border-2 border-[#E8B84B] rounded-2xl p-6">
+                    <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold ${
+                      wizardAnswers[1] === 'heavy'
+                        ? 'bg-[#1B3A5C] text-white'
+                        : 'bg-[#E8B84B] text-[#1A1A2E]'
+                    }`}>
+                      {wizardAnswers[1] === 'heavy' ? 'CPJ 55' : 'CPJ 45'}
+                    </div>
+                    <p className="mt-4 text-sm text-[#6B7280] leading-relaxed">
+                      {wizardAnswers[1] === 'heavy'
+                        ? t('products.wizard.cpj55Recommend')
+                        : t('products.wizard.cpj45Recommend')
+                      }
+                    </p>
+                    <div className="mt-4 flex items-center justify-center gap-2 bg-[#E8B84B]/15 border border-[#E8B84B]/30 rounded-xl px-4 py-3">
+                      <span className="text-2xl font-bold text-[#1B3A5C]">
+                        {wizardAnswers[1] === 'heavy' ? '1 600' : '1 500'}
+                      </span>
+                      <span className="text-sm font-semibold text-[#1B3A5C]/70">DH/T</span>
+                    </div>
+                    <div className="mt-6">
+                      <Link href={`/${locale}/devis`}>
+                        <Button className="bg-[#C1272D] text-white hover:bg-[#C1272D]/90 font-semibold rounded-full px-6">
+                          {t('products.requestQuote')} <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => { setWizardStep(0); setWizardAnswers([]); }}
+                    className="mt-4 text-xs text-[#6B7280] hover:text-[#1B3A5C] transition-colors"
+                  >
+                    ← {t('products.wizard.restart')}
+                  </button>
+                </div>
+              )}
             </div>
           </ScrollReveal>
         </div>
