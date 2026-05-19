@@ -1,104 +1,73 @@
 {
   "nav": {
     "home": "Accueil",
+    "medias": "Médias",
+    "contact": "Contact",
     "about": "À Propos",
-    "process": "Fabrication",
-    "products": "Produits",
-    "quality": "Qualité",
+    "solutions": "Solutions & Process",
+    "investors": "Investisseurs",
     "sustainability": "Développement Durable",
     "careers": "Carrières",
-    "investors": "Investisseurs",
-    "news": "Actualités",
-    "contact": "Contact",
     "legal": "Mentions Légales",
-    "facilities": "Installations",
-    "certifications": "Certifications",
-    "rse": "RSE",
-    "faq": "FAQ",
-    "quote": "Devis",
-    "productsServices": "Produits & Services",
-    "rseCareers": "RSE & Carrières"
+    "sitemap": "Plan du Site"
   },
   "hero": {
-    "title": "Le Ciment de Confiance du Sud Marocain",
-    "subtitle": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure",
-    "cta": "Découvrir nos produits",
-    "ctaSecondary": "Notre processus"
+    "title": "Construisons ensemble un avenir durable",
+    "subtitle": "Ciment DAM — L'excellence industrielle au service du Sud Marocain",
+    "cta": "Découvrir nos solutions",
+    "ctaSecondary": "Voir le processus"
   },
-  "stats": {
-    "capacity": "100 000",
-    "capacityUnit": "tonnes/an",
-    "capacityLabel": "Capacité de production",
-    "since": "2018",
-    "sinceLabel": "En activité depuis",
-    "capital": "30,1M",
-    "capitalUnit": "DHS",
-    "capitalLabel": "Capital social",
-    "employees": "85+",
-    "employeesLabel": "Collaborateurs"
+  "homeAnchor": {
+    "title": "Ancrage Régional",
+    "text": "Investissement stratégique dans les Provinces du Sud. Avec une capacité de 100 000 tonnes par an, notre centre de broyage de Lassargua est le poumon industriel de la région Dakhla-Oued Ed-Dahab.",
+    "cta": "Nos solutions",
+    "ctaSecondary": "Voir le processus",
+    "stat1": "100 000 Tonnes/an",
+    "stat2": "200+ MDHS Investissement",
+    "stat3": "85+ Collaborateurs",
+    "stat4": "2018 Démarrage"
   },
-  "homeProducts": {
-    "title": "Nos Produits",
-    "subtitle": "Une gamme complète de ciments pour tous vos projets de construction",
-    "cpj35": {
-      "name": "CPJ 35",
-      "desc": "Ciment Portland composé pour maçonnerie et enduits courants"
-    },
-    "cpj45": {
-      "name": "CPJ 45",
-      "desc": "Ciment Portland composé pour béton armé et ouvrages courants"
-    },
-    "cpa42_5": {
-      "name": "CPA 42.5",
-      "desc": "Ciment Portland artificiel pour ouvrages exigeants et préfabrication"
-    },
-    "cpj55": {
-      "name": "CPJ 55",
-      "desc": "Ciment Portland composé haute résistance pour travaux spéciaux"
-    }
+  "homeEco": {
+    "title": "DAM ECOShield",
+    "tagline": "Le ciment vert qui révolutionne la construction au Maroc",
+    "card1Title": "Empreinte Carbone Réduite",
+    "card1Value": "-30% à -60% CO₂",
+    "card1Desc": "Grâce à notre procédé innovant de broyage à faible impact, DAM ECOShield réduit considérablement les émissions de CO₂ par rapport aux ciments traditionnels.",
+    "card2Title": "Résistance Maritime Extrême",
+    "card2Value": "Environnement Côtier",
+    "card2Desc": "Conçu pour les environnements côtiers de Dakhla, notre formulation résiste aux attaques sulfatiques et à la corrosion marine."
   },
-  "cta": {
-    "title": "Un projet ? Parlons-en.",
-    "subtitle": "Contactez notre équipe commerciale pour obtenir un devis personnalisé ou des conseils techniques.",
-    "button": "Nous contacter"
+  "homeStories": {
+    "title": "Nos Histoires",
+    "story1Title": "N'Bniouw Dakhla",
+    "story1Desc": "Construction locale et développement régional",
+    "story2Title": "Nos Talents",
+    "story2Desc": "Carrières et formation professionnelle",
+    "story3Title": "Préservation des Écosystèmes Côtiers",
+    "story3Desc": "Environnement et biodiversité",
+    "story4Title": "Gestion Circulaire",
+    "story4Desc": "Économie circulaire et réduction des déchets"
   },
   "about": {
-    "title": "À Propos de Dakhla Aménagement",
-    "subtitle": "Un acteur majeur de l'industrie cimentière au Sud du Maroc",
-    "history": {
-      "title": "Notre Histoire",
-      "p1": "Dakhla Aménagement S.A. est une Société Anonyme créée en 2015 par des investisseurs mauritaniens visionnaires, avec la conviction que la région de Dakhla avait besoin d'une infrastructure cimentière moderne pour soutenir son développement rapide.",
-      "p2": "En 2018, notre centre de broyage de clinker à Lassargua a démarré ses opérations, marquant le début d'une nouvelle ère pour la construction dans le Sud marocain. Avec une capacité de 100 000 tonnes par an, nous répondons à la demande croissante de matériaux de construction de qualité."
-    },
-    "mission": {
-      "title": "Notre Mission",
-      "text": "Produire, conditionner et commercialiser des matériaux de construction de qualité supérieure, en contribuant au développement économique et social de la région de Dakhla-Oued Ed-Dahab, tout en respectant les normes environnementales les plus strictes.",
-      "creation": "Création",
-      "startup": "Démarrage",
-      "tonnage": "Tonnes/an",
-      "team": "Collaborateurs"
-    },
-    "values": {
-      "title": "Nos Valeurs",
-      "quality": {
-        "name": "Qualité",
-        "desc": "Des produits conformes aux normes internationales, testés dans notre laboratoire interne."
-      },
-      "integrity": {
-        "name": "Intégrité",
-        "desc": "Une gouvernance transparente et des pratiques commerciales éthiques."
-      },
-      "innovation": {
-        "name": "Innovation",
-        "desc": "Investissement continu dans nos procédés pour améliorer performance et durabilité."
-      },
-      "community": {
-        "name": "Engagement Local",
-        "desc": "Création d'emplois locaux et soutien au développement de la région."
+    "title": "À Propos",
+    "subtitle": "L'excellence industrielle au cœur du Sud Marocain",
+    "genesis": {
+      "title": "Genèse",
+      "text": "Dakhla Aménagement S.A. est une Société Anonyme créée en 2015 par des investisseurs mauritaniens visionnaires, avec la conviction que la région de Dakhla avait besoin d'une infrastructure cimentière moderne pour soutenir son développement rapide.",
+      "timeline": {
+        "t1Year": "2015",
+        "t1Text": "Création de Dakhla Aménagement S.A. par des investisseurs mauritaniens visionnaires",
+        "t2Year": "2018",
+        "t2Text": "Démarrage du centre de broyage de Lassargua — 100 000 tonnes/an",
+        "t3Year": "2024",
+        "t3Text": "Franchissement du cap des 50 000 tonnes produites",
+        "t4Year": "Aujourd'hui",
+        "t4Text": "Lancement de DAM ECOShield et ambition de croissance continue"
       }
     },
-    "legal": {
-      "title": "Informations Légales",
+    "company": {
+      "title": "Dakhla Aménagement",
+      "text": "Dakhla Aménagement S.A. est le poumon industriel de la région Dakhla-Oued Ed-Dahab. Notre centre de broyage de clinker à Lassargua produit, conditionne et commercialise des matériaux de construction de qualité supérieure, contribuant au développement économique et social de la région.",
       "form": "Société Anonyme (S.A.)",
       "rc": "RC : 7207",
       "ice": "ICE : 001726721000031",
@@ -106,144 +75,336 @@
       "capital": "Capital social : 30 100 000 DHS",
       "hq": "Siège social : Angle rue Lagouira, Av. El Walae, Dakhla, Maroc",
       "investors": "Actionnariat : 100% investisseurs mauritaniens"
+    },
+    "governance": {
+      "title": "Gouvernance",
+      "text": "Dakhla Aménagement S.A. est dirigée par un Conseil d'Administration composé de professionnels expérimentés, garantissant une gestion rigoureuse et transparente de l'entreprise.",
+      "board": "Conseil d'Administration",
+      "ceo": "Directeur Général",
+      "cfo": "Directeur Financier",
+      "coo": "Directeur des Opérations"
+    },
+    "facilities": {
+      "title": "Installations",
+      "text": "Notre centre de broyage de clinker est situé à Lassargua, à proximité de Dakhla. Inauguré en 2018, il représente un investissement de plus de 200 millions de DHS et dispose d'une capacité de production de 100 000 tonnes par an.",
+      "capacity": "Capacité : 100 000 tonnes/an",
+      "location": "Localisation : Lassargua, Dakhla",
+      "investment": "Investissement : 200+ MDHS",
+      "area": "Superficie : 5 hectares",
+      "mills": "Broyeurs à Boulets — Broyeurs haute performance pour un broyage fin et régulier",
+      "silos": "Silos de Stockage — Installations capacitaires pour clinker et ciment",
+      "packaging": "Lignes de Conditionnement — Sacs 50 kg et vrac",
+      "lab": "Laboratoire de Qualité — Équipements d'analyse avancés"
     }
   },
-  "process": {
-    "title": "Notre Processus de Fabrication",
-    "subtitle": "De la matière première au produit fini, découvrez chaque étape de notre processus de broyage de clinker",
-    "stepLabel": "Étape",
-    "step1": {
-      "title": "Réception du Clinker",
-      "desc": "Le clinker est réceptionné et stocké dans nos installations de Lassargua. Nous assurons un contrôle qualité rigoureux à chaque livraison, vérifiant la composition chimique et les propriétés physiques du matériau brut."
-    },
-    "step2": {
-      "title": "Broyage & Dosage",
-      "desc": "Le clinker est finement broyé dans nos broyeurs à boulets haute performance. Le dosage précis des ajouts (gypse, calcaire, cendres) garantit les caractéristiques spécifiques de chaque type de ciment."
-    },
-    "step3": {
-      "title": "Contrôle Qualité",
-      "desc": "Chaque lot est soumis à des tests exhaustifs dans notre laboratoire : résistance à la compression, finesse de broyage, temps de prise, et chaleur d'hydratation. Aucun produit ne quitte l'usine sans certificat de conformité."
-    },
-    "step4": {
-      "title": "Conditionnement & Expédition",
-      "desc": "Le ciment est conditionné en sacs de 50 kg ou expédié en vrac. Notre logistique optimisée assure une livraison rapide et fiable sur tout le territoire du Sud marocain et au-delà."
-    }
-  },
-  "products": {
-    "title": "Nos Produits",
-    "subtitle": "Une gamme complète de ciments pour répondre à tous les besoins de construction",
-    "specLabels": {
-      "resistance": "Résistance",
-      "fineness": "Finesse",
-      "setting": "Prise",
-      "use": "Usage"
-    },
-    "cpj35": {
-      "name": "CPJ 35",
-      "full": "Ciment Portland Composé 35",
-      "desc": "Ciment destiné aux travaux de maçonnerie courante, enduits intérieurs et extérieurs, et mortiers de pose. Idéal pour les projets résidentiels et les travaux de second œuvre.",
-      "specs": {
-        "resistance": "35 MPa (28 jours)",
-        "fineness": "≥ 300 m²/kg",
-        "setting": "Début ≥ 60 min",
-        "use": "Maçonnerie, enduits, mortiers"
-      }
-    },
-    "cpj45": {
-      "name": "CPJ 45",
-      "full": "Ciment Portland Composé 45",
-      "desc": "Ciment polyvalent pour béton armé, dallages et ouvrages courants de génie civil. Le choix de référence pour la majorité des projets de construction.",
-      "specs": {
-        "resistance": "45 MPa (28 jours)",
-        "fineness": "≥ 320 m²/kg",
-        "setting": "Début ≥ 60 min",
-        "use": "Béton armé, dallages, ouvrages courants"
-      }
-    },
-    "cpa42_5": {
-      "name": "CPA 42.5",
-      "full": "Ciment Portland Artificiel 42.5",
-      "desc": "Ciment de haute performance pour ouvrages exigeants, préfabrication et travaux en milieu agressif. Résistance initiale élevée permettant un décoffrage rapide.",
-      "specs": {
-        "resistance": "42.5 MPa (28 jours)",
-        "fineness": "≥ 350 m²/kg",
-        "setting": "Début ≥ 45 min",
-        "use": "Préfabrication, ouvrages exigeants"
-      }
-    },
-    "cpj55": {
-      "name": "CPJ 55",
-      "full": "Ciment Portland Composé 55",
-      "desc": "Ciment à haute résistance pour travaux spéciaux, fondations profondes et ouvrages de génie civil soumis à des contraintes mécaniques élevées.",
-      "specs": {
-        "resistance": "55 MPa (28 jours)",
-        "fineness": "≥ 380 m²/kg",
-        "setting": "Début ≥ 45 min",
-        "use": "Génie civil, fondations, travaux spéciaux"
-      }
-    },
-    "packaging": "Conditionnement : Sacs 50 kg | Vrac",
-    "standards": "Conforme aux normes NM 10.1.004 / EN 197-1"
-  },
-  "quality": {
-    "title": "Qualité & Certifications",
-    "subtitle": "L'excellence au cœur de chaque sac de ciment",
-    "lab": {
-      "title": "Notre Laboratoire",
-      "text": "Notre laboratoire interne, équipé des technologies les plus avancées, réalise des analyses chimiques et physiques à chaque étape du processus de fabrication. De la réception des matières premières à l'expédition du produit fini, aucun détail n'est laissé au hasard."
-    },
-    "standards": {
-      "title": "Normes & Conformité",
-      "nm": {
-        "name": "NM 10.1.004",
-        "desc": "Norme marocaine définissant les spécifications des ciments Portland"
+  "solutions": {
+    "title": "Solutions & Process",
+    "subtitle": "Notre gamme de ciments et notre processus de broyage industriel",
+    "tabProducts": "Notre Gamme",
+    "tabProcess": "Process de Broyage",
+    "tabQuality": "Qualité & Certifications",
+    "products": {
+      "cpj35": {
+        "name": "CPJ 35",
+        "full": "Ciment Portland Composé 35",
+        "desc": "Ciment destiné aux travaux de maçonnerie courante, enduits intérieurs et extérieurs, et mortiers de pose. Idéal pour les projets résidentiels et les travaux de second œuvre.",
+        "specs": {
+          "resistance": "35 MPa (28 jours)",
+          "fineness": "≥ 300 m²/kg",
+          "setting": "Début ≥ 60 min",
+          "use": "Maçonnerie, enduits, mortiers"
+        }
       },
-      "en": {
-        "name": "EN 197-1",
-        "desc": "Norme européenne pour la composition et les spécifications des ciments courants"
+      "cpj45": {
+        "name": "CPJ 45",
+        "full": "Ciment Portland Composé 45",
+        "desc": "Ciment polyvalent pour béton armé, dallages et ouvrages courants de génie civil. Le choix de référence pour la majorité des projets de construction.",
+        "specs": {
+          "resistance": "45 MPa (28 jours)",
+          "fineness": "≥ 320 m²/kg",
+          "setting": "Début ≥ 60 min",
+          "use": "Béton armé, dallages, ouvrages courants"
+        }
       },
-      "iso": {
-        "name": "ISO 9001",
-        "desc": "Système de management de la qualité — Certification en cours"
+      "cpa42_5": {
+        "name": "CPA 42.5",
+        "full": "Ciment Portland Artificiel 42.5",
+        "desc": "Ciment de haute performance pour ouvrages exigeants, préfabrication et travaux en milieu agressif. Résistance initiale élevée permettant un décoffrage rapide.",
+        "specs": {
+          "resistance": "42.5 MPa (28 jours)",
+          "fineness": "≥ 350 m²/kg",
+          "setting": "Début ≥ 45 min",
+          "use": "Préfabrication, ouvrages exigeants"
+        }
+      },
+      "cpj55": {
+        "name": "CPJ 55",
+        "full": "Ciment Portland Composé 55",
+        "desc": "Ciment à haute résistance pour travaux spéciaux, fondations profondes et ouvrages de génie civil soumis à des contraintes mécaniques élevées.",
+        "specs": {
+          "resistance": "55 MPa (28 jours)",
+          "fineness": "≥ 380 m²/kg",
+          "setting": "Début ≥ 45 min",
+          "use": "Génie civil, fondations, travaux spéciaux"
+        }
+      },
+      "ecoShield": {
+        "name": "DAM ECOShield",
+        "full": "Ciment Vert Haute Performance",
+        "desc": "Notre ciment innovant à faible empreinte carbone, conçu pour les environnements côtiers. Jusqu'à -60% d'émissions CO₂ par rapport aux ciments traditionnels, avec une résistance maritime exceptionnelle.",
+        "badge": "NOUVEAU",
+        "specs": {
+          "resistance": "42.5 MPa (28 jours)",
+          "fineness": "≥ 350 m²/kg",
+          "setting": "Début ≥ 45 min",
+          "use": "Environnements côtiers, construction durable"
+        }
+      },
+      "packaging": "Conditionnement : Sacs 50 kg | Vrac",
+      "standards": "Conforme aux normes NM 10.1.004 / EN 197-1",
+      "specLabels": {
+        "resistance": "Résistance",
+        "fineness": "Finesse",
+        "setting": "Prise",
+        "use": "Usage"
       }
     },
-    "tests": {
-      "title": "Tests Effectués",
-      "chemical": "Analyse chimique (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
-      "physical": "Résistance à la compression (7 et 28 jours)",
-      "fineness": "Finesse de broyage (surface Blaine)",
-      "setting": "Temps de prise (début et fin)",
-      "expansion": "Stabilité / Expansion",
-      "heat": "Chaleur d'hydratation"
+    "process": {
+      "title": "Process de Broyage",
+      "subtitle": "De la matière première au produit fini, découvrez chaque étape de notre processus de broyage de clinker",
+      "step1": {
+        "title": "Réception du Clinker",
+        "desc": "Le clinker est réceptionné et stocké dans nos installations de Lassargua. Nous assurons un contrôle qualité rigoureux à chaque livraison, vérifiant la composition chimique et les propriétés physiques du matériau brut."
+      },
+      "step2": {
+        "title": "Broyage & Dosage",
+        "desc": "Le clinker est finement broyé dans nos broyeurs à boulets haute performance. Le dosage précis des ajouts (gypse, calcaire, cendres) garantit les caractéristiques spécifiques de chaque type de ciment."
+      },
+      "step3": {
+        "title": "Contrôle Qualité",
+        "desc": "Chaque lot est soumis à des tests exhaustifs dans notre laboratoire : résistance à la compression, finesse de broyage, temps de prise, et chaleur d'hydratation. Aucun produit ne quitte l'usine sans certificat de conformité."
+      },
+      "step4": {
+        "title": "Conditionnement & Expédition",
+        "desc": "Le ciment est conditionné en sacs de 50 kg ou expédié en vrac. Notre logistique optimisée assure une livraison rapide et fiable sur tout le territoire du Sud marocain et au-delà."
+      }
+    },
+    "quality": {
+      "title": "Qualité & Certifications",
+      "subtitle": "L'excellence au cœur de chaque sac de ciment",
+      "lab": {
+        "title": "Notre Laboratoire",
+        "text": "Notre laboratoire interne, équipé des technologies les plus avancées, réalise des analyses chimiques et physiques à chaque étape du processus de fabrication. De la réception des matières premières à l'expédition du produit fini, aucun détail n'est laissé au hasard."
+      },
+      "standards": {
+        "title": "Normes & Conformité",
+        "nm": {
+          "name": "NM 10.1.004",
+          "desc": "Norme marocaine définissant les spécifications des ciments Portland",
+          "status": "Certifié"
+        },
+        "en": {
+          "name": "EN 197-1",
+          "desc": "Norme européenne pour la composition et les spécifications des ciments courants",
+          "status": "Certifié"
+        },
+        "iso": {
+          "name": "ISO 9001",
+          "desc": "Système de management de la qualité — Certification en cours",
+          "status": "En cours"
+        }
+      },
+      "tests": {
+        "title": "Tests Effectués",
+        "chemical": "Analyse chimique (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
+        "physical": "Résistance à la compression (7 et 28 jours)",
+        "fineness": "Finesse de broyage (surface Blaine)",
+        "setting": "Temps de prise (début et fin)",
+        "expansion": "Stabilité / Expansion",
+        "heat": "Chaleur d'hydratation"
+      }
     }
   },
   "sustainability": {
     "title": "Développement Durable",
     "subtitle": "Construire l'avenir en préservant notre environnement",
+    "ecoShield": {
+      "title": "DAM ECOShield",
+      "subtitle": "Le ciment vert qui révolutionne la construction au Maroc",
+      "desc": "DAM ECOShield est notre innovation majeure : un ciment à faible empreinte carbone spécialement conçu pour les environnements côtiers du Sud Marocain. Grâce à notre procédé de broyage optimisé et à l'intégration de matériaux recyclés, nous réduisons les émissions de CO₂ de 30 à 60% tout en garantissant une résistance supérieure aux attaques sulfatiques et à la corrosion marine.",
+      "feature1Title": "Émissions CO₂ Réduites",
+      "feature1Value": "-30% à -60%",
+      "feature2Title": "Résistance Maritime",
+      "feature2Value": "Extrême",
+      "feature3Title": "Matériaux Recyclés",
+      "feature3Value": "Intégrés",
+      "feature4Title": "Normes Internationales",
+      "feature4Value": "Conforme"
+    },
     "environment": {
-      "title": "Respect de l'Environnement",
-      "text": "Dakhla Aménagement s'engage à minimiser son impact environnemental. Notre centre de broyage utilise des technologies d'efficacité énergétique avancées, avec un système de filtration des émissions respectant les normes les plus strictes. Nous optimisons constamment notre consommation énergétique et réduisons notre empreinte carbone.",
-      "items": {
-        "emissions": "Filtration des émissions — Normes MARHP",
-        "energy": "Optimisation énergétique continue",
-        "water": "Recyclage des eaux de process",
-        "waste": "Gestion responsable des déchets industriels"
-      }
+      "title": "Engagements Environnementaux",
+      "text": "Dakhla Aménagement s'engage à minimiser son impact environnemental. Notre centre de broyage utilise des technologies d'efficacité énergétique avancées, avec un système de filtration des émissions respectant les normes les plus strictes.",
+      "emissions": "Filtration des émissions — Normes MARHP",
+      "energy": "Optimisation énergétique continue",
+      "water": "Recyclage des eaux de process",
+      "waste": "Gestion responsable des déchets industriels"
     },
     "social": {
-      "title": "Responsabilité Sociale",
+      "title": "Responsabilité Sociétale",
       "text": "Nous sommes fiers de contribuer au développement de la région de Dakhla par la création d'emplois locaux et le soutien aux communautés environnantes.",
-      "items": {
-        "jobs": "85+ emplois directs créés localement",
-        "training": "Programmes de formation continue",
-        "local": "Approvisionnement local privilégié",
-        "community": "Soutien aux projets communautaires"
+      "jobs": "85+ emplois directs créés localement",
+      "training": "Programmes de formation continue",
+      "local": "Approvisionnement local privilégié",
+      "community": "Soutien aux projets communautaires"
+    },
+    "economic": {
+      "title": "Impact Économique",
+      "text": "Dakhla Aménagement contribue activement au développement économique de la région de Dakhla-Oued Ed-Dahab par la création de valeur locale et le soutien à l'économie régionale.",
+      "jobs": "Création d'emplois directs et indirects",
+      "local": "Approvisionnement local privilégié",
+      "development": "Contribution au développement régional",
+      "investment": "Investissement de plus de 200 MDHS"
+    }
+  },
+  "medias": {
+    "title": "Médias",
+    "subtitle": "Actualités et communiqués de presse de Ciment DAM",
+    "readMore": "Lire la suite",
+    "newsTitle": "Actualités",
+    "pressTitle": "Communiqués de Presse",
+    "article1": {
+      "title": "Dakhla Aménagement franchit le cap des 50 000 tonnes produites en 2024",
+      "date": "15 Janvier 2025",
+      "excerpt": "L'année 2024 a été marquée par une production record pour notre centre de broyage, démontrant la fiabilité de nos installations et l'engagement de nos équipes."
+    },
+    "article2": {
+      "title": "Nouveau partenariat pour l'approvisionnement de la région de Dakhla-Oued Ed-Dahab",
+      "date": "20 Novembre 2024",
+      "excerpt": "Un accord stratégique a été signé pour garantir l'approvisionnement en clinker de qualité, renforçant notre capacité à répondre à la demande locale."
+    },
+    "article3": {
+      "title": "Programme de certification ISO 9001 : les avancées",
+      "date": "5 Septembre 2024",
+      "excerpt": "Notre démarche de certification ISO 9001 progresse conformément au calendrier prévu, témoignant de notre engagement qualité."
+    },
+    "press1": {
+      "title": "Lancement de DAM ECOShield : le ciment vert made in Dakhla",
+      "date": "Février 2025",
+      "excerpt": "Ciment DAM annonce le lancement commercial de DAM ECOShield, son ciment innovant à faible empreinte carbone, spécialement conçu pour les environnements côtiers du Sud Marocain."
+    },
+    "press2": {
+      "title": "Ciment DAM participe au Forum International de Dakhla",
+      "date": "Décembre 2024",
+      "excerpt": "Notre entreprise était présente au Forum International de Dakhla, où nous avons présenté notre vision du développement industriel durable dans les Provinces du Sud."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes à votre écoute — Demandes B2B et devis personnalisés",
+    "tabGeneral": "Contact général",
+    "tabQuote": "Demande de devis",
+    "address": {
+      "title": "Adresse",
+      "line1": "Angle rue Lagouira, Av. El Walae",
+      "line2": "Dakhla, Maroc"
+    },
+    "site": {
+      "title": "Site de Production",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Maroc"
+    },
+    "phone": "Téléphone",
+    "phoneValue": "+212 5XX-XXXXXX",
+    "email": "Email",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer",
+      "success": "Message envoyé avec succès !",
+      "subjects": {
+        "commercial": "Demande commerciale",
+        "technical": "Support technique",
+        "careers": "Recrutement",
+        "other": "Autre"
+      }
+    },
+    "quote": {
+      "company": "Nom de l'entreprise",
+      "contact": "Nom du contact",
+      "email": "Adresse email",
+      "phone": "Téléphone",
+      "product": "Type de produit",
+      "quantity": "Quantité (tonnes)",
+      "location": "Lieu de livraison",
+      "message": "Message complémentaire",
+      "send": "Envoyer la demande",
+      "success": "Demande de devis envoyée avec succès ! Notre équipe commerciale vous contactera sous 24h.",
+      "products": {
+        "cpj35": "CPJ 35",
+        "cpj45": "CPJ 45",
+        "cpa42_5": "CPA 42.5",
+        "cpj55": "CPJ 55",
+        "ecoShield": "DAM ECOShield"
+      }
+    }
+  },
+  "investors": {
+    "title": "Investisseurs",
+    "subtitle": "Gouvernance transparente et performance durable",
+    "governance": {
+      "title": "Gouvernance",
+      "text": "Dakhla Aménagement S.A. est dirigée par un Conseil d'Administration composé de professionnels expérimentés, garantissant une gestion rigoureuse et transparente de l'entreprise.",
+      "board": "Conseil d'Administration",
+      "ceo": "Directeur Général",
+      "cfo": "Directeur Financier",
+      "coo": "Directeur des Opérations"
+    },
+    "financial": {
+      "title": "Données Financières",
+      "capital": "Capital social : 30 100 000 DHS",
+      "shares": "Nombre d'actions : 30 100",
+      "parValue": "Valeur nominale : 1 000 DHS",
+      "ownership": "Actionnariat : 100% investisseurs mauritaniens"
+    },
+    "keyFigures": {
+      "title": "Chiffres Clés",
+      "capacity": "Capacité : 100 000 T/an",
+      "revenue": "Chiffre d'affaires en croissance continue",
+      "market": "Marché : Sud Marocain & Mauritanie",
+      "investment": "Investissement initial : 200+ MDHS"
+    },
+    "reports": {
+      "title": "Rapports Financiers",
+      "r2024": {
+        "title": "Rapport Annuel 2024",
+        "desc": "Résultats financiers, gouvernance et perspectives stratégiques"
+      },
+      "r2023": {
+        "title": "Rapport Annuel 2023",
+        "desc": "Performance opérationnelle et développement durable"
+      },
+      "r2022": {
+        "title": "Rapport Annuel 2022",
+        "desc": "Consolidation et croissance de l'activité"
       }
     }
   },
   "careers": {
     "title": "Carrières",
     "subtitle": "Rejoignez une équipe ambitieuse et contribuez au développement du Sud Marocain",
+    "whyJoin": {
+      "title": "Pourquoi nous rejoindre",
+      "reason1Title": "Impact Réel",
+      "reason1Desc": "Contribuez directement au développement des Provinces du Sud",
+      "reason2Title": "Innovation",
+      "reason2Desc": "Travaillez avec des technologies industrielles de pointe",
+      "reason3Title": "Évolution",
+      "reason3Desc": "Programmes de formation et évolution de carrière accélérés",
+      "reason4Title": "Engagement",
+      "reason4Desc": "Environnement bienveillant et valeurs fortes"
+    },
     "culture": {
       "title": "Notre Culture",
       "text": "Chez Dakhla Aménagement, nous valorisons l'esprit d'équipe, l'excellence technique et l'engagement. Nous offrons un environnement de travail stimulant où chaque collaborateur peut développer ses compétences et contribuer à des projets concrets qui façonnent l'avenir de la région."
@@ -281,88 +442,11 @@
     "apply": "Postuler",
     "sendCv": "Envoyez votre CV à : recrutement@dakhla-amenagement.ma"
   },
-  "investors": {
-    "title": "Espace Investisseurs",
-    "subtitle": "Gouvernance transparente et performance durable",
-    "governance": {
-      "title": "Gouvernance",
-      "text": "Dakhla Aménagement S.A. est dirigée par un Conseil d'Administration composé de professionnels expérimentés, garantissant une gestion rigoureuse et transparente de l'entreprise.",
-      "board": "Conseil d'Administration",
-      "ceo": "Directeur Général",
-      "cfo": "Directeur Financier",
-      "coo": "Directeur des Opérations"
-    },
-    "financial": {
-      "title": "Données Financières",
-      "capital": "Capital social : 30 100 000 DHS",
-      "shares": "Nombre d'actions : 30 100",
-      "parValue": "Valeur nominale : 1 000 DHS",
-      "ownership": "Actionnariat : 100% investisseurs mauritaniens"
-    },
-    "keyFigures": {
-      "title": "Chiffres Clés",
-      "capacity": "Capacité : 100 000 T/an",
-      "revenue": "Chiffre d'affaires en croissance continue",
-      "market": "Marché : Sud Marocain & Mauritanie",
-      "investment": "Investissement initial : 200+ MDHS"
-    }
-  },
-  "news": {
-    "title": "Actualités",
-    "subtitle": "Les dernières nouvelles de Dakhla Aménagement",
-    "readMore": "Lire la suite",
-    "article1": {
-      "title": "Dakhla Aménagement franchit le cap des 50 000 tonnes produites en 2024",
-      "date": "15 Janvier 2025",
-      "excerpt": "L'année 2024 a été marquée par une production record pour notre centre de broyage, démontrant la fiabilité de nos installations et l'engagement de nos équipes."
-    },
-    "article2": {
-      "title": "Nouveau partenariat pour l'approvisionnement de la région de Dakhla-Oued Ed-Dahab",
-      "date": "20 Novembre 2024",
-      "excerpt": "Un accord stratégique a été signé pour garantir l'approvisionnement en clinker de qualité, renforçant notre capacité à répondre à la demande locale."
-    },
-    "article3": {
-      "title": "Programme de certification ISO 9001 : les avancées",
-      "date": "5 Septembre 2024",
-      "excerpt": "Notre démarche de certification ISO 9001 progresse conformément au calendrier prévu, témoignant de notre engagement qualité."
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "subtitle": "Nous sommes à votre écoute",
-    "address": {
-      "title": "Adresse",
-      "line1": "Angle rue Lagouira, Av. El Walae",
-      "line2": "Dakhla, Maroc"
-    },
-    "site": {
-      "title": "Site de Production",
-      "line1": "Lassargua, Dakhla",
-      "line2": "Maroc"
-    },
-    "phone": "Téléphone",
-    "phoneValue": "+212 5XX-XXXXXX",
-    "email": "Email",
-    "form": {
-      "name": "Nom complet",
-      "email": "Adresse email",
-      "subject": "Sujet",
-      "message": "Message",
-      "send": "Envoyer",
-      "success": "Message envoyé avec succès !",
-      "subjects": {
-        "commercial": "Demande commerciale",
-        "technical": "Support technique",
-        "careers": "Recrutement",
-        "other": "Autre"
-      }
-    }
-  },
   "legal": {
     "title": "Mentions Légales",
     "company": {
       "title": "Éditeur du Site",
-      "name": "Dakhla Aménagement S.A.",
+      "name": "Ciment DAM — Dakhla Aménagement S.A.",
       "form": "Société Anonyme au capital de 30 100 000 DHS",
       "rc": "Registre du Commerce : 7207",
       "ice": "Identifiant Commun de l'Entreprise : 001726721000031",
@@ -391,244 +475,40 @@
     }
   },
   "footer": {
-    "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction.",
-    "quickLinks": "Liens Rapides",
-    "contact": "Contact",
+    "description": "Ciment DAM — Centre de broyage de clinker. Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
+    "company": "L'Entreprise",
+    "products": "Produits",
+    "rse": "RSE & Durable",
+    "resources": "Ressources",
     "legal": "Mentions Légales",
+    "sitemap": "Plan du Site",
     "rights": "Tous droits réservés.",
-    "madeIn": "Fait au Maroc"
-  },
-  "facilities": {
-    "title": "Nos Installations",
-    "subtitle": "Découvrez notre centre de production de Lassargua",
-    "production": {
-      "title": "Centre de Production",
-      "text": "Notre centre de broyage de clinker est situé à Lassargua, à proximité de Dakhla. Inauguré en 2018, il représente un investissement de plus de 200 millions de DHS et dispose d'une capacité de production de 100 000 tonnes par an. Le site est stratégiquement positionné pour desservir l'ensemble de la région de Dakhla-Oued Ed-Dahab et les marchés voisins.",
-      "capacity": "Capacité : 100 000 tonnes/an",
-      "location": "Localisation : Lassargua, Dakhla",
-      "investment": "Investissement : 200+ MDHS",
-      "area": "Superficie : 5 hectares"
-    },
-    "equipment": {
-      "title": "Équipements",
-      "mills": {
-        "name": "Broyeurs à Boulets",
-        "desc": "Broyeurs haute performance pour un broyage fin et régulier du clinker, garantissant une finesse optimale du ciment produit."
-      },
-      "silos": {
-        "name": "Silos de Stockage",
-        "desc": "Installations de stockage capacitaires pour le clinker brut et les différents types de ciment finis, assurant une disponibilité permanente."
-      },
-      "packaging": {
-        "name": "Lignes de Conditionnement",
-        "desc": "Lignes automatisées de conditionnement en sacs de 50 kg et installations de chargement vrac pour une logistique efficace."
-      },
-      "lab": {
-        "name": "Laboratoire de Qualité",
-        "desc": "Laboratoire interne équipé d'instruments d'analyse avancés pour le contrôle qualité à chaque étape de la production."
-      }
-    },
-    "gallery": {
-      "title": "Galerie",
-      "factory": "Vue extérieure de l'usine",
-      "grinding": "Processus de broyage",
-      "lab": "Laboratoire qualité",
-      "bags": "Conditionnement des sacs"
-    },
-    "location": {
-      "title": "Localisation",
-      "address": "Adresse du Site de Production",
-      "line1": "Lassargua, Dakhla",
-      "line2": "Région Dakhla-Oued Ed-Dahab, Maroc",
-      "access": "Accessibilité : Route nationale N1, à 15 km du centre-ville de Dakhla"
-    }
-  },
-  "certifications": {
-    "title": "Nos Certifications",
-    "subtitle": "Des normes rigoureuses pour une qualité garantie",
-    "active": {
-      "title": "Certifications Actives",
-      "nm": {
-        "name": "NM 10.1.004",
-        "desc": "Norme marocaine définissant les spécifications et les méthodes d'essai des ciments Portland. Notre conformité à cette norme garantit que nos ciments répondent aux exigences de qualité nationales.",
-        "status": "Certifié"
-      },
-      "en": {
-        "name": "EN 197-1",
-        "desc": "Norme européenne relative à la composition, aux spécifications et aux critères de conformité des ciments courants. Cette certification atteste de la conformité de nos produits aux standards internationaux.",
-        "status": "Certifié"
-      }
-    },
-    "inProgress": {
-      "title": "En Cours d'Obtention",
-      "iso": {
-        "name": "ISO 9001",
-        "desc": "Système de management de la qualité. Notre démarche de certification progresse conformément au calendrier prévu, avec un audit prévu pour 2025. Cette certification témoignera de notre engagement pour l'amélioration continue de nos processus.",
-        "status": "En cours"
-      }
-    },
-    "testing": {
-      "title": "Processus de Test",
-      "desc": "Chaque lot de production est soumis à un processus de test rigoureux avant sa mise sur le marché. Notre laboratoire interne réalise des analyses chimiques et physiques complètes, et des échantillons sont régulièrement envoyés à des laboratoires externes indépendants pour validation.",
-      "steps": {
-        "sampling": "Échantillonnage systématique à chaque étape",
-        "analysis": "Analyses chimiques et physiques complètes",
-        "validation": "Validation par laboratoires externes indépendants",
-        "certification": "Délivrance du certificat de conformité"
-      }
-    },
-    "commitment": {
-      "title": "Notre Engagement Qualité",
-      "text": "La qualité est au cœur de notre stratégie. Nous nous engageons à maintenir les plus hauts standards de qualité à travers des contrôles rigoureux, une formation continue de nos équipes et un investissement constant dans nos équipements de laboratoire. Notre objectif est zéro défaut sur l'ensemble de notre chaîne de production."
-    }
-  },
-  "rse": {
-    "title": "Responsabilité Sociétale",
-    "subtitle": "Notre engagement pour un développement durable et responsable",
-    "environment": {
-      "title": "Engagement Environnemental",
-      "text": "Dakhla Aménagement s'engage à minimiser son impact environnemental. Notre centre de broyage utilise des technologies d'efficacité énergétique avancées, avec un système de filtration des émissions respectant les normes les plus strictes. Nous optimisons constamment notre consommation énergétique et réduisons notre empreinte carbone.",
-      "items": {
-        "emissions": "Filtration des émissions — Normes MARHP",
-        "energy": "Optimisation énergétique continue",
-        "water": "Recyclage des eaux de process",
-        "waste": "Gestion responsable des déchets industriels"
-      }
-    },
-    "social": {
-      "title": "Engagement Social",
-      "text": "Nous sommes fiers de contribuer au développement de la région de Dakhla par la création d'emplois locaux et le soutien aux communautés environnantes.",
-      "items": {
-        "jobs": "85+ emplois directs créés localement",
-        "training": "Programmes de formation continue",
-        "safety": "Politique de santé-sécurité rigoureuse",
-        "wellbeing": "Bien-être des collaborateurs"
-      }
-    },
-    "economic": {
-      "title": "Impact Économique",
-      "text": "Dakhla Aménagement contribue activement au développement économique de la région de Dakhla-Oued Ed-Dahab par la création de valeur locale et le soutien à l'économie régionale.",
-      "items": {
-        "jobs": "Création d'emplois directs et indirects",
-        "local": "Approvisionnement local privilégié",
-        "development": "Contribution au développement régional",
-        "investment": "Investissement de plus de 200 MDHS"
-      }
-    },
-    "partnerships": {
-      "title": "Partenariats & Communauté",
-      "text": "Nous entretenons des partenariats étroits avec les acteurs locaux pour soutenir le développement communautaire et renforcer le tissu socio-économique de la région.",
-      "items": {
-        "education": "Soutien à l'éducation et la formation professionnelle",
-        "community": "Projets communautaires et solidarité",
-        "associations": "Partenariats avec les associations locales",
-        "events": "Soutien aux événements culturels et sportifs"
-      }
-    }
-  },
-  "faq": {
-    "title": "Questions Fréquentes",
-    "subtitle": "Trouvez les réponses aux questions les plus courantes",
-    "q1": {
-      "question": "Quels types de ciments produisez-vous ?",
-      "answer": "Nous produisons une gamme complète de ciments : CPJ 35 pour la maçonnerie courante, CPJ 45 pour le béton armé, CPA 42.5 pour les ouvrages exigeants et la préfabrication, et CPJ 55 pour les travaux spéciaux à haute résistance."
-    },
-    "q2": {
-      "question": "Comment passer commande ?",
-      "answer": "Vous pouvez passer commande en contactant notre équipe commerciale par email à contact@dakhla-amenagement.ma ou par téléphone. Nous vous établirons un devis personnalisé adapté à vos besoins."
-    },
-    "q3": {
-      "question": "Quelles sont les zones de livraison ?",
-      "answer": "Nous livrons sur l'ensemble de la région de Dakhla-Oued Ed-Dahab et les zones limitrophes. Pour les livraisons vers d'autres régions, veuillez nous contacter pour étudier les possibilités."
-    },
-    "q4": {
-      "question": "Comment garantissez-vous la qualité de vos produits ?",
-      "answer": "Chaque lot de production est testé dans notre laboratoire interne. Nous réalisons des analyses chimiques et physiques complètes à chaque étape du processus. Nos produits sont conformes aux normes NM 10.1.004 et EN 197-1."
-    },
-    "q5": {
-      "question": "Vos ciments sont-ils certifiés ?",
-      "answer": "Oui, nos ciments sont conformes aux normes NM 10.1.004 (norme marocaine) et EN 197-1 (norme européenne). Nous sommes également en cours de certification ISO 9001."
-    },
-    "q6": {
-      "question": "Est-il possible de visiter l'usine ?",
-      "answer": "Les visites de notre centre de production à Lassargua sont possibles sur rendez-vous. Veuillez contacter notre service communication pour organiser une visite."
-    },
-    "q7": {
-      "question": "Comment postuler à un emploi ?",
-      "answer": "Vous pouvez envoyer votre CV et lettre de motivation à recrutement@dakhla-amenagement.ma. Consultez notre page Carrières pour voir les postes ouverts."
-    },
-    "q8": {
-      "question": "Comment vous contacter ?",
-      "answer": "Vous pouvez nous joindre par email à contact@dakhla-amenagement.ma, par téléphone au +212 5XX-XXXXXX, ou via le formulaire de contact sur notre site. Notre siège social est situé Angle rue Lagouira, Av. El Walae, Dakhla."
-    },
-    "q9": {
-      "question": "Quels sont les conditionnements disponibles ?",
-      "answer": "Nos ciments sont disponibles en sacs de 50 kg et en vrac. Le conditionnement en vrac est particulièrement adapté aux chantiers de grande envergure et aux centrales à béton."
-    },
-    "q10": {
-      "question": "Quel est le délai de livraison ?",
-      "answer": "Les délais de livraison varient selon la destination et la quantité commandée. En règle générale, nous assurons une livraison sous 48 à 72 heures pour la région de Dakhla-Oued Ed-Dahab. Contactez-nous pour un délai précis."
-    }
-  },
-  "quote": {
-    "title": "Demande de Devis",
-    "subtitle": "Obtenez un devis personnalisé pour votre projet",
-    "form": {
-      "company": "Nom de l'entreprise",
-      "contact": "Nom du contact",
-      "email": "Adresse email",
-      "phone": "Téléphone",
-      "product": "Type de produit",
-      "quantity": "Quantité (tonnes)",
-      "location": "Lieu de livraison",
-      "message": "Message complémentaire",
-      "send": "Envoyer la demande",
-      "success": "Demande de devis envoyée avec succès ! Notre équipe commerciale vous contactera sous 24h.",
-      "products": {
-        "cpj35": "CPJ 35",
-        "cpj45": "CPJ 45",
-        "cpa42_5": "CPA 42.5",
-        "cpj55": "CPJ 55"
-      }
-    }
+    "madeIn": "Fait au Maroc",
+    "rc": "RC : 7207",
+    "ice": "ICE : 001726721000031",
+    "if": "IF : 46377920"
   },
   "sitemap": {
     "title": "Plan du Site",
-    "subtitle": "Toutes les pages du site Dakhla Aménagement",
-    "company": {
-      "title": "L'Entreprise",
+    "subtitle": "Toutes les pages du site Ciment DAM",
+    "main": {
+      "title": "Navigation Principale",
       "pages": {
         "home": "Accueil",
+        "medias": "Médias",
+        "contact": "Contact",
         "about": "À Propos",
+        "solutions": "Solutions & Process",
         "investors": "Investisseurs",
-        "news": "Actualités"
-      }
-    },
-    "productsServices": {
-      "title": "Produits & Services",
-      "pages": {
-        "products": "Produits",
-        "process": "Fabrication",
-        "quality": "Qualité",
-        "facilities": "Installations",
-        "certifications": "Certifications",
-        "quote": "Demande de Devis"
-      }
-    },
-    "rseCareers": {
-      "title": "RSE & Carrières",
-      "pages": {
-        "rse": "RSE",
         "sustainability": "Développement Durable",
         "careers": "Carrières"
       }
     },
-    "help": {
-      "title": "Aide & Informations",
+    "legal": {
+      "title": "Informations",
       "pages": {
-        "faq": "FAQ",
-        "contact": "Contact",
-        "legal": "Mentions Légales"
+        "legal": "Mentions Légales",
+        "sitemap": "Plan du Site"
       }
     }
   }

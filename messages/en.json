@@ -1,104 +1,73 @@
 {
   "nav": {
     "home": "Home",
+    "medias": "Media",
+    "contact": "Contact",
     "about": "About",
-    "process": "Manufacturing",
-    "products": "Products",
-    "quality": "Quality",
+    "solutions": "Solutions & Process",
+    "investors": "Investors",
     "sustainability": "Sustainability",
     "careers": "Careers",
-    "investors": "Investors",
-    "news": "News",
-    "contact": "Contact",
     "legal": "Legal Notice",
-    "facilities": "Facilities",
-    "certifications": "Certifications",
-    "rse": "CSR",
-    "faq": "FAQ",
-    "quote": "Quote",
-    "productsServices": "Products & Services",
-    "rseCareers": "CSR & Careers"
+    "sitemap": "Sitemap"
   },
   "hero": {
-    "title": "The Trusted Cement of Southern Morocco",
-    "subtitle": "Clinker grinding center — Production, packaging and marketing of premium construction materials",
-    "cta": "Discover our products",
-    "ctaSecondary": "Our process"
+    "title": "Building a sustainable future together",
+    "subtitle": "Ciment DAM — Industrial excellence serving Southern Morocco",
+    "cta": "Discover our solutions",
+    "ctaSecondary": "View the process"
   },
-  "stats": {
-    "capacity": "100,000",
-    "capacityUnit": "tonnes/year",
-    "capacityLabel": "Production capacity",
-    "since": "2018",
-    "sinceLabel": "Operating since",
-    "capital": "30.1M",
-    "capitalUnit": "MAD",
-    "capitalLabel": "Share capital",
-    "employees": "85+",
-    "employeesLabel": "Employees"
+  "homeAnchor": {
+    "title": "Regional Anchor",
+    "text": "Strategic investment in the Southern Provinces. With a capacity of 100,000 tonnes per year, our Lassargua grinding center is the industrial engine of the Dakhla-Oued Ed-Dahab region.",
+    "cta": "Our solutions",
+    "ctaSecondary": "View the process",
+    "stat1": "100,000 Tonnes/year",
+    "stat2": "200+ M MAD Investment",
+    "stat3": "85+ Employees",
+    "stat4": "2018 Launch"
   },
-  "homeProducts": {
-    "title": "Our Products",
-    "subtitle": "A complete range of cements for all your construction projects",
-    "cpj35": {
-      "name": "CPJ 35",
-      "desc": "Composite Portland cement for common masonry and plastering"
-    },
-    "cpj45": {
-      "name": "CPJ 45",
-      "desc": "Composite Portland cement for reinforced concrete and common works"
-    },
-    "cpa42_5": {
-      "name": "CPA 42.5",
-      "desc": "Artificial Portland cement for demanding structures and precasting"
-    },
-    "cpj55": {
-      "name": "CPJ 55",
-      "desc": "High-strength composite Portland cement for specialized works"
-    }
+  "homeEco": {
+    "title": "DAM ECOShield",
+    "tagline": "The green cement revolutionizing construction in Morocco",
+    "card1Title": "Reduced Carbon Footprint",
+    "card1Value": "-30% to -60% CO₂",
+    "card1Desc": "Thanks to our innovative low-impact grinding process, DAM ECOShield significantly reduces CO₂ emissions compared to traditional cements.",
+    "card2Title": "Extreme Maritime Resistance",
+    "card2Value": "Coastal Environment",
+    "card2Desc": "Designed for Dakhla's coastal environments, our formulation resists sulfate attacks and marine corrosion."
   },
-  "cta": {
-    "title": "Have a project? Let's talk.",
-    "subtitle": "Contact our sales team for a custom quote or technical advice.",
-    "button": "Contact us"
+  "homeStories": {
+    "title": "Our Stories",
+    "story1Title": "N'Bniouw Dakhla",
+    "story1Desc": "Local construction and regional development",
+    "story2Title": "Our Talents",
+    "story2Desc": "Careers and professional training",
+    "story3Title": "Coastal Ecosystem Preservation",
+    "story3Desc": "Environment and biodiversity",
+    "story4Title": "Circular Management",
+    "story4Desc": "Circular economy and waste reduction"
   },
   "about": {
-    "title": "About Dakhla Aménagement",
-    "subtitle": "A major player in the cement industry in Southern Morocco",
-    "history": {
-      "title": "Our History",
-      "p1": "Dakhla Aménagement S.A. is a public limited company founded in 2015 by visionary Mauritanian investors, with the conviction that the Dakhla region needed modern cement infrastructure to support its rapid development.",
-      "p2": "In 2018, our clinker grinding center in Lassargua began operations, marking the beginning of a new era for construction in Southern Morocco. With a capacity of 100,000 tonnes per year, we meet the growing demand for quality construction materials."
-    },
-    "mission": {
-      "title": "Our Mission",
-      "text": "To produce, package and market premium construction materials, contributing to the economic and social development of the Dakhla-Oued Ed-Dahab region, while respecting the strictest environmental standards.",
-      "creation": "Founded",
-      "startup": "Operations",
-      "tonnage": "Tonnes/year",
-      "team": "Employees"
-    },
-    "values": {
-      "title": "Our Values",
-      "quality": {
-        "name": "Quality",
-        "desc": "Products conforming to international standards, tested in our in-house laboratory."
-      },
-      "integrity": {
-        "name": "Integrity",
-        "desc": "Transparent governance and ethical business practices."
-      },
-      "innovation": {
-        "name": "Innovation",
-        "desc": "Continuous investment in our processes to improve performance and sustainability."
-      },
-      "community": {
-        "name": "Local Commitment",
-        "desc": "Creating local jobs and supporting regional development."
+    "title": "About",
+    "subtitle": "Industrial excellence at the heart of Southern Morocco",
+    "genesis": {
+      "title": "Genesis",
+      "text": "Dakhla Aménagement S.A. is a public limited company founded in 2015 by visionary Mauritanian investors, with the conviction that the Dakhla region needed modern cement infrastructure to support its rapid development.",
+      "timeline": {
+        "t1Year": "2015",
+        "t1Text": "Creation of Dakhla Aménagement S.A. by visionary Mauritanian investors",
+        "t2Year": "2018",
+        "t2Text": "Launch of the Lassargua grinding center — 100,000 tonnes/year",
+        "t3Year": "2024",
+        "t3Text": "Surpassing 50,000 tonnes produced",
+        "t4Year": "Today",
+        "t4Text": "Launch of DAM ECOShield and continuous growth ambition"
       }
     },
-    "legal": {
-      "title": "Legal Information",
+    "company": {
+      "title": "Dakhla Aménagement",
+      "text": "Dakhla Aménagement S.A. is the industrial engine of the Dakhla-Oued Ed-Dahab region. Our clinker grinding center in Lassargua produces, packages and markets premium construction materials, contributing to the economic and social development of the region.",
       "form": "Public Limited Company (S.A.)",
       "rc": "RC: 7207",
       "ice": "ICE: 001726721000031",
@@ -106,144 +75,336 @@
       "capital": "Share capital: 30,100,000 MAD",
       "hq": "Headquarters: Corner of Lagouira St., El Walae Ave., Dakhla, Morocco",
       "investors": "Shareholding: 100% Mauritanian investors"
+    },
+    "governance": {
+      "title": "Governance",
+      "text": "Dakhla Aménagement S.A. is led by a Board of Directors composed of experienced professionals, ensuring rigorous and transparent management of the company.",
+      "board": "Board of Directors",
+      "ceo": "Chief Executive Officer",
+      "cfo": "Chief Financial Officer",
+      "coo": "Chief Operations Officer"
+    },
+    "facilities": {
+      "title": "Facilities",
+      "text": "Our clinker grinding center is located in Lassargua, near Dakhla. Inaugurated in 2018, it represents an investment of over 200 million MAD and has a production capacity of 100,000 tonnes per year.",
+      "capacity": "Capacity: 100,000 tonnes/year",
+      "location": "Location: Lassargua, Dakhla",
+      "investment": "Investment: 200+ M MAD",
+      "area": "Area: 5 hectares",
+      "mills": "Ball Mills — High-performance mills for fine and consistent grinding",
+      "silos": "Storage Silos — High-capacity facilities for clinker and cement",
+      "packaging": "Packaging Lines — 50 kg bags and bulk",
+      "lab": "Quality Laboratory — Advanced analysis equipment"
     }
   },
-  "process": {
-    "title": "Our Manufacturing Process",
-    "subtitle": "From raw material to finished product, discover each step of our clinker grinding process",
-    "stepLabel": "Step",
-    "step1": {
-      "title": "Clinker Reception",
-      "desc": "Clinker is received and stored at our Lassargua facility. We ensure rigorous quality control at every delivery, verifying the chemical composition and physical properties of the raw material."
-    },
-    "step2": {
-      "title": "Grinding & Dosing",
-      "desc": "Clinker is finely ground in our high-performance ball mills. Precise dosing of additives (gypsum, limestone, fly ash) guarantees the specific characteristics of each cement type."
-    },
-    "step3": {
-      "title": "Quality Control",
-      "desc": "Each batch undergoes exhaustive testing in our laboratory: compressive strength, fineness, setting time, and heat of hydration. No product leaves the plant without a certificate of conformity."
-    },
-    "step4": {
-      "title": "Packaging & Shipping",
-      "desc": "Cement is packaged in 50 kg bags or shipped in bulk. Our optimized logistics ensure fast and reliable delivery across Southern Morocco and beyond."
-    }
-  },
-  "products": {
-    "title": "Our Products",
-    "subtitle": "A complete range of cements to meet all construction needs",
-    "specLabels": {
-      "resistance": "Resistance",
-      "fineness": "Fineness",
-      "setting": "Setting",
-      "use": "Use"
-    },
-    "cpj35": {
-      "name": "CPJ 35",
-      "full": "Composite Portland Cement 35",
-      "desc": "Cement for common masonry, interior and exterior plastering, and bedding mortars. Ideal for residential projects and finishing works.",
-      "specs": {
-        "resistance": "35 MPa (28 days)",
-        "fineness": "≥ 300 m²/kg",
-        "setting": "Initial ≥ 60 min",
-        "use": "Masonry, plastering, mortars"
-      }
-    },
-    "cpj45": {
-      "name": "CPJ 45",
-      "full": "Composite Portland Cement 45",
-      "desc": "Versatile cement for reinforced concrete, floor slabs and common civil engineering works. The benchmark choice for most construction projects.",
-      "specs": {
-        "resistance": "45 MPa (28 days)",
-        "fineness": "≥ 320 m²/kg",
-        "setting": "Initial ≥ 60 min",
-        "use": "Reinforced concrete, slabs, common works"
-      }
-    },
-    "cpa42_5": {
-      "name": "CPA 42.5",
-      "full": "Artificial Portland Cement 42.5",
-      "desc": "High-performance cement for demanding structures, precasting and work in aggressive environments. High early strength allows rapid formwork removal.",
-      "specs": {
-        "resistance": "42.5 MPa (28 days)",
-        "fineness": "≥ 350 m²/kg",
-        "setting": "Initial ≥ 45 min",
-        "use": "Precasting, demanding structures"
-      }
-    },
-    "cpj55": {
-      "name": "CPJ 55",
-      "full": "Composite Portland Cement 55",
-      "desc": "High-strength cement for specialized works, deep foundations and civil engineering structures subject to high mechanical stress.",
-      "specs": {
-        "resistance": "55 MPa (28 days)",
-        "fineness": "≥ 380 m²/kg",
-        "setting": "Initial ≥ 45 min",
-        "use": "Civil engineering, foundations, specialized works"
-      }
-    },
-    "packaging": "Packaging: 50 kg bags | Bulk",
-    "standards": "Compliant with NM 10.1.004 / EN 197-1 standards"
-  },
-  "quality": {
-    "title": "Quality & Certifications",
-    "subtitle": "Excellence at the heart of every bag of cement",
-    "lab": {
-      "title": "Our Laboratory",
-      "text": "Our in-house laboratory, equipped with the most advanced technologies, performs chemical and physical analyses at every stage of the manufacturing process. From raw material reception to finished product shipment, no detail is left to chance."
-    },
-    "standards": {
-      "title": "Standards & Compliance",
-      "nm": {
-        "name": "NM 10.1.004",
-        "desc": "Moroccan standard defining specifications for Portland cements"
+  "solutions": {
+    "title": "Solutions & Process",
+    "subtitle": "Our cement range and industrial grinding process",
+    "tabProducts": "Our Range",
+    "tabProcess": "Grinding Process",
+    "tabQuality": "Quality & Certifications",
+    "products": {
+      "cpj35": {
+        "name": "CPJ 35",
+        "full": "Composite Portland Cement 35",
+        "desc": "Cement for common masonry, interior and exterior plastering, and bedding mortars. Ideal for residential projects and finishing works.",
+        "specs": {
+          "resistance": "35 MPa (28 days)",
+          "fineness": "≥ 300 m²/kg",
+          "setting": "Initial ≥ 60 min",
+          "use": "Masonry, plastering, mortars"
+        }
       },
-      "en": {
-        "name": "EN 197-1",
-        "desc": "European standard for composition and specifications of common cements"
+      "cpj45": {
+        "name": "CPJ 45",
+        "full": "Composite Portland Cement 45",
+        "desc": "Versatile cement for reinforced concrete, floor slabs and common civil engineering works. The benchmark choice for most construction projects.",
+        "specs": {
+          "resistance": "45 MPa (28 days)",
+          "fineness": "≥ 320 m²/kg",
+          "setting": "Initial ≥ 60 min",
+          "use": "Reinforced concrete, slabs, common works"
+        }
       },
-      "iso": {
-        "name": "ISO 9001",
-        "desc": "Quality management system — Certification in progress"
+      "cpa42_5": {
+        "name": "CPA 42.5",
+        "full": "Artificial Portland Cement 42.5",
+        "desc": "High-performance cement for demanding structures, precasting and work in aggressive environments. High early strength allows rapid formwork removal.",
+        "specs": {
+          "resistance": "42.5 MPa (28 days)",
+          "fineness": "≥ 350 m²/kg",
+          "setting": "Initial ≥ 45 min",
+          "use": "Precasting, demanding structures"
+        }
+      },
+      "cpj55": {
+        "name": "CPJ 55",
+        "full": "Composite Portland Cement 55",
+        "desc": "High-strength cement for specialized works, deep foundations and civil engineering structures subject to high mechanical stress.",
+        "specs": {
+          "resistance": "55 MPa (28 days)",
+          "fineness": "≥ 380 m²/kg",
+          "setting": "Initial ≥ 45 min",
+          "use": "Civil engineering, foundations, specialized works"
+        }
+      },
+      "ecoShield": {
+        "name": "DAM ECOShield",
+        "full": "High-Performance Green Cement",
+        "desc": "Our innovative low-carbon cement, designed for coastal environments. Up to -60% CO₂ emissions compared to traditional cements, with exceptional maritime resistance.",
+        "badge": "NEW",
+        "specs": {
+          "resistance": "42.5 MPa (28 days)",
+          "fineness": "≥ 350 m²/kg",
+          "setting": "Initial ≥ 45 min",
+          "use": "Coastal environments, sustainable construction"
+        }
+      },
+      "packaging": "Packaging: 50 kg bags | Bulk",
+      "standards": "Compliant with NM 10.1.004 / EN 197-1 standards",
+      "specLabels": {
+        "resistance": "Resistance",
+        "fineness": "Fineness",
+        "setting": "Setting",
+        "use": "Use"
       }
     },
-    "tests": {
-      "title": "Tests Performed",
-      "chemical": "Chemical analysis (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
-      "physical": "Compressive strength (7 and 28 days)",
-      "fineness": "Grinding fineness (Blaine surface)",
-      "setting": "Setting time (initial and final)",
-      "expansion": "Stability / Expansion",
-      "heat": "Heat of hydration"
+    "process": {
+      "title": "Grinding Process",
+      "subtitle": "From raw material to finished product, discover each step of our clinker grinding process",
+      "step1": {
+        "title": "Clinker Reception",
+        "desc": "Clinker is received and stored at our Lassargua facility. We ensure rigorous quality control at every delivery, verifying the chemical composition and physical properties of the raw material."
+      },
+      "step2": {
+        "title": "Grinding & Dosing",
+        "desc": "Clinker is finely ground in our high-performance ball mills. Precise dosing of additives (gypsum, limestone, fly ash) guarantees the specific characteristics of each cement type."
+      },
+      "step3": {
+        "title": "Quality Control",
+        "desc": "Each batch undergoes exhaustive testing in our laboratory: compressive strength, fineness, setting time, and heat of hydration. No product leaves the plant without a certificate of conformity."
+      },
+      "step4": {
+        "title": "Packaging & Shipping",
+        "desc": "Cement is packaged in 50 kg bags or shipped in bulk. Our optimized logistics ensure fast and reliable delivery across Southern Morocco and beyond."
+      }
+    },
+    "quality": {
+      "title": "Quality & Certifications",
+      "subtitle": "Excellence at the heart of every bag of cement",
+      "lab": {
+        "title": "Our Laboratory",
+        "text": "Our in-house laboratory, equipped with the most advanced technologies, performs chemical and physical analyses at every stage of the manufacturing process. From raw material reception to finished product shipment, no detail is left to chance."
+      },
+      "standards": {
+        "title": "Standards & Compliance",
+        "nm": {
+          "name": "NM 10.1.004",
+          "desc": "Moroccan standard defining specifications for Portland cements",
+          "status": "Certified"
+        },
+        "en": {
+          "name": "EN 197-1",
+          "desc": "European standard for composition and specifications of common cements",
+          "status": "Certified"
+        },
+        "iso": {
+          "name": "ISO 9001",
+          "desc": "Quality management system — Certification in progress",
+          "status": "In progress"
+        }
+      },
+      "tests": {
+        "title": "Tests Performed",
+        "chemical": "Chemical analysis (CaO, SiO₂, Al₂O₃, Fe₂O₃)",
+        "physical": "Compressive strength (7 and 28 days)",
+        "fineness": "Grinding fineness (Blaine surface)",
+        "setting": "Setting time (initial and final)",
+        "expansion": "Stability / Expansion",
+        "heat": "Heat of hydration"
+      }
     }
   },
   "sustainability": {
     "title": "Sustainability",
     "subtitle": "Building the future while preserving our environment",
+    "ecoShield": {
+      "title": "DAM ECOShield",
+      "subtitle": "The green cement revolutionizing construction in Morocco",
+      "desc": "DAM ECOShield is our major innovation: a low-carbon cement specifically designed for the coastal environments of Southern Morocco. Thanks to our optimized grinding process and the integration of recycled materials, we reduce CO₂ emissions by 30 to 60% while guaranteeing superior resistance to sulfate attacks and marine corrosion.",
+      "feature1Title": "Reduced CO₂ Emissions",
+      "feature1Value": "-30% to -60%",
+      "feature2Title": "Maritime Resistance",
+      "feature2Value": "Extreme",
+      "feature3Title": "Recycled Materials",
+      "feature3Value": "Integrated",
+      "feature4Title": "International Standards",
+      "feature4Value": "Compliant"
+    },
     "environment": {
-      "title": "Environmental Respect",
-      "text": "Dakhla Aménagement is committed to minimizing its environmental impact. Our grinding center uses advanced energy efficiency technologies, with an emission filtration system that meets the strictest standards. We constantly optimize our energy consumption and reduce our carbon footprint.",
-      "items": {
-        "emissions": "Emission filtration — MARHP standards",
-        "energy": "Continuous energy optimization",
-        "water": "Process water recycling",
-        "waste": "Responsible industrial waste management"
-      }
+      "title": "Environmental Commitments",
+      "text": "Dakhla Aménagement is committed to minimizing its environmental impact. Our grinding center uses advanced energy efficiency technologies, with an emission filtration system that meets the strictest standards.",
+      "emissions": "Emission filtration — MARHP standards",
+      "energy": "Continuous energy optimization",
+      "water": "Process water recycling",
+      "waste": "Responsible industrial waste management"
     },
     "social": {
       "title": "Social Responsibility",
       "text": "We are proud to contribute to the development of the Dakhla region through local job creation and support for surrounding communities.",
-      "items": {
-        "jobs": "85+ direct local jobs created",
-        "training": "Continuous training programs",
-        "local": "Preferred local sourcing",
-        "community": "Support for community projects"
+      "jobs": "85+ direct local jobs created",
+      "training": "Continuous training programs",
+      "local": "Preferred local sourcing",
+      "community": "Support for community projects"
+    },
+    "economic": {
+      "title": "Economic Impact",
+      "text": "Dakhla Aménagement actively contributes to the economic development of the Dakhla-Oued Ed-Dahab region through local value creation and support for the regional economy.",
+      "jobs": "Creation of direct and indirect jobs",
+      "local": "Preferred local sourcing",
+      "development": "Contribution to regional development",
+      "investment": "Investment of over 200 M MAD"
+    }
+  },
+  "medias": {
+    "title": "Media",
+    "subtitle": "News and press releases from Ciment DAM",
+    "readMore": "Read more",
+    "newsTitle": "News",
+    "pressTitle": "Press Releases",
+    "article1": {
+      "title": "Dakhla Aménagement surpasses 50,000 tonnes produced in 2024",
+      "date": "January 15, 2025",
+      "excerpt": "The year 2024 was marked by record production for our grinding center, demonstrating the reliability of our facilities and the commitment of our teams."
+    },
+    "article2": {
+      "title": "New partnership for supplying the Dakhla-Oued Ed-Dahab region",
+      "date": "November 20, 2024",
+      "excerpt": "A strategic agreement was signed to guarantee the supply of quality clinker, strengthening our capacity to meet local demand."
+    },
+    "article3": {
+      "title": "ISO 9001 certification program: progress update",
+      "date": "September 5, 2024",
+      "excerpt": "Our ISO 9001 certification process is progressing according to the planned schedule, demonstrating our quality commitment."
+    },
+    "press1": {
+      "title": "Launch of DAM ECOShield: the green cement made in Dakhla",
+      "date": "February 2025",
+      "excerpt": "Ciment DAM announces the commercial launch of DAM ECOShield, its innovative low-carbon cement, specifically designed for the coastal environments of Southern Morocco."
+    },
+    "press2": {
+      "title": "Ciment DAM participates in the International Forum of Dakhla",
+      "date": "December 2024",
+      "excerpt": "Our company was present at the International Forum of Dakhla, where we presented our vision of sustainable industrial development in the Southern Provinces."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We're here to help — B2B inquiries and custom quotes",
+    "tabGeneral": "General Contact",
+    "tabQuote": "Request a Quote",
+    "address": {
+      "title": "Address",
+      "line1": "Corner of Lagouira St., El Walae Ave.",
+      "line2": "Dakhla, Morocco"
+    },
+    "site": {
+      "title": "Production Site",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Morocco"
+    },
+    "phone": "Phone",
+    "phoneValue": "+212 5XX-XXXXXX",
+    "email": "Email",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "success": "Message sent successfully!",
+      "subjects": {
+        "commercial": "Commercial inquiry",
+        "technical": "Technical support",
+        "careers": "Recruitment",
+        "other": "Other"
+      }
+    },
+    "quote": {
+      "company": "Company name",
+      "contact": "Contact name",
+      "email": "Email address",
+      "phone": "Phone",
+      "product": "Product type",
+      "quantity": "Quantity (tonnes)",
+      "location": "Delivery location",
+      "message": "Additional message",
+      "send": "Send request",
+      "success": "Quote request sent successfully! Our sales team will contact you within 24 hours.",
+      "products": {
+        "cpj35": "CPJ 35",
+        "cpj45": "CPJ 45",
+        "cpa42_5": "CPA 42.5",
+        "cpj55": "CPJ 55",
+        "ecoShield": "DAM ECOShield"
+      }
+    }
+  },
+  "investors": {
+    "title": "Investors",
+    "subtitle": "Transparent governance and sustainable performance",
+    "governance": {
+      "title": "Governance",
+      "text": "Dakhla Aménagement S.A. is led by a Board of Directors composed of experienced professionals, ensuring rigorous and transparent management of the company.",
+      "board": "Board of Directors",
+      "ceo": "Chief Executive Officer",
+      "cfo": "Chief Financial Officer",
+      "coo": "Chief Operations Officer"
+    },
+    "financial": {
+      "title": "Financial Data",
+      "capital": "Share capital: 30,100,000 MAD",
+      "shares": "Number of shares: 30,100",
+      "parValue": "Nominal value: 1,000 MAD",
+      "ownership": "Shareholding: 100% Mauritanian investors"
+    },
+    "keyFigures": {
+      "title": "Key Figures",
+      "capacity": "Capacity: 100,000 T/year",
+      "revenue": "Continuously growing revenue",
+      "market": "Market: Southern Morocco & Mauritania",
+      "investment": "Initial investment: 200+ M MAD"
+    },
+    "reports": {
+      "title": "Financial Reports",
+      "r2024": {
+        "title": "Annual Report 2024",
+        "desc": "Financial results, governance and strategic outlook"
+      },
+      "r2023": {
+        "title": "Annual Report 2023",
+        "desc": "Operational performance and sustainable development"
+      },
+      "r2022": {
+        "title": "Annual Report 2022",
+        "desc": "Consolidation and business growth"
       }
     }
   },
   "careers": {
     "title": "Careers",
     "subtitle": "Join an ambitious team and contribute to the development of Southern Morocco",
+    "whyJoin": {
+      "title": "Why Join Us",
+      "reason1Title": "Real Impact",
+      "reason1Desc": "Contribute directly to the development of the Southern Provinces",
+      "reason2Title": "Innovation",
+      "reason2Desc": "Work with cutting-edge industrial technologies",
+      "reason3Title": "Growth",
+      "reason3Desc": "Training programs and accelerated career development",
+      "reason4Title": "Commitment",
+      "reason4Desc": "Supportive environment and strong values"
+    },
     "culture": {
       "title": "Our Culture",
       "text": "At Dakhla Aménagement, we value teamwork, technical excellence and commitment. We offer a stimulating work environment where every employee can develop their skills and contribute to concrete projects that shape the future of the region."
@@ -281,88 +442,11 @@
     "apply": "Apply",
     "sendCv": "Send your CV to: recrutement@dakhla-amenagement.ma"
   },
-  "investors": {
-    "title": "Investor Relations",
-    "subtitle": "Transparent governance and sustainable performance",
-    "governance": {
-      "title": "Governance",
-      "text": "Dakhla Aménagement S.A. is led by a Board of Directors composed of experienced professionals, ensuring rigorous and transparent management of the company.",
-      "board": "Board of Directors",
-      "ceo": "Chief Executive Officer",
-      "cfo": "Chief Financial Officer",
-      "coo": "Chief Operations Officer"
-    },
-    "financial": {
-      "title": "Financial Data",
-      "capital": "Share capital: 30,100,000 MAD",
-      "shares": "Number of shares: 30,100",
-      "parValue": "Nominal value: 1,000 MAD",
-      "ownership": "Shareholding: 100% Mauritanian investors"
-    },
-    "keyFigures": {
-      "title": "Key Figures",
-      "capacity": "Capacity: 100,000 T/year",
-      "revenue": "Continuously growing revenue",
-      "market": "Market: Southern Morocco & Mauritania",
-      "investment": "Initial investment: 200+ M MAD"
-    }
-  },
-  "news": {
-    "title": "News",
-    "subtitle": "Latest news from Dakhla Aménagement",
-    "readMore": "Read more",
-    "article1": {
-      "title": "Dakhla Aménagement surpasses 50,000 tonnes produced in 2024",
-      "date": "January 15, 2025",
-      "excerpt": "The year 2024 was marked by record production for our grinding center, demonstrating the reliability of our facilities and the commitment of our teams."
-    },
-    "article2": {
-      "title": "New partnership for supplying the Dakhla-Oued Ed-Dahab region",
-      "date": "November 20, 2024",
-      "excerpt": "A strategic agreement was signed to guarantee the supply of quality clinker, strengthening our capacity to meet local demand."
-    },
-    "article3": {
-      "title": "ISO 9001 certification program: progress update",
-      "date": "September 5, 2024",
-      "excerpt": "Our ISO 9001 certification process is progressing according to the planned schedule, demonstrating our quality commitment."
-    }
-  },
-  "contact": {
-    "title": "Contact",
-    "subtitle": "We're here to help",
-    "address": {
-      "title": "Address",
-      "line1": "Corner of Lagouira St., El Walae Ave.",
-      "line2": "Dakhla, Morocco"
-    },
-    "site": {
-      "title": "Production Site",
-      "line1": "Lassargua, Dakhla",
-      "line2": "Morocco"
-    },
-    "phone": "Phone",
-    "phoneValue": "+212 5XX-XXXXXX",
-    "email": "Email",
-    "form": {
-      "name": "Full name",
-      "email": "Email address",
-      "subject": "Subject",
-      "message": "Message",
-      "send": "Send",
-      "success": "Message sent successfully!",
-      "subjects": {
-        "commercial": "Commercial inquiry",
-        "technical": "Technical support",
-        "careers": "Recruitment",
-        "other": "Other"
-      }
-    }
-  },
   "legal": {
     "title": "Legal Notice",
     "company": {
       "title": "Website Publisher",
-      "name": "Dakhla Aménagement S.A.",
+      "name": "Ciment DAM — Dakhla Aménagement S.A.",
       "form": "Public limited company with capital of 30,100,000 MAD",
       "rc": "Trade Register: 7207",
       "ice": "Common Enterprise Identifier: 001726721000031",
@@ -391,244 +475,40 @@
     }
   },
   "footer": {
-    "description": "Clinker grinding center — Production, packaging and marketing of construction materials.",
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
+    "description": "Ciment DAM — Clinker grinding center. Production, packaging and marketing of premium construction materials in Dakhla, Morocco.",
+    "company": "Company",
+    "products": "Products",
+    "rse": "CSR & Sustainability",
+    "resources": "Resources",
     "legal": "Legal Notice",
+    "sitemap": "Sitemap",
     "rights": "All rights reserved.",
-    "madeIn": "Made in Morocco"
-  },
-  "facilities": {
-    "title": "Our Facilities",
-    "subtitle": "Discover our Lassargua production center",
-    "production": {
-      "title": "Production Center",
-      "text": "Our clinker grinding center is located in Lassargua, near Dakhla. Inaugurated in 2018, it represents an investment of over 200 million MAD and has a production capacity of 100,000 tonnes per year. The site is strategically positioned to serve the entire Dakhla-Oued Ed-Dahab region and neighboring markets.",
-      "capacity": "Capacity: 100,000 tonnes/year",
-      "location": "Location: Lassargua, Dakhla",
-      "investment": "Investment: 200+ M MAD",
-      "area": "Area: 5 hectares"
-    },
-    "equipment": {
-      "title": "Equipment",
-      "mills": {
-        "name": "Ball Mills",
-        "desc": "High-performance mills for fine and consistent clinker grinding, ensuring optimal fineness of the cement produced."
-      },
-      "silos": {
-        "name": "Storage Silos",
-        "desc": "High-capacity storage facilities for raw clinker and various types of finished cement, ensuring permanent availability."
-      },
-      "packaging": {
-        "name": "Packaging Lines",
-        "desc": "Automated 50 kg bag packaging lines and bulk loading facilities for efficient logistics."
-      },
-      "lab": {
-        "name": "Quality Laboratory",
-        "desc": "In-house laboratory equipped with advanced analysis instruments for quality control at every stage of production."
-      }
-    },
-    "gallery": {
-      "title": "Gallery",
-      "factory": "Factory exterior view",
-      "grinding": "Grinding process",
-      "lab": "Quality laboratory",
-      "bags": "Cement bag packaging"
-    },
-    "location": {
-      "title": "Location",
-      "address": "Production Site Address",
-      "line1": "Lassargua, Dakhla",
-      "line2": "Dakhla-Oued Ed-Dahab Region, Morocco",
-      "access": "Accessibility: National Route N1, 15 km from Dakhla city center"
-    }
-  },
-  "certifications": {
-    "title": "Our Certifications",
-    "subtitle": "Rigorous standards for guaranteed quality",
-    "active": {
-      "title": "Active Certifications",
-      "nm": {
-        "name": "NM 10.1.004",
-        "desc": "Moroccan standard defining specifications and test methods for Portland cements. Our compliance with this standard ensures that our cements meet national quality requirements.",
-        "status": "Certified"
-      },
-      "en": {
-        "name": "EN 197-1",
-        "desc": "European standard for the composition, specifications and conformity criteria of common cements. This certification attests to the compliance of our products with international standards.",
-        "status": "Certified"
-      }
-    },
-    "inProgress": {
-      "title": "In Progress",
-      "iso": {
-        "name": "ISO 9001",
-        "desc": "Quality management system. Our certification process is progressing according to the planned schedule, with an audit planned for 2025. This certification will demonstrate our commitment to continuous improvement of our processes.",
-        "status": "In progress"
-      }
-    },
-    "testing": {
-      "title": "Testing Process",
-      "desc": "Each production batch undergoes a rigorous testing process before being placed on the market. Our in-house laboratory performs comprehensive chemical and physical analyses, and samples are regularly sent to independent external laboratories for validation.",
-      "steps": {
-        "sampling": "Systematic sampling at every stage",
-        "analysis": "Complete chemical and physical analyses",
-        "validation": "Validation by independent external laboratories",
-        "certification": "Issuance of certificate of conformity"
-      }
-    },
-    "commitment": {
-      "title": "Our Quality Commitment",
-      "text": "Quality is at the heart of our strategy. We are committed to maintaining the highest quality standards through rigorous controls, continuous training of our teams and constant investment in our laboratory equipment. Our goal is zero defects across our entire production chain."
-    }
-  },
-  "rse": {
-    "title": "Corporate Social Responsibility",
-    "subtitle": "Our commitment to sustainable and responsible development",
-    "environment": {
-      "title": "Environmental Commitment",
-      "text": "Dakhla Aménagement is committed to minimizing its environmental impact. Our grinding center uses advanced energy efficiency technologies, with an emission filtration system that meets the strictest standards. We constantly optimize our energy consumption and reduce our carbon footprint.",
-      "items": {
-        "emissions": "Emission filtration — MARHP standards",
-        "energy": "Continuous energy optimization",
-        "water": "Process water recycling",
-        "waste": "Responsible industrial waste management"
-      }
-    },
-    "social": {
-      "title": "Social Commitment",
-      "text": "We are proud to contribute to the development of the Dakhla region through local job creation and support for surrounding communities.",
-      "items": {
-        "jobs": "85+ direct local jobs created",
-        "training": "Continuous training programs",
-        "safety": "Rigorous health and safety policy",
-        "wellbeing": "Employee wellbeing"
-      }
-    },
-    "economic": {
-      "title": "Economic Impact",
-      "text": "Dakhla Aménagement actively contributes to the economic development of the Dakhla-Oued Ed-Dahab region through local value creation and support for the regional economy.",
-      "items": {
-        "jobs": "Creation of direct and indirect jobs",
-        "local": "Preferred local sourcing",
-        "development": "Contribution to regional development",
-        "investment": "Investment of over 200 M MAD"
-      }
-    },
-    "partnerships": {
-      "title": "Partnerships & Community",
-      "text": "We maintain close partnerships with local stakeholders to support community development and strengthen the region's socio-economic fabric.",
-      "items": {
-        "education": "Support for education and vocational training",
-        "community": "Community projects and solidarity",
-        "associations": "Partnerships with local associations",
-        "events": "Support for cultural and sporting events"
-      }
-    }
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most common questions",
-    "q1": {
-      "question": "What types of cement do you produce?",
-      "answer": "We produce a complete range of cements: CPJ 35 for common masonry, CPJ 45 for reinforced concrete, CPA 42.5 for demanding structures and precasting, and CPJ 55 for high-strength specialized works."
-    },
-    "q2": {
-      "question": "How can I place an order?",
-      "answer": "You can place an order by contacting our sales team by email at contact@dakhla-amenagement.ma or by phone. We will provide you with a personalized quote tailored to your needs."
-    },
-    "q3": {
-      "question": "What are the delivery areas?",
-      "answer": "We deliver throughout the Dakhla-Oued Ed-Dahab region and surrounding areas. For deliveries to other regions, please contact us to discuss possibilities."
-    },
-    "q4": {
-      "question": "How do you guarantee the quality of your products?",
-      "answer": "Each production batch is tested in our in-house laboratory. We perform comprehensive chemical and physical analyses at every stage of the process. Our products comply with NM 10.1.004 and EN 197-1 standards."
-    },
-    "q5": {
-      "question": "Are your cements certified?",
-      "answer": "Yes, our cements comply with NM 10.1.004 (Moroccan standard) and EN 197-1 (European standard). We are also in the process of obtaining ISO 9001 certification."
-    },
-    "q6": {
-      "question": "Is it possible to visit the plant?",
-      "answer": "Visits to our Lassargua production center are possible by appointment. Please contact our communications department to arrange a visit."
-    },
-    "q7": {
-      "question": "How can I apply for a job?",
-      "answer": "You can send your CV and cover letter to recrutement@dakhla-amenagement.ma. Check our Careers page for open positions."
-    },
-    "q8": {
-      "question": "How can I contact you?",
-      "answer": "You can reach us by email at contact@dakhla-amenagement.ma, by phone at +212 5XX-XXXXXX, or via the contact form on our website. Our headquarters is located at Corner of Lagouira St., El Walae Ave., Dakhla."
-    },
-    "q9": {
-      "question": "What packaging options are available?",
-      "answer": "Our cements are available in 50 kg bags and in bulk. Bulk packaging is particularly suited for large-scale construction sites and concrete plants."
-    },
-    "q10": {
-      "question": "What is the delivery time?",
-      "answer": "Delivery times vary depending on the destination and quantity ordered. Generally, we ensure delivery within 48 to 72 hours for the Dakhla-Oued Ed-Dahab region. Contact us for a precise timeframe."
-    }
-  },
-  "quote": {
-    "title": "Request a Quote",
-    "subtitle": "Get a personalized quote for your project",
-    "form": {
-      "company": "Company name",
-      "contact": "Contact name",
-      "email": "Email address",
-      "phone": "Phone",
-      "product": "Product type",
-      "quantity": "Quantity (tonnes)",
-      "location": "Delivery location",
-      "message": "Additional message",
-      "send": "Send request",
-      "success": "Quote request sent successfully! Our sales team will contact you within 24 hours.",
-      "products": {
-        "cpj35": "CPJ 35",
-        "cpj45": "CPJ 45",
-        "cpa42_5": "CPA 42.5",
-        "cpj55": "CPJ 55"
-      }
-    }
+    "madeIn": "Made in Morocco",
+    "rc": "RC: 7207",
+    "ice": "ICE: 001726721000031",
+    "if": "IF: 46377920"
   },
   "sitemap": {
     "title": "Sitemap",
-    "subtitle": "All pages of the Dakhla Aménagement website",
-    "company": {
-      "title": "The Company",
+    "subtitle": "All pages of the Ciment DAM website",
+    "main": {
+      "title": "Main Navigation",
       "pages": {
         "home": "Home",
+        "medias": "Media",
+        "contact": "Contact",
         "about": "About",
+        "solutions": "Solutions & Process",
         "investors": "Investors",
-        "news": "News"
-      }
-    },
-    "productsServices": {
-      "title": "Products & Services",
-      "pages": {
-        "products": "Products",
-        "process": "Manufacturing",
-        "quality": "Quality",
-        "facilities": "Facilities",
-        "certifications": "Certifications",
-        "quote": "Request a Quote"
-      }
-    },
-    "rseCareers": {
-      "title": "CSR & Careers",
-      "pages": {
-        "rse": "CSR",
         "sustainability": "Sustainability",
         "careers": "Careers"
       }
     },
-    "help": {
-      "title": "Help & Information",
+    "legal": {
+      "title": "Information",
       "pages": {
-        "faq": "FAQ",
-        "contact": "Contact",
-        "legal": "Legal Notice"
+        "legal": "Legal Notice",
+        "sitemap": "Sitemap"
       }
     }
   }

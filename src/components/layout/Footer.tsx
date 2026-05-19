@@ -10,46 +10,57 @@ export function Footer({ locale }: { locale: string }) {
   const tNav = useTranslations('nav');
   const tContact = useTranslations('contact');
 
-  const quickLinks = [
+  const companyLinks = [
     { key: 'about', href: `/${locale}/about` },
-    { key: 'products', href: `/${locale}/products` },
-    { key: 'quality', href: `/${locale}/quality` },
-    { key: 'facilities', href: `/${locale}/facilities` },
-    { key: 'certifications', href: `/${locale}/certifications` },
-    { key: 'rse', href: `/${locale}/rse` },
-    { key: 'sustainability', href: `/${locale}/sustainability` },
+    { key: 'investors', href: `/${locale}/investors` },
     { key: 'careers', href: `/${locale}/careers` },
-    { key: 'faq', href: `/${locale}/faq` },
-    { key: 'quote', href: `/${locale}/quote` },
+  ];
+
+  const productLinks = [
+    { key: 'solutions', href: `/${locale}/solutions` },
+    { key: 'sustainability', href: `/${locale}/sustainability` },
+    { key: 'medias', href: `/${locale}/medias` },
+  ];
+
+  const resourceLinks = [
     { key: 'contact', href: `/${locale}/contact` },
+    { key: 'legal', href: `/${locale}/legal` },
+    { key: 'sitemap', href: `/${locale}/sitemap` },
   ];
 
   return (
-    <footer className="bg-navy text-white mt-auto">
+    <footer className="bg-anthracite text-white mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="flex flex-col mb-4">
-              <span className="text-xl font-bold text-white leading-tight">DAKHLA</span>
-              <span className="text-xs font-medium text-steel tracking-[0.2em] uppercase -mt-0.5">
-                Aménagement S.A.
+              <span className="font-heading text-2xl font-bold tracking-wider text-white leading-tight">
+                DAM
+              </span>
+              <span className="text-[10px] font-medium tracking-[0.3em] uppercase text-bleu-ocean -mt-0.5">
+                CIMENT
               </span>
             </div>
-            <p className="text-sm text-white/70 leading-relaxed">{t('description')}</p>
+            <p className="text-sm text-white/50 leading-relaxed max-w-sm">{t('description')}</p>
+            <div className="mt-4 space-y-1">
+              <p className="text-xs text-white/30">{t('rc')}</p>
+              <p className="text-xs text-white/30">{t('ice')}</p>
+              <p className="text-xs text-white/30">{t('if')}</p>
+            </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Company Links */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('quickLinks')}
+              {t('company')}
             </h3>
             <ul className="space-y-2.5">
-              {quickLinks.map((link) => (
+              {companyLinks.map((link) => (
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
+                    className="text-sm text-white/50 hover:text-white transition-colors"
                   >
                     {tNav(link.key)}
                   </Link>
@@ -58,65 +69,68 @@ export function Footer({ locale }: { locale: string }) {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Product Links */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('contact')}
+              {t('products')}
             </h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-steel shrink-0 mt-0.5" />
-                <span className="text-sm text-white/70">
-                  {tContact('address.line1')}
-                  <br />
-                  {tContact('address.line2')}
-                </span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-steel shrink-0" />
-                <span className="text-sm text-white/70">{tContact('phoneValue')}</span>
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Mail className="w-4 h-4 text-steel shrink-0" />
-                <span className="text-sm text-white/70">contact@dakhla-amenagement.ma</span>
-              </li>
+            <ul className="space-y-2.5">
+              {productLinks.map((link) => (
+                <li key={link.key}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 hover:text-white transition-colors"
+                  >
+                    {tNav(link.key)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Resources & Contact */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('legal')}
+              {t('resources')}
             </h3>
             <ul className="space-y-2.5">
-              <li>
-                <Link
-                  href={`/${locale}/legal`}
-                  className="text-sm text-white/70 hover:text-white transition-colors"
-                >
-                  {t('legal')}
-                </Link>
-              </li>
-              <li className="text-sm text-white/50">
-                RC: 7207
-              </li>
-              <li className="text-sm text-white/50">
-                ICE: 001726721000031
-              </li>
-              <li className="text-sm text-white/50">
-                IF: 46377920
-              </li>
+              {resourceLinks.map((link) => (
+                <li key={link.key}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-white/50 hover:text-white transition-colors"
+                  >
+                    {link.key === 'legal' ? t('legal') : link.key === 'sitemap' ? t('sitemap') : tNav(link.key)}
+                  </Link>
+                </li>
+              ))}
             </ul>
+            <div className="mt-6 space-y-2">
+              <div className="flex items-center gap-2">
+                <Phone className="w-3.5 h-3.5 text-bleu-ocean shrink-0" />
+                <span className="text-xs text-white/40">{tContact('phoneValue')}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="w-3.5 h-3.5 text-bleu-ocean shrink-0" />
+                <span className="text-xs text-white/40">contact@ciment-dam.com</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin className="w-3.5 h-3.5 text-bleu-ocean shrink-0 mt-0.5" />
+                <span className="text-xs text-white/40">
+                  {tContact('address.line1')}, {tContact('address.line2')}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
         <Separator className="my-8 bg-white/10" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} Dakhla Aménagement S.A. {t('rights')}
+          <p className="text-xs text-white/30">
+            © 2026 Ciment DAM — Dakhla Aménagement S.A. {t('rights')}
           </p>
-          <p className="text-xs text-white/50">{t('madeIn')}</p>
+          <p className="text-xs text-white/30">{t('madeIn')}</p>
         </div>
       </div>
     </footer>
