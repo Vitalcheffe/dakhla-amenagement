@@ -96,7 +96,7 @@ export function Footer({ locale }: { locale: string }) {
                 </a>
               </li>
               <li>
-                <a href="tel:+2125XXXXXXXX" className="hover:text-[#1B3A5C] transition-colors">
+                <a href="tel:+212528XXXXXX" className="hover:text-[#1B3A5C] transition-colors">
                   {t('phone')}
                 </a>
               </li>

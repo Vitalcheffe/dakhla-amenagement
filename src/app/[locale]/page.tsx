@@ -17,9 +17,9 @@ export default function HomePage() {
 
   const stats = [
     { value: 2015, suffix: '', label: t('numbers.stat1') },
-    { value: 500, suffix: 'K+', label: t('numbers.stat2') },
-    { value: 200, suffix: '+', label: t('numbers.stat3') },
-    { value: 85, suffix: '+', label: t('numbers.stat4') },
+    { value: 100, suffix: 'K+', label: t('numbers.stat2') },
+    { value: 120, suffix: '+', label: t('numbers.stat3') },
+    { value: 35, suffix: '', label: t('numbers.stat4') },
   ];
 
   const processSteps = [

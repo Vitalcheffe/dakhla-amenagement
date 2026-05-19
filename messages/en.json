@@ -79,9 +79,9 @@
     "title": "Key Figures",
     "subtitle": "Dakhla Aménagement in numbers",
     "stat1": "Since 2015",
-    "stat2": "100K+ Tonnes/year",
-    "stat3": "120+ Clients",
-    "stat4": "35 Direct / 350 Indirect"
+    "stat2": "Tonnes/year",
+    "stat3": "Clients",
+    "stat4": "Direct jobs / 350 indirect"
   },
   "videoBreak": {
     "label": "Our Expertise",
@@ -374,7 +374,40 @@
       "author": "Dakhla Aménagement Team",
       "backToBlog": "Back to blog",
       "ctaTitle": "Need cement for your project?",
-      "ctaButton": "Request a quote"
+      "ctaButton": "Request a quote",
+      "bodies": {
+        "choisir-ciment-projet": [
+          "Choosing the right cement is a crucial decision for any construction project. The two most common types of cement in Morocco are CPJ 45 and CPJ 55, each with its own characteristics.",
+          "CPJ 45, with its compressive strength of 45 MPa at 28 days, is the ideal choice for demanding works: reinforced concrete, foundations, floor slabs and civil engineering structures. Its high initial strength allows for rapid formwork removal.",
+          "CPJ 55, ultra-performing, offers superior strength of 55 MPa, ideal for major civil engineering works and large infrastructure projects.",
+          "For coastal environments like Dakhla, it is recommended to prioritize high-strength cement for structures exposed to sea spray. Consult our technical team for personalized recommendations."
+        ],
+        "capacite-500k-tonnes": [
+          "Dakhla Aménagement S.A. continues to strengthen its position as a major player in the cement industry in the Southern Provinces. With constantly growing production capacity, our grinding center meets the increasing demand of the market.",
+          "Continuous investment in our equipment and processes allows us to maintain a consistent level of quality while increasing our production volumes. Our high-performance ball mills guarantee optimal grinding fineness.",
+          "This extended capacity enables us to serve not only the local Dakhla market, but also the entire Southern Moroccan region and neighboring Mauritania, contributing to regional economic development."
+        ],
+        "normes-ciment-maroc": [
+          "The Moroccan standard NM 10.1.004 and the European standard EN 197-1 define the specifications that cements marketed in Morocco must comply with. These standards guarantee the quality and safety of structures.",
+          "CPJ 45 and CPJ 55 are classified as composite Portland cements (CEM II). They contain Portland clinker and secondary constituents in regulated proportions.",
+          "At Dakhla Aménagement, each production batch undergoes exhaustive testing: compressive strength, grinding fineness (Blaine surface), setting time, stability and heat of hydration. No product leaves the factory without a certificate of conformity."
+        ],
+        "construction-durable-ciment": [
+          "The cement industry faces the major challenge of reducing its carbon footprint. At Dakhla Aménagement, we invest in advanced energy efficiency technologies and optimized grinding processes.",
+          "The use of secondary constituents such as fly ash and blast furnace slag reduces the amount of clinker needed, thereby reducing CO₂ emissions per tonne of cement produced.",
+          "Our environmental approach also includes process water recycling, emission filtration in accordance with MARHP standards, and responsible management of industrial waste."
+        ],
+        "projet-infrastructure-dakhla": [
+          "Dakhla is experiencing unprecedented infrastructure development. New roads, port extensions, public facilities — these major projects require reliable and quality cement supplies.",
+          "Dakhla Aménagement is proud to contribute to these construction sites by supplying CPJ 45 cement for bridges and foundations, and CPJ 55 for civil engineering works and special structures.",
+          "Our optimized logistics and proximity to construction sites enable fast deliveries, even for urgent orders. We accompany our clients from order to delivery."
+        ],
+        "stockage-ciment-chantier": [
+          "Proper storage of cement on site is essential to preserve its properties. Cement must be protected from moisture, stored on pallets and ideally in a covered, ventilated area.",
+          "The shelf life of cement is limited: approximately 3 months for bagged cement stored in good conditions. Beyond that, strength may decrease significantly.",
+          "For large quantities, silo storage is recommended. Dakhla Aménagement offers bulk delivery with direct silo filling, guaranteeing optimal product quality until use."
+        ]
+      }
     }
   },
   "realisations": {
@@ -428,9 +461,9 @@
       "address": "Address",
       "addressValue": "Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
       "phone": "Phone",
-      "phoneValue": "+212 5XX-XXXXXX",
+      "phoneValue": "+212 528-XXXXXX",
       "whatsapp": "WhatsApp",
-      "whatsappValue": "+212 5XX-XXXXXX",
+      "whatsappValue": "+212 6XX-XXXXXX",
       "email": "Email",
       "emailValue": "contact@dakhla-amenagement.ma",
       "hours": "Business Hours",
@@ -485,7 +518,7 @@
     "privacy": "Privacy Policy",
     "address": "Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
     "email": "contact@dakhla-amenagement.ma",
-    "phone": "+212 5XX-XXXXXX",
+    "phone": "+212 528-XXXXXX",
     "copyright": "© 2026 Dakhla Aménagement S.A.",
     "rights": "All rights reserved."
   },
