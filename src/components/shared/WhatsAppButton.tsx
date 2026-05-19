@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
 
 const WHATSAPP_URL =
-  'https://wa.me/212XXXXXXXXX?text=Bonjour%2C%20je%20souhaite%20un%20devis%20ciment';
+  'https://wa.me/212658265685?text=Bonjour%2C%20je%20souhaite%20un%20devis%20ciment';
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
@@ -22,7 +22,7 @@ export function WhatsAppButton() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Contact us on WhatsApp"
+          aria-label="Contactez-nous sur WhatsApp"
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
@@ -33,6 +33,11 @@ export function WhatsAppButton() {
           <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30" />
 
           <MessageCircle className="w-7 h-7 md:w-8 md:h-8 text-white relative z-10" />
+          
+          {/* Tooltip */}
+          <span className="absolute right-full mr-3 px-3 py-1.5 text-xs font-medium text-white bg-[#1B3A5C] rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            WhatsApp
+          </span>
         </motion.a>
       )}
     </AnimatePresence>

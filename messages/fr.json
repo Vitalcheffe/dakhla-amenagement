@@ -250,9 +250,9 @@
       "name": "Nom complet",
       "namePlaceholder": "Votre nom complet",
       "phone": "Téléphone",
-      "phonePlaceholder": "+212 6XX-XXXXXX",
+      "phonePlaceholder": "+212 658-265685",
       "whatsapp": "WhatsApp (optionnel)",
-      "whatsappPlaceholder": "+212 6XX-XXXXXX",
+      "whatsappPlaceholder": "+212 658-265685",
       "email": "Adresse email",
       "emailPlaceholder": "votre@email.com",
       "company": "Entreprise (optionnel)",
@@ -554,7 +554,7 @@
         ],
         "devenir-revendeur": [
           "Le programme revendeur de Dakhla Aménagement offre une opportunité commerciale attractive pour les distributeurs de matériaux de construction du Sud marocain. En tant que revendeur agréé DAM, vous bénéficiez d'une remise de 5 % sur les tarifs publics, d'un accompagnement commercial personnalisé et de la possibilité d'obtenir une zone d'exclusivité géographique.",
-          "Le processus d'inscription est simple et rapide. Il suffit de contacter notre service commercial par email à contact@ciment-dam.com ou par téléphone au +212 528-XXXXXX. Notre équipe vous guidera dans les étapes d'inscription, qui incluent la fourniture de documents administratifs (registre de commerce, identifiant fiscal) et la visite de vos locaux de stockage par notre responsable commercial.",
+          "Le processus d'inscription est simple et rapide. Il suffit de contacter notre service commercial par email à contact@ciment-dam.com ou par téléphone au +212 658-265685. Notre équipe vous guidera dans les étapes d'inscription, qui incluent la fourniture de documents administratifs (registre de commerce, identifiant fiscal) et la visite de vos locaux de stockage par notre responsable commercial.",
           "Les avantages du programme revendeur vont au-delà de la simple remise tarifaire. Vous accédez à une marque reconnue dans la région, à des supports marketing (plaquettes, affiches, goodies), et à une priorité de livraison en période de forte demande. Notre réseau de revendeurs bénéficie également de formations techniques régulières sur les produits CPJ 45 et CPJ 55.",
           "Les zones d'exclusivité sont attribuées en fonction du potentiel du marché local et de l'engagement du revendeur en termes de volume d'achat minimum. Cette exclusivité garantit au revendeur une position privilégiée sur son territoire, sans concurrence directe d'autres distributeurs DAM. Rejoignez notre réseau et devenez partenaire de la marque de ciment de référence au Sud du Maroc."
         ],
@@ -642,9 +642,9 @@
       "address": "Adresse",
       "addressValue": "Quartier Lassargua, 1 et 1 angle rue Lagouira, Avenue El Walae, Dakhla, Maroc",
       "phone": "Téléphone",
-      "phoneValue": "+212 528-XXXXXX",
+      "phoneValue": "+212 658-265685",
       "whatsapp": "WhatsApp",
-      "whatsappValue": "+212 6XX-XXXXXX",
+      "whatsappValue": "+212 658-265685",
       "email": "Email",
       "emailValue": "contact@ciment-dam.com",
       "hours": "Horaires",
@@ -705,7 +705,7 @@
     "privacy": "Politique de Confidentialité",
     "address": "Quartier Lassargua, 1 et 1 angle rue Lagouira, Avenue El Walae, Dakhla, Maroc",
     "email": "contact@ciment-dam.com",
-    "phone": "+212 528-XXXXXX",
+    "phone": "+212 658-265685",
     "copyright": "© 2026 Dakhla Aménagement S.A.",
     "rights": "Tous droits réservés.",
     "devis": "Devis en ligne",
@@ -830,7 +830,7 @@
       },
       "q5": {
         "q": "Comment passer commande ?",
-        "a": "Vous pouvez commander via notre formulaire de devis en ligne, par téléphone au +212 528-XXXXXX, par WhatsApp, ou par email à contact@ciment-dam.com. Notre équipe commerciale vous répond sous 24h.",
+        "a": "Vous pouvez commander via notre formulaire de devis en ligne, par téléphone au +212 658-265685, par WhatsApp, ou par email à contact@ciment-dam.com. Notre équipe commerciale vous répond sous 24h.",
         "cat": "pricing"
       },
       "q6": {
@@ -855,7 +855,7 @@
       },
       "q10": {
         "q": "Comment devenir revendeur DAM ?",
-        "a": "Pour devenir revendeur, contactez notre service commercial à contact@ciment-dam.com ou au +212 528-XXXXXX. Nous offrons une remise revendeur de 5% sur nos tarifs, un accompagnement commercial et une zone d'exclusivité potentielle.",
+        "a": "Pour devenir revendeur, contactez notre service commercial à contact@ciment-dam.com ou au +212 658-265685. Nous offrons une remise revendeur de 5% sur nos tarifs, un accompagnement commercial et une zone d'exclusivité potentielle.",
         "cat": "company"
       },
       "q11": {
@@ -1296,7 +1296,7 @@
       "title": "Contact Presse",
       "name": "Service Communication",
       "email": "presse@ciment-dam.com",
-      "phone": "+212 528-XXXXXX"
+      "phone": "+212 658-265685"
     }
   },
   "investors": {

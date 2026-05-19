@@ -48,7 +48,7 @@ export default function ContactPage() {
       {/* Hero image bar */}
       <section className="relative h-48 md:h-64 -mt-4">
         <Image
-          src="/images/factory/factory-exterior.jpg"
+          src="/images/real/factory/factory-2.jpg"
           alt="Usine Dakhla Aménagement — Cimenterie de Dakhla"
           fill
           quality={90}
@@ -160,22 +160,27 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1B3A5C]">{t('contact.info.phone')}</h4>
-                      <p className="text-sm text-[#6B7280] mt-1">{t('contact.info.phoneValue')}</p>
+                      <a href="tel:+212658265685" className="text-sm text-[#6B7280] mt-1 hover:text-[#1B3A5C] transition-colors">{t('contact.info.phoneValue')}</a>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-[#F7F8FA] rounded-2xl p-6">
+                <a
+                  href="https://wa.me/212658265685?text=Bonjour%2C%20je%20souhaite%20des%20informations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-[#25D366]/5 rounded-2xl p-6 hover:bg-[#25D366]/10 transition-colors group"
+                >
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#1B3A5C]/10 flex items-center justify-center shrink-0">
-                      <MessageCircle className="w-5 h-5 text-[#1B3A5C]" />
+                    <div className="w-10 h-10 rounded-xl bg-[#25D366]/15 flex items-center justify-center shrink-0">
+                      <MessageCircle className="w-5 h-5 text-[#25D366]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1B3A5C]">WhatsApp</h4>
-                      <p className="text-sm text-[#6B7280] mt-1">{t('contact.info.whatsappValue')}</p>
+                      <p className="text-sm text-[#6B7280] mt-1 group-hover:text-[#25D366] transition-colors">{t('contact.info.whatsappValue')}</p>
                     </div>
                   </div>
-                </div>
+                </a>
 
                 <div className="bg-[#F7F8FA] rounded-2xl p-6">
                   <div className="flex items-start gap-4">
@@ -184,7 +189,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-[#1B3A5C]">{t('contact.info.email')}</h4>
-                      <p className="text-sm text-[#6B7280] mt-1">{t('contact.info.emailValue')}</p>
+                      <a href="mailto:contact@ciment-dam.com" className="text-sm text-[#6B7280] mt-1 hover:text-[#1B3A5C] transition-colors">{t('contact.info.emailValue')}</a>
                     </div>
                   </div>
                 </div>
@@ -204,7 +209,7 @@ export default function ContactPage() {
                 {/* Google Maps embed */}
                 <div className="bg-[#F7F8FA] rounded-2xl overflow-hidden">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5!2d-15.96!3d23.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQwJzUzLjAiTiAxNcKwNTcnMzYuMCJX!5e0!3m2!1sfr!2sma!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5!2d-15.9597!3d23.6814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQwJzUzLjAiTiAxNcKwNTcnMzYuMCJX!5e0!3m2!1sfr!2sma!4v1"
                     width="100%"
                     height="288"
                     style={{ border: 0 }}

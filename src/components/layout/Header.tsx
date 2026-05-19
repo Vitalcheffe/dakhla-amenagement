@@ -133,26 +133,14 @@ export function Header({ locale }: { locale: string }) {
     >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo minimaliste */}
-          <Link href={`/${locale}`} className="flex items-center gap-2">
-            <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
-            <span className="w-[2px] h-6 rounded-full bg-[#E8B84B]/50" />
-            <div className="flex flex-col">
-              <span
-                className={`text-[11px] font-bold tracking-[0.2em] leading-none transition-colors duration-300 ${
-                  isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
-                }`}
-              >
-                DAKHLA
-              </span>
-              <span
-                className={`text-[11px] font-bold tracking-[0.2em] leading-none mt-0.5 transition-colors duration-300 ${
-                  isHome && !scrolled ? 'text-white/80' : 'text-[#1B3A5C]'
-                }`}
-              >
-                AMÉNAGEMENT
-              </span>
-            </div>
+          {/* Logo DAM */}
+          <Link href={`/${locale}`} className="flex items-center gap-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={isHome && !scrolled ? '/images/logo-dam-white.svg' : '/images/logo-dam.svg'}
+              alt="DAM - Dakhla Aménagement"
+              className="h-10 md:h-12 w-auto transition-all duration-300"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -283,16 +271,12 @@ export function Header({ locale }: { locale: string }) {
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex items-center justify-between p-6 border-b border-[#E5E7EB]">
                   <div className="flex items-center gap-2">
-                    <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
-                    <span className="w-[2px] h-5 rounded-full bg-[#E8B84B]/50" />
-                    <div className="flex flex-col">
-                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none text-[#1B3A5C]">
-                        DAKHLA
-                      </span>
-                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none mt-0.5 text-[#1B3A5C]">
-                        AMÉNAGEMENT
-                      </span>
-                    </div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/images/logo-dam.svg"
+                      alt="DAM - Dakhla Aménagement"
+                      className="h-9 w-auto"
+                    />
                   </div>
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
                     <X className="h-5 w-5" />

@@ -250,9 +250,9 @@
       "name": "Full name",
       "namePlaceholder": "Your full name",
       "phone": "Phone",
-      "phonePlaceholder": "+212 6XX-XXXXXX",
+      "phonePlaceholder": "+212 658-265685",
       "whatsapp": "WhatsApp (optional)",
-      "whatsappPlaceholder": "+212 6XX-XXXXXX",
+      "whatsappPlaceholder": "+212 658-265685",
       "email": "Email address",
       "emailPlaceholder": "your@email.com",
       "company": "Company (optional)",
@@ -554,7 +554,7 @@
         ],
         "devenir-revendeur": [
           "Dakhla Aménagement's reseller program offers an attractive commercial opportunity for construction material distributors in Southern Morocco. As an approved DAM reseller, you benefit from a 5% discount on public rates, personalized commercial support and the possibility of obtaining a geographical exclusivity zone.",
-          "The registration process is simple and quick. Simply contact our sales department by email at contact@ciment-dam.com or by phone at +212 528-XXXXXX. Our team will guide you through the registration steps, which include providing administrative documents (trade register, tax identification) and a visit to your storage facilities by our sales manager.",
+          "The registration process is simple and quick. Simply contact our sales department by email at contact@ciment-dam.com or by phone at +212 658-265685. Our team will guide you through the registration steps, which include providing administrative documents (trade register, tax identification) and a visit to your storage facilities by our sales manager.",
           "The advantages of the reseller program go beyond the simple tariff discount. You gain access to a recognized brand in the region, marketing materials (brochures, posters, promotional items), and delivery priority during periods of high demand. Our reseller network also benefits from regular technical training on CPJ 45 and CPJ 55 products.",
           "Exclusivity zones are allocated based on the potential of the local market and the reseller's commitment in terms of minimum purchase volume. This exclusivity guarantees the reseller a privileged position in their territory, without direct competition from other DAM distributors. Join our network and become a partner of the reference cement brand in Southern Morocco."
         ],
@@ -642,9 +642,9 @@
       "address": "Address",
       "addressValue": "Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
       "phone": "Phone",
-      "phoneValue": "+212 528-XXXXXX",
+      "phoneValue": "+212 658-265685",
       "whatsapp": "WhatsApp",
-      "whatsappValue": "+212 6XX-XXXXXX",
+      "whatsappValue": "+212 658-265685",
       "email": "Email",
       "emailValue": "contact@ciment-dam.com",
       "hours": "Business Hours",
@@ -705,7 +705,7 @@
     "privacy": "Privacy Policy",
     "address": "Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
     "email": "contact@ciment-dam.com",
-    "phone": "+212 528-XXXXXX",
+    "phone": "+212 658-265685",
     "copyright": "© 2026 Dakhla Aménagement S.A.",
     "rights": "All rights reserved.",
     "devis": "Online Quote",
@@ -830,7 +830,7 @@
       },
       "q5": {
         "q": "How to place an order?",
-        "a": "You can order via our online quote form, by phone at +212 528-XXXXXX, by WhatsApp, or by email at contact@ciment-dam.com. Our sales team will respond within 24 hours.",
+        "a": "You can order via our online quote form, by phone at +212 658-265685, by WhatsApp, or by email at contact@ciment-dam.com. Our sales team will respond within 24 hours.",
         "cat": "pricing"
       },
       "q6": {
@@ -855,7 +855,7 @@
       },
       "q10": {
         "q": "How to become a DAM reseller?",
-        "a": "To become a reseller, contact our sales department at contact@ciment-dam.com or at +212 528-XXXXXX. We offer a 5% reseller discount on our rates, commercial support and a potential exclusivity zone.",
+        "a": "To become a reseller, contact our sales department at contact@ciment-dam.com or at +212 658-265685. We offer a 5% reseller discount on our rates, commercial support and a potential exclusivity zone.",
         "cat": "company"
       },
       "q11": {
@@ -1296,7 +1296,7 @@
       "title": "Press Contact",
       "name": "Communications Department",
       "email": "presse@ciment-dam.com",
-      "phone": "+212 528-XXXXXX"
+      "phone": "+212 658-265685"
     }
   },
   "investors": {

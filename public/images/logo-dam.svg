@@ -1,11 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" fill="none">
-  <!-- DA letters -->
-  <text x="0" y="42" fill="#1B3A5C" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="44" letter-spacing="4">DA</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="200" height="180">
+  <!-- DAM Logo - Building with 3 towers, arc foundation, "DAM" text -->
   
-  <!-- Gold accent line -->
-  <rect x="68" y="8" width="2.5" height="40" rx="1" fill="#E8B84B"/>
+  <!-- Left Tower (narrowest) -->
+  <rect x="30" y="20" width="32" height="80" fill="#1B3A5C" rx="1"/>
+  <!-- Left tower windows -->
+  <rect x="37" y="28" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="37" y="40" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="37" y="52" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="37" y="64" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="49" y="28" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="49" y="40" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="49" y="52" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="49" y="64" width="8" height="6" fill="white" rx="0.5"/>
   
-  <!-- Company name -->
-  <text x="82" y="24" fill="#1B3A5C" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="14" letter-spacing="4">DAKHLA</text>
-  <text x="82" y="44" fill="#1B3A5C" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="14" letter-spacing="4">AMÉNAGEMENT</text>
+  <!-- Middle Tower (tallest, widest) -->
+  <rect x="68" y="10" width="44" height="90" fill="#1B3A5C" rx="1"/>
+  <!-- Middle tower windows -->
+  <rect x="76" y="18" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="76" y="30" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="76" y="42" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="76" y="54" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="76" y="66" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="88" y="18" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="88" y="30" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="88" y="42" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="88" y="54" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="88" y="66" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="100" y="18" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="100" y="30" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="100" y="42" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="100" y="54" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="100" y="66" width="8" height="6" fill="white" rx="0.5"/>
+  
+  <!-- Right Tower (medium) -->
+  <rect x="118" y="15" width="38" height="85" fill="#1B3A5C" rx="1"/>
+  <!-- Right tower windows -->
+  <rect x="126" y="23" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="126" y="35" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="126" y="47" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="126" y="59" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="140" y="23" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="140" y="35" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="140" y="47" width="8" height="6" fill="white" rx="0.5"/>
+  <rect x="140" y="59" width="8" height="6" fill="white" rx="0.5"/>
+  
+  <!-- Base platform connecting towers -->
+  <rect x="26" y="95" width="134" height="8" fill="#1B3A5C" rx="1"/>
+  
+  <!-- Foundation arc -->
+  <path d="M 26 103 Q 93 130 160 103" fill="none" stroke="#1B3A5C" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Text "DAM" -->
+  <text x="100" y="160" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="bold" fill="#1B3A5C" text-anchor="middle" letter-spacing="6">DAM</text>
 </svg>

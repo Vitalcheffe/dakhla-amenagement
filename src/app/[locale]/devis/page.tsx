@@ -1654,7 +1654,7 @@ function generatePDF(quote: QuoteData, calc: CalcResult, quoteNumber: string, t:
   doc.setTextColor(150, 150, 150);
   doc.setFontSize(7);
   doc.text('Dakhla Amenagement S.A. | Quartier Lassargua, Ave El Walae, Dakhla, Maroc', 105, 280, { align: 'center' });
-  doc.text(`contact@ciment-dam.com | +212 5XX-XXXXXX | Page 1/1`, 105, 284, { align: 'center' });
+  doc.text(`contact@ciment-dam.com | +212 658-265685 | Page 1/1`, 105, 284, { align: 'center' });
 
   // QR placeholder
   doc.setDrawColor(200, 200, 200);
@@ -1677,7 +1677,7 @@ function SuccessPage({ quoteNumber, calc, t }: { quoteNumber: string; calc: Calc
   }, []);
 
   const whatsappMsg = encodeURIComponent(`Bonjour, je souhaite confirmer le devis ${quoteNumber}. Montant TTC: ${formatPrice(calc.totalTtc)} MAD`);
-  const whatsappUrl = `https://wa.me/212XXXXXXXX?text=${whatsappMsg}`;
+  const whatsappUrl = `https://wa.me/212658265685?text=${whatsappMsg}`;
 
   const nextSteps = [
     { icon: CheckCircle2, label: t('quote.successStep1'), delay: 1.2 },

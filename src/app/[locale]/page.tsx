@@ -58,12 +58,12 @@ export default function HomePage() {
   const previewArticles = ['article1', 'article2', 'article5'];
 
   const galleryImages = [
-    { src: '/images/factory/factory-aerial.jpg', alt: 'Factory aerial' },
-    { src: '/images/factory/factory-exterior.jpg', alt: 'Factory exterior' },
-    { src: '/images/factory/factory-silos.jpg', alt: 'Factory silos' },
-    { src: '/images/products/cpj45-bags.jpg', alt: 'CPJ 45 bags' },
-    { src: '/images/products/bulk-cement-truck.jpg', alt: 'Bulk cement truck' },
-    { src: '/images/projects/villa-construction.jpg', alt: 'Villa construction' },
+    { src: '/images/real/factory/factory-2.jpg', alt: 'Usine Dakhla Aménagement' },
+    { src: '/images/real/lab/lab-1.jpg', alt: 'Laboratoire qualité' },
+    { src: '/images/real/products/cement-bags-1.jpg', alt: 'Sacs de ciment DAM' },
+    { src: '/images/real/delivery/delivery-1.jpg', alt: 'Livraison ciment' },
+    { src: '/images/real/construction/construction-1.jpg', alt: 'Chantier construction' },
+    { src: '/images/real/team/team-1.jpg', alt: 'Équipe DAM' },
   ];
 
   const articleImages: Record<string, string> = {
@@ -77,7 +77,7 @@ export default function HomePage() {
       {/* ====== HERO — Full-Screen Background Video ====== */}
       <HeroVideo
         src="/videos/hero.mp4"
-        poster="/images/factory/factory-exterior.jpg"
+        poster="/images/real/factory/factory-2.jpg"
         overlay="dark"
         height="h-[100dvh]"
         parallax={true}
