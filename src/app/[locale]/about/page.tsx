@@ -199,7 +199,7 @@ export default function AboutPage() {
           <ScrollReveal delay={0.3}>
             <div className="mt-12 relative aspect-[21/9] rounded-2xl overflow-hidden">
               <Image
-                src="/images/factory-exterior.png"
+                src="/images/factory-exterior.jpg"
                 alt={t('facilities.title')}
                 fill
                 className="object-cover"

@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { PageHero } from '@/components/shared/PageHero';
+import { HeroVideo } from '@/components/shared/HeroVideo';
 import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/shared/Animations';
 import { Leaf, Shield, TrendingDown, Waves, Wind, Droplets, Recycle, Users, GraduationCap, MapPin, Heart, DollarSign, Building2 } from 'lucide-react';
 
@@ -39,7 +40,24 @@ export default function SustainabilityPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} sectionCounter="/3.0" />
+      {/* Video Hero — Sustainability */}
+      <HeroVideo
+        src="/videos/sustainability.mp4"
+        poster="/images/sustainability.jpg"
+        overlay="gradient-bottom"
+        height="h-[40vh] md:h-[50vh]"
+        parallax={false}
+      >
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-full flex flex-col justify-end pb-12 md:pb-16">
+          <span className="section-counter text-white/30">/3.0</span>
+          <h1 className="mt-4 text-[clamp(2rem,5vw,3.5rem)] font-bold text-white tracking-[-0.02em] leading-[1.1] max-w-4xl">
+            {t('title')}
+          </h1>
+          <p className="mt-4 text-[clamp(1rem,1.5vw,1.25rem)] text-white/60 max-w-2xl leading-relaxed">
+            {t('subtitle')}
+          </p>
+        </div>
+      </HeroVideo>
 
       {/* Section 1: DAM ECOShield */}
       <section className="py-20 md:py-32 bg-[#0A0A0A] text-white relative overflow-hidden">
@@ -89,7 +107,7 @@ export default function SustainabilityPage() {
           <ScrollReveal delay={0.3}>
             <div className="mt-12 relative aspect-[21/9] rounded-2xl overflow-hidden">
               <Image
-                src="/images/sustainability.png"
+                src="/images/sustainability.jpg"
                 alt={t('ecoShield.title')}
                 fill
                 className="object-cover"

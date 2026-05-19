@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, ChevronDown, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal, CountUp, VideoModal } from '@/components/shared/Animations';
+import { HeroVideo } from '@/components/shared/HeroVideo';
 import { motion } from 'framer-motion';
 
 export default function HomePage() {
@@ -35,26 +36,26 @@ export default function HomePage() {
     {
       title: t('homeStories.story1Title'),
       desc: t('homeStories.story1Desc'),
-      image: '/images/cement-bags.png',
+      image: '/images/cement-bags.jpg',
       href: `/${locale}/solutions`,
     },
     {
       title: t('homeStories.story2Title'),
       desc: t('homeStories.story2Desc'),
-      image: '/images/quality-lab.png',
+      image: '/images/quality-lab.jpg',
       href: `/${locale}/careers`,
     },
     {
       title: t('homeStories.story3Title'),
       desc: t('homeStories.story3Desc'),
-      image: '/images/sustainability.png',
+      image: '/images/sustainability.jpg',
       href: `/${locale}/sustainability`,
     },
     {
       title: t('homeStories.story4Title'),
       desc: t('homeStories.story4Desc'),
-      image: '/images/grinding-process.png',
-      href: `/${locale}/sustainability`,
+      image: '/images/construction-site.jpg',
+      href: `/${locale}/solutions`,
     },
   ];
 
@@ -78,25 +79,15 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ====== HERO — harchcorp.com Video Hero Pattern ====== */}
-      <section className="relative min-h-screen">
-        {/* Video Background */}
-        <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/images/factory-exterior.png"
-            className="w-full h-full object-cover poster-fallback"
-          >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-          </video>
-        </div>
-        {/* Overlay */}
-        <div className="absolute inset-0 hero-overlay" />
-        {/* Content */}
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 h-full flex flex-col items-center justify-center text-center min-h-screen">
+      {/* ====== HERO — Palantir-style Full-Screen Background Video ====== */}
+      <HeroVideo
+        src="/videos/hero.mp4"
+        poster="/images/factory-exterior.jpg"
+        overlay="dark"
+        height="h-[100dvh]"
+        parallax={true}
+      >
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-full flex flex-col items-center justify-center text-center">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -151,7 +142,7 @@ export default function HomePage() {
         >
           <ChevronDown className="w-6 h-6 text-white/40 scroll-bounce" />
         </motion.div>
-      </section>
+      </HeroVideo>
 
       {/* ====== SECTION 2: Pill Tab Categories ====== */}
       <section className="py-20 md:py-32 bg-white">
@@ -225,10 +216,10 @@ export default function HomePage() {
                       <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-[#F5F5F5]">
                         <Image
                           src={
-                            i === 0 ? '/images/factory-exterior.png' :
-                            i === 1 ? '/images/grinding-process.png' :
-                            i === 2 ? '/images/quality-lab.png' :
-                            '/images/cement-bags.png'
+                            i === 0 ? '/images/factory-exterior.jpg' :
+                            i === 1 ? '/images/grinding-process.jpg' :
+                            i === 2 ? '/images/quality-lab.jpg' :
+                            '/images/cement-bags.jpg'
                           }
                           alt={t(`solutions.process.${step}.title`)}
                           fill
@@ -244,7 +235,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="bg-[#0A0A0A] rounded-xl p-8 lg:p-10">
                   <div className="w-14 h-14 rounded-xl bg-[#2ECC71]/10 flex items-center justify-center mb-6">
-                    <span className="font-mono text-2xl font-bold text-[#2ECC71]">CO₂</span>
+                    <span className="font-mono text-2xl font-bold text-[#2ECC71]">CO2</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">{t('homeEco.card1Title')}</h3>
                   <div className="font-mono text-4xl lg:text-5xl font-bold text-[#2ECC71] mb-4">{t('homeEco.card1Value')}</div>
@@ -252,7 +243,7 @@ export default function HomePage() {
                 </div>
                 <div className="bg-[#0A0A0A] rounded-xl p-8 lg:p-10">
                   <div className="w-14 h-14 rounded-xl bg-[#0F4C75]/20 flex items-center justify-center mb-6">
-                    <span className="font-mono text-2xl font-bold text-[#0F4C75]">H₂O</span>
+                    <span className="font-mono text-2xl font-bold text-[#0F4C75]">H2O</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-3">{t('homeEco.card2Title')}</h3>
                   <div className="font-mono text-4xl lg:text-5xl font-bold text-[#0F4C75] mb-4">{t('homeEco.card2Value')}</div>
@@ -281,6 +272,26 @@ export default function HomePage() {
           </motion.div>
         </div>
       </section>
+
+      {/* ====== VIDEO BREAK — Process Fabrication (Harch Corp pattern) ====== */}
+      <HeroVideo
+        src="/videos/process.mp4"
+        poster="/images/grinding-process.jpg"
+        overlay="gradient-left"
+        height="h-[50vh] md:h-[60vh]"
+        parallax={false}
+      >
+        <div className="h-full flex items-end pb-12 md:pb-16 max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div>
+              <span className="font-mono text-sm text-white/40">{locale === 'fr' ? 'Notre Savoir-Faire' : 'Our Expertise'}</span>
+              <h2 className="mt-2 text-[clamp(1.5rem,3.5vw,2.5rem)] font-bold text-white/90 tracking-[-0.02em] leading-tight max-w-xl">
+                {locale === 'fr' ? 'De la matiere premiere au produit fini' : 'From raw material to finished product'}
+              </h2>
+            </div>
+          </ScrollReveal>
+        </div>
+      </HeroVideo>
 
       {/* ====== SECTION 3: Stats / Impact Statement (Palantir style) ====== */}
       <section className="py-20 md:py-32 bg-[#F5F5F5]">

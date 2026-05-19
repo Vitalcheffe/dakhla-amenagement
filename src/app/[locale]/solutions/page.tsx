@@ -122,10 +122,10 @@ export default function SolutionsPage() {
                             <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                               <Image
                                 src={
-                                  i === 0 ? '/images/factory-exterior.png' :
-                                  i === 1 ? '/images/grinding-process.png' :
-                                  i === 2 ? '/images/quality-lab.png' :
-                                  '/images/cement-bags.png'
+                                  i === 0 ? '/images/factory-exterior.jpg' :
+                                  i === 1 ? '/images/grinding-process.jpg' :
+                                  i === 2 ? '/images/quality-lab.jpg' :
+                                  '/images/cement-bags.jpg'
                                 }
                                 alt={t(`process.${step}.title`)}
                                 fill
@@ -186,7 +186,7 @@ export default function SolutionsPage() {
                     </div>
                     <div className="mt-6 relative aspect-[4/3] rounded-xl overflow-hidden">
                       <Image
-                        src="/images/quality-lab.png"
+                        src="/images/quality-lab.jpg"
                         alt={t('quality.lab.title')}
                         fill
                         className="object-cover"
