@@ -1654,7 +1654,7 @@ function generatePDF(quote: QuoteData, calc: CalcResult, quoteNumber: string, t:
   doc.setTextColor(150, 150, 150);
   doc.setFontSize(7);
   doc.text('Dakhla Amenagement S.A. | Quartier Lassargua, Ave El Walae, Dakhla, Maroc', 105, 280, { align: 'center' });
-  doc.text(`contact@dakhla-amenagement.ma | +212 5XX-XXXXXX | Page 1/1`, 105, 284, { align: 'center' });
+  doc.text(`contact@ciment-dam.com | +212 5XX-XXXXXX | Page 1/1`, 105, 284, { align: 'center' });
 
   // QR placeholder
   doc.setDrawColor(200, 200, 200);

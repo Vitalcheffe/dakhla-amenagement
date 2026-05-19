@@ -15,6 +15,20 @@ const articleImages = [
   '/images/sustainability.jpg',
   '/images/construction-site.jpg',
   '/images/grinding-process.jpg',
+  '/images/products/cpj45-bags.jpg',
+  '/images/construction-site.jpg',
+  '/images/projects/villa-construction.jpg',
+  '/images/dakhla-aerial.jpg',
+  '/images/process/step2-grinding.jpg',
+  '/images/products/bulk-cement-truck.jpg',
+  '/images/projects/port-construction.jpg',
+  '/images/factory/factory-exterior.jpg',
+  '/images/products/big-bag-cement.jpg',
+  '/images/delivery/concrete-delivery.jpg',
+  '/images/sustainability.jpg',
+  '/images/lab/lab-compression-test.jpg',
+  '/images/products/cpj55-bags.jpg',
+  '/images/cement-bags.jpg',
 ];
 
 const articleSlugs = [
@@ -24,6 +38,20 @@ const articleSlugs = [
   'construction-durable-ciment',
   'projet-infrastructure-dakhla',
   'stockage-ciment-chantier',
+  'cpj45-vs-cpj55-guide',
+  'calculer-quantite-ciment',
+  'beton-arme-maroc',
+  'dakhla-pole-developpement',
+  'role-gypse-ciment',
+  'conditionnement-vrac',
+  'construction-zone-cotiere',
+  '10-ans-excellence',
+  'devenir-revendeur',
+  'transport-ciment-logistique',
+  'rse-communaute-dakhla',
+  'essais-resistance-ciment',
+  'big-bag-vs-sacs',
+  '5-erreurs-ciment',
 ];
 
 export default function BlogPage() {
@@ -55,7 +83,7 @@ export default function BlogPage() {
 
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((i) => {
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((i) => {
               const slug = articleSlugs[i - 1];
               return (
                 <ScrollReveal key={i} delay={(i - 1) * 0.05}>

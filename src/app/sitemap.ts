@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.ciment-dam.com';
   const locales = ['fr', 'en'];
-  const pages = ['', '/produits', '/processus', '/a-propos', '/realisations', '/blog', '/devis', '/contact', '/mentions-legales'];
+  const pages = ['', '/produits', '/processus', '/a-propos', '/realisations', '/blog', '/devis', '/contact', '/mentions-legales', '/durabilite', '/carrieres', '/faq', '/galerie', '/temoignages', '/presse', '/investisseurs', '/documents'];
 
   const entries: MetadataRoute.Sitemap = [];
 

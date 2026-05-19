@@ -1,20 +1,54 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { Menu, X, Globe, ArrowRight } from 'lucide-react';
+import { Menu, X, Globe, ArrowRight, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
-const navItems = [
+interface DropdownItem {
+  key: string;
+  href: string;
+  badge?: string;
+}
+
+interface NavItem {
+  key: string;
+  href: string;
+  dropdownItems?: DropdownItem[];
+}
+
+const navItems: NavItem[] = [
   { key: 'home', href: '/' },
-  { key: 'products', href: '/produits' },
+  {
+    key: 'solutions',
+    href: '/produits',
+    dropdownItems: [
+      { key: 'cpj45', href: '/produits', badge: '1 500 DH/T' },
+      { key: 'cpj55', href: '/produits', badge: '1 600 DH/T' },
+      { key: 'comparison', href: '/produits' },
+      { key: 'quote', href: '/devis' },
+    ],
+  },
   { key: 'process', href: '/processus' },
-  { key: 'about', href: '/a-propos' },
+  {
+    key: 'about',
+    href: '/a-propos',
+    dropdownItems: [
+      { key: 'history', href: '/a-propos' },
+      { key: 'sustainability', href: '/durabilite' },
+      { key: 'careers', href: '/carrieres' },
+      { key: 'investors', href: '/investisseurs' },
+      { key: 'press', href: '/presse' },
+      { key: 'documents', href: '/documents' },
+    ],
+  },
   { key: 'realisations', href: '/realisations' },
   { key: 'blog', href: '/blog' },
+  { key: 'faq', href: '/faq' },
+  { key: 'testimonials', href: '/temoignages' },
   { key: 'contact', href: '/contact' },
 ];
 
@@ -23,6 +57,9 @@ export function Header({ locale }: { locale: string }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
@@ -34,42 +71,160 @@ export function Header({ locale }: { locale: string }) {
   const otherLocale = locale === 'fr' ? 'en' : 'fr';
   const switchPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
 
+  const handleDropdownEnter = (key: string) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setActiveDropdown(key);
+  };
+
+  const handleDropdownLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150);
+  };
+
+  const resolveHref = (href: string) => {
+    return href === '/' ? `/${locale}` : `/${locale}${href}`;
+  };
+
+  const isItemActive = (item: NavItem) => {
+    if (item.href === '/') {
+      return pathname === `/${locale}` || pathname === `/${locale}/`;
+    }
+    return pathname.startsWith(`/${locale}${item.href}`);
+  };
+
+  const isDropdownItemActive = (item: NavItem) => {
+    if (!item.dropdownItems) return false;
+    return item.dropdownItems.some((di) => {
+      if (di.href === '/') {
+        return pathname === `/${locale}` || pathname === `/${locale}/`;
+      }
+      return pathname.startsWith(`/${locale}${di.href}`);
+    });
+  };
+
+  // Translation key mapping for dropdown items
+  const getDropdownLabel = (key: string): string => {
+    const keyMap: Record<string, string> = {
+      cpj45: 'cpj45',
+      cpj55: 'cpj55',
+      comparison: 'comparison',
+      quote: 'quote',
+      history: 'history',
+      sustainability: 'sustainability',
+      careers: 'careers',
+      investors: 'investors',
+      press: 'press',
+      documents: 'documents',
+    };
+    return t(keyMap[key] || key);
+  };
+
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isHome && !scrolled
-        ? 'bg-transparent'
-        : 'bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]'
-    } ${scrolled ? 'shadow-sm' : ''}`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isHome && !scrolled
+          ? 'bg-transparent'
+          : 'bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]'
+      } ${scrolled ? 'shadow-sm' : ''}`}
+    >
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo minimaliste */}
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            {/* DA monogram */}
-            <span className={`text-xl font-bold tracking-wider transition-colors duration-300 ${
-              isHome && !scrolled ? 'text-[#E8B84B]' : 'text-[#E8B84B]'
-            }`}>DA</span>
-            {/* Gold separator */}
-            <span className={`w-[2px] h-6 rounded-full transition-colors duration-300 ${
-              isHome && !scrolled ? 'bg-[#E8B84B]/50' : 'bg-[#E8B84B]/50'
-            }`} />
-            {/* Company name */}
+            <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
+            <span className="w-[2px] h-6 rounded-full bg-[#E8B84B]/50" />
             <div className="flex flex-col">
-              <span className={`text-[11px] font-bold tracking-[0.2em] leading-none transition-colors duration-300 ${
-                isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
-              }`}>DAKHLA</span>
-              <span className={`text-[11px] font-bold tracking-[0.2em] leading-none mt-0.5 transition-colors duration-300 ${
-                isHome && !scrolled ? 'text-white/80' : 'text-[#1B3A5C]'
-              }`}>AMÉNAGEMENT</span>
+              <span
+                className={`text-[11px] font-bold tracking-[0.2em] leading-none transition-colors duration-300 ${
+                  isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
+                }`}
+              >
+                DAKHLA
+              </span>
+              <span
+                className={`text-[11px] font-bold tracking-[0.2em] leading-none mt-0.5 transition-colors duration-300 ${
+                  isHome && !scrolled ? 'text-white/80' : 'text-[#1B3A5C]'
+                }`}
+              >
+                AMÉNAGEMENT
+              </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => {
-              const href = item.href === '/' ? `/${locale}` : `/${locale}${item.href}`;
-              const isActive = item.href === '/'
-                ? pathname === `/${locale}` || pathname === `/${locale}/`
-                : pathname.startsWith(`/${locale}${item.href}`);
+              const href = resolveHref(item.href);
+              const isActive = isItemActive(item);
+              const isDropdownActive = isDropdownItemActive(item);
+              const hasDropdown = !!item.dropdownItems;
+
+              if (hasDropdown) {
+                return (
+                  <div
+                    key={item.key}
+                    className="relative"
+                    onMouseEnter={() => handleDropdownEnter(item.key)}
+                    onMouseLeave={handleDropdownLeave}
+                  >
+                    <Link
+                      href={href}
+                      className={`relative px-3 py-2 text-[13px] font-medium transition-all duration-300 flex items-center gap-1 ${
+                        isActive || isDropdownActive
+                          ? isHome && !scrolled
+                            ? 'text-white'
+                            : 'text-[#1B3A5C]'
+                          : isHome && !scrolled
+                            ? 'text-white/70 hover:text-white'
+                            : 'text-[#6B7280] hover:text-[#1B3A5C]'
+                      }`}
+                    >
+                      {t(item.key)}
+                      <ChevronDown
+                        className={`w-3 h-3 transition-transform duration-200 ${
+                          activeDropdown === item.key ? 'rotate-180' : ''
+                        }`}
+                      />
+                      {(isActive || isDropdownActive) && (
+                        <span
+                          className={`absolute bottom-0 left-3 right-3 h-[2px] ${
+                            isHome && !scrolled ? 'bg-[#E8B84B]' : 'bg-[#1B3A5C]'
+                          }`}
+                        />
+                      )}
+                    </Link>
+
+                    {/* Dropdown Menu */}
+                    {activeDropdown === item.key && (
+                      <div className="absolute top-full left-0 pt-2">
+                        <div className="bg-white rounded-xl shadow-xl border border-[#E5E7EB] py-2 min-w-[240px] animate-in fade-in-0 slide-in-from-top-2 duration-150">
+                          {/* Small arrow indicator */}
+                          <div className="absolute -top-1 left-8 w-2 h-2 bg-white border-l border-t border-[#E5E7EB] rotate-45" />
+                          {item.dropdownItems!.map((di) => (
+                            <Link
+                              key={di.key}
+                              href={resolveHref(di.href)}
+                              className="flex items-center justify-between px-4 py-2.5 text-sm text-[#6B7280] hover:bg-[#F7F8FA] hover:text-[#1B3A5C] transition-colors"
+                            >
+                              <span>{getDropdownLabel(di.key)}</span>
+                              {di.badge && (
+                                <span className="ml-2 px-2 py-0.5 text-[11px] font-semibold bg-[#E8B84B]/15 text-[#E8B84B] rounded-full">
+                                  {di.badge}
+                                </span>
+                              )}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
               return (
                 <Link
                   key={item.key}
@@ -106,7 +261,7 @@ export function Header({ locale }: { locale: string }) {
 
             <Link
               href={`/${locale}/devis`}
-              className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold rounded-full transition-all duration-300 bg-[#C1272D] text-white hover:bg-[#C1272D]/90`}
+              className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold rounded-full transition-all duration-300 bg-[#C1272D] text-white hover:bg-[#C1272D]/90"
             >
               {t('quote')}
               <ArrowRight className="w-3.5 h-3.5" />
@@ -115,7 +270,12 @@ export function Header({ locale }: { locale: string }) {
             {/* Mobile menu */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger className="lg:hidden">
-                <Button variant="ghost" size="icon" aria-label="Menu" className={isHome && !scrolled ? 'text-white hover:bg-white/10' : ''}>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Menu"
+                  className={isHome && !scrolled ? 'text-white hover:bg-white/10' : ''}
+                >
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
@@ -126,27 +286,77 @@ export function Header({ locale }: { locale: string }) {
                     <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
                     <span className="w-[2px] h-5 rounded-full bg-[#E8B84B]/50" />
                     <div className="flex flex-col">
-                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none text-[#1B3A5C]">DAKHLA</span>
-                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none mt-0.5 text-[#1B3A5C]">AMÉNAGEMENT</span>
+                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none text-[#1B3A5C]">
+                        DAKHLA
+                      </span>
+                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none mt-0.5 text-[#1B3A5C]">
+                        AMÉNAGEMENT
+                      </span>
                     </div>
                   </div>
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
                     <X className="h-5 w-5" />
                   </Button>
                 </div>
-                <nav className="p-6 space-y-1">
+                <nav className="p-6 space-y-1 max-h-[calc(100vh-180px)] overflow-y-auto">
                   {navItems.map((item) => {
-                    const href = item.href === '/' ? `/${locale}` : `/${locale}${item.href}`;
-                    const isActive = item.href === '/'
-                      ? pathname === `/${locale}` || pathname === `/${locale}/`
-                      : pathname.startsWith(`/${locale}${item.href}`);
+                    const href = resolveHref(item.href);
+                    const isActive = isItemActive(item);
+                    const hasDropdown = !!item.dropdownItems;
+                    const isExpanded = mobileExpanded === item.key;
+
+                    if (hasDropdown) {
+                      return (
+                        <div key={item.key}>
+                          <button
+                            onClick={() =>
+                              setMobileExpanded(isExpanded ? null : item.key)
+                            }
+                            className={`flex items-center justify-between w-full px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
+                              isActive
+                                ? 'bg-[#1B3A5C] text-white'
+                                : 'text-[#6B7280] hover:text-[#1B3A5C] hover:bg-[#1B3A5C]/5'
+                            }`}
+                          >
+                            <span>{t(item.key)}</span>
+                            <ChevronDown
+                              className={`w-4 h-4 transition-transform duration-200 ${
+                                isExpanded ? 'rotate-180' : ''
+                              }`}
+                            />
+                          </button>
+                          {isExpanded && (
+                            <div className="ml-4 mt-1 space-y-0.5 border-l-2 border-[#E8B84B]/30 pl-3">
+                              {item.dropdownItems!.map((di) => (
+                                <Link
+                                  key={di.key}
+                                  href={resolveHref(di.href)}
+                                  onClick={() => setOpen(false)}
+                                  className="flex items-center justify-between px-3 py-2 text-sm text-[#6B7280] hover:text-[#1B3A5C] hover:bg-[#1B3A5C]/5 rounded-lg transition-colors"
+                                >
+                                  <span>{getDropdownLabel(di.key)}</span>
+                                  {di.badge && (
+                                    <span className="ml-2 px-2 py-0.5 text-[10px] font-semibold bg-[#E8B84B]/15 text-[#E8B84B] rounded-full whitespace-nowrap">
+                                      {di.badge}
+                                    </span>
+                                  )}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    }
+
                     return (
                       <Link
                         key={item.key}
                         href={href}
                         onClick={() => setOpen(false)}
                         className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                          isActive ? 'bg-[#1B3A5C] text-white' : 'text-[#6B7280] hover:text-[#1B3A5C] hover:bg-[#1B3A5C]/5'
+                          isActive
+                            ? 'bg-[#1B3A5C] text-white'
+                            : 'text-[#6B7280] hover:text-[#1B3A5C] hover:bg-[#1B3A5C]/5'
                         }`}
                       >
                         {t(item.key)}

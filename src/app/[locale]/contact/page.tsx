@@ -201,24 +201,19 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map placeholder with factory image overlay */}
-                <div className="relative bg-[#F7F8FA] rounded-2xl overflow-hidden">
-                  <div className="relative h-56">
-                    <Image
-                      src="/images/factory/factory-exterior.jpg"
-                      alt="Usine Dakhla Aménagement"
-                      fill
-                      quality={80}
-                      className="object-cover opacity-30"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <MapPin className="w-8 h-8 text-[#1B3A5C] mx-auto mb-2" />
-                        <p className="text-sm font-semibold text-[#1B3A5C]">Dakhla, Maroc</p>
-                        <p className="text-xs text-[#6B7280] mt-1">23.6814° N, 15.9597° W</p>
-                      </div>
-                    </div>
-                  </div>
+                {/* Google Maps embed */}
+                <div className="bg-[#F7F8FA] rounded-2xl overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.5!2d-15.96!3d23.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQwJzUzLjAiTiAxNcKwNTcnMzYuMCJX!5e0!3m2!1sfr!2sma!4v1"
+                    width="100%"
+                    height="288"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Dakhla Aménagement — Dakhla, Morocco"
+                    className="w-full h-72 rounded-2xl"
+                  />
                 </div>
               </div>
             </ScrollReveal>

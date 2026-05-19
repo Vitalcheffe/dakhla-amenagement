@@ -49,7 +49,7 @@ export async function POST(request: Request) {
         },
         body: JSON.stringify({
           from: 'Dakhla Aménagement <noreply@ciment-dam.com>',
-          to: ['contact@dakhla-amenagement.ma'],
+          to: ['contact@ciment-dam.com'],
           subject: `[ciment-dam.com] ${subject || 'Nouveau message'} — ${name}`,
           html: `
             <h2>Nouveau message depuis ciment-dam.com</h2>

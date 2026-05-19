@@ -6,6 +6,8 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { WhatsAppButton } from '@/components/shared/WhatsAppButton';
+import { CookieConsent } from '@/components/shared/CookieConsent';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -57,6 +59,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           <main className="flex-1">{children}</main>
+          <WhatsAppButton />
+          <CookieConsent />
           <Footer locale={locale} />
         </NextIntlClientProvider>
       </body>

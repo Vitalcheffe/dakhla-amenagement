@@ -2,14 +2,27 @@
   "nav": {
     "home": "Home",
     "products": "Products",
+    "solutions": "Our Solutions",
     "process": "Process",
     "about": "About",
+    "history": "Our History",
+    "comparison": "Comparison",
     "realisations": "Projects",
+    "testimonials": "Testimonials",
+    "careers": "Careers",
     "blog": "Blog",
+    "faq": "FAQ",
+    "gallery": "Gallery",
     "contact": "Contact",
     "quote": "Request a Quote",
     "legal": "Legal Notice",
-    "sitemap": "Sitemap"
+    "sitemap": "Sitemap",
+    "press": "Press",
+    "investors": "Investors",
+    "documents": "Documents",
+    "sustainability": "Sustainability",
+    "cpj45": "CPJ 45",
+    "cpj55": "CPJ 55"
   },
   "hero": {
     "title": "Trusted Cement in Morocco",
@@ -366,6 +379,90 @@
         "excerpt": "Practical tips to preserve the quality of your cement: storage, moisture protection and shelf life.",
         "date": "August 12, 2025",
         "category": "Technical Advice"
+      },
+      "article7": {
+        "title": "CPJ 45 vs CPJ 55: Complete Comparative Guide",
+        "excerpt": "Detailed comparison table of the two Dakhla Aménagement cements. When to use CPJ 45 and when to prefer CPJ 55 for your project.",
+        "date": "July 1, 2025",
+        "category": "Technical Advice"
+      },
+      "article8": {
+        "title": "How to Calculate the Quantity of Cement for Your Construction Site",
+        "excerpt": "Practical formulas and worked examples to estimate your cement needs: foundations, slabs, walls, plastering. Correspondence tables.",
+        "date": "June 15, 2025",
+        "category": "Technical Advice"
+      },
+      "article9": {
+        "title": "Reinforced Concrete: Techniques and Best Practices in Morocco",
+        "excerpt": "Professional advice for reinforcement, pouring and curing of reinforced concrete in Moroccan climatic conditions.",
+        "date": "June 1, 2025",
+        "category": "Technical Advice"
+      },
+      "article10": {
+        "title": "Dakhla: Development Hub of Southern Morocco",
+        "excerpt": "Focus on the economic development of Dakhla: infrastructure projects, investments and opportunities for the construction sector.",
+        "date": "May 20, 2025",
+        "category": "News"
+      },
+      "article11": {
+        "title": "The Role of Gypsum in Cement Manufacturing",
+        "excerpt": "Understanding the importance of gypsum in the manufacturing process: dosage, impact on setting time and cement strength.",
+        "date": "May 5, 2025",
+        "category": "Technical Advice"
+      },
+      "article12": {
+        "title": "Why Choose Bulk Packaging?",
+        "excerpt": "Economic and ecological advantages of bulk cement: cost reduction, time savings on site, logistics optimization.",
+        "date": "April 15, 2025",
+        "category": "Technical Advice"
+      },
+      "article13": {
+        "title": "Coastal Construction: The Challenges of Cement in Dakhla",
+        "excerpt": "Sea spray, corrosion and humidity: how choosing the right cement guarantees the durability of structures in coastal areas.",
+        "date": "April 1, 2025",
+        "category": "Technical Advice"
+      },
+      "article14": {
+        "title": "Dakhla Aménagement: 10 Years of Industrial Excellence",
+        "excerpt": "Retrospective 2015-2025: from the creation of the SA to the reference grinding center of Southern Morocco. A decade of commitment.",
+        "date": "March 15, 2025",
+        "category": "News"
+      },
+      "article15": {
+        "title": "How to Become a DAM Cement Reseller",
+        "excerpt": "Registration process, commercial advantages and exclusivity zones: everything you need to know about the Dakhla Aménagement reseller program.",
+        "date": "March 1, 2025",
+        "category": "Company"
+      },
+      "article16": {
+        "title": "Cement Transport: Logistics and Safety",
+        "excerpt": "Bulk vs bags, delivery distances, regulation of powdery material transport: the logistics challenges of cement.",
+        "date": "February 15, 2025",
+        "category": "Technical Advice"
+      },
+      "article17": {
+        "title": "CSR: Our Commitment to the Dakhla Community",
+        "excerpt": "Social actions, local employment, vocational training and support for community initiatives: DAM's corporate social responsibility.",
+        "date": "February 1, 2025",
+        "category": "Sustainability"
+      },
+      "article18": {
+        "title": "Cement Strength Tests: How They Work",
+        "excerpt": "Compression, tension, flexion: understanding the different strength tests and their importance for guaranteeing the quality of structures.",
+        "date": "January 15, 2025",
+        "category": "Technical Advice"
+      },
+      "article19": {
+        "title": "Big Bag vs 50kg Bags: Which Packaging to Choose?",
+        "excerpt": "Detailed comparison of cement packaging: advantages, disadvantages, costs and recommended use cases for each format.",
+        "date": "January 1, 2025",
+        "category": "Technical Advice"
+      },
+      "article20": {
+        "title": "5 Mistakes to Avoid When Using Cement",
+        "excerpt": "Incorrect dosage, excessive water addition, inadequate storage: common mistakes that compromise the quality of your structures.",
+        "date": "December 15, 2024",
+        "category": "Technical Advice"
       }
     },
     "article": {
@@ -406,6 +503,90 @@
           "Proper storage of cement on site is essential to preserve its properties. Cement must be protected from moisture, stored on pallets and ideally in a covered, ventilated area.",
           "The shelf life of cement is limited: approximately 3 months for bagged cement stored in good conditions. Beyond that, strength may decrease significantly.",
           "For large quantities, silo storage is recommended. Dakhla Aménagement offers bulk delivery with direct silo filling, guaranteeing optimal product quality until use."
+        ],
+        "cpj45-vs-cpj55-guide": [
+          "Choosing between CPJ 45 and CPJ 55 is a central question for any project owner in Morocco. These two composite Portland cements, produced by Dakhla Aménagement, have distinct mechanical characteristics that suit them for different uses. CPJ 45 offers a compressive strength of 45 MPa at 28 days, while CPJ 55 reaches 55 MPa under the same conditions.",
+          "CPJ 45 is the versatile cement par excellence. It is perfectly suited for standard masonry, interior and exterior plastering, floor slabs and shallow foundations. Its grinding fineness of 350 m²/kg or more gives it excellent workability, facilitating implementation on site. For standard residential projects, it is the economical and high-performing choice.",
+          "CPJ 55, with its superior strength, is recommended for civil engineering works, deep foundations, heavily loaded structures and aggressive environments. In coastal areas like Dakhla, where sea spray accelerates corrosion, CPJ 55 offers increased durability thanks to its denser and less permeable matrix.",
+          "In summary, for residential projects and standard masonry, CPJ 45 is the optimal choice in terms of value for money. For bridges, infrastructure and demanding environments, CPJ 55 guarantees superior performance and increased longevity of structures."
+        ],
+        "calculer-quantite-ciment": [
+          "Accurately estimating the quantity of cement needed is a crucial step to optimize costs and avoid waste on site. The calculation depends on the type of structure, the concrete or mortar dosage, and the dimensions of the element to be produced. For standard reinforced concrete, the standard dosage is 350 kg of cement per cubic meter of concrete.",
+          "For a reinforced concrete slab 10 cm thick and 50 m² in surface area, the volume of concrete needed is 5 m³. With a dosage of 350 kg/m³, 1,750 kg of cement is required, or about 35 bags of 50 kg. For foundations, the dosage can increase to 400 kg/m³, which proportionally increases the amount of cement required.",
+          "For masonry walls, the calculation is based on the number of concrete blocks and the jointing mortar. Count approximately 25 kg of cement per m² of wall in 20 cm blocks. For plastering, plan about 15 kg of cement per m² for a 1.5 cm thickness. These ratios allow for a quick estimate for quantitative quotes.",
+          "It is recommended to provide an additional 5 to 10% margin to compensate for losses and dosage inaccuracies. Dakhla Aménagement offers a technical advisory service to help you precisely calculate your cement needs according to your project specifications."
+        ],
+        "beton-arme-maroc": [
+          "Reinforced concrete is the most widely used construction material in Morocco, combining the compressive strength of concrete and the tensile strength of steel. In Moroccan climatic conditions, characterized by high temperatures and strong evaporation, the implementation of reinforced concrete requires special precautions to guarantee the quality of the structures.",
+          "Reinforcement must be dimensioned according to Moroccan seismic regulations (RPS 2011), particularly in the country's seismic zones. The concrete cover of the reinforcement, that is, the minimum distance between the steel surface and the concrete surface, must be at least 3 cm in standard environments and 5 cm in marine or aggressive environments. This cover protects the steel against corrosion.",
+          "Pouring concrete in hot climates requires increased vigilance. The temperature of fresh concrete should not exceed 30°C to avoid too rapid setting. It is recommended to pour early in the morning or late afternoon, to moisten the formwork before pouring, and to protect the fresh concrete from sun and wind. Curing, which consists of keeping the concrete moist for at least 7 days, is essential to achieve the specified strengths.",
+          "For projects in Morocco, the choice of cement is crucial. Dakhla Aménagement's CPJ 45 is perfectly suited for standard reinforced concrete structures, while CPJ 55 is recommended for heavily loaded elements and structures in marine environments."
+        ],
+        "dakhla-pole-developpement": [
+          "Dakhla is experiencing unprecedented economic transformation, positioned as one of the most dynamic development hubs in Southern Morocco. The city benefits from massive investments in infrastructure: port extension, new express road, special economic zone, and modern public facilities. These structural projects create a growing demand for construction materials.",
+          "The Southern Provinces Development Program, launched by His Majesty King Mohammed VI, provides for investments of several billion dirhams. This program includes the construction of roads, hospitals, schools, housing and port facilities. The construction sector is the primary beneficiary of this dynamic, with double-digit annual growth.",
+          "Dakhla's geographical position, at the crossroads of North Africa and Sub-Saharan Africa, makes it a strategic logistics hub. The deep-water port and proximity to Mauritania open up export perspectives to countries in the region. Dakhla Aménagement, with its Lassargua grinding center, is at the heart of this dynamic.",
+          "For construction companies, Dakhla represents a unique development opportunity. The local availability of quality cement, produced by Dakhla Aménagement, guarantees reliable and competitive supplies, a key success factor for construction projects in the region."
+        ],
+        "role-gypse-ciment": [
+          "Gypsum is an essential component of cement manufacturing, although it represents only 3 to 5% of the final composition. Its main role is to regulate the setting time of the cement, without which the concrete would harden almost instantly upon contact with water, making any implementation impossible. Gypsum retards the hydration of tricalcium aluminate (C3A), the clinker compound responsible for rapid setting.",
+          "The dosage of gypsum must be precise: insufficient, the cement sets too quickly (flash set); excessive, it can cause abnormal swelling of the concrete and reduce mechanical strengths. The optimal quantity depends on the C3A content of the clinker, the grinding fineness and the ambient temperature. At Dakhla Aménagement, the dosage is rigorously controlled by our laboratory for each production batch.",
+          "Gypsum also influences the long-term properties of the cement. An appropriate dosage contributes to the optimal development of mechanical strengths at 7, 28 and 90 days. It also participates in the dimensional stability of the hardened concrete, preventing swelling reactions that could compromise the integrity of the structures.",
+          "There are different types of gypsum that can be used: natural gypsum (CaSO4·2H2O), hemihydrate (plaster) and anhydrite. The choice of type and purity of gypsum is an important parameter that the engineers at Dakhla Aménagement master to guarantee the consistency of the quality of our CPJ 45 and CPJ 55 cements."
+        ],
+        "conditionnement-vrac": [
+          "Bulk packaging represents the most economical and ecological solution for large-scale construction sites. The cement is delivered by tanker truck and pumped directly into storage silos on site, eliminating the costs and waste associated with packaging. This method represents a significant saving on the unit cost of cement.",
+          "In terms of logistics, bulk offers considerable advantages. A tanker truck can transport up to 30 tonnes of cement, compared to 26 tonnes in bags. Unloading time is halved: 30 minutes for a bulk truck compared to over an hour for manual unloading of bags. This efficiency translates into smoother construction sites and less labor devoted to handling.",
+          "In terms of quality, bulk better preserves the properties of the cement. Unlike bags that are exposed to moisture and repeated handling, cement in silos remains protected from humidity and contamination. The loss of strength due to aging is also reduced, as cement in silos is generally consumed more quickly than a stock of bags.",
+          "Dakhla Aménagement has a fleet of modern tanker trucks equipped with high-pressure pumping systems, capable of supplying silos located several tens of meters in height. Our logistics service ensures bulk delivery throughout Southern Morocco and in Mauritania, with deadlines of 24 to 72 hours depending on the zone."
+        ],
+        "construction-zone-cotiere": [
+          "Construction in coastal areas presents specific challenges related to the marine environment. Sea spray, loaded with sodium and magnesium chlorides, penetrates the porosity of the concrete and attacks the metal reinforcement, causing corrosion. This phenomenon, known as accelerated carbonation, is the primary cause of degradation of seaside structures.",
+          "In Dakhla, the combination of marine humidity, sandy winds and significant thermal amplitudes creates a particularly aggressive environment for concrete structures. Structures exposed to the northwest, the direction of the prevailing spray-laden winds, are the most vulnerable. It is therefore crucial to choose an appropriate cement and to respect the rules of the art for marine reinforced concrete.",
+          "Dakhla Aménagement's CPJ 55 is particularly recommended for structures in coastal areas. Its superior strength produces a denser and less permeable concrete matrix, slowing the penetration of chlorides. Combined with a reinforcement cover of at least 5 cm and a water/cement ratio of less than 0.45, it guarantees optimal durability of maritime structures.",
+          "Complementary measures include the use of water-repellent admixtures, the protection of exposed faces with waterproofing coatings, and prolonged curing of fresh concrete. Regular maintenance, including visual inspection of cracks and refurbishment of protective coatings, contributes to significantly extending the lifespan of coastal structures."
+        ],
+        "10-ans-excellence": [
+          "In 2025, Dakhla Aménagement S.A. celebrates a decade of existence, a decade marked by major advances for the cement industry of Southern Morocco. Founded in 2015 by visionary Mauritanian investors, the company was born from the conviction that the Dakhla region deserved modern cement infrastructure to support its rapid development.",
+          "The early years were devoted to the construction of the Lassargua grinding center, an ambitious project that required an investment of several million dirhams. The choice of the site, close to Dakhla and transport routes, was strategic to ensure rapid delivery to construction sites in the region. The official start of production in 2018 marked the beginning of a new era for the local construction sector.",
+          "Over the years, Dakhla Aménagement has constantly invested in improving its equipment and processes. The modernization of mills, the installation of advanced filtration systems, and the creation of a high-performance quality laboratory have made it possible to achieve the most demanding standards. Surpassing the 100,000 tonnes of annual capacity is a testament to this continuous growth.",
+          "Today, Dakhla Aménagement is much more than a cement producer. It is an actor committed to the economic and social development of the region, with 35 direct jobs and over 350 indirect jobs. The company looks to the future with ambition, driven by the trust of its customers and the growth dynamic of Southern Morocco."
+        ],
+        "devenir-revendeur": [
+          "Dakhla Aménagement's reseller program offers an attractive commercial opportunity for construction material distributors in Southern Morocco. As an approved DAM reseller, you benefit from a 5% discount on public rates, personalized commercial support and the possibility of obtaining a geographical exclusivity zone.",
+          "The registration process is simple and quick. Simply contact our sales department by email at contact@ciment-dam.com or by phone at +212 528-XXXXXX. Our team will guide you through the registration steps, which include providing administrative documents (trade register, tax identification) and a visit to your storage facilities by our sales manager.",
+          "The advantages of the reseller program go beyond the simple tariff discount. You gain access to a recognized brand in the region, marketing materials (brochures, posters, promotional items), and delivery priority during periods of high demand. Our reseller network also benefits from regular technical training on CPJ 45 and CPJ 55 products.",
+          "Exclusivity zones are allocated based on the potential of the local market and the reseller's commitment in terms of minimum purchase volume. This exclusivity guarantees the reseller a privileged position in their territory, without direct competition from other DAM distributors. Join our network and become a partner of the reference cement brand in Southern Morocco."
+        ],
+        "transport-ciment-logistique": [
+          "Cement transport is a major logistical component that directly influences costs and delivery times. Two packaging modes dominate: bulk, transported by tanker trucks, and bags, transported by flatbed trucks. Each mode has specific advantages and constraints that determine the choice for each type of construction site.",
+          "Bulk transport is the most economical for distances under 200 km. Tanker trucks, with a capacity of 20 to 30 tonnes, ensure rapid unloading by pneumatic pumping directly into silos. This mode eliminates the risk of packaging deterioration and reduces product losses. However, it requires a reception silo on the construction site.",
+          "Transport in 50 kg bags remains the most common mode for small and medium-sized construction sites. The bags are palletized (40 bags per pallet, or 2 tonnes) and covered for protection against the weather. Unloading can be mechanized (forklift) or manual. Big Bag packaging (1 to 1.5 tonnes) offers an interesting compromise between bulk and individual bags.",
+          "Moroccan regulations strictly govern the transport of powdery materials. Trucks must be equipped with anti-dust systems and respect speed limits. Dakhla Aménagement ensures that all its partner carriers comply with these requirements, guaranteeing secure deliveries that comply with current regulations."
+        ],
+        "rse-communaute-dakhla": [
+          "Dakhla Aménagement's corporate social responsibility goes well beyond the production of quality cement. Since its creation, the company has been actively committed to the social and economic development of the Dakhla community. This CSR approach is structured around four pillars: local employment, vocational training, social actions and support for community initiatives.",
+          "Local employment is the priority of our CSR policy. Of the 35 direct jobs created by Dakhla Aménagement, more than 80% are held by residents of Dakhla and the Southern Provinces. Furthermore, our activity generates more than 350 indirect jobs in transport, distribution and associated services. Each job created in our factory leads to the creation of ten jobs in the local economy.",
+          "Vocational training is a pillar of our commitment. We offer practical internships for students from technical schools in Dakhla, industrial safety training for our employees, and awareness workshops on careers in the cement industry. Each year, we welcome about ten interns, several of whom are subsequently hired within our teams.",
+          "Our social actions include support for local schools, participation in national solidarity campaigns, and donations to charitable associations in the region. Dakhla Aménagement is also a partner of local authorities for the improvement of community infrastructure. Our conviction is deep: a prosperous company can only exist within a prosperous community."
+        ],
+        "essais-resistance-ciment": [
+          "Cement strength tests are fundamental tests that guarantee the quality and conformity of products delivered to the construction site. These tests, standardized by NM 10.1.004 and EN 197-1 standards, measure the mechanical performance of cement at different ages and under different conditions. Compressive strength is the most determining parameter.",
+          "The compression test is performed on cylindrical or cubic specimens of standardized mortar, composed of cement, standardized sand and water in strictly defined proportions. The specimens are kept in water at 20°C for 2, 7 and 28 days before being subjected to an increasing load until failure. The compressive strength at 28 days determines the cement class: 45 MPa for CPJ 45 and 55 MPa for CPJ 55.",
+          "The flexural tensile test complements the compression measurements. It is performed on 40x40x160 mm mortar prisms, according to EN 196-1. Flexural strength is generally between 6 and 10 MPa at 28 days for composite Portland cements. Although less directly used in structural calculations, this value provides indications on the cohesion of the cementitious matrix.",
+          "At Dakhla Aménagement, each production batch undergoes these tests before shipment. Our laboratory equipped with calibrated hydraulic presses and standardized testing machines guarantees the reliability of the results. No product leaves the factory without a certificate of conformity attesting that the measured strengths meet the declared specifications."
+        ],
+        "big-bag-vs-sacs": [
+          "The choice of cement packaging is a practical and economic decision that directly impacts the organization of the construction site and construction costs. Dakhla Aménagement offers three formats: 50 kg bags, Big Bags of 1 to 1.5 tonnes, and bulk. Each has advantages and disadvantages that should be carefully evaluated before ordering.",
+          "The 50 kg bags are the most common and practical packaging for small and medium-sized construction sites. Easy to handle, they allow precise dosing and can be stored in confined spaces. Their main disadvantage is repetitive manual handling, which requires two workers per bag and generates risks of back injuries. The packaging cost adds about 30 DH per tonne to the price of cement.",
+          "Big Bags of 1 to 1.5 tonnes offer an excellent compromise for medium-sized construction sites. They require lifting equipment (crane, forklift) for handling, but considerably reduce the number of unloading operations. A 1-tonne Big Bag replaces 20 bags of 50 kg, dividing handling time by 20. The surcharge compared to bulk is about 80 DH per tonne, but the investment in a silo is not necessary.",
+          "In summary, for small construction sites and renovation work, 50 kg bags remain the most flexible solution. For medium-sized sites with lifting equipment, Big Bags optimize logistics. For large construction sites, bulk remains the most economical and efficient solution. Do not hesitate to consult our team to determine the most suitable packaging for your project."
+        ],
+        "5-erreurs-ciment": [
+          "The use of cement on site is subject to precise rules, the non-compliance with which can seriously compromise the quality of structures. The first and most common mistake is incorrect dosage. Insufficient dosage reduces mechanical strengths and concrete durability. Excessive dosage is wasteful and can cause shrinkage cracks. Compliance with prescribed dosages (350 kg/m³ for standard reinforced concrete) is imperative.",
+          "The second common mistake is excessive water addition. Many workers add water to facilitate implementation, but each liter of excess water reduces concrete strength by about 2 to 3 MPa. The water/cement ratio should never exceed 0.50 for reinforced structures. Prefer the use of a plasticizer to improve workability without compromising strengths.",
+          "The third mistake is inadequate cement storage. Cement left on the ground, exposed to moisture or bad weather, degrades quickly. Wet cement sets in lumps and loses a significant portion of its strength. Always store cement on pallets, in a covered and ventilated area, and consume it within 3 months of manufacture.",
+          "The fourth and fifth mistakes are insufficient curing and premature formwork removal. Curing, which keeps the concrete moist for at least 7 days, is essential for optimal strength development. Without curing, the 28-day strength can be reduced by 30 to 50%. Premature formwork removal can cause irreversible deformations and cracks. Respect the minimum deadlines: 24 hours for vertical elements, 7 days for floor slabs, and 21 days for spans exceeding 6 meters."
         ]
       }
     }
@@ -465,7 +646,7 @@
       "whatsapp": "WhatsApp",
       "whatsappValue": "+212 6XX-XXXXXX",
       "email": "Email",
-      "emailValue": "contact@dakhla-amenagement.ma",
+      "emailValue": "contact@ciment-dam.com",
       "hours": "Business Hours",
       "hoursValue": "Mon-Fri: 8:00 AM - 5:00 PM | Sat: 8:00 AM - 12:00 PM"
     }
@@ -495,16 +676,22 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "text": "In accordance with Law 09-08 on the protection of individuals regarding personal data processing, you have the right to access, rectify and delete data concerning you. To exercise this right, contact us at: contact@dakhla-amenagement.ma"
+      "text": "In accordance with Law 09-08 on the protection of individuals regarding personal data processing, you have the right to access, rectify and delete data concerning you. To exercise this right, contact us at: contact@ciment-dam.com"
     },
     "cookies": {
       "title": "Cookies",
       "text": "This website uses cookies to improve your browsing experience. You can configure your browser to refuse cookies."
     }
   },
+  "cookies": {
+    "text": "This website uses cookies to improve your browsing experience.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
   "footer": {
     "description": "Clinker grinding center — Production, packaging and marketing of premium construction materials.",
     "products": "Products",
+    "solutions": "Our Solutions",
     "company": "Company",
     "resources": "Resources",
     "contactTitle": "Contact",
@@ -517,10 +704,547 @@
     "legal": "Legal Notice",
     "privacy": "Privacy Policy",
     "address": "Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
-    "email": "contact@dakhla-amenagement.ma",
+    "email": "contact@ciment-dam.com",
     "phone": "+212 528-XXXXXX",
     "copyright": "© 2026 Dakhla Aménagement S.A.",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "devis": "Online Quote",
+    "faq": "FAQ",
+    "testimonials": "Testimonials",
+    "documents": "Documents",
+    "press": "Press",
+    "investors": "Investors",
+    "sustainability": "Sustainability",
+    "careers": "Careers"
+  },
+  "sustainability": {
+    "title": "Sustainability & Environment",
+    "subtitle": "Our commitment to a responsible and sustainable future in the cement industry",
+    "engagement": {
+      "title": "Our 2030 Commitments",
+      "desc": "Dakhla Aménagement S.A. is committed to reducing its environmental impact while maintaining the excellence of its products. Our vision integrates sustainable development at the heart of every stage of our industrial process.",
+      "co2": {
+        "title": "CO₂ Emissions Reduction",
+        "desc": "Investment in eco-energy grinding technologies and use of secondary constituents to reduce the amount of clinker needed per tonne of cement produced."
+      },
+      "energy": {
+        "title": "Energy Efficiency",
+        "desc": "Continuous optimization of our grinding processes to minimize energy consumption. Our high-performance ball mills guarantee optimal energy efficiency."
+      },
+      "circular": {
+        "title": "Circular Economy",
+        "desc": "Use of secondary constituents such as fly ash and blast furnace slag, reducing waste and the extraction of virgin raw materials."
+      },
+      "biodiversity": {
+        "title": "Biodiversity & Natural Environment",
+        "desc": "Continuous environmental monitoring of our Lassargua site and its surroundings. Preservation of the natural environment in respect of Saharan flora and fauna."
+      }
+    },
+    "numbers": {
+      "title": "In Numbers",
+      "stat1": "% CO₂ reduction",
+      "stat2": "MWh optimized energy",
+      "stat3": "% water recycled",
+      "stat4": "tonnes waste recovered"
+    },
+    "actions": {
+      "title": "Our Concrete Actions",
+      "subtitle": "Tangible measures for a positive impact",
+      "grinding": {
+        "title": "Eco-Energy Grinding",
+        "desc": "Our latest-generation ball mills consume less energy per tonne produced, thanks to optimized classification and ventilation systems."
+      },
+      "filtration": {
+        "title": "Emission Filtration",
+        "desc": "Installation of advanced filtration systems compliant with MARHP standards, significantly reducing dust and particle emissions into the atmosphere."
+      },
+      "water": {
+        "title": "Process Water Recycling",
+        "desc": "Closed-loop recycling system for water used in the grinding process, reducing our freshwater consumption and environmental discharge."
+      },
+      "waste": {
+        "title": "Responsible Waste Management",
+        "desc": "Sorting, recovery and responsible disposal of all industrial waste generated by our activities, in strict compliance with Moroccan regulations."
+      },
+      "additions": {
+        "title": "Secondary Constituents",
+        "desc": "Incorporation of fly ash, blast furnace slag and limestone filler, reducing the clinker content in our cement and associated CO₂ emissions."
+      },
+      "monitoring": {
+        "title": "Environmental Monitoring",
+        "desc": "Continuous monitoring program for air, water and soil quality around our site, with regular reports submitted to the competent authorities."
+      }
+    },
+    "compliance": {
+      "title": "Regulatory Compliance",
+      "subtitle": "Our commitment to the strictest standards",
+      "marhp": {
+        "title": "MARHP Standards",
+        "desc": "Full compliance with the requirements of the Ministry of Land Planning, Water and the Environment regarding industrial emissions and environmental protection."
+      },
+      "moroccan": {
+        "title": "Moroccan Environmental Regulations",
+        "desc": "Full compliance with Law 13-03 on air pollution control and Law 10-95 on water, with regular inspections and independent audits."
+      },
+      "reports": {
+        "title": "Environmental Reports",
+        "desc": "Annual publication of our environmental report detailing our emissions, energy consumption and continuous improvement actions."
+      }
+    },
+    "cta": {
+      "title": "Discover our CSR commitment",
+      "subtitle": "Contact us to learn more about our environmental initiatives",
+      "button": "Contact us"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to your questions about our products, services and the company",
+    "categories": {
+      "products": "Products & Quality",
+      "pricing": "Pricing & Orders",
+      "delivery": "Delivery & Logistics",
+      "technical": "Technical & Usage",
+      "company": "Company"
+    },
+    "items": {
+      "q1": {
+        "q": "What is the difference between CPJ 45 and CPJ 55?",
+        "a": "CPJ 45 offers a compressive strength of 45 MPa at 28 days, ideal for reinforced concrete, foundations and floor slabs. CPJ 55 offers a superior strength of 55 MPa, recommended for major civil engineering works and large infrastructure projects requiring exceptional performance.",
+        "cat": "products"
+      },
+      "q2": {
+        "q": "What are your prices?",
+        "a": "Our current rates are: CPJ 45 at 1,500 DH per tonne and CPJ 55 at 1,600 DH per tonne. Volume discounts apply from 10 tonnes. Contact us for a personalized quote.",
+        "cat": "pricing"
+      },
+      "q3": {
+        "q": "What delivery zones do you cover?",
+        "a": "We deliver to Dakhla City (free), Dakhla Region (+50 MAD/T), Southern Morocco (+150 MAD/T) and Mauritania (+250 MAD/T). Express delivery is available for urgent orders.",
+        "cat": "delivery"
+      },
+      "q4": {
+        "q": "What packaging do you offer?",
+        "a": "We offer three packaging options: Bulk (tanker truck delivery, no surcharge), 50 kg bags (+30 DH/T) and industrial Big Bags (+80 DH/T). Bulk is recommended for large construction sites.",
+        "cat": "products"
+      },
+      "q5": {
+        "q": "How to place an order?",
+        "a": "You can order via our online quote form, by phone at +212 528-XXXXXX, by WhatsApp, or by email at contact@ciment-dam.com. Our sales team will respond within 24 hours.",
+        "cat": "pricing"
+      },
+      "q6": {
+        "q": "What is the delivery timeframe?",
+        "a": "The timeframe depends on the zone: Dakhla City (1-2 days), Dakhla Region (2-3 days), Southern Morocco (3-5 days), Mauritania (5-7 days). Urgent delivery reduces these timeframes by 30 to 50%.",
+        "cat": "delivery"
+      },
+      "q7": {
+        "q": "How to store cement on site?",
+        "a": "Cement must be protected from moisture, stored on pallets in a covered and ventilated area. The shelf life is approximately 3 months for bagged cement. For large quantities, silo storage is recommended. We offer bulk delivery with direct silo filling.",
+        "cat": "technical"
+      },
+      "q8": {
+        "q": "What certifications do you have?",
+        "a": "Our cements are certified compliant with the Moroccan standard NM 10.1.004 and the European standard EN 197-1. ISO 9001 certification is in progress. Each batch is tested and accompanied by a certificate of conformity.",
+        "cat": "products"
+      },
+      "q9": {
+        "q": "Are you compliant with Moroccan standards?",
+        "a": "Yes, all our cements are produced in compliance with the NM 10.1.004 standard which defines cement specifications in Morocco, as well as the European standard EN 197-1. Each batch undergoes exhaustive laboratory testing before shipment.",
+        "cat": "products"
+      },
+      "q10": {
+        "q": "How to become a DAM reseller?",
+        "a": "To become a reseller, contact our sales department at contact@ciment-dam.com or at +212 528-XXXXXX. We offer a 5% reseller discount on our rates, commercial support and a potential exclusivity zone.",
+        "cat": "company"
+      },
+      "q11": {
+        "q": "What is the recommended strength for foundations?",
+        "a": "For standard foundations, CPJ 45 (45 MPa) is generally sufficient. For deep foundations or difficult soils, CPJ 55 (55 MPa) is recommended. Consult our technical team for a personalized recommendation based on your project.",
+        "cat": "technical"
+      },
+      "q12": {
+        "q": "Do you offer volume discounts?",
+        "a": "Yes, our volume discounts are: 2% from 10T, 5% from 25T, 8% from 50T, 12% from 100T, and 15% from 500T. Companies receive an additional 3% discount and resellers 5%.",
+        "cat": "pricing"
+      },
+      "q13": {
+        "q": "What are the payment terms?",
+        "a": "Our standard terms are: 50% on order and 50% on delivery. Payment is made by bank transfer (RIB on request). Specific terms can be negotiated for long-term contracts.",
+        "cat": "pricing"
+      },
+      "q14": {
+        "q": "What is the production capacity of Dakhla Aménagement?",
+        "a": "Our Lassargua grinding center has a production capacity of over 100,000 tonnes per year. We serve the Dakhla market, Southern Morocco and neighboring Mauritania.",
+        "cat": "company"
+      },
+      "q15": {
+        "q": "Is CPJ 45 cement suitable for plastering?",
+        "a": "Yes, CPJ 45 is perfectly suited for plastering and standard masonry. Its grinding fineness (≥ 350 m²/kg) ensures good workability and a smooth finish. For exterior plastering in coastal areas, we recommend CPJ 55 for its better durability.",
+        "cat": "technical"
+      }
+    },
+    "cta": {
+      "title": "Didn't find your answer?",
+      "subtitle": "Our team is available to answer all your questions",
+      "button": "Contact us"
+    }
+  },
+  "gallery": {
+    "title": "Photo & Video Gallery",
+    "subtitle": "Discover our factory, products and achievements in images",
+    "filters": {
+      "all": "All",
+      "factory": "Factory & Production",
+      "products": "Products",
+      "delivery": "Delivery & Logistics",
+      "lab": "Laboratory & Quality",
+      "projects": "Projects & Achievements",
+      "team": "Team & Social Life"
+    },
+    "photos": {
+      "p1": {
+        "alt": "Aerial view of the factory",
+        "cat": "factory"
+      },
+      "p2": {
+        "alt": "Factory exterior view",
+        "cat": "factory"
+      },
+      "p3": {
+        "alt": "Storage silos",
+        "cat": "factory"
+      },
+      "p4": {
+        "alt": "Factory interior",
+        "cat": "factory"
+      },
+      "p5": {
+        "alt": "Control room",
+        "cat": "factory"
+      },
+      "p6": {
+        "alt": "Storage warehouse",
+        "cat": "factory"
+      },
+      "p7": {
+        "alt": "Clinker reception",
+        "cat": "factory"
+      },
+      "p8": {
+        "alt": "Cement grinding",
+        "cat": "factory"
+      },
+      "p9": {
+        "alt": "Dosing and additions",
+        "cat": "factory"
+      },
+      "p10": {
+        "alt": "Bag packaging",
+        "cat": "factory"
+      },
+      "p11": {
+        "alt": "CPJ 45 bags",
+        "cat": "products"
+      },
+      "p12": {
+        "alt": "CPJ 55 bags",
+        "cat": "products"
+      },
+      "p13": {
+        "alt": "Cement Big Bags",
+        "cat": "products"
+      },
+      "p14": {
+        "alt": "Bulk cement",
+        "cat": "products"
+      },
+      "p15": {
+        "alt": "Cement powder",
+        "cat": "products"
+      },
+      "p16": {
+        "alt": "Delivery truck",
+        "cat": "delivery"
+      },
+      "p17": {
+        "alt": "Concrete delivery",
+        "cat": "delivery"
+      },
+      "p18": {
+        "alt": "Compression test",
+        "cat": "lab"
+      },
+      "p19": {
+        "alt": "Residential site",
+        "cat": "projects"
+      },
+      "p20": {
+        "alt": "Infrastructure site",
+        "cat": "projects"
+      },
+      "p21": {
+        "alt": "Port construction",
+        "cat": "projects"
+      },
+      "p22": {
+        "alt": "School construction",
+        "cat": "projects"
+      },
+      "p23": {
+        "alt": "Residential construction",
+        "cat": "projects"
+      },
+      "p24": {
+        "alt": "Dakhla panorama",
+        "cat": "team"
+      }
+    },
+    "lightbox": {
+      "of": "of",
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "cta": {
+      "title": "Visit Our Factory",
+      "subtitle": "Contact us to arrange a visit to the Lassargua grinding center",
+      "button": "Contact us"
+    }
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "Discover what our clients and partners say about Dakhla Aménagement",
+    "filters": {
+      "all": "All",
+      "builder": "Builders",
+      "civil": "Civil Engineering",
+      "reseller": "Resellers",
+      "architect": "Architects",
+      "individual": "Individuals"
+    },
+    "items": {
+      "t1": {
+        "name": "Mohamed El Amrani",
+        "role": "Site Director",
+        "company": "Société El Amrani BTP",
+        "type": "builder",
+        "stars": 5,
+        "text": "We have been working with Dakhla Aménagement since 2019 and the quality of CPJ 45 cement is consistent. Deliveries are on time and the sales team is very responsive. They are our reference supplier for all our residential projects in Dakhla."
+      },
+      "t2": {
+        "name": "Fatima Zahra Bensaid",
+        "role": "Civil Engineer",
+        "company": "Cabinet Bensaid Ingénierie",
+        "type": "civil",
+        "stars": 5,
+        "text": "Dakhla Aménagement's CPJ 55 was our choice for the RN1 viaduct. The compressive strength is excellent and meets certifications. The technical team supported us throughout the project with professionalism."
+      },
+      "t3": {
+        "name": "Abdelkader Diop",
+        "role": "Manager",
+        "company": "Diop Matériaux",
+        "type": "reseller",
+        "stars": 5,
+        "text": "As a reseller, the 5% discount and reliability of deliveries are a real plus. DAM cement is the most requested by our customers. The 50 kg bag packaging is practical and quality is consistently met with every order."
+      },
+      "t4": {
+        "name": "Amina Tazi",
+        "role": "Licensed Architect",
+        "company": "Atelier Tazi Architecture",
+        "type": "architect",
+        "stars": 4,
+        "text": "I recommend CPJ 45 for plastering and finishing. The grinding fineness allows for smooth and durable surfaces. For seaside projects, CPJ 55 perfectly resists sea spray. A reliable partner for our projects in Dakhla."
+      },
+      "t5": {
+        "name": "Youssef El Idrissi",
+        "role": "Public Contractor",
+        "company": "PROVUD SA",
+        "type": "civil",
+        "stars": 5,
+        "text": "Dakhla Aménagement's grinding center is strategic for supplying the South. We used CPJ 55 for the foundations of the new fishing port. Bulk delivery is efficient and the quality-price ratio is unbeatable in the region."
+      },
+      "t6": {
+        "name": "Hassan Moussaid",
+        "role": "Self-builder",
+        "company": "",
+        "type": "individual",
+        "stars": 5,
+        "text": "For building my villa in Dakhla, I used CPJ 45 for all the masonry. The online quote is convenient and prices are transparent. Delivery was made the day after my order. I highly recommend!"
+      },
+      "t7": {
+        "name": "Rachid Ouakrim",
+        "role": "Business Owner",
+        "company": "Ouakrim Construction",
+        "type": "builder",
+        "stars": 5,
+        "text": "We deliver over 20 construction sites per year with DAM cement. The consistency of quality is remarkable — each batch meets specifications. The emergency delivery service has saved us several times. A trusted partner."
+      },
+      "t8": {
+        "name": "Khadija Benali",
+        "role": "Purchasing Manager",
+        "company": "Société Benali & Fils",
+        "type": "reseller",
+        "stars": 4,
+        "text": "The partnership with Dakhla Aménagement is simple and efficient. Reseller rates are competitive, logistics are reliable and our sales contact is always available. It's a supplier that understands the needs of local distributors."
+      }
+    },
+    "cta": {
+      "title": "Join our satisfied clients",
+      "subtitle": "Request your free quote and discover DAM quality",
+      "button": "Request a quote"
+    }
+  },
+  "careers": {
+    "title": "Careers & Employment",
+    "subtitle": "Join a team committed to the development of Southern Morocco",
+    "why": {
+      "title": "Why Join Us",
+      "stability": {
+        "title": "Job Stability",
+        "desc": "Dakhla Aménagement is a Public Limited Company founded in 2015, offering remarkable professional stability in the Dakhla region. Our continuous growth guarantees long-term career development prospects."
+      },
+      "training": {
+        "title": "Continuous Training",
+        "desc": "We invest in the development of our employees with technical, safety and management training programs. Each employee benefits from a personalized annual training plan."
+      },
+      "benefits": {
+        "title": "Social Benefits",
+        "desc": "Competitive salary, medical coverage, transportation, productivity bonuses and regional benefits. We ensure the well-being of every team member."
+      },
+      "impact": {
+        "title": "Regional Impact",
+        "desc": "With 35 direct jobs and over 350 indirect jobs, Dakhla Aménagement is a major economic player in the region. Every employee contributes directly to the development of Southern Morocco."
+      }
+    },
+    "jobs": {
+      "title": "Our Positions",
+      "subtitle": "Key roles at the heart of our industrial activity",
+      "operator": {
+        "title": "Grinding Operator",
+        "desc": "Operating and monitoring grinding equipment. Controlling production parameters and first-level maintenance.",
+        "skills": "Technical training, observational skills, rigor"
+      },
+      "technician": {
+        "title": "Maintenance Technician",
+        "desc": "Preventive and corrective maintenance of industrial equipment. Troubleshooting and optimization of production lines.",
+        "skills": "BTS/DUT industrial maintenance, experience preferred"
+      },
+      "engineer": {
+        "title": "Quality Engineer",
+        "desc": "Managing the quality laboratory, resistance testing, chemical and physical analysis of products. Ensuring compliance with NM 10.1.004 and EN 197-1 standards.",
+        "skills": "Engineering degree, materials/BCG specialty"
+      },
+      "driver": {
+        "title": "Delivery Driver",
+        "desc": "Delivering bulk and bagged cement to construction sites in the region. Vehicle maintenance and field customer relations.",
+        "skills": "Category C license, heavy vehicle driving experience"
+      },
+      "sales": {
+        "title": "Sales Representative",
+        "desc": "Commercial development in the Southern Moroccan market. Prospecting, client follow-up, quote preparation and contract negotiation.",
+        "skills": "Commercial training, strong interpersonal skills"
+      },
+      "admin": {
+        "title": "Administration & Accounting",
+        "desc": "Administrative management, accounting, invoicing and relations with financial partners. Support to general management.",
+        "skills": "Accounting/management training, ERP proficiency"
+      }
+    },
+    "openings": {
+      "title": "Job Openings",
+      "subtitle": "Currently available positions",
+      "noOpenings": "No current job openings. Send us your spontaneous application!",
+      "spontaneous": "Spontaneous Application",
+      "spontaneousDesc": "Can't find the position that suits you? Send us your CV and cover letter to the address below. We keep every application for our future recruitment.",
+      "sendCv": "Send my application",
+      "cdi": "Permanent",
+      "cdd": "Fixed-term",
+      "dakhla": "Dakhla, Morocco"
+    },
+    "life": {
+      "title": "Living in Dakhla",
+      "subtitle": "An exceptional quality of life in the heart of Southern Morocco",
+      "desc": "Dakhla offers a unique living environment between the Atlantic Ocean and the Sahara Desert. With over 300 days of sunshine per year, a preserved coastline and a growing economy, the city attracts more and more talent. The community is warm, the cost of living is affordable and water sports (surfing, kitesurfing, fishing) are world-renowned.",
+      "highlights": {
+        "sun": "300+ days of sunshine/year",
+        "ocean": "Atlantic Ocean nearby",
+        "cost": "Affordable cost of living",
+        "community": "Welcoming community"
+      }
+    },
+    "cta": {
+      "title": "Join the DAM Adventure",
+      "subtitle": "Send your application to recrutement@ciment-dam.com",
+      "button": "Send my application"
+    }
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": "Cement solutions adapted to every type of project",
+    "concrete": {
+      "title": "Reinforced Concrete & Infrastructure",
+      "desc": "CPJ 45 recommended — Foundations, columns, beams and reinforced concrete structures requiring reliable strength and fast formwork removal.",
+      "product": "CPJ 45"
+    },
+    "residential": {
+      "title": "Residential Construction",
+      "desc": "CPJ 45 recommended — Masonry, plastering, floor slabs and all construction work for villas and residential buildings.",
+      "product": "CPJ 45"
+    },
+    "maritime": {
+      "title": "Maritime Structures",
+      "desc": "CPJ 55 recommended — Superior resistance to sea spray and aggressive coastal environments. Exceptional durability.",
+      "product": "CPJ 55"
+    },
+    "civil": {
+      "title": "Civil Engineering & Major Works",
+      "desc": "CPJ 55 recommended — Bridges, roads, tunnels and engineering structures requiring the highest compressive strength.",
+      "product": "CPJ 55"
+    },
+    "distribution": {
+      "title": "Resellers & Distribution",
+      "desc": "Special reseller rates with 5% discount. Flexible packaging and optimized delivery for distributors.",
+      "product": "-5%"
+    }
+  },
+  "homeExtras": {
+    "testimonialsTitle": "Trusted by Professionals",
+    "blogTitle": "Latest News",
+    "blogViewAll": "View all articles",
+    "galleryTitle": "Our Factory in Images",
+    "galleryViewAll": "View full gallery",
+    "sustainabilityTitle": "Our Environmental Commitment",
+    "sustainabilityDesc": "Dakhla Aménagement is committed to a sustainable future: CO₂ emissions reduction, energy efficiency and circular economy at the heart of our industrial process.",
+    "sustainabilityCta": "Discover our approach"
+  },
+  "productComparison": {
+    "title": "CPJ 45 vs CPJ 55 Comparison",
+    "subtitle": "Find the right cement for your project",
+    "feature": "Characteristic",
+    "cpj45": "CPJ 45",
+    "cpj55": "CPJ 55",
+    "resistance": "28-day Strength",
+    "resistanceVal45": "45 MPa",
+    "resistanceVal55": "55 MPa",
+    "fineness": "Blaine Fineness",
+    "finenessVal45": "≥ 350 m²/kg",
+    "finenessVal55": "≥ 400 m²/kg",
+    "setting": "Setting Time",
+    "settingVal45": "≥ 45 min",
+    "settingVal55": "≥ 45 min",
+    "use": "Recommended Use",
+    "useVal45": "Reinforced concrete, Masonry, Plastering",
+    "useVal55": "Civil engineering, Major works, Coastal areas",
+    "price": "Price / tonne",
+    "priceVal45": "1,500 DH",
+    "priceVal55": "1,600 DH",
+    "packaging": "Packaging",
+    "packagingVal": "Bulk | 50kg Bags | Big Bag",
+    "standard": "Standards",
+    "standardVal": "NM 10.1.004 / EN 197-1",
+    "badge45": "Best-seller",
+    "badge55": "High Performance"
   },
   "common": {
     "learnMore": "Learn more",
@@ -533,5 +1257,141 @@
     "required": "This field is required",
     "invalidEmail": "Invalid email address",
     "invalidPhone": "Invalid phone number"
+  },
+  "press": {
+    "title": "Press Room",
+    "subtitle": "Press releases, resources and media contacts",
+    "releases": {
+      "title": "Press Releases",
+      "r1": {
+        "date": "March 15, 2026",
+        "title": "Dakhla Aménagement surpasses 100,000 tonnes of annual capacity",
+        "excerpt": "The Lassargua grinding center reaches a strategic milestone with increased production capacity to meet the growing demand of the Southern Moroccan and Mauritanian markets."
+      },
+      "r2": {
+        "date": "January 20, 2026",
+        "title": "Launch of the 2026 energy efficiency program",
+        "excerpt": "Dakhla Aménagement announces a significant investment in energy optimization of its grinding facilities, reducing electricity consumption per tonne produced."
+      },
+      "r3": {
+        "date": "November 5, 2025",
+        "title": "EN 197-1 certification: a guarantee of international quality",
+        "excerpt": "Our CPJ 45 and CPJ 55 cements have obtained certification to the European standard EN 197-1, confirming their compliance with international quality standards."
+      },
+      "r4": {
+        "date": "September 15, 2025",
+        "title": "Dakhla Aménagement participates in the Dakhla BTP Fair",
+        "excerpt": "The company will be present at the Dakhla Building and Public Works Fair to present its cement solutions and meet industry players."
+      }
+    },
+    "kit": {
+      "title": "Press Kit",
+      "subtitle": "Downloadable resources for the media",
+      "logo": "DAM Logo (vector + high-resolution PNG)",
+      "photos": "HD photos of the factory and products",
+      "charte": "DAM graphic charter",
+      "fiche": "Company factsheet PDF"
+    },
+    "contact": {
+      "title": "Press Contact",
+      "name": "Communications Department",
+      "email": "presse@ciment-dam.com",
+      "phone": "+212 528-XXXXXX"
+    }
+  },
+  "investors": {
+    "title": "Investor Relations",
+    "subtitle": "Financial information and governance of Dakhla Aménagement S.A.",
+    "keyFigures": {
+      "title": "Key Financial Figures",
+      "capital": {
+        "label": "Share Capital",
+        "value": "30,100,000 MAD"
+      },
+      "capacity": {
+        "label": "Production Capacity",
+        "value": "100K+ T/year"
+      },
+      "creation": {
+        "label": "Year Founded",
+        "value": "2015"
+      },
+      "shareholding": {
+        "label": "Shareholding",
+        "value": "100% Mauritanian"
+      }
+    },
+    "governance": {
+      "title": "Governance",
+      "subtitle": "Rigorous and transparent management",
+      "board": {
+        "title": "Board of Directors",
+        "desc": "The Board of Directors of Dakhla Aménagement S.A. is composed of experienced professionals from the industrial and financial sectors, ensuring a long-term strategic vision and transparent management of the company."
+      },
+      "management": {
+        "title": "General Management",
+        "desc": "General Management ensures the implementation of the strategy defined by the Board of Directors and the daily operational management of the grinding center, with particular attention to quality, safety and industrial performance."
+      },
+      "orgchart": {
+        "title": "Organization",
+        "desc": "The company is structured around three operational departments: Industrial Department (production, maintenance, quality), Commercial Department (sales, logistics, customer service) and Administrative & Financial Department (accounting, HR, legal)."
+      }
+    },
+    "documents": {
+      "title": "Financial Documents",
+      "subtitle": "Downloadable reports and balance sheets",
+      "comingSoon": "Financial reports will be available soon. Contact us for any information request."
+    },
+    "contact": {
+      "title": "Investor Contact",
+      "email": "investisseurs@ciment-dam.com"
+    }
+  },
+  "documents": {
+    "title": "Documents & Regulations",
+    "subtitle": "Access our technical, regulatory and contractual documents",
+    "technical": {
+      "title": "Technical Data Sheets",
+      "f1": {
+        "name": "CPJ 45 technical data sheet",
+        "desc": "Complete physical and chemical characteristics of CPJ 45"
+      },
+      "f2": {
+        "name": "CPJ 55 technical data sheet",
+        "desc": "Complete physical and chemical characteristics of CPJ 55"
+      },
+      "f3": {
+        "name": "Cement safety data sheet",
+        "desc": "Safety information and precautions for cement use"
+      }
+    },
+    "certificates": {
+      "title": "Certificates & Compliance",
+      "c1": {
+        "name": "NM 10.1.004 Certificate",
+        "desc": "Compliance with the Moroccan cement standard"
+      },
+      "c2": {
+        "name": "EN 197-1 Certificate",
+        "desc": "Compliance with the European cement standard"
+      }
+    },
+    "legal": {
+      "title": "Contractual Documents",
+      "l1": {
+        "name": "General terms and conditions of sale",
+        "desc": "GTC applicable to all cement and clinker orders"
+      },
+      "l2": {
+        "name": "General terms and conditions of purchase",
+        "desc": "GTC applicable to suppliers and service providers"
+      },
+      "l3": {
+        "name": "Tax compliance certificate",
+        "desc": "Certificate of tax compliance of the company"
+      }
+    },
+    "download": "Download",
+    "comingSoon": "Document coming soon"
   }
 }

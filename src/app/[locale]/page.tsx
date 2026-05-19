@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ChevronDown, Truck, Factory, Beaker, Package } from 'lucide-react';
+import { ArrowRight, ChevronDown, Truck, Factory, Beaker, Package, Building2, Home, Waves, Construction, Star, Leaf, Zap, Recycle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal, CountUp } from '@/components/shared/Animations';
 import { HeroVideo } from '@/components/shared/HeroVideo';
@@ -44,6 +44,33 @@ export default function HomePage() {
       desc: t('process.step4.desc'),
     },
   ];
+
+  const solutions = [
+    { key: 'concrete', icon: Building2, color: '#1B3A5C' },
+    { key: 'residential', icon: Home, color: '#C1272D' },
+    { key: 'maritime', icon: Waves, color: '#0E7490' },
+    { key: 'civil', icon: Construction, color: '#7C3AED' },
+    { key: 'distribution', icon: Truck, color: '#E8B84B' },
+  ];
+
+  const previewTestimonials = ['t1', 't2', 't5'];
+
+  const previewArticles = ['article1', 'article2', 'article5'];
+
+  const galleryImages = [
+    { src: '/images/factory/factory-aerial.jpg', alt: 'Factory aerial' },
+    { src: '/images/factory/factory-exterior.jpg', alt: 'Factory exterior' },
+    { src: '/images/factory/factory-silos.jpg', alt: 'Factory silos' },
+    { src: '/images/products/cpj45-bags.jpg', alt: 'CPJ 45 bags' },
+    { src: '/images/products/bulk-cement-truck.jpg', alt: 'Bulk cement truck' },
+    { src: '/images/projects/villa-construction.jpg', alt: 'Villa construction' },
+  ];
+
+  const articleImages: Record<string, string> = {
+    article1: '/images/products/cpj45-bags.jpg',
+    article2: '/images/factory/factory-aerial.jpg',
+    article5: '/images/projects/infrastructure-road.jpg',
+  };
 
   return (
     <>
@@ -164,6 +191,10 @@ export default function HomePage() {
                       <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj45.specs.use')}</p>
                     </div>
                   </div>
+                  <div className="mt-5 flex items-center gap-2 bg-[#E8B84B]/15 border border-[#E8B84B]/30 rounded-xl px-4 py-3">
+                    <span className="text-2xl font-bold text-[#1B3A5C]">1 500</span>
+                    <span className="text-sm font-semibold text-[#1B3A5C]/70">DH/T</span>
+                  </div>
                   <div className="mt-6 flex items-center gap-4">
                     <Link href={`/${locale}/produits`}>
                       <span className="inline-flex items-center gap-1 text-sm font-medium text-[#1B3A5C] hover:gap-2 transition-all">
@@ -216,6 +247,10 @@ export default function HomePage() {
                       <span className="text-xs text-[#6B7280]">{t('products.specLabels.use')}</span>
                       <p className="text-sm font-semibold text-[#1B3A5C]">{t('products.cpj55.specs.use')}</p>
                     </div>
+                  </div>
+                  <div className="mt-5 flex items-center gap-2 bg-[#E8B84B]/15 border border-[#E8B84B]/30 rounded-xl px-4 py-3">
+                    <span className="text-2xl font-bold text-[#1B3A5C]">1 600</span>
+                    <span className="text-sm font-semibold text-[#1B3A5C]/70">DH/T</span>
                   </div>
                   <div className="mt-6 flex items-center gap-4">
                     <Link href={`/${locale}/produits`}>
@@ -293,7 +328,6 @@ export default function HomePage() {
 
       {/* ====== KEY NUMBERS SECTION (with factory background) ====== */}
       <section className="py-20 md:py-28 relative overflow-hidden">
-        {/* Background image */}
         <div className="absolute inset-0">
           <Image
             src="/images/factory/factory-silos.jpg"
@@ -325,6 +359,253 @@ export default function HomePage() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ====== NEW SECTION A: NOS SOLUTIONS ====== */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+                {t('solutions.title')}
+              </h2>
+              <p className="mt-4 text-[#6B7280] text-[clamp(1rem,1.5vw,1.2rem)] max-w-2xl mx-auto">
+                {t('solutions.subtitle')}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {solutions.map((sol, i) => (
+              <ScrollReveal key={sol.key} delay={i * 0.08}>
+                <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 relative">
+                  <div
+                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
+                    style={{ backgroundColor: `${sol.color}15` }}
+                  >
+                    <sol.icon className="w-6 h-6" style={{ color: sol.color }} />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#1B3A5C] mb-3">
+                    {t(`solutions.${sol.key}.title`)}
+                  </h3>
+                  <p className="text-sm text-[#6B7280] leading-relaxed">
+                    {t(`solutions.${sol.key}.desc`)}
+                  </p>
+                  <div className="mt-4 inline-flex items-center bg-[#E8B84B]/15 border border-[#E8B84B]/30 rounded-full px-3 py-1">
+                    <span className="text-xs font-bold text-[#1B3A5C]">
+                      {t(`solutions.${sol.key}.product`)}
+                    </span>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ====== NEW SECTION B: TESTIMONIALS PREVIEW ====== */}
+      <section className="py-20 md:py-28 bg-[#F7F8FA]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+                {t('homeExtras.testimonialsTitle')}
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {previewTestimonials.map((key, i) => (
+              <ScrollReveal key={key} delay={i * 0.1}>
+                <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8">
+                  <div className="flex gap-1 mb-4">
+                    {Array.from({ length: Number(t(`testimonials.items.${key}.stars`)) }).map((_, si) => (
+                      <Star key={si} className="w-4 h-4 fill-[#E8B84B] text-[#E8B84B]" />
+                    ))}
+                  </div>
+                  <p className="text-sm text-[#1A1A2E]/70 leading-relaxed italic mb-6 line-clamp-4">
+                    &ldquo;{t(`testimonials.items.${key}.text`)}&rdquo;
+                  </p>
+                  <div className="border-t border-[#E5E7EB] pt-4">
+                    <p className="text-sm font-semibold text-[#1B3A5C]">
+                      {t(`testimonials.items.${key}.name`)}
+                    </p>
+                    <p className="text-xs text-[#6B7280]">
+                      {t(`testimonials.items.${key}.role`)}{t(`testimonials.items.${key}.company`) ? ` — ${t(`testimonials.items.${key}.company`)}` : ''}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link href={`/${locale}/temoignages`}>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#1B3A5C] hover:gap-3 transition-all">
+                  {t('common.viewAll')} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ====== NEW SECTION C: BLOG PREVIEW ====== */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+                {t('homeExtras.blogTitle')}
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {previewArticles.map((key, i) => {
+              const slugMap: Record<string, string> = {
+                article1: 'choisir-ciment-projet',
+                article2: 'capacite-500k-tonnes',
+                article5: 'projet-infrastructure-dakhla',
+              };
+              return (
+                <ScrollReveal key={key} delay={i * 0.1}>
+                  <Link href={`/${locale}/blog/${slugMap[key]}`}>
+                    <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
+                      <div className="relative h-48">
+                        <Image
+                          src={articleImages[key] || '/images/factory/factory-exterior.jpg'}
+                          alt={t(`blog.articles.${key}.title`)}
+                          fill
+                          quality={90}
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute top-3 left-3 bg-[#1B3A5C]/80 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm">
+                          {t(`blog.articles.${key}.category`)}
+                        </div>
+                      </div>
+                      <div className="p-5">
+                        <p className="text-xs text-[#6B7280] mb-2">{t(`blog.articles.${key}.date`)}</p>
+                        <h3 className="text-sm font-bold text-[#1B3A5C] mb-2 line-clamp-2 group-hover:text-[#C1272D] transition-colors">
+                          {t(`blog.articles.${key}.title`)}
+                        </h3>
+                        <p className="text-xs text-[#6B7280] leading-relaxed line-clamp-2">
+                          {t(`blog.articles.${key}.excerpt`)}
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+
+          <ScrollReveal delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link href={`/${locale}/blog`}>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#1B3A5C] hover:gap-3 transition-all">
+                  {t('homeExtras.blogViewAll')} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ====== NEW SECTION D: GALLERY PREVIEW ====== */}
+      <section className="py-20 md:py-28 bg-[#F7F8FA]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+                {t('homeExtras.galleryTitle')}
+              </h2>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {galleryImages.map((img, i) => (
+              <ScrollReveal key={i} delay={i * 0.05}>
+                <Link href={`/${locale}/galerie`}>
+                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      quality={90}
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-[#1B3A5C]/0 group-hover:bg-[#1B3A5C]/20 transition-colors duration-300" />
+                  </div>
+                </Link>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link href={`/${locale}/galerie`}>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#1B3A5C] hover:gap-3 transition-all">
+                  {t('homeExtras.galleryViewAll')} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* ====== NEW SECTION E: SUSTAINABILITY PREVIEW ====== */}
+      <section className="py-20 md:py-28 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/factory/factory-silos.jpg"
+            alt="Factory silos"
+            fill
+            quality={90}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-[#1B3A5C]/85" />
+        </div>
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+          <ScrollReveal>
+            <div className="text-center mb-12">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-white tracking-[-0.02em] leading-[1.15]">
+                {t('homeExtras.sustainabilityTitle')}
+              </h2>
+              <p className="mt-4 text-white/70 text-[clamp(1rem,1.5vw,1.15rem)] max-w-2xl mx-auto leading-relaxed">
+                {t('homeExtras.sustainabilityDesc')}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { icon: Leaf, label: locale === 'fr' ? 'Réduction CO₂' : 'CO₂ Reduction' },
+              { icon: Zap, label: locale === 'fr' ? 'Efficacité Énergétique' : 'Energy Efficiency' },
+              { icon: Recycle, label: locale === 'fr' ? 'Économie Circulaire' : 'Circular Economy' },
+            ].map((item, i) => (
+              <ScrollReveal key={i} delay={i * 0.1}>
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
+                  <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mx-auto mb-4">
+                    <item.icon className="w-6 h-6 text-[#E8B84B]" />
+                  </div>
+                  <p className="text-sm font-semibold text-white">{item.label}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <ScrollReveal delay={0.3}>
+            <div className="mt-10 text-center">
+              <Link href={`/${locale}/durabilite`}>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#E8B84B] hover:gap-3 transition-all">
+                  {t('homeExtras.sustainabilityCta')} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 

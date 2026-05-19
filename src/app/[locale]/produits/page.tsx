@@ -14,9 +14,34 @@ export default function ProduitsPage() {
   const params = useParams();
   const locale = (params?.locale as string) || 'fr';
 
+  const comparisonRows = [
+    { feature: 'resistance', val45: 'resistanceVal45', val55: 'resistanceVal55' },
+    { feature: 'fineness', val45: 'finenessVal45', val55: 'finenessVal55' },
+    { feature: 'setting', val45: 'settingVal45', val55: 'settingVal55' },
+    { feature: 'use', val45: 'useVal45', val55: 'useVal55' },
+    { feature: 'price', val45: 'priceVal45', val55: 'priceVal55' },
+    { feature: 'packaging', val45: 'packagingVal', val55: 'packagingVal' },
+    { feature: 'standard', val45: 'standardVal', val55: 'standardVal' },
+  ];
+
   return (
     <>
       <PageHero title={t('products.title')} subtitle={t('products.subtitle')} sectionCounter="/01" />
+
+      {/* ====== PRICE BANNER ====== */}
+      <section className="bg-[#E8B84B] py-5">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-12 text-center">
+          <div className="flex items-center gap-3">
+            <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 45</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 500 DH/tonne</span>
+          </div>
+          <div className="hidden sm:block w-px h-8 bg-[#1A1A2E]/30" />
+          <div className="flex items-center gap-3">
+            <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 55</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 600 DH/tonne</span>
+          </div>
+        </div>
+      </section>
 
       {/* CPJ 45 — Full detail */}
       <section className="py-16 md:py-24 bg-white">
@@ -302,8 +327,68 @@ export default function ProduitsPage() {
         </div>
       </section>
 
-      {/* Packaging & Standards */}
+      {/* ====== PRODUCT COMPARISON TABLE ====== */}
       <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="text-center mb-14">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+                {t('productComparison.title')}
+              </h2>
+              <p className="mt-4 text-[#6B7280] text-[clamp(1rem,1.5vw,1.15rem)] max-w-xl mx-auto">
+                {t('productComparison.subtitle')}
+              </p>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.1}>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[600px] border-collapse">
+                <thead>
+                  <tr>
+                    <th className="text-left p-4 bg-[#1B3A5C] text-white font-semibold text-sm rounded-tl-xl">
+                      {t('productComparison.feature')}
+                    </th>
+                    <th className="text-center p-4 bg-[#1B3A5C] text-white font-semibold text-sm">
+                      <div className="flex flex-col items-center gap-1">
+                        <span>{t('productComparison.cpj45')}</span>
+                        <span className="text-[10px] bg-[#E8B84B] text-[#1A1A2E] px-2 py-0.5 rounded-full font-bold">{t('productComparison.badge45')}</span>
+                      </div>
+                    </th>
+                    <th className="text-center p-4 bg-[#1B3A5C] text-white font-semibold text-sm rounded-tr-xl">
+                      <div className="flex flex-col items-center gap-1">
+                        <span>{t('productComparison.cpj55')}</span>
+                        <span className="text-[10px] bg-white/20 text-white px-2 py-0.5 rounded-full font-bold">{t('productComparison.badge55')}</span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonRows.map((row, i) => (
+                    <tr
+                      key={row.feature}
+                      className={i % 2 === 0 ? 'bg-[#F7F8FA]' : 'bg-white'}
+                    >
+                      <td className="p-4 text-sm font-medium text-[#1B3A5C] border-b border-[#E5E7EB]">
+                        {t(`productComparison.${row.feature}`)}
+                      </td>
+                      <td className="p-4 text-sm text-[#1A1A2E]/70 text-center border-b border-[#E5E7EB]">
+                        {t(`productComparison.${row.val45}`)}
+                      </td>
+                      <td className="p-4 text-sm text-[#1A1A2E]/70 text-center border-b border-[#E5E7EB]">
+                        {t(`productComparison.${row.val55}`)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Packaging & Standards */}
+      <section className="py-16 md:py-24 bg-[#F7F8FA]">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
             <div className="bg-[#1B3A5C] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">

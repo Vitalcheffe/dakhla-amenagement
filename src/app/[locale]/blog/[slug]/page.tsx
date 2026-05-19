@@ -15,6 +15,20 @@ const articleImages: Record<string, string> = {
   'construction-durable-ciment': '/images/sustainability.jpg',
   'projet-infrastructure-dakhla': '/images/construction-site.jpg',
   'stockage-ciment-chantier': '/images/grinding-process.jpg',
+  'cpj45-vs-cpj55-guide': '/images/products/cpj45-bags.jpg',
+  'calculer-quantite-ciment': '/images/construction-site.jpg',
+  'beton-arme-maroc': '/images/projects/villa-construction.jpg',
+  'dakhla-pole-developpement': '/images/dakhla-aerial.jpg',
+  'role-gypse-ciment': '/images/process/step2-grinding.jpg',
+  'conditionnement-vrac': '/images/products/bulk-cement-truck.jpg',
+  'construction-zone-cotiere': '/images/projects/port-construction.jpg',
+  '10-ans-excellence': '/images/factory/factory-exterior.jpg',
+  'devenir-revendeur': '/images/products/big-bag-cement.jpg',
+  'transport-ciment-logistique': '/images/delivery/concrete-delivery.jpg',
+  'rse-communaute-dakhla': '/images/sustainability.jpg',
+  'essais-resistance-ciment': '/images/lab/lab-compression-test.jpg',
+  'big-bag-vs-sacs': '/images/products/cpj55-bags.jpg',
+  '5-erreurs-ciment': '/images/cement-bags.jpg',
 };
 
 const articleMap: Record<string, number> = {
@@ -24,6 +38,20 @@ const articleMap: Record<string, number> = {
   'construction-durable-ciment': 4,
   'projet-infrastructure-dakhla': 5,
   'stockage-ciment-chantier': 6,
+  'cpj45-vs-cpj55-guide': 7,
+  'calculer-quantite-ciment': 8,
+  'beton-arme-maroc': 9,
+  'dakhla-pole-developpement': 10,
+  'role-gypse-ciment': 11,
+  'conditionnement-vrac': 12,
+  'construction-zone-cotiere': 13,
+  '10-ans-excellence': 14,
+  'devenir-revendeur': 15,
+  'transport-ciment-logistique': 16,
+  'rse-communaute-dakhla': 17,
+  'essais-resistance-ciment': 18,
+  'big-bag-vs-sacs': 19,
+  '5-erreurs-ciment': 20,
 };
 
 const articleSlugs = [
@@ -33,6 +61,20 @@ const articleSlugs = [
   'construction-durable-ciment',
   'projet-infrastructure-dakhla',
   'stockage-ciment-chantier',
+  'cpj45-vs-cpj55-guide',
+  'calculer-quantite-ciment',
+  'beton-arme-maroc',
+  'dakhla-pole-developpement',
+  'role-gypse-ciment',
+  'conditionnement-vrac',
+  'construction-zone-cotiere',
+  '10-ans-excellence',
+  'devenir-revendeur',
+  'transport-ciment-logistique',
+  'rse-communaute-dakhla',
+  'essais-resistance-ciment',
+  'big-bag-vs-sacs',
+  '5-erreurs-ciment',
 ];
 
 export default function BlogArticlePage() {
