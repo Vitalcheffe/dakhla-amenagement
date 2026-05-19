@@ -1,71 +1,101 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Camera, Filter, X, Play } from 'lucide-react';
 import { PageHero } from '@/components/shared/PageHero';
-import { ScrollReveal } from '@/components/shared/Animations';
+import { ScrollReveal, StaggerContainer, StaggerItem } from '@/components/shared/Animations';
 import { Lightbox } from '@/components/shared/Lightbox';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
-type Category = 'all' | 'factory' | 'products' | 'delivery' | 'lab' | 'projects' | 'team';
+type Category = 'all' | 'factory' | 'lab' | 'products' | 'delivery' | 'projects' | 'team' | 'dakhla';
 
-const categoryKeys: Category[] = ['all', 'factory', 'products', 'delivery', 'lab', 'projects', 'team'];
+const categoryKeys: Category[] = ['all', 'factory', 'lab', 'products', 'delivery', 'projects', 'team', 'dakhla'];
 
-const photoKeys = [
-  'p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9', 'p10',
-  'p11', 'p12', 'p13', 'p14', 'p15', 'p16', 'p17', 'p18', 'p19', 'p20',
-  'p21', 'p22', 'p23', 'p24',
+interface GalleryPhoto {
+  key: string;
+  src: string;
+  cat: Category;
+  aspect: 'portrait' | 'landscape' | 'square';
+}
+
+const allPhotos: GalleryPhoto[] = [
+  // Factory - Real photos
+  { key: 'p1', src: '/images/real/factory/factory-1.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p2', src: '/images/real/factory/factory-2.jpg', cat: 'factory', aspect: 'portrait' },
+  // Factory - Stock photos
+  { key: 'p3', src: '/images/factory/factory-aerial.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p4', src: '/images/factory/factory-interior.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p5', src: '/images/factory/factory-silos.jpg', cat: 'factory', aspect: 'portrait' },
+  { key: 'p6', src: '/images/factory/control-room.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p7', src: '/images/factory/warehouse.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p8', src: '/images/factory/factory-exterior.jpg', cat: 'factory', aspect: 'landscape' },
+  // Process as factory
+  { key: 'p9', src: '/images/process/step1-clinker-reception.jpg', cat: 'factory', aspect: 'square' },
+  { key: 'p10', src: '/images/process/step2-grinding.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p11', src: '/images/process/step3-dosing-lab.jpg', cat: 'factory', aspect: 'portrait' },
+  { key: 'p12', src: '/images/process/step4-packaging.jpg', cat: 'factory', aspect: 'landscape' },
+  // Lab - Real photos
+  { key: 'p13', src: '/images/real/lab/lab-1.jpg', cat: 'lab', aspect: 'portrait' },
+  { key: 'p14', src: '/images/real/lab/lab-2.jpg', cat: 'lab', aspect: 'landscape' },
+  { key: 'p15', src: '/images/real/lab/lab-3.jpg', cat: 'lab', aspect: 'square' },
+  { key: 'p16', src: '/images/real/lab/lab-4.jpg', cat: 'lab', aspect: 'portrait' },
+  { key: 'p17', src: '/images/real/lab/lab-5.jpg', cat: 'lab', aspect: 'landscape' },
+  { key: 'p18', src: '/images/real/lab/lab-6.jpg', cat: 'lab', aspect: 'portrait' },
+  // Lab - Stock
+  { key: 'p19', src: '/images/lab/lab-compression-test.jpg', cat: 'lab', aspect: 'landscape' },
+  // Products - Real
+  { key: 'p20', src: '/images/real/products/cement-bags-1.jpg', cat: 'products', aspect: 'landscape' },
+  // Products - Stock
+  { key: 'p21', src: '/images/products/cpj45-bags.jpg', cat: 'products', aspect: 'portrait' },
+  { key: 'p22', src: '/images/products/cpj55-bags.jpg', cat: 'products', aspect: 'portrait' },
+  { key: 'p23', src: '/images/products/big-bag-cement.jpg', cat: 'products', aspect: 'landscape' },
+  { key: 'p24', src: '/images/products/bulk-cement-truck.jpg', cat: 'products', aspect: 'landscape' },
+  { key: 'p25', src: '/images/products/cement-powder-closeup.jpg', cat: 'products', aspect: 'square' },
+  // Delivery - Real
+  { key: 'p26', src: '/images/real/delivery/delivery-1.jpg', cat: 'delivery', aspect: 'landscape' },
+  // Delivery - Stock
+  { key: 'p27', src: '/images/delivery/delivery-fleet.jpg', cat: 'delivery', aspect: 'landscape' },
+  { key: 'p28', src: '/images/delivery/concrete-delivery.jpg', cat: 'delivery', aspect: 'portrait' },
+  // Projects - Real
+  { key: 'p29', src: '/images/real/construction/construction-1.jpg', cat: 'projects', aspect: 'landscape' },
+  // Projects - Stock
+  { key: 'p30', src: '/images/projects/villa-construction.jpg', cat: 'projects', aspect: 'portrait' },
+  { key: 'p31', src: '/images/projects/infrastructure-road.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p32', src: '/images/projects/port-construction.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p33', src: '/images/projects/school-construction.jpg', cat: 'projects', aspect: 'portrait' },
+  { key: 'p34', src: '/images/projects/residential-construction.jpg', cat: 'projects', aspect: 'landscape' },
+  // Team - Real
+  { key: 'p35', src: '/images/real/team/team-1.jpg', cat: 'team', aspect: 'landscape' },
+  // Office - Real
+  { key: 'p36', src: '/images/real/office/office-1.jpg', cat: 'team', aspect: 'landscape' },
+  // Dakhla
+  { key: 'p37', src: '/images/dakhla-aerial.jpg', cat: 'dakhla', aspect: 'landscape' },
+  { key: 'p38', src: '/images/solar-industrial.jpg', cat: 'dakhla', aspect: 'landscape' },
+  { key: 'p39', src: '/images/construction-site.jpg', cat: 'dakhla', aspect: 'portrait' },
+  { key: 'p40', src: '/images/sustainability.jpg', cat: 'dakhla', aspect: 'landscape' },
 ];
 
-const photoMap: Record<string, string> = {
-  p1: '/images/factory/factory-aerial.jpg',
-  p2: '/images/factory/factory-exterior.jpg',
-  p3: '/images/factory/factory-silos.jpg',
-  p4: '/images/factory/factory-interior.jpg',
-  p5: '/images/factory/control-room.jpg',
-  p6: '/images/factory/warehouse.jpg',
-  p7: '/images/process/step1-clinker-reception.jpg',
-  p8: '/images/process/step2-grinding.jpg',
-  p9: '/images/process/step3-dosing-lab.jpg',
-  p10: '/images/process/step4-packaging.jpg',
-  p11: '/images/products/cpj45-bags.jpg',
-  p12: '/images/products/cpj55-bags.jpg',
-  p13: '/images/products/big-bag-cement.jpg',
-  p14: '/images/products/bulk-cement-truck.jpg',
-  p15: '/images/products/cement-powder-closeup.jpg',
-  p16: '/images/delivery/delivery-fleet.jpg',
-  p17: '/images/delivery/concrete-delivery.jpg',
-  p18: '/images/lab/lab-compression-test.jpg',
-  p19: '/images/projects/villa-construction.jpg',
-  p20: '/images/projects/infrastructure-road.jpg',
-  p21: '/images/projects/port-construction.jpg',
-  p22: '/images/projects/school-construction.jpg',
-  p23: '/images/projects/residential-construction.jpg',
-  p24: '/images/dakhla-aerial.jpg',
-};
-
-// Varying heights for masonry-like effect
-const heightMap: Record<string, string> = {
-  p1: 'h-64', p2: 'h-48', p3: 'h-56', p4: 'h-64',
-  p5: 'h-48', p6: 'h-56', p7: 'h-48', p8: 'h-64',
-  p9: 'h-56', p10: 'h-48', p11: 'h-56', p12: 'h-64',
-  p13: 'h-48', p14: 'h-56', p15: 'h-64', p16: 'h-48',
-  p17: 'h-56', p18: 'h-64', p19: 'h-48', p20: 'h-56',
-  p21: 'h-64', p22: 'h-48', p23: 'h-56', p24: 'h-64',
-};
-
-// Category badge colors
+// Category badge colors matching the design system
 const categoryColors: Record<string, string> = {
   factory: 'bg-[#1B3A5C]',
+  lab: 'bg-emerald-600',
   products: 'bg-[#C1272D]',
   delivery: 'bg-[#E8B84B] text-[#1A1A2E]',
-  lab: 'bg-emerald-600',
   projects: 'bg-amber-700',
   team: 'bg-violet-700',
+  dakhla: 'bg-cyan-700',
+};
+
+// Aspect ratio classes for masonry variety
+const aspectClasses: Record<string, string> = {
+  portrait: 'aspect-[3/4]',
+  landscape: 'aspect-[4/3]',
+  square: 'aspect-square',
 };
 
 export default function GaleriePage() {
@@ -76,75 +106,108 @@ export default function GaleriePage() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
-  // Build photos array from translations
-  const allPhotos = useMemo(
+  // Build photos array with translations
+  const translatedPhotos = useMemo(
     () =>
-      photoKeys.map((key) => ({
-        key,
-        src: photoMap[key],
-        alt: t(`photos.${key}.alt`),
-        cat: t(`photos.${key}.cat`) as string,
+      allPhotos.map((photo) => ({
+        ...photo,
+        alt: t(`photos.${photo.key}.alt`),
       })),
     [t]
   );
 
   const filteredPhotos =
     activeCategory === 'all'
-      ? allPhotos
-      : allPhotos.filter((p) => p.cat === activeCategory);
+      ? translatedPhotos
+      : translatedPhotos.filter((p) => p.cat === activeCategory);
 
-  // Lightbox images (all photos for navigation, filtered order)
+  // Lightbox images (filtered set)
   const lightboxImages = filteredPhotos.map((p) => ({
     src: p.src,
     alt: p.alt,
   }));
 
-  const openLightbox = (index: number) => {
+  const openLightbox = useCallback((index: number) => {
     setLightboxIndex(index);
     setLightboxOpen(true);
-  };
+  }, []);
+
+  const closeLightbox = useCallback(() => {
+    setLightboxOpen(false);
+  }, []);
+
+  // Count photos per category
+  const photoCount = useMemo(() => {
+    const counts: Record<string, number> = { all: allPhotos.length };
+    allPhotos.forEach((p) => {
+      counts[p.cat] = (counts[p.cat] || 0) + 1;
+    });
+    return counts;
+  }, []);
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} sectionCounter="/10" />
+      <PageHero title={t('title')} subtitle={t('subtitle')} sectionCounter="/09" />
 
       {/* Gallery Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-          {/* Filter Tabs */}
+          {/* Filter Bar */}
           <ScrollReveal>
-            <div className="flex gap-3 overflow-x-auto pb-4 mb-12 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+            <div className="flex items-center gap-3 overflow-x-auto pb-4 mb-10 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+              <Filter className="w-4 h-4 text-[#6B7280] shrink-0 hidden md:block" />
               {categoryKeys.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-5 py-2.5 text-sm font-medium rounded-full whitespace-nowrap transition-colors ${
+                  className={`group flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-full whitespace-nowrap transition-all duration-300 ${
                     activeCategory === cat
-                      ? 'bg-[#1B3A5C] text-white'
-                      : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C] hover:text-white'
+                      ? 'bg-[#1B3A5C] text-white shadow-lg shadow-[#1B3A5C]/20'
+                      : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C]/10'
                   }`}
                 >
                   {t(`filters.${cat}`)}
+                  <span
+                    className={`text-[11px] px-1.5 py-0.5 rounded-full ${
+                      activeCategory === cat
+                        ? 'bg-white/20 text-white'
+                        : 'bg-[#1B3A5C]/10 text-[#1B3A5C]'
+                    }`}
+                  >
+                    {photoCount[cat] || 0}
+                  </span>
                 </button>
               ))}
             </div>
           </ScrollReveal>
 
-          {/* Photo count */}
-          <div className="mb-8">
-            <p className="text-sm text-[#6B7280]">
-              {filteredPhotos.length} {locale === 'fr' ? 'photos' : 'photos'}
-            </p>
+          {/* Photo count indicator */}
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+              <Camera className="w-4 h-4" />
+              <span>
+                {filteredPhotos.length} {t('photoCount')}
+              </span>
+            </div>
+            {activeCategory !== 'all' && (
+              <button
+                onClick={() => setActiveCategory('all')}
+                className="text-sm text-[#C1272D] hover:underline flex items-center gap-1"
+              >
+                <X className="w-3 h-3" />
+                {t('clearFilter')}
+              </button>
+            )}
           </div>
 
-          {/* Masonry-style Grid */}
+          {/* Masonry Grid */}
           <AnimatePresence mode="wait">
             <motion.div
               key={activeCategory}
-              initial={{ opacity: 0, y: 10 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.3 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.35, ease: 'easeOut' }}
               className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4"
             >
               {filteredPhotos.map((photo, index) => (
@@ -152,33 +215,41 @@ export default function GaleriePage() {
                   key={photo.key}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.03 }}
+                  transition={{ duration: 0.4, delay: Math.min(index * 0.04, 0.6) }}
                   className="break-inside-avoid"
                 >
                   <div
-                    className={`group relative rounded-xl overflow-hidden cursor-pointer card-lift ${heightMap[photo.key]}`}
+                    className={`group relative rounded-xl overflow-hidden cursor-pointer ${aspectClasses[photo.aspect]}`}
                     onClick={() => openLightbox(index)}
                   >
                     <Image
                       src={photo.src}
                       alt={photo.alt}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
+
                     {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
                     {/* Category badge */}
                     <span
-                      className={`absolute top-3 left-3 px-3 py-1 text-[11px] font-semibold rounded-full text-white ${categoryColors[photo.cat] || 'bg-[#1B3A5C]'}`}
+                      className={`absolute top-3 left-3 px-3 py-1 text-[11px] font-semibold rounded-full text-white opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 ${
+                        categoryColors[photo.cat] || 'bg-[#1B3A5C]'
+                      }`}
                     >
                       {t(`filters.${photo.cat}`)}
                     </span>
 
-                    {/* Alt text on hover */}
-                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <p className="text-white text-sm font-medium">{photo.alt}</p>
+                    {/* Caption on hover */}
+                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-400">
+                      <p className="text-white text-sm font-medium drop-shadow-lg">{photo.alt}</p>
+                    </div>
+
+                    {/* Zoom icon */}
+                    <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Camera className="w-3.5 h-3.5 text-white" />
                     </div>
                   </div>
                 </motion.div>
@@ -189,11 +260,56 @@ export default function GaleriePage() {
           {/* Empty state */}
           {filteredPhotos.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-[#6B7280] text-lg">
-                {locale === 'fr' ? 'Aucune photo dans cette catégorie' : 'No photos in this category'}
-              </p>
+              <Camera className="w-12 h-12 text-[#E5E7EB] mx-auto mb-4" />
+              <p className="text-[#6B7280] text-lg">{t('emptyState')}</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-16 md:py-24 bg-[#F7F8FA]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <ScrollReveal>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-full bg-[#C1272D]/10 flex items-center justify-center">
+                <Play className="w-5 h-5 text-[#C1272D]" />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C]">{t('videoTitle')}</h2>
+            </div>
+            <p className="text-[#6B7280] text-base mb-12 max-w-2xl">{t('videoSubtitle')}</p>
+          </ScrollReveal>
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {['v1', 'v2', 'v3'].map((vKey) => (
+              <StaggerItem key={vKey}>
+                <div className="group relative rounded-xl overflow-hidden bg-[#1B3A5C] aspect-video cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                  <Image
+                    src={t(`videos.${vKey}.thumbnail`)}
+                    alt={t(`videos.${vKey}.title`)}
+                    fill
+                    className="object-cover opacity-70 group-hover:opacity-50 group-hover:scale-105 transition-all duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                  {/* Play button overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                      <Play className="w-7 h-7 text-white ml-1" />
+                    </div>
+                  </div>
+                  {/* Video info */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                    <p className="text-white text-sm font-semibold">{t(`videos.${vKey}.title`)}</p>
+                    <p className="text-white/60 text-xs mt-1">{t(`videos.${vKey}.duration`)}</p>
+                  </div>
+                  {/* Coming soon badge */}
+                  <span className="absolute top-3 right-3 px-2.5 py-1 bg-[#E8B84B] text-[#1A1A2E] text-[10px] font-bold rounded-full uppercase tracking-wider">
+                    {t('videoComingSoon')}
+                  </span>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
         </div>
       </section>
 
@@ -231,7 +347,7 @@ export default function GaleriePage() {
         <Lightbox
           images={lightboxImages}
           initialIndex={lightboxIndex}
-          onClose={() => setLightboxOpen(false)}
+          onClose={closeLightbox}
           counterLabel={t('lightbox.of')}
           closeLabel={t('lightbox.close')}
           prevLabel={t('lightbox.prev')}

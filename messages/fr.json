@@ -722,250 +722,277 @@
     "subtitle": "Notre engagement pour un avenir responsable et durable dans l'industrie cimentière",
     "engagement": {
       "title": "Nos Engagements 2030",
-      "desc": "Dakhla Aménagement S.A. s'engage à réduire son impact environnemental tout en maintenant l'excellence de ses produits. Notre vision intègre le développement durable au cœur de chaque étape de notre processus industriel.",
+      "desc": "Dakhla Aménagement S.A. s'engage à réduire son empreinte carbone de 30 % d'ici 2030. Notre feuille de route environnementale intègre l'efficacité énergétique, l'économie circulaire et la préservation de la biodiversité au cœur de chaque étape de notre processus industriel.",
       "co2": {
-        "title": "Réduction des Émissions CO₂",
-        "desc": "Investissement dans des technologies de broyage éco-énergétiques et utilisation de constituants secondaires pour réduire la quantité de clinker nécessaire par tonne de ciment produite."
+        "title": "Réduction CO₂",
+        "desc": "Optimisation de nos procédés de broyage et incorporation de constituants secondaires pour réduire la quantité de clinker nécessaire par tonne de ciment produite, avec un objectif de -30 % d'émissions d'ici 2030.",
+        "target": "Objectif : -30 % d'ici 2030"
       },
       "energy": {
         "title": "Efficacité Énergétique",
-        "desc": "Optimisation continue de nos procédés de broyage pour minimiser la consommation énergétique. Nos broyeurs à boulets haute performance garantissent un rendement énergétique optimal."
+        "desc": "Installation de panneaux solaires pour alimenter nos installations et récupération de la chaleur fatale de nos broyeurs pour optimiser notre bilan énergétique global."
       },
       "circular": {
         "title": "Économie Circulaire",
-        "desc": "Utilisation de constituants secondaires comme les cendres volantes et le laitier de haut fourneau, réduisant les déchets et l'extraction de matières premières vierges."
+        "desc": "Substitution du clinker par des ajouts minéraux (cendres volantes, laitier, filler calcaire) et recyclage de 95 % de nos déchets industriels pour réduire l'extraction de matières premières vierges."
       },
       "biodiversity": {
-        "title": "Biodiversité & Milieu Naturel",
-        "desc": "Surveillance environnementale continue de notre site de Lassargua et de ses environs. Préservation du milieu naturel dans le respect de la faune et la flore sahariennes."
+        "title": "Biodiversité",
+        "desc": "Surveillance environnementale continue de notre site de Lassargua et protection des écosystèmes locaux dans le respect de la faune et la flore sahariennes."
       }
     },
-    "numbers": {
-      "title": "En Chiffres",
-      "stat1": "% réduction CO₂",
-      "stat2": "MWh énergie optimisée",
-      "stat3": "% eau recyclée",
-      "stat4": "tonnes déchets valorisés"
+    "counters": {
+      "title": "Nos Objectifs En Chiffres",
+      "subtitle": "Des ambitions mesurables pour un impact concret",
+      "co2": "Réduction CO₂ ciblée",
+      "renewable": "Énergie renouvelable",
+      "waste": "Déchets recyclés",
+      "water": "Eau recyclée"
     },
     "actions": {
       "title": "Nos Actions Concrètes",
-      "subtitle": "Des mesures tangibles pour un impact positif",
-      "grinding": {
-        "title": "Broyage Éco-énergétique",
-        "desc": "Nos broyeurs à boulets de dernière génération consomment moins d'énergie par tonne produite, grâce à des systèmes de classification et de ventilation optimisés."
+      "subtitle": "Des mesures tangibles pour un impact positif sur l'environnement",
+      "solar": {
+        "title": "Panneaux Solaires",
+        "desc": "Installation de panneaux photovoltaïques sur nos installations de Lassargua pour produire une énergie propre et réduire notre dépendance aux énergies fossiles."
       },
-      "filtration": {
-        "title": "Filtration des Émissions",
-        "desc": "Installation de systèmes de filtration avancés conformes aux normes MARHP, réduisant significativement les émissions de poussières et de particules dans l'atmosphère."
+      "clinker": {
+        "title": "Substitution du Clinker",
+        "desc": "Incorporation d'ajouts minéraux — cendres volantes, laitier de haut fourneau et filler calcaire — pour réduire la part de clinker et les émissions de CO₂ associées."
       },
       "water": {
-        "title": "Recyclage des Eaux de Process",
-        "desc": "Système fermé de recyclage des eaux utilisées dans le processus de broyage, réduisant notre consommation d'eau douce et notre rejet dans l'environnement."
+        "title": "Recyclage des Eaux",
+        "desc": "Système fermé de recyclage des eaux de process permettant de recycler 100 % des eaux utilisées, réduisant notre consommation d'eau douce à néant."
       },
-      "waste": {
-        "title": "Gestion Responsable des Déchets",
-        "desc": "Tri, valorisation et élimination responsable de tous les déchets industriels générés par nos activités, dans le strict respect de la réglementation marocaine."
+      "dust": {
+        "title": "Filtration des Poussières",
+        "desc": "Installation de systèmes de filtration avancés conformes aux normes MARHP, réduisant significativement les émissions de poussières et de particules dans l'atmosphère."
       },
-      "additions": {
-        "title": "Constituants Secondaires",
-        "desc": "Incorporation de cendres volantes, de laitier de haut fourneau et de filler calcaire, réduisant la part de clinker dans notre ciment et les émissions de CO₂ associées."
+      "sourcing": {
+        "title": "Approvisionnement Local",
+        "desc": "Priorité donnée aux fournisseurs locaux pour réduire l'empreinte carbone du transport et soutenir le développement économique de la région de Dakhla."
       },
-      "monitoring": {
-        "title": "Surveillance Environnementale",
-        "desc": "Programme continu de monitoring de la qualité de l'air, de l'eau et des sols autour de notre site, avec des rapports réguliers transmis aux autorités compétentes."
+      "training": {
+        "title": "Formation Environnementale",
+        "desc": "Programme de formation continue pour l'ensemble de nos collaborateurs sur les bonnes pratiques environnementales, la sécurité et le développement durable."
       }
     },
     "compliance": {
       "title": "Conformité Réglementaire",
       "subtitle": "Notre engagement envers les normes les plus strictes",
-      "marhp": {
-        "title": "Normes MARHP",
-        "desc": "Conformité totale avec les exigences du Ministère de l'Aménagement du Territoire, de l'Eau et de l'Environnement en matière d'émissions industrielles et de protection de l'environnement."
+      "nm": {
+        "title": "NM 10.1.004",
+        "desc": "Conformité totale avec la norme marocaine régissant les spécifications des ciments, garantissant la qualité et la sécurité de nos produits.",
+        "status": "Certifié"
       },
-      "moroccan": {
-        "title": "Réglementation Environnementale Marocaine",
-        "desc": "Respect intégral de la loi 13-03 relative à la lutte contre la pollution de l'air et de la loi 10-95 sur l'eau, avec des contrôles réguliers et des audits indépendants."
+      "iso": {
+        "title": "ISO 14001",
+        "desc": "Mise en place d'un système de management environnemental conforme à la norme internationale, structurant notre démarche d'amélioration continue.",
+        "status": "En cours"
       },
-      "reports": {
-        "title": "Rapports Environnementaux",
-        "desc": "Publication annuelle de notre bilan environnemental détaillant nos émissions, notre consommation énergétique et nos actions d'amélioration continue."
+      "law": {
+        "title": "Loi 09-08",
+        "desc": "Respect intégral de la loi marocaine relative à la protection de l'environnement, avec des contrôles réguliers et des audits indépendants.",
+        "status": "Conforme"
       }
     },
     "cta": {
-      "title": "Découvrez notre engagement RSE",
-      "subtitle": "Contactez-nous pour en savoir plus sur nos initiatives environnementales",
-      "button": "Nous contacter"
+      "title": "Découvrez notre rapport RSE",
+      "subtitle": "Contactez-nous pour recevoir notre rapport RSE détaillé et en savoir plus sur nos initiatives environnementales",
+      "button": "Demander le rapport RSE"
     }
   },
   "faq": {
     "title": "Questions Fréquentes",
     "subtitle": "Trouvez les réponses à vos questions sur nos produits, services et l'entreprise",
+    "showing": "Affichage de",
+    "questions": "questions",
     "categories": {
-      "products": "Produits & Qualité",
-      "pricing": "Prix & Commande",
-      "delivery": "Livraison & Logistique",
-      "technical": "Technique & Usage",
-      "company": "Entreprise"
+      "general": "Général",
+      "products": "Produits & Prix",
+      "delivery": "Livraison & Commande",
+      "technical": "Technique",
+      "certifications": "Certifications & Qualité"
     },
     "items": {
-      "q1": {
+      "g1": {
+        "q": "Qu'est-ce que Dakhla Aménagement ?",
+        "a": "Dakhla Aménagement S.A. est un centre de broyage de clinker créé en 2015 à Dakhla, Maroc. Avec une capacité de production de plus de 100 000 tonnes par an, nous produisons du ciment CPJ 45 et CPJ 55 de haute qualité pour le marché du Sud marocain et la Mauritanie. Notre usine est située à Lassargua, quartier de Dakhla."
+      },
+      "g2": {
+        "q": "Comment nous contacter ?",
+        "a": "Vous pouvez nous joindre par téléphone au +212 658-265685, par email à contact@ciment-dam.com, ou via notre formulaire de contact en ligne. Notre équipe commerciale est disponible pour répondre à toutes vos questions et vous accompagner dans vos projets."
+      },
+      "g3": {
+        "q": "Quelles sont vos conditions de paiement ?",
+        "a": "Nous acceptons le virement bancaire, le chèque et les espèces. Nos conditions standard sont : 50% à la commande et 50% à la livraison. Des conditions spécifiques peuvent être négociées pour les contrats à long terme et les volumes importants."
+      },
+      "p1": {
         "q": "Quelle est la différence entre CPJ 45 et CPJ 55 ?",
-        "a": "Le CPJ 45 offre une résistance à la compression de 45 MPa à 28 jours, idéal pour le béton armé, les fondations et les dallages. Le CPJ 55 offre une résistance supérieure de 55 MPa, recommandé pour les grands ouvrages de génie civil et les projets d'infrastructure majeurs nécessitant une performance exceptionnelle.",
-        "cat": "products"
+        "a": "Le CPJ 45 offre une résistance à la compression de 45 MPa à 28 jours, idéal pour le béton armé, les fondations et les dallages. Le CPJ 55 offre une résistance supérieure de 55 MPa, recommandé pour les grands ouvrages de génie civil et les projets d'infrastructure majeurs nécessitant une performance exceptionnelle."
       },
-      "q2": {
+      "p2": {
         "q": "Quels sont vos prix ?",
-        "a": "Nos tarifs actuels sont : CPJ 45 à 1 500 DH la tonne et CPJ 55 à 1 600 DH la tonne. Des remises volume sont applicables dès 10 tonnes. Contactez-nous pour un devis personnalisé.",
-        "cat": "pricing"
+        "a": "Nos tarifs actuels sont : CPJ 45 à 1 500 DH la tonne et CPJ 55 à 1 600 DH la tonne. Des remises volume sont applicables dès 10 tonnes. Les entreprises bénéficient d'une remise supplémentaire de 3% et les revendeurs de 5%. Contactez-nous pour un devis personnalisé."
       },
-      "q3": {
-        "q": "Quelles zones de livraison couvrez-vous ?",
-        "a": "Nous livrons à Dakhla Ville (gratuit), dans la Région de Dakhla (+50 MAD/T), dans le Sud Marocain (+150 MAD/T) et en Mauritanie (+250 MAD/T). La livraison express est disponible en urgence.",
-        "cat": "delivery"
+      "p3": {
+        "q": "Quels conditionnements proposez-vous ?",
+        "a": "Nous proposons trois conditionnements : Vrac (livraison par camion-citerne avec pompage direct en silo), Sacs de 50 kg (palettisés, 40 sacs par palette) et Big Bags industriels de 1,5 tonne. Le vrac est recommandé pour les chantiers importants, offrant la meilleure économie et la meilleure préservation du produit."
       },
-      "q4": {
-        "q": "Quel conditionnement proposez-vous ?",
-        "a": "Nous proposons trois conditionnements : Vrac (livraison par camion citerne, sans supplément), Sacs de 50 kg (+30 DH/T) et Big Bags industriels (+80 DH/T). Le vrac est recommandé pour les chantiers importants.",
-        "cat": "products"
-      },
-      "q5": {
-        "q": "Comment passer commande ?",
-        "a": "Vous pouvez commander via notre formulaire de devis en ligne, par téléphone au +212 658-265685, par WhatsApp, ou par email à contact@ciment-dam.com. Notre équipe commerciale vous répond sous 24h.",
-        "cat": "pricing"
-      },
-      "q6": {
-        "q": "Quel est le délai de livraison ?",
-        "a": "Le délai dépend de la zone : Dakhla Ville (1-2 jours), Région Dakhla (2-3 jours), Sud Maroc (3-5 jours), Mauritanie (5-7 jours). La livraison urgente réduit ces délais de 30 à 50%.",
-        "cat": "delivery"
-      },
-      "q7": {
-        "q": "Comment stocker le ciment sur chantier ?",
-        "a": "Le ciment doit être protégé de l'humidité, stocké sur des palettes dans un local couvert et ventilé. La durée de conservation est d'environ 3 mois en sacs. Pour les grandes quantités, le stockage en silo est recommandé. Nous proposons la livraison en vrac avec mise en silo directe.",
-        "cat": "technical"
-      },
-      "q8": {
-        "q": "Quelles certifications avez-vous ?",
-        "a": "Nos ciments sont certifiés conformes à la norme marocaine NM 10.1.004 et à la norme européenne EN 197-1. La certification ISO 9001 est en cours d'obtention. Chaque lot est testé et accompagné d'un certificat de conformité.",
-        "cat": "products"
-      },
-      "q9": {
-        "q": "Êtes-vous conformes aux normes marocaines ?",
-        "a": "Oui, tous nos ciments sont produits conformément à la norme NM 10.1.004 qui définit les spécifications des ciments au Maroc, ainsi qu'à la norme européenne EN 197-1. Chaque lot fait l'objet de tests exhaustifs en laboratoire avant expédition.",
-        "cat": "products"
-      },
-      "q10": {
-        "q": "Comment devenir revendeur DAM ?",
-        "a": "Pour devenir revendeur, contactez notre service commercial à contact@ciment-dam.com ou au +212 658-265685. Nous offrons une remise revendeur de 5% sur nos tarifs, un accompagnement commercial et une zone d'exclusivité potentielle.",
-        "cat": "company"
-      },
-      "q11": {
-        "q": "Quelle est la résistance recommandée pour les fondations ?",
-        "a": "Pour les fondations standards, le CPJ 45 (45 MPa) est généralement suffisant. Pour les fondations profondes ou les sols difficiles, le CPJ 55 (55 MPa) est recommandé. Consultez notre équipe technique pour une recommandation personnalisée selon votre projet.",
-        "cat": "technical"
-      },
-      "q12": {
+      "p4": {
         "q": "Proposez-vous des remises volume ?",
-        "a": "Oui, nos remises volume sont : 2% dès 10T, 5% dès 25T, 8% dès 50T, 12% dès 100T, et 15% dès 500T. Les entreprises bénéficient d'une remise supplémentaire de 3% et les revendeurs de 5%.",
-        "cat": "pricing"
+        "a": "Oui, nos remises volume sont : 2% dès 10T, 5% dès 25T, 8% dès 50T, 12% dès 100T, et 15% dès 500T. Les entreprises bénéficient d'une remise supplémentaire de 3% et les revendeurs agréés de 5%."
       },
-      "q13": {
-        "q": "Quelles sont les conditions de paiement ?",
-        "a": "Nos conditions standard sont : 50% à la commande et 50% à la livraison. Le paiement se fait par virement bancaire (RIB sur demande). Des conditions spécifiques peuvent être négociées pour les contrats à long terme.",
-        "cat": "pricing"
+      "d1": {
+        "q": "Comment passer commande ?",
+        "a": "Vous pouvez commander via notre formulaire de devis en ligne, par téléphone au +212 658-265685, par WhatsApp, ou par email à contact@ciment-dam.com. Notre équipe commerciale vous répond sous 24h avec un devis personnalisé adapté à votre projet."
       },
-      "q14": {
-        "q": "Quelle est la capacité de production de Dakhla Aménagement ?",
-        "a": "Notre centre de broyage de Lassargua a une capacité de production de plus de 100 000 tonnes par an. Nous desservons le marché de Dakhla, le Sud marocain et la Mauritanie voisine.",
-        "cat": "company"
+      "d2": {
+        "q": "Quelles zones de livraison couvrez-vous ?",
+        "a": "Nous livrons dans la région de Dakhla et dans un rayon de 200 km : Dakhla Ville (gratuit), Région de Dakhla (+50 MAD/T), Sud Marocain (+150 MAD/T) et Mauritanie (+250 MAD/T). La livraison express est disponible en urgence."
       },
-      "q15": {
-        "q": "Le ciment CPJ 45 convient-il pour les enduits ?",
-        "a": "Oui, le CPJ 45 est parfaitement adapté aux enduits et à la maçonnerie courante. Sa finesse de broyage (≥ 350 m²/kg) assure une bonne ouvrabilité et un fini lisse. Pour les enduits extérieurs en zone côtière, nous recommandons le CPJ 55 pour sa meilleure durabilité.",
-        "cat": "technical"
+      "d3": {
+        "q": "Quel est le délai de livraison ?",
+        "a": "Le délai standard de livraison est de 24 à 48 heures pour Dakhla et sa région. Pour le Sud marocain, comptez 3 à 5 jours, et 5 à 7 jours pour la Mauritanie. La livraison urgente réduit ces délais de 30 à 50%."
+      },
+      "d4": {
+        "q": "Quelle est la commande minimum ?",
+        "a": "La commande minimum est de 10 tonnes pour le vrac et d'1 palette (soit 2 tonnes ou 40 sacs de 50 kg) pour les sacs. Pour les Big Bags, la commande minimum est d'1 Big Bag (1,5 tonne). Des arrangements particuliers peuvent être discutés pour les chantiers spécifiques."
+      },
+      "t1": {
+        "q": "Quelle résistance pour les fondations ?",
+        "a": "Pour les fondations standards, le CPJ 45 (45 MPa) est généralement suffisant. Pour les fondations profondes ou les sols difficiles, le CPJ 55 (55 MPa) est recommandé. En zone côtière comme Dakhla, le CPJ 55 offre une meilleure durabilité grâce à sa matrice plus dense et moins perméable. Consultez notre équipe technique pour une recommandation personnalisée."
+      },
+      "t2": {
+        "q": "Comment stocker le ciment sur chantier ?",
+        "a": "Le ciment doit être protégé de l'humidité, stocké sur des palettes dans un local couvert et ventilé. La durée de conservation est d'environ 3 mois en sacs dans de bonnes conditions. Pour les grandes quantités, le stockage en silo est recommandé. Nous proposons la livraison en vrac avec mise en silo directe pour une qualité optimale."
+      },
+      "t3": {
+        "q": "Le CPJ 45 convient-il pour les enduits ?",
+        "a": "Oui, le CPJ 45 est parfaitement adapté aux enduits et à la maçonnerie courante. Sa finesse de broyage (≥ 350 m²/kg) assure une bonne ouvrabilité et un fini lisse. Pour les enduits extérieurs en zone côtière, nous recommandons le CPJ 55 pour sa meilleure résistance aux embruns marins et sa durabilité accrue."
+      },
+      "c1": {
+        "q": "Quelles certifications avez-vous ?",
+        "a": "Nos ciments sont certifiés conformes à la norme marocaine NM 10.1.004 et à la norme européenne EN 197-1. La certification ISO 9001 pour le management de la qualité est en cours d'obtention. Chaque lot est testé et accompagné d'un certificat de conformité avant expédition."
+      },
+      "c2": {
+        "q": "Êtes-vous conformes aux normes marocaines ?",
+        "a": "Oui, tous nos ciments sont produits conformément à la norme NM 10.1.004 qui définit les spécifications des ciments au Maroc, ainsi qu'à la norme européenne EN 197-1. Chaque lot fait l'objet de tests exhaustifs en laboratoire : résistance à la compression, finesse de broyage, temps de prise et stabilité."
+      },
+      "c3": {
+        "q": "Comment est contrôlée la qualité de vos produits ?",
+        "a": "Chaque lot de production est soumis à des tests rigoureux dans notre laboratoire : résistance à la compression à 2, 7 et 28 jours, finesse de broyage (surface Blaine), temps de prise, stabilité et chaleur d'hydratation. Aucun produit ne quitte l'usine sans certificat de conformité. Notre démarche qualité vise la certification ISO 9001."
       }
     },
     "cta": {
       "title": "Vous n'avez pas trouvé votre réponse ?",
-      "subtitle": "Notre équipe est à votre disposition pour répondre à toutes vos questions",
+      "subtitle": "Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans vos projets",
       "button": "Nous contacter"
     }
   },
   "testimonials": {
     "title": "Témoignages Clients",
     "subtitle": "Découvrez ce que nos clients et partenaires disent de Dakhla Aménagement",
+    "filterTitle": "Filtrer par type",
+    "noResults": "Aucun témoignage pour ce filtre",
+    "stats": {
+      "clients": "Clients actifs",
+      "rating": "Note moyenne",
+      "satisfaction": "Taux de satisfaction",
+      "trust": "Ans de confiance"
+    },
     "filters": {
       "all": "Tous",
-      "builder": "Entrepreneurs",
-      "civil": "Génie Civil",
-      "reseller": "Revendeurs",
-      "architect": "Architectes",
-      "individual": "Particuliers"
+      "promoteur": "Promoteurs",
+      "entrepreneur": "Entrepreneurs",
+      "revendeur": "Revendeurs",
+      "particulier": "Particuliers"
     },
     "items": {
       "t1": {
-        "name": "Mohamed El Amrani",
-        "role": "Directeur de chantier",
-        "company": "Société El Amrani BTP",
-        "type": "builder",
+        "name": "Mohamed Ould Ahmed",
+        "role": "Directeur",
+        "company": "Ould Ahmed Construction",
+        "type": "entrepreneur",
         "stars": 5,
         "text": "Nous travaillons avec Dakhla Aménagement depuis 2019 et la qualité du ciment CPJ 45 est constante. Les livraisons sont ponctuelles et le service commercial est très réactif. C'est notre fournisseur de référence pour tous nos chantiers résidentiels à Dakhla."
       },
       "t2": {
-        "name": "Fatima Zahra Bensaid",
-        "role": "Ingénieure génie civil",
-        "company": "Cabinet Bensaid Ingénierie",
-        "type": "civil",
+        "name": "Fatima Zohra El Mansouri",
+        "role": "Chef de projet",
+        "company": "Promo Dakhla",
+        "type": "promoteur",
         "stars": 5,
         "text": "Le CPJ 55 de Dakhla Aménagement a été notre choix pour le viaduc de la RN1. La résistance à la compression est excellente et conforme aux certifications. L'équipe technique nous a accompagnés tout au long du projet avec professionnalisme."
       },
       "t3": {
-        "name": "Abdelkader Diop",
+        "name": "Karim Benali",
         "role": "Gérant",
-        "company": "Diop Matériaux",
-        "type": "reseller",
+        "company": "BTP Sahara",
+        "type": "entrepreneur",
+        "stars": 4,
+        "text": "En tant qu'entrepreneur BTP, la fiabilité des livraisons est cruciale. Le ciment DAM nous a jamais fait défaut. Le conditionnement en sacs 50 kg est pratique et la qualité est constante à chaque commande. Un partenaire solide pour le Sud marocain."
+      },
+      "t4": {
+        "name": "Abderrahmane Dia",
+        "role": "Responsable achats",
+        "company": "Dia & Fils",
+        "type": "revendeur",
         "stars": 5,
         "text": "En tant que revendeur, la remise de 5% et la fiabilité des livraisons sont un vrai plus. Le ciment DAM est le plus demandé par nos clients. Le conditionnement en sacs 50 kg est pratique et la qualité est au rendez-vous à chaque commande."
       },
-      "t4": {
-        "name": "Amina Tazi",
-        "role": "Architecte DPLG",
-        "company": "Atelier Tazi Architecture",
-        "type": "architect",
-        "stars": 4,
+      "t5": {
+        "name": "Sophie Laurent",
+        "role": "Architecte",
+        "company": "Cabinet Laurent",
+        "type": "particulier",
+        "stars": 5,
         "text": "Je recommande le CPJ 45 pour les enduits et finitions. La finesse de broyage permet des surfaces lisses et durables. Pour les projets en bord de mer, le CPJ 55 résiste parfaitement aux embruns marins. Un partenaire fiable pour nos projets à Dakhla."
       },
-      "t5": {
-        "name": "Youssef El Idrissi",
-        "role": "Entrepreneur public",
-        "company": "PROVUD SA",
-        "type": "civil",
-        "stars": 5,
-        "text": "Le centre de broyage de Dakhla Aménagement est stratégique pour l'approvisionnement du Sud. Nous avons utilisé le CPJ 55 pour les fondations du nouveau port de pêche. La livraison en vrac est efficace et le rapport qualité-prix est imbattable dans la région."
-      },
       "t6": {
-        "name": "Hassan Moussaid",
-        "role": "Auto-constructeur",
-        "company": "",
-        "type": "individual",
-        "stars": 5,
-        "text": "Pour la construction de ma villa à Dakhla, j'ai utilisé le CPJ 45 pour toute la maçonnerie. Le devis en ligne est pratique et les prix sont transparents. La livraison a été faite le lendemain de ma commande. Je recommande vivement !"
-      },
-      "t7": {
-        "name": "Rachid Ouakrim",
-        "role": "Chef d'entreprise",
-        "company": "Ouakrim Construction",
-        "type": "builder",
+        "name": "Hassan Mokhtar",
+        "role": "Directeur",
+        "company": "Mokhtar BTP",
+        "type": "entrepreneur",
         "stars": 5,
         "text": "Nous livrons plus de 20 chantiers par an avec le ciment DAM. La constance de la qualité est remarquable — chaque lot est conforme aux spécifications. Le service de livraison en urgence nous a sauvé plusieurs fois. Un partenaire de confiance."
       },
-      "t8": {
-        "name": "Khadija Benali",
-        "role": "Responsable achats",
-        "company": "Société Benali & Fils",
-        "type": "reseller",
+      "t7": {
+        "name": "Amina Taleb",
+        "role": "Chef d'entreprise",
+        "company": "Taleb Construction",
+        "type": "promoteur",
         "stars": 4,
+        "text": "Le centre de broyage de Dakhla Aménagement est stratégique pour l'approvisionnement du Sud. Nous avons utilisé le CPJ 55 pour les fondations de notre programme immobilier. La livraison en vrac est efficace et le rapport qualité-prix est imbattable."
+      },
+      "t8": {
+        "name": "Youssef Khatri",
+        "role": "Gérant",
+        "company": "Khatri Matériaux",
+        "type": "revendeur",
+        "stars": 5,
         "text": "Le partenariat avec Dakhla Aménagement est simple et efficace. Les tarifs revendeurs sont compétitifs, la logistique est fiable et notre interlocuteur commercial est toujours disponible. C'est un fournisseur qui comprend les besoins des distributeurs locaux."
+      },
+      "t9": {
+        "name": "Omar Ba",
+        "role": "Ingénieur",
+        "company": "Ba & Associés",
+        "type": "entrepreneur",
+        "stars": 5,
+        "text": "Pour la construction du nouveau port de pêche, le CPJ 55 de DAM a été déterminant. La résistance supérieure et la livraison en vrac ont permis de respecter les délais sur un chantier aussi exigeant. Une collaboration exemplaire du début à la fin."
+      },
+      "t10": {
+        "name": "Nadia Benchekroun",
+        "role": "Propriétaire",
+        "company": "Villa Benchekroun",
+        "type": "particulier",
+        "stars": 4,
+        "text": "Pour la construction de ma villa à Dakhla, j'ai utilisé le CPJ 45 pour toute la maçonnerie. Le devis en ligne est pratique et les prix sont transparents. La livraison a été faite le lendemain de ma commande. Je recommande vivement !"
       }
+    },
+    "logos": {
+      "title": "Ils nous font confiance",
+      "subtitle": "Nos partenaires et clients de référence dans le Sud marocain"
     },
     "cta": {
       "title": "Rejoignez nos clients satisfaits",
@@ -974,114 +1001,62 @@
     }
   },
   "gallery": {
-    "title": "Galerie Photos & Vidéos",
-    "subtitle": "Découvrez notre usine, nos produits et nos réalisations en images",
+    "title": "Galerie Photo & Vidéo",
+    "subtitle": "Découvrez notre usine, nos produits et nos réalisations en images et en vidéo",
+    "photoCount": "photos",
+    "clearFilter": "Effacer le filtre",
+    "emptyState": "Aucune photo dans cette catégorie",
     "filters": {
       "all": "Tout",
-      "factory": "Usine & Production",
+      "factory": "Usine",
+      "lab": "Laboratoire",
       "products": "Produits",
-      "delivery": "Livraison & Logistique",
-      "lab": "Laboratoire & Qualité",
-      "projects": "Chantiers & Réalisations",
-      "team": "Équipe & Vie sociale"
+      "delivery": "Livraison",
+      "projects": "Projets",
+      "team": "Équipe",
+      "dakhla": "Dakhla"
     },
     "photos": {
-      "p1": {
-        "alt": "Vue aérienne de l'usine",
-        "cat": "factory"
-      },
-      "p2": {
-        "alt": "Vue extérieure de l'usine",
-        "cat": "factory"
-      },
-      "p3": {
-        "alt": "Silos de stockage",
-        "cat": "factory"
-      },
-      "p4": {
-        "alt": "Intérieur de l'usine",
-        "cat": "factory"
-      },
-      "p5": {
-        "alt": "Salle de contrôle",
-        "cat": "factory"
-      },
-      "p6": {
-        "alt": "Entrepôt de stockage",
-        "cat": "factory"
-      },
-      "p7": {
-        "alt": "Réception du clinker",
-        "cat": "factory"
-      },
-      "p8": {
-        "alt": "Broyage du ciment",
-        "cat": "factory"
-      },
-      "p9": {
-        "alt": "Dosage et additions",
-        "cat": "factory"
-      },
-      "p10": {
-        "alt": "Conditionnement sacs",
-        "cat": "factory"
-      },
-      "p11": {
-        "alt": "Sacs CPJ 45",
-        "cat": "products"
-      },
-      "p12": {
-        "alt": "Sacs CPJ 55",
-        "cat": "products"
-      },
-      "p13": {
-        "alt": "Big Bags de ciment",
-        "cat": "products"
-      },
-      "p14": {
-        "alt": "Ciment en vrac",
-        "cat": "products"
-      },
-      "p15": {
-        "alt": "Poudre de ciment",
-        "cat": "products"
-      },
-      "p16": {
-        "alt": "Camion de livraison",
-        "cat": "delivery"
-      },
-      "p17": {
-        "alt": "Livraison béton",
-        "cat": "delivery"
-      },
-      "p18": {
-        "alt": "Test de compression",
-        "cat": "lab"
-      },
-      "p19": {
-        "alt": "Chantier résidentiel",
-        "cat": "projects"
-      },
-      "p20": {
-        "alt": "Chantier infrastructure",
-        "cat": "projects"
-      },
-      "p21": {
-        "alt": "Construction portuaire",
-        "cat": "projects"
-      },
-      "p22": {
-        "alt": "Construction école",
-        "cat": "projects"
-      },
-      "p23": {
-        "alt": "Construction résidentielle",
-        "cat": "projects"
-      },
-      "p24": {
-        "alt": "Panorama Dakhla",
-        "cat": "team"
-      }
+      "p1": { "alt": "Usine — Vue extérieure" },
+      "p2": { "alt": "Usine — Façade principale" },
+      "p3": { "alt": "Usine — Vue aérienne" },
+      "p4": { "alt": "Usine — Intérieur de broyage" },
+      "p5": { "alt": "Usine — Silos de stockage" },
+      "p6": { "alt": "Usine — Salle de contrôle" },
+      "p7": { "alt": "Usine — Entrepôt" },
+      "p8": { "alt": "Usine — Vue extérieure côté production" },
+      "p9": { "alt": "Usine — Réception du clinker" },
+      "p10": { "alt": "Usine — Broyage du ciment" },
+      "p11": { "alt": "Usine — Dosage et additions" },
+      "p12": { "alt": "Usine — Conditionnement sacs" },
+      "p13": { "alt": "Laboratoire — Analyse qualité" },
+      "p14": { "alt": "Laboratoire — Tests en cours" },
+      "p15": { "alt": "Laboratoire — Équipement de mesure" },
+      "p16": { "alt": "Laboratoire — Contrôle produit" },
+      "p17": { "alt": "Laboratoire — Échantillonnage" },
+      "p18": { "alt": "Laboratoire — Vérification finale" },
+      "p19": { "alt": "Laboratoire — Test de compression" },
+      "p20": { "alt": "Produits — Sacs de ciment" },
+      "p21": { "alt": "Produits — Sacs CPJ 45" },
+      "p22": { "alt": "Produits — Sacs CPJ 55" },
+      "p23": { "alt": "Produits — Big Bags de ciment" },
+      "p24": { "alt": "Produits — Ciment en vrac" },
+      "p25": { "alt": "Produits — Gros plan poudre de ciment" },
+      "p26": { "alt": "Livraison — Chargement camion" },
+      "p27": { "alt": "Livraison — Flotte de livraison" },
+      "p28": { "alt": "Livraison — Livraison sur chantier" },
+      "p29": { "alt": "Projets — Chantier en cours" },
+      "p30": { "alt": "Projets — Construction villa" },
+      "p31": { "alt": "Projets — Infrastructure routière" },
+      "p32": { "alt": "Projets — Construction portuaire" },
+      "p33": { "alt": "Projets — Construction école" },
+      "p34": { "alt": "Projets — Construction résidentielle" },
+      "p35": { "alt": "Équipe — Notre équipe" },
+      "p36": { "alt": "Équipe — Bureaux" },
+      "p37": { "alt": "Dakhla — Vue aérienne" },
+      "p38": { "alt": "Dakhla — Zone industrielle" },
+      "p39": { "alt": "Dakhla — Chantier régional" },
+      "p40": { "alt": "Dakhla — Développement durable" }
     },
     "lightbox": {
       "of": "sur",
@@ -1089,93 +1064,176 @@
       "prev": "Précédent",
       "next": "Suivant"
     },
+    "videoTitle": "Nos Vidéos",
+    "videoSubtitle": "Plongez au cœur de notre processus de fabrication et découvrez nos installations en vidéo",
+    "videoComingSoon": "Bientôt",
+    "videos": {
+      "v1": {
+        "title": "Visite virtuelle du centre de broyage",
+        "duration": "3:45",
+        "thumbnail": "/images/factory/factory-interior.jpg"
+      },
+      "v2": {
+        "title": "Du clinker au ciment : le processus complet",
+        "duration": "5:20",
+        "thumbnail": "/images/process/step2-grinding.jpg"
+      },
+      "v3": {
+        "title": "Dakhla Aménagement : 10 ans d'excellence",
+        "duration": "4:10",
+        "thumbnail": "/images/dakhla-aerial.jpg"
+      }
+    },
     "cta": {
       "title": "Visitez notre usine",
-      "subtitle": "Contactez-nous pour organiser une visite du centre de broyage de Lassargua",
+      "subtitle": "Contactez-nous pour organiser une visite du centre de broyage de Lassargua et découvrir nos installations",
       "button": "Nous contacter"
     }
   },
   "careers": {
-    "title": "Carrières & Emploi",
-    "subtitle": "Rejoignez une équipe engagée au service du développement du Sud marocain",
-    "why": {
-      "title": "Pourquoi Nous Rejoindre",
-      "stability": {
-        "title": "Stabilité d'Emploi",
-        "desc": "Dakhla Aménagement est une Société Anonyme fondée en 2015, offrant une stabilité professionnelle remarquable dans la région de Dakhla. Notre croissance continue garantit des perspectives d'évolution à long terme."
+    "title": "Carrières",
+    "subtitle": "Rejoignez l'aventure DAM",
+    "benefits": {
+      "title": "Pourquoi Rejoindre DAM",
+      "subtitle": "Une entreprise qui investit dans ses talents et son territoire",
+      "durable": {
+        "title": "Emploi Durable",
+        "desc": "Dakhla Aménagement S.A., fondée en 2015, offre une stabilité professionnelle remarquable. Notre croissance continue garantit des perspectives d'évolution à long terme dans la région de Dakhla.",
+        "stat1Value": "35",
+        "stat1Label": "emplois directs",
+        "stat2Value": "350",
+        "stat2Label": "emplois indirects"
       },
       "training": {
         "title": "Formation Continue",
-        "desc": "Nous investissons dans le développement de nos collaborateurs avec des programmes de formation technique, sécurité et management. Chaque employé bénéficie d'un plan de formation personnalisé annuel."
+        "desc": "Nous investissons dans le développement de nos collaborateurs avec des programmes de formation technique, sécurité et management. Chaque employé bénéficie d'un plan de formation personnalisé annuel.",
+        "stat1Value": "",
+        "stat1Label": "",
+        "stat2Value": "",
+        "stat2Label": ""
       },
-      "benefits": {
+      "social": {
         "title": "Avantages Sociaux",
-        "desc": "Rémunération compétitive, couverture médicale, transport, primes de productivité et avantages liés à la région. Nous veillons au bien-être de chaque membre de l'équipe."
+        "desc": "Couverture médicale, transport, restauration, primes de productivité et avantages liés à la région. Nous veillons au bien-être de chaque membre de l'équipe.",
+        "stat1Value": "",
+        "stat1Label": "",
+        "stat2Value": "",
+        "stat2Label": ""
       },
       "impact": {
-        "title": "Impact Régional",
-        "desc": "Avec 35 emplois directs et plus de 350 emplois indirects, Dakhla Aménagement est un acteur économique majeur de la région. Chaque collaborateur contribue directement au développement du Sud marocain."
+        "title": "Impact Local",
+        "desc": "Avec 350 emplois indirects générés et un engagement fort dans le développement communautaire, chaque collaborateur contribue directement à l'essor du Sud marocain.",
+        "stat1Value": "350",
+        "stat1Label": "emplois indirects créés",
+        "stat2Value": "",
+        "stat2Label": ""
       }
     },
-    "jobs": {
-      "title": "Nos Métiers",
-      "subtitle": "Des postes clés au cœur de notre activité industrielle",
-      "operator": {
-        "title": "Opérateur de Broyage",
-        "desc": "Pilotage et surveillance des équipements de broyage. Contrôle des paramètres de production et maintenance de premier niveau.",
-        "skills": "Formation technique, sens de l'observation, rigueur"
+    "jobTypes": {
+      "title": "Nos Domaines d'Activité",
+      "subtitle": "Des métiers variés au cœur de l'industrie cimentière",
+      "production": {
+        "title": "Production & Maintenance",
+        "desc": "Pilotage des équipements de broyage, contrôle des paramètres de production, maintenance préventive et curative des installations industrielles.",
+        "role0": "Opérateur de broyage",
+        "role1": "Technicien de maintenance",
+        "role2": "Électromécanicien"
       },
-      "technician": {
-        "title": "Technicien de Maintenance",
-        "desc": "Entretien préventif et curatif des équipements industriels. Dépannage et optimisation des lignes de production.",
-        "skills": "BTS/DUT maintenance industrielle, expérience souhaitée"
+      "quality": {
+        "title": "Qualité & Laboratoire",
+        "desc": "Gestion du laboratoire, tests de résistance, analyse chimique et physique des produits, garantie de la conformité aux normes NM 10.1.004 et EN 197-1.",
+        "role0": "Ingénieur qualité",
+        "role1": "Technicien de laboratoire",
+        "role2": "Contrôleur qualité"
       },
-      "engineer": {
-        "title": "Ingénieur Qualité",
-        "desc": "Gestion du laboratoire qualité, tests de résistance, analyse chimique et physique des produits. Garantie de la conformité aux normes NM 10.1.004 et EN 197-1.",
-        "skills": "Diplôme ingénieur, spécialité matériaux/BCG"
+      "logistics": {
+        "title": "Logistique & Transport",
+        "desc": "Livraison de ciment en vrac et en sacs, gestion de la flotte, optimisation des flux logistiques sur tout le Sud marocain et la Mauritanie.",
+        "role0": "Chauffeur livreur",
+        "role1": "Responsable logistique",
+        "role2": "Manutentionnaire"
       },
-      "driver": {
-        "title": "Chauffeur Livreur",
-        "desc": "Livraison de ciment en vrac et en sacs sur les chantiers de la région. Entretien du véhicule et relation client terrain.",
-        "skills": "Permis C, expérience conduite poids lourd"
+      "commercial": {
+        "title": "Commercial & Administration",
+        "desc": "Développement commercial, prospection, suivi clients, élaboration de devis, gestion administrative et comptabilité.",
+        "role0": "Agent commercial",
+        "role1": "Assistante commerciale",
+        "role2": "Comptable"
       },
-      "sales": {
-        "title": "Agent Commercial",
-        "desc": "Développement commercial sur le marché du Sud marocain. Prospection, suivi clients, élaboration de devis et négociation contracts.",
-        "skills": "Formation commerciale, sens du relationnel"
-      },
-      "admin": {
-        "title": "Administratif & Comptabilité",
-        "desc": "Gestion administrative, comptabilité, facturation et relations avec les partenaires financiers. Support à la direction générale.",
-        "skills": "Formation comptabilité/gestion, maîtrise ERP"
+      "direction": {
+        "title": "Direction & Management",
+        "desc": "Pilotage stratégique de l'entreprise, gestion des opérations, supervision financière et développement des partenariats.",
+        "role0": "Directeur des opérations",
+        "role1": "Responsable financier"
       }
     },
     "openings": {
       "title": "Offres d'Emploi",
-      "subtitle": "Postes actuellement disponibles",
-      "noOpenings": "Aucune offre d'emploi en cours. Envoyez-nous votre candidature spontanée !",
+      "subtitle": "Postes actuellement disponibles — Rejoignez notre équipe",
+      "apply": "Postuler",
       "spontaneous": "Candidature Spontanée",
-      "spontaneousDesc": "Vous ne trouvez pas le poste qui vous correspond ? Envoyez-nous votre CV et lettre de motivation à l'adresse ci-dessous. Nous conservons chaque candidature pour nos futurs recrutements.",
+      "spontaneousDesc": "Vous ne trouvez pas le poste qui vous correspond ? Envoyez-nous votre CV et lettre de motivation. Nous conservons chaque candidature pour nos futurs recrutements.",
       "sendCv": "Envoyer ma candidature",
-      "cdi": "CDI",
-      "cdd": "CDD",
-      "dakhla": "Dakhla, Maroc"
+      "maintenance": {
+        "title": "Technicien de Maintenance",
+        "type": "CDI",
+        "location": "Dakhla, Maroc",
+        "desc": "Entretien préventif et curatif des équipements industriels. Dépannage et optimisation des lignes de production de broyage.",
+        "req0": "BTS/DUT maintenance industrielle",
+        "req1": "3 ans d'expérience minimum",
+        "req2": "Connaissance en électromécanique"
+      },
+      "teamLead": {
+        "title": "Chef d'Équipe Production",
+        "type": "CDI",
+        "location": "Dakhla, Maroc",
+        "desc": "Supervision des équipes de production, planification des postes, garantie des objectifs de production et de qualité.",
+        "req0": "Formation technique supérieure",
+        "req1": "5 ans d'expérience en industrie",
+        "req2": "Capacité de management d'équipe"
+      },
+      "qualityManager": {
+        "title": "Responsable Qualité",
+        "type": "CDI",
+        "location": "Dakhla, Maroc",
+        "desc": "Gestion du laboratoire qualité, tests de résistance, analyse chimique et physique. Garantie de la conformité aux normes NM 10.1.004 et EN 197-1.",
+        "req0": "Diplôme ingénieur matériaux",
+        "req1": "Expérience en laboratoire cimentier",
+        "req2": "Maîtrise des normes EN 197-1"
+      },
+      "salesRep": {
+        "title": "Commercial Terrain",
+        "type": "CDI",
+        "location": "Dakhla, Maroc",
+        "desc": "Développement commercial sur le marché du Sud marocain. Prospection, suivi clients, élaboration de devis et négociation de contrats.",
+        "req0": "Formation commerciale BAC+3",
+        "req1": "Sens du relationnel et de la négociation",
+        "req2": "Permis de conduire B"
+      },
+      "processEngineer": {
+        "title": "Ingénieur Procédé",
+        "type": "CDI",
+        "location": "Dakhla, Maroc",
+        "desc": "Optimisation des procédés de broyage, amélioration continue des performances, analyse des données de production et mise en place d'indicateurs.",
+        "req0": "Diplôme ingénieur procédé/industrie",
+        "req1": "Maîtrise des outils d'analyse statistique",
+        "req2": "Expérience en amélioration continue"
+      }
     },
-    "life": {
+    "dakhla": {
       "title": "Vivre à Dakhla",
       "subtitle": "Une qualité de vie exceptionnelle au cœur du Sud marocain",
-      "desc": "Dakhla offre un cadre de vie unique entre océan Atlantique et désert saharien. Avec plus de 300 jours de soleil par an, une côte préservée et un dynamisme économique grandissant, la ville attire de plus en plus de talents. La communauté y est chaleureuse, le coût de la vie abordable et les activités nautiques (surf, kitesurf, pêche) sont mondialement réputées.",
+      "desc": "Dakhla offre un cadre de vie unique entre océan Atlantique et désert saharien. Avec plus de 300 jours de soleil par an, une côte préservée et un dynamisme économique grandissant, la ville attire de plus en plus de talents. La communauté y est chaleureuse, le coût de la vie abordable et les activités nautiques — surf, kitesurf, pêche — sont mondialement réputées.",
       "highlights": {
-        "sun": "300+ jours de soleil/an",
-        "ocean": "Océan Atlantique à proximité",
         "cost": "Coût de la vie abordable",
-        "community": "Communauté accueillante"
+        "climate": "300+ jours de soleil/an",
+        "community": "Communauté chaleureuse",
+        "outdoor": "Surf, kitesurf & pêche"
       }
     },
     "cta": {
       "title": "Rejoignez l'aventure DAM",
-      "subtitle": "Envoyez votre candidature à recrutement@ciment-dam.com",
+      "subtitle": "Contactez-nous pour discuter des opportunités et envoyer votre candidature",
       "button": "Envoyer ma candidature"
     }
   },
