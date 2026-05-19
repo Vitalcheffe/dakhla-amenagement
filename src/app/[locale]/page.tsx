@@ -32,14 +32,14 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with Ken Burns effect */}
       <section className="relative bg-navy text-white overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/factory-exterior.png"
             alt="Dakhla Aménagement Factory"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-30 ken-burns"
             priority
           />
         </div>
@@ -170,12 +170,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dakhla Section */}
+      {/* Dakhla Section with parallax on desktop */}
       <section className="bg-light-gray py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden lg:sticky lg:top-24">
                 <Image
                   src="/images/dakhla-aerial.png"
                   alt="Dakhla, Maroc"

@@ -114,3 +114,26 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #9CA3AF;
 }
+
+/* Ken Burns zoom effect for hero images */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.ken-burns {
+  animation: ken-burns 20s ease-in-out infinite alternate;
+}
+
+/* Parallax effect (desktop only) */
+@media (min-width: 1024px) {
+  .parallax-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+}

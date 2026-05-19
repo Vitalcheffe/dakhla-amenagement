@@ -14,8 +14,13 @@ export function Footer({ locale }: { locale: string }) {
     { key: 'about', href: `/${locale}/about` },
     { key: 'products', href: `/${locale}/products` },
     { key: 'quality', href: `/${locale}/quality` },
+    { key: 'facilities', href: `/${locale}/facilities` },
+    { key: 'certifications', href: `/${locale}/certifications` },
+    { key: 'rse', href: `/${locale}/rse` },
     { key: 'sustainability', href: `/${locale}/sustainability` },
     { key: 'careers', href: `/${locale}/careers` },
+    { key: 'faq', href: `/${locale}/faq` },
+    { key: 'quote', href: `/${locale}/quote` },
     { key: 'contact', href: `/${locale}/contact` },
   ];
 
@@ -69,7 +74,7 @@ export function Footer({ locale }: { locale: string }) {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-steel shrink-0" />
-                <span className="text-sm text-white/70">+212 5XX-XXXXXX</span>
+                <span className="text-sm text-white/70">{tContact('phoneValue')}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-steel shrink-0" />

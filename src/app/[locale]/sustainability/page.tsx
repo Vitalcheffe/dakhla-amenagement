@@ -17,7 +17,7 @@ export default function SustainabilityPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} />
+      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/sustainability.png" />
 
       {/* Environment */}
       <section className="bg-white py-16 lg:py-24">

@@ -10,12 +10,13 @@ import { Separator } from '@/components/ui/separator';
 
 export default function ProductsPage() {
   const t = useTranslations('products');
+  const tSpec = useTranslations('products.specLabels');
 
   const products = ['cpj35', 'cpj45', 'cpa42_5', 'cpj55'] as const;
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} />
+      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/cement-bags.png" />
 
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,9 +59,7 @@ export default function ProductsPage() {
                           {(['resistance', 'fineness', 'setting', 'use'] as const).map((spec) => (
                             <div key={spec}>
                               <p className="text-xs text-warm-gray uppercase tracking-wider font-medium">
-                                {spec === 'resistance' ? 'Résistance' :
-                                 spec === 'fineness' ? 'Finesse' :
-                                 spec === 'setting' ? 'Prise' : 'Usage'}
+                                {tSpec(spec)}
                               </p>
                               <p className="mt-1 text-sm font-medium text-navy">
                                 {t(`${key}.specs.${spec}`)}

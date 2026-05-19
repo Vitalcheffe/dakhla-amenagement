@@ -10,7 +10,14 @@
     "investors": "Investisseurs",
     "news": "Actualités",
     "contact": "Contact",
-    "legal": "Mentions Légales"
+    "legal": "Mentions Légales",
+    "facilities": "Installations",
+    "certifications": "Certifications",
+    "rse": "RSE",
+    "faq": "FAQ",
+    "quote": "Devis",
+    "productsServices": "Produits & Services",
+    "rseCareers": "RSE & Carrières"
   },
   "hero": {
     "title": "Le Ciment de Confiance du Sud Marocain",
@@ -65,7 +72,11 @@
     },
     "mission": {
       "title": "Notre Mission",
-      "text": "Produire, conditionner et commercialiser des matériaux de construction de qualité supérieure, en contribuant au développement économique et social de la région de Dakhla-Oued Ed-Dahab, tout en respectant les normes environnementales les plus strictes."
+      "text": "Produire, conditionner et commercialiser des matériaux de construction de qualité supérieure, en contribuant au développement économique et social de la région de Dakhla-Oued Ed-Dahab, tout en respectant les normes environnementales les plus strictes.",
+      "creation": "Création",
+      "startup": "Démarrage",
+      "tonnage": "Tonnes/an",
+      "team": "Collaborateurs"
     },
     "values": {
       "title": "Nos Valeurs",
@@ -100,6 +111,7 @@
   "process": {
     "title": "Notre Processus de Fabrication",
     "subtitle": "De la matière première au produit fini, découvrez chaque étape de notre processus de broyage de clinker",
+    "stepLabel": "Étape",
     "step1": {
       "title": "Réception du Clinker",
       "desc": "Le clinker est réceptionné et stocké dans nos installations de Lassargua. Nous assurons un contrôle qualité rigoureux à chaque livraison, vérifiant la composition chimique et les propriétés physiques du matériau brut."
@@ -120,6 +132,12 @@
   "products": {
     "title": "Nos Produits",
     "subtitle": "Une gamme complète de ciments pour répondre à tous les besoins de construction",
+    "specLabels": {
+      "resistance": "Résistance",
+      "fineness": "Finesse",
+      "setting": "Prise",
+      "use": "Usage"
+    },
     "cpj35": {
       "name": "CPJ 35",
       "full": "Ciment Portland Composé 35",
@@ -323,6 +341,7 @@
       "line2": "Maroc"
     },
     "phone": "Téléphone",
+    "phoneValue": "+212 5XX-XXXXXX",
     "email": "Email",
     "form": {
       "name": "Nom complet",
@@ -378,5 +397,239 @@
     "legal": "Mentions Légales",
     "rights": "Tous droits réservés.",
     "madeIn": "Fait au Maroc"
+  },
+  "facilities": {
+    "title": "Nos Installations",
+    "subtitle": "Découvrez notre centre de production de Lassargua",
+    "production": {
+      "title": "Centre de Production",
+      "text": "Notre centre de broyage de clinker est situé à Lassargua, à proximité de Dakhla. Inauguré en 2018, il représente un investissement de plus de 200 millions de DHS et dispose d'une capacité de production de 100 000 tonnes par an. Le site est stratégiquement positionné pour desservir l'ensemble de la région de Dakhla-Oued Ed-Dahab et les marchés voisins.",
+      "capacity": "Capacité : 100 000 tonnes/an",
+      "location": "Localisation : Lassargua, Dakhla",
+      "investment": "Investissement : 200+ MDHS",
+      "area": "Superficie : 5 hectares"
+    },
+    "equipment": {
+      "title": "Équipements",
+      "mills": {
+        "name": "Broyeurs à Boulets",
+        "desc": "Broyeurs haute performance pour un broyage fin et régulier du clinker, garantissant une finesse optimale du ciment produit."
+      },
+      "silos": {
+        "name": "Silos de Stockage",
+        "desc": "Installations de stockage capacitaires pour le clinker brut et les différents types de ciment finis, assurant une disponibilité permanente."
+      },
+      "packaging": {
+        "name": "Lignes de Conditionnement",
+        "desc": "Lignes automatisées de conditionnement en sacs de 50 kg et installations de chargement vrac pour une logistique efficace."
+      },
+      "lab": {
+        "name": "Laboratoire de Qualité",
+        "desc": "Laboratoire interne équipé d'instruments d'analyse avancés pour le contrôle qualité à chaque étape de la production."
+      }
+    },
+    "gallery": {
+      "title": "Galerie",
+      "factory": "Vue extérieure de l'usine",
+      "grinding": "Processus de broyage",
+      "lab": "Laboratoire qualité",
+      "bags": "Conditionnement des sacs"
+    },
+    "location": {
+      "title": "Localisation",
+      "address": "Adresse du Site de Production",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Région Dakhla-Oued Ed-Dahab, Maroc",
+      "access": "Accessibilité : Route nationale N1, à 15 km du centre-ville de Dakhla"
+    }
+  },
+  "certifications": {
+    "title": "Nos Certifications",
+    "subtitle": "Des normes rigoureuses pour une qualité garantie",
+    "active": {
+      "title": "Certifications Actives",
+      "nm": {
+        "name": "NM 10.1.004",
+        "desc": "Norme marocaine définissant les spécifications et les méthodes d'essai des ciments Portland. Notre conformité à cette norme garantit que nos ciments répondent aux exigences de qualité nationales.",
+        "status": "Certifié"
+      },
+      "en": {
+        "name": "EN 197-1",
+        "desc": "Norme européenne relative à la composition, aux spécifications et aux critères de conformité des ciments courants. Cette certification atteste de la conformité de nos produits aux standards internationaux.",
+        "status": "Certifié"
+      }
+    },
+    "inProgress": {
+      "title": "En Cours d'Obtention",
+      "iso": {
+        "name": "ISO 9001",
+        "desc": "Système de management de la qualité. Notre démarche de certification progresse conformément au calendrier prévu, avec un audit prévu pour 2025. Cette certification témoignera de notre engagement pour l'amélioration continue de nos processus.",
+        "status": "En cours"
+      }
+    },
+    "testing": {
+      "title": "Processus de Test",
+      "desc": "Chaque lot de production est soumis à un processus de test rigoureux avant sa mise sur le marché. Notre laboratoire interne réalise des analyses chimiques et physiques complètes, et des échantillons sont régulièrement envoyés à des laboratoires externes indépendants pour validation.",
+      "steps": {
+        "sampling": "Échantillonnage systématique à chaque étape",
+        "analysis": "Analyses chimiques et physiques complètes",
+        "validation": "Validation par laboratoires externes indépendants",
+        "certification": "Délivrance du certificat de conformité"
+      }
+    },
+    "commitment": {
+      "title": "Notre Engagement Qualité",
+      "text": "La qualité est au cœur de notre stratégie. Nous nous engageons à maintenir les plus hauts standards de qualité à travers des contrôles rigoureux, une formation continue de nos équipes et un investissement constant dans nos équipements de laboratoire. Notre objectif est zéro défaut sur l'ensemble de notre chaîne de production."
+    }
+  },
+  "rse": {
+    "title": "Responsabilité Sociétale",
+    "subtitle": "Notre engagement pour un développement durable et responsable",
+    "environment": {
+      "title": "Engagement Environnemental",
+      "text": "Dakhla Aménagement s'engage à minimiser son impact environnemental. Notre centre de broyage utilise des technologies d'efficacité énergétique avancées, avec un système de filtration des émissions respectant les normes les plus strictes. Nous optimisons constamment notre consommation énergétique et réduisons notre empreinte carbone.",
+      "items": {
+        "emissions": "Filtration des émissions — Normes MARHP",
+        "energy": "Optimisation énergétique continue",
+        "water": "Recyclage des eaux de process",
+        "waste": "Gestion responsable des déchets industriels"
+      }
+    },
+    "social": {
+      "title": "Engagement Social",
+      "text": "Nous sommes fiers de contribuer au développement de la région de Dakhla par la création d'emplois locaux et le soutien aux communautés environnantes.",
+      "items": {
+        "jobs": "85+ emplois directs créés localement",
+        "training": "Programmes de formation continue",
+        "safety": "Politique de santé-sécurité rigoureuse",
+        "wellbeing": "Bien-être des collaborateurs"
+      }
+    },
+    "economic": {
+      "title": "Impact Économique",
+      "text": "Dakhla Aménagement contribue activement au développement économique de la région de Dakhla-Oued Ed-Dahab par la création de valeur locale et le soutien à l'économie régionale.",
+      "items": {
+        "jobs": "Création d'emplois directs et indirects",
+        "local": "Approvisionnement local privilégié",
+        "development": "Contribution au développement régional",
+        "investment": "Investissement de plus de 200 MDHS"
+      }
+    },
+    "partnerships": {
+      "title": "Partenariats & Communauté",
+      "text": "Nous entretenons des partenariats étroits avec les acteurs locaux pour soutenir le développement communautaire et renforcer le tissu socio-économique de la région.",
+      "items": {
+        "education": "Soutien à l'éducation et la formation professionnelle",
+        "community": "Projets communautaires et solidarité",
+        "associations": "Partenariats avec les associations locales",
+        "events": "Soutien aux événements culturels et sportifs"
+      }
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquentes",
+    "subtitle": "Trouvez les réponses aux questions les plus courantes",
+    "q1": {
+      "question": "Quels types de ciments produisez-vous ?",
+      "answer": "Nous produisons une gamme complète de ciments : CPJ 35 pour la maçonnerie courante, CPJ 45 pour le béton armé, CPA 42.5 pour les ouvrages exigeants et la préfabrication, et CPJ 55 pour les travaux spéciaux à haute résistance."
+    },
+    "q2": {
+      "question": "Comment passer commande ?",
+      "answer": "Vous pouvez passer commande en contactant notre équipe commerciale par email à contact@dakhla-amenagement.ma ou par téléphone. Nous vous établirons un devis personnalisé adapté à vos besoins."
+    },
+    "q3": {
+      "question": "Quelles sont les zones de livraison ?",
+      "answer": "Nous livrons sur l'ensemble de la région de Dakhla-Oued Ed-Dahab et les zones limitrophes. Pour les livraisons vers d'autres régions, veuillez nous contacter pour étudier les possibilités."
+    },
+    "q4": {
+      "question": "Comment garantissez-vous la qualité de vos produits ?",
+      "answer": "Chaque lot de production est testé dans notre laboratoire interne. Nous réalisons des analyses chimiques et physiques complètes à chaque étape du processus. Nos produits sont conformes aux normes NM 10.1.004 et EN 197-1."
+    },
+    "q5": {
+      "question": "Vos ciments sont-ils certifiés ?",
+      "answer": "Oui, nos ciments sont conformes aux normes NM 10.1.004 (norme marocaine) et EN 197-1 (norme européenne). Nous sommes également en cours de certification ISO 9001."
+    },
+    "q6": {
+      "question": "Est-il possible de visiter l'usine ?",
+      "answer": "Les visites de notre centre de production à Lassargua sont possibles sur rendez-vous. Veuillez contacter notre service communication pour organiser une visite."
+    },
+    "q7": {
+      "question": "Comment postuler à un emploi ?",
+      "answer": "Vous pouvez envoyer votre CV et lettre de motivation à recrutement@dakhla-amenagement.ma. Consultez notre page Carrières pour voir les postes ouverts."
+    },
+    "q8": {
+      "question": "Comment vous contacter ?",
+      "answer": "Vous pouvez nous joindre par email à contact@dakhla-amenagement.ma, par téléphone au +212 5XX-XXXXXX, ou via le formulaire de contact sur notre site. Notre siège social est situé Angle rue Lagouira, Av. El Walae, Dakhla."
+    },
+    "q9": {
+      "question": "Quels sont les conditionnements disponibles ?",
+      "answer": "Nos ciments sont disponibles en sacs de 50 kg et en vrac. Le conditionnement en vrac est particulièrement adapté aux chantiers de grande envergure et aux centrales à béton."
+    },
+    "q10": {
+      "question": "Quel est le délai de livraison ?",
+      "answer": "Les délais de livraison varient selon la destination et la quantité commandée. En règle générale, nous assurons une livraison sous 48 à 72 heures pour la région de Dakhla-Oued Ed-Dahab. Contactez-nous pour un délai précis."
+    }
+  },
+  "quote": {
+    "title": "Demande de Devis",
+    "subtitle": "Obtenez un devis personnalisé pour votre projet",
+    "form": {
+      "company": "Nom de l'entreprise",
+      "contact": "Nom du contact",
+      "email": "Adresse email",
+      "phone": "Téléphone",
+      "product": "Type de produit",
+      "quantity": "Quantité (tonnes)",
+      "location": "Lieu de livraison",
+      "message": "Message complémentaire",
+      "send": "Envoyer la demande",
+      "success": "Demande de devis envoyée avec succès ! Notre équipe commerciale vous contactera sous 24h.",
+      "products": {
+        "cpj35": "CPJ 35",
+        "cpj45": "CPJ 45",
+        "cpa42_5": "CPA 42.5",
+        "cpj55": "CPJ 55"
+      }
+    }
+  },
+  "sitemap": {
+    "title": "Plan du Site",
+    "subtitle": "Toutes les pages du site Dakhla Aménagement",
+    "company": {
+      "title": "L'Entreprise",
+      "pages": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "investors": "Investisseurs",
+        "news": "Actualités"
+      }
+    },
+    "productsServices": {
+      "title": "Produits & Services",
+      "pages": {
+        "products": "Produits",
+        "process": "Fabrication",
+        "quality": "Qualité",
+        "facilities": "Installations",
+        "certifications": "Certifications",
+        "quote": "Demande de Devis"
+      }
+    },
+    "rseCareers": {
+      "title": "RSE & Carrières",
+      "pages": {
+        "rse": "RSE",
+        "sustainability": "Développement Durable",
+        "careers": "Carrières"
+      }
+    },
+    "help": {
+      "title": "Aide & Informations",
+      "pages": {
+        "faq": "FAQ",
+        "contact": "Contact",
+        "legal": "Mentions Légales"
+      }
+    }
   }
 }

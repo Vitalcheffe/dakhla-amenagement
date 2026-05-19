@@ -25,7 +25,7 @@ export default function ProcessPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} />
+      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/grinding-process.png" />
 
       <section className="bg-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +42,7 @@ export default function ProcessPage() {
                         <step.icon className="w-7 h-7 text-white" />
                       </div>
                       <div>
-                        <span className="font-mono text-sm text-steel font-medium">Étape {step.num}</span>
+                        <span className="font-mono text-sm text-steel font-medium">{t('stepLabel')} {step.num}</span>
                         <h3 className="text-2xl font-bold text-navy">{t(`${step.key}.title`)}</h3>
                       </div>
                     </div>

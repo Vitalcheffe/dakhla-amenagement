@@ -19,7 +19,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} />
+      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/factory-exterior.png" />
 
       {/* History */}
       <section className="bg-white py-16 lg:py-24">
@@ -56,19 +56,19 @@ export default function AboutPage() {
               <div className="mt-8 grid grid-cols-2 gap-6 max-w-md mx-auto">
                 <div>
                   <div className="font-mono text-3xl font-bold text-navy">2015</div>
-                  <p className="mt-1 text-sm text-warm-gray">Création</p>
+                  <p className="mt-1 text-sm text-warm-gray">{t('mission.creation')}</p>
                 </div>
                 <div>
                   <div className="font-mono text-3xl font-bold text-navy">2018</div>
-                  <p className="mt-1 text-sm text-warm-gray">Démarrage</p>
+                  <p className="mt-1 text-sm text-warm-gray">{t('mission.startup')}</p>
                 </div>
                 <div>
                   <div className="font-mono text-3xl font-bold text-navy">100K</div>
-                  <p className="mt-1 text-sm text-warm-gray">Tonnes/an</p>
+                  <p className="mt-1 text-sm text-warm-gray">{t('mission.tonnage')}</p>
                 </div>
                 <div>
                   <div className="font-mono text-3xl font-bold text-navy">85+</div>
-                  <p className="mt-1 text-sm text-warm-gray">Collaborateurs</p>
+                  <p className="mt-1 text-sm text-warm-gray">{t('mission.team')}</p>
                 </div>
               </div>
             </div>

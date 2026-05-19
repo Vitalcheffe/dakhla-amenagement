@@ -15,7 +15,7 @@ export default function QualityPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} />
+      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/quality-lab.png" />
 
       {/* Lab Section */}
       <section className="bg-white py-16 lg:py-24">

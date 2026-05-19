@@ -10,7 +10,14 @@
     "investors": "Investors",
     "news": "News",
     "contact": "Contact",
-    "legal": "Legal Notice"
+    "legal": "Legal Notice",
+    "facilities": "Facilities",
+    "certifications": "Certifications",
+    "rse": "CSR",
+    "faq": "FAQ",
+    "quote": "Quote",
+    "productsServices": "Products & Services",
+    "rseCareers": "CSR & Careers"
   },
   "hero": {
     "title": "The Trusted Cement of Southern Morocco",
@@ -65,7 +72,11 @@
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To produce, package and market premium construction materials, contributing to the economic and social development of the Dakhla-Oued Ed-Dahab region, while respecting the strictest environmental standards."
+      "text": "To produce, package and market premium construction materials, contributing to the economic and social development of the Dakhla-Oued Ed-Dahab region, while respecting the strictest environmental standards.",
+      "creation": "Founded",
+      "startup": "Operations",
+      "tonnage": "Tonnes/year",
+      "team": "Employees"
     },
     "values": {
       "title": "Our Values",
@@ -100,6 +111,7 @@
   "process": {
     "title": "Our Manufacturing Process",
     "subtitle": "From raw material to finished product, discover each step of our clinker grinding process",
+    "stepLabel": "Step",
     "step1": {
       "title": "Clinker Reception",
       "desc": "Clinker is received and stored at our Lassargua facility. We ensure rigorous quality control at every delivery, verifying the chemical composition and physical properties of the raw material."
@@ -120,6 +132,12 @@
   "products": {
     "title": "Our Products",
     "subtitle": "A complete range of cements to meet all construction needs",
+    "specLabels": {
+      "resistance": "Resistance",
+      "fineness": "Fineness",
+      "setting": "Setting",
+      "use": "Use"
+    },
     "cpj35": {
       "name": "CPJ 35",
       "full": "Composite Portland Cement 35",
@@ -323,6 +341,7 @@
       "line2": "Morocco"
     },
     "phone": "Phone",
+    "phoneValue": "+212 5XX-XXXXXX",
     "email": "Email",
     "form": {
       "name": "Full name",
@@ -378,5 +397,239 @@
     "legal": "Legal Notice",
     "rights": "All rights reserved.",
     "madeIn": "Made in Morocco"
+  },
+  "facilities": {
+    "title": "Our Facilities",
+    "subtitle": "Discover our Lassargua production center",
+    "production": {
+      "title": "Production Center",
+      "text": "Our clinker grinding center is located in Lassargua, near Dakhla. Inaugurated in 2018, it represents an investment of over 200 million MAD and has a production capacity of 100,000 tonnes per year. The site is strategically positioned to serve the entire Dakhla-Oued Ed-Dahab region and neighboring markets.",
+      "capacity": "Capacity: 100,000 tonnes/year",
+      "location": "Location: Lassargua, Dakhla",
+      "investment": "Investment: 200+ M MAD",
+      "area": "Area: 5 hectares"
+    },
+    "equipment": {
+      "title": "Equipment",
+      "mills": {
+        "name": "Ball Mills",
+        "desc": "High-performance mills for fine and consistent clinker grinding, ensuring optimal fineness of the cement produced."
+      },
+      "silos": {
+        "name": "Storage Silos",
+        "desc": "High-capacity storage facilities for raw clinker and various types of finished cement, ensuring permanent availability."
+      },
+      "packaging": {
+        "name": "Packaging Lines",
+        "desc": "Automated 50 kg bag packaging lines and bulk loading facilities for efficient logistics."
+      },
+      "lab": {
+        "name": "Quality Laboratory",
+        "desc": "In-house laboratory equipped with advanced analysis instruments for quality control at every stage of production."
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "factory": "Factory exterior view",
+      "grinding": "Grinding process",
+      "lab": "Quality laboratory",
+      "bags": "Cement bag packaging"
+    },
+    "location": {
+      "title": "Location",
+      "address": "Production Site Address",
+      "line1": "Lassargua, Dakhla",
+      "line2": "Dakhla-Oued Ed-Dahab Region, Morocco",
+      "access": "Accessibility: National Route N1, 15 km from Dakhla city center"
+    }
+  },
+  "certifications": {
+    "title": "Our Certifications",
+    "subtitle": "Rigorous standards for guaranteed quality",
+    "active": {
+      "title": "Active Certifications",
+      "nm": {
+        "name": "NM 10.1.004",
+        "desc": "Moroccan standard defining specifications and test methods for Portland cements. Our compliance with this standard ensures that our cements meet national quality requirements.",
+        "status": "Certified"
+      },
+      "en": {
+        "name": "EN 197-1",
+        "desc": "European standard for the composition, specifications and conformity criteria of common cements. This certification attests to the compliance of our products with international standards.",
+        "status": "Certified"
+      }
+    },
+    "inProgress": {
+      "title": "In Progress",
+      "iso": {
+        "name": "ISO 9001",
+        "desc": "Quality management system. Our certification process is progressing according to the planned schedule, with an audit planned for 2025. This certification will demonstrate our commitment to continuous improvement of our processes.",
+        "status": "In progress"
+      }
+    },
+    "testing": {
+      "title": "Testing Process",
+      "desc": "Each production batch undergoes a rigorous testing process before being placed on the market. Our in-house laboratory performs comprehensive chemical and physical analyses, and samples are regularly sent to independent external laboratories for validation.",
+      "steps": {
+        "sampling": "Systematic sampling at every stage",
+        "analysis": "Complete chemical and physical analyses",
+        "validation": "Validation by independent external laboratories",
+        "certification": "Issuance of certificate of conformity"
+      }
+    },
+    "commitment": {
+      "title": "Our Quality Commitment",
+      "text": "Quality is at the heart of our strategy. We are committed to maintaining the highest quality standards through rigorous controls, continuous training of our teams and constant investment in our laboratory equipment. Our goal is zero defects across our entire production chain."
+    }
+  },
+  "rse": {
+    "title": "Corporate Social Responsibility",
+    "subtitle": "Our commitment to sustainable and responsible development",
+    "environment": {
+      "title": "Environmental Commitment",
+      "text": "Dakhla Aménagement is committed to minimizing its environmental impact. Our grinding center uses advanced energy efficiency technologies, with an emission filtration system that meets the strictest standards. We constantly optimize our energy consumption and reduce our carbon footprint.",
+      "items": {
+        "emissions": "Emission filtration — MARHP standards",
+        "energy": "Continuous energy optimization",
+        "water": "Process water recycling",
+        "waste": "Responsible industrial waste management"
+      }
+    },
+    "social": {
+      "title": "Social Commitment",
+      "text": "We are proud to contribute to the development of the Dakhla region through local job creation and support for surrounding communities.",
+      "items": {
+        "jobs": "85+ direct local jobs created",
+        "training": "Continuous training programs",
+        "safety": "Rigorous health and safety policy",
+        "wellbeing": "Employee wellbeing"
+      }
+    },
+    "economic": {
+      "title": "Economic Impact",
+      "text": "Dakhla Aménagement actively contributes to the economic development of the Dakhla-Oued Ed-Dahab region through local value creation and support for the regional economy.",
+      "items": {
+        "jobs": "Creation of direct and indirect jobs",
+        "local": "Preferred local sourcing",
+        "development": "Contribution to regional development",
+        "investment": "Investment of over 200 M MAD"
+      }
+    },
+    "partnerships": {
+      "title": "Partnerships & Community",
+      "text": "We maintain close partnerships with local stakeholders to support community development and strengthen the region's socio-economic fabric.",
+      "items": {
+        "education": "Support for education and vocational training",
+        "community": "Community projects and solidarity",
+        "associations": "Partnerships with local associations",
+        "events": "Support for cultural and sporting events"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most common questions",
+    "q1": {
+      "question": "What types of cement do you produce?",
+      "answer": "We produce a complete range of cements: CPJ 35 for common masonry, CPJ 45 for reinforced concrete, CPA 42.5 for demanding structures and precasting, and CPJ 55 for high-strength specialized works."
+    },
+    "q2": {
+      "question": "How can I place an order?",
+      "answer": "You can place an order by contacting our sales team by email at contact@dakhla-amenagement.ma or by phone. We will provide you with a personalized quote tailored to your needs."
+    },
+    "q3": {
+      "question": "What are the delivery areas?",
+      "answer": "We deliver throughout the Dakhla-Oued Ed-Dahab region and surrounding areas. For deliveries to other regions, please contact us to discuss possibilities."
+    },
+    "q4": {
+      "question": "How do you guarantee the quality of your products?",
+      "answer": "Each production batch is tested in our in-house laboratory. We perform comprehensive chemical and physical analyses at every stage of the process. Our products comply with NM 10.1.004 and EN 197-1 standards."
+    },
+    "q5": {
+      "question": "Are your cements certified?",
+      "answer": "Yes, our cements comply with NM 10.1.004 (Moroccan standard) and EN 197-1 (European standard). We are also in the process of obtaining ISO 9001 certification."
+    },
+    "q6": {
+      "question": "Is it possible to visit the plant?",
+      "answer": "Visits to our Lassargua production center are possible by appointment. Please contact our communications department to arrange a visit."
+    },
+    "q7": {
+      "question": "How can I apply for a job?",
+      "answer": "You can send your CV and cover letter to recrutement@dakhla-amenagement.ma. Check our Careers page for open positions."
+    },
+    "q8": {
+      "question": "How can I contact you?",
+      "answer": "You can reach us by email at contact@dakhla-amenagement.ma, by phone at +212 5XX-XXXXXX, or via the contact form on our website. Our headquarters is located at Corner of Lagouira St., El Walae Ave., Dakhla."
+    },
+    "q9": {
+      "question": "What packaging options are available?",
+      "answer": "Our cements are available in 50 kg bags and in bulk. Bulk packaging is particularly suited for large-scale construction sites and concrete plants."
+    },
+    "q10": {
+      "question": "What is the delivery time?",
+      "answer": "Delivery times vary depending on the destination and quantity ordered. Generally, we ensure delivery within 48 to 72 hours for the Dakhla-Oued Ed-Dahab region. Contact us for a precise timeframe."
+    }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "subtitle": "Get a personalized quote for your project",
+    "form": {
+      "company": "Company name",
+      "contact": "Contact name",
+      "email": "Email address",
+      "phone": "Phone",
+      "product": "Product type",
+      "quantity": "Quantity (tonnes)",
+      "location": "Delivery location",
+      "message": "Additional message",
+      "send": "Send request",
+      "success": "Quote request sent successfully! Our sales team will contact you within 24 hours.",
+      "products": {
+        "cpj35": "CPJ 35",
+        "cpj45": "CPJ 45",
+        "cpa42_5": "CPA 42.5",
+        "cpj55": "CPJ 55"
+      }
+    }
+  },
+  "sitemap": {
+    "title": "Sitemap",
+    "subtitle": "All pages of the Dakhla Aménagement website",
+    "company": {
+      "title": "The Company",
+      "pages": {
+        "home": "Home",
+        "about": "About",
+        "investors": "Investors",
+        "news": "News"
+      }
+    },
+    "productsServices": {
+      "title": "Products & Services",
+      "pages": {
+        "products": "Products",
+        "process": "Manufacturing",
+        "quality": "Quality",
+        "facilities": "Facilities",
+        "certifications": "Certifications",
+        "quote": "Request a Quote"
+      }
+    },
+    "rseCareers": {
+      "title": "CSR & Careers",
+      "pages": {
+        "rse": "CSR",
+        "sustainability": "Sustainability",
+        "careers": "Careers"
+      }
+    },
+    "help": {
+      "title": "Help & Information",
+      "pages": {
+        "faq": "FAQ",
+        "contact": "Contact",
+        "legal": "Legal Notice"
+      }
+    }
   }
 }

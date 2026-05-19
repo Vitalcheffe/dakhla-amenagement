@@ -4,20 +4,59 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 
-const navKeys = [
+const standaloneItems = [
   { key: 'home', href: '' },
   { key: 'about', href: '/about' },
-  { key: 'process', href: '/process' },
+];
+
+const dropdownGroups = [
+  {
+    key: 'productsServices',
+    items: [
+      { key: 'products', href: '/products' },
+      { key: 'process', href: '/process' },
+      { key: 'quality', href: '/quality' },
+      { key: 'facilities', href: '/facilities' },
+      { key: 'certifications', href: '/certifications' },
+      { key: 'quote', href: '/quote' },
+    ],
+  },
+  {
+    key: 'rseCareers',
+    items: [
+      { key: 'rse', href: '/rse' },
+      { key: 'sustainability', href: '/sustainability' },
+      { key: 'careers', href: '/careers' },
+    ],
+  },
+];
+
+const rightStandaloneItems = [
+  { key: 'investors', href: '/investors' },
+  { key: 'news', href: '/news' },
+  { key: 'faq', href: '/faq' },
+  { key: 'contact', href: '/contact' },
+];
+
+const allMobileItems = [
+  { key: 'home', href: '' },
+  { key: 'about', href: '/about' },
   { key: 'products', href: '/products' },
+  { key: 'process', href: '/process' },
   { key: 'quality', href: '/quality' },
+  { key: 'facilities', href: '/facilities' },
+  { key: 'certifications', href: '/certifications' },
+  { key: 'quote', href: '/quote' },
+  { key: 'rse', href: '/rse' },
   { key: 'sustainability', href: '/sustainability' },
   { key: 'careers', href: '/careers' },
   { key: 'investors', href: '/investors' },
   { key: 'news', href: '/news' },
+  { key: 'faq', href: '/faq' },
   { key: 'contact', href: '/contact' },
 ];
 
@@ -28,6 +67,16 @@ export function Header({ locale }: { locale: string }) {
 
   const otherLocale = locale === 'fr' ? 'en' : 'fr';
   const switchPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+
+  const isActive = (href: string) => {
+    if (!href) {
+      return pathname === `/${locale}` || pathname === `/${locale}/`;
+    }
+    return pathname === `/${locale}${href}` || pathname.startsWith(`/${locale}${href}/`);
+  };
+
+  const isGroupActive = (items: { href: string }[]) =>
+    items.some((item) => isActive(item.href));
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
@@ -47,17 +96,69 @@ export function Header({ locale }: { locale: string }) {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navKeys.map((item) => {
+            {/* Left standalone items */}
+            {standaloneItems.map((item) => {
               const href = item.href ? `/${locale}${item.href}` : `/${locale}`;
-              const isActive = item.href
-                ? pathname === href || pathname.startsWith(href + '/')
-                : pathname === `/${locale}` || pathname === `/${locale}/`;
               return (
                 <Link
                   key={item.key}
                   href={href}
                   className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                    isActive
+                    isActive(item.href)
+                      ? 'text-navy bg-light-gray'
+                      : 'text-warm-gray hover:text-navy hover:bg-light-gray/60'
+                  }`}
+                >
+                  {t(item.key)}
+                </Link>
+              );
+            })}
+
+            {/* Dropdown menus */}
+            {dropdownGroups.map((group) => (
+              <div key={group.key} className="relative group">
+                <button
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                    isGroupActive(group.items)
+                      ? 'text-navy bg-light-gray'
+                      : 'text-warm-gray hover:text-navy hover:bg-light-gray/60'
+                  }`}
+                >
+                  {t(group.key)}
+                  <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:rotate-180" />
+                </button>
+                <div className="absolute left-0 top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="bg-white rounded-lg shadow-lg border border-border py-2 min-w-[200px]">
+                    {group.items.map((item) => {
+                      const href = `/${locale}${item.href}`;
+                      return (
+                        <Link
+                          key={item.key}
+                          href={href}
+                          className={`block px-4 py-2.5 text-sm font-medium transition-colors ${
+                            isActive(item.href)
+                              ? 'text-navy bg-light-gray'
+                              : 'text-warm-gray hover:text-navy hover:bg-light-gray/60'
+                          }`}
+                        >
+                          {t(item.key)}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* Right standalone items */}
+            {rightStandaloneItems.map((item) => {
+              const href = `/${locale}${item.href}`;
+              return (
+                <Link
+                  key={item.key}
+                  href={href}
+                  className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                    isActive(item.href)
                       ? 'text-navy bg-light-gray'
                       : 'text-warm-gray hover:text-navy hover:bg-light-gray/60'
                   }`}
@@ -94,23 +195,20 @@ export function Header({ locale }: { locale: string }) {
                       Aménagement S.A.
                     </span>
                   </div>
-                  <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Fermer">
+                  <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close">
                     <X className="h-5 w-5 text-navy" />
                   </Button>
                 </div>
                 <nav className="p-4 space-y-1 max-h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar">
-                  {navKeys.map((item) => {
+                  {allMobileItems.map((item) => {
                     const href = item.href ? `/${locale}${item.href}` : `/${locale}`;
-                    const isActive = item.href
-                      ? pathname === href || pathname.startsWith(href + '/')
-                      : pathname === `/${locale}` || pathname === `/${locale}/`;
                     return (
                       <Link
                         key={item.key}
                         href={href}
                         onClick={() => setOpen(false)}
                         className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                          isActive
+                          isActive(item.href)
                             ? 'text-navy bg-light-gray'
                             : 'text-warm-gray hover:text-navy hover:bg-light-gray/60'
                         }`}
@@ -119,6 +217,17 @@ export function Header({ locale }: { locale: string }) {
                       </Link>
                     );
                   })}
+                  {/* Language switcher in mobile nav */}
+                  <div className="pt-4 mt-4 border-t border-border">
+                    <Link
+                      href={switchPath}
+                      onClick={() => setOpen(false)}
+                      className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-warm-gray hover:text-navy rounded-lg hover:bg-light-gray/60 transition-colors"
+                    >
+                      <Globe className="w-4 h-4" />
+                      <span className="uppercase">{otherLocale}</span>
+                    </Link>
+                  </div>
                 </nav>
               </SheetContent>
             </Sheet>
