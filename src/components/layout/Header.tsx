@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Menu, X, Globe, ArrowRight } from 'lucide-react';
@@ -43,16 +42,25 @@ export function Header({ locale }: { locale: string }) {
     } ${scrolled ? 'shadow-sm' : ''}`}>
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo — SVG contains shield + company name */}
+          {/* Logo minimaliste */}
           <Link href={`/${locale}`} className="flex items-center gap-2">
-            <Image
-              src="/images/logo-dam.svg"
-              alt="Dakhla Aménagement"
-              width={180}
-              height={44}
-              className="h-9 md:h-10 w-auto"
-              priority
-            />
+            {/* DA monogram */}
+            <span className={`text-xl font-bold tracking-wider transition-colors duration-300 ${
+              isHome && !scrolled ? 'text-[#E8B84B]' : 'text-[#E8B84B]'
+            }`}>DA</span>
+            {/* Gold separator */}
+            <span className={`w-[2px] h-6 rounded-full transition-colors duration-300 ${
+              isHome && !scrolled ? 'bg-[#E8B84B]/50' : 'bg-[#E8B84B]/50'
+            }`} />
+            {/* Company name */}
+            <div className="flex flex-col">
+              <span className={`text-[11px] font-bold tracking-[0.2em] leading-none transition-colors duration-300 ${
+                isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'
+              }`}>DAKHLA</span>
+              <span className={`text-[11px] font-bold tracking-[0.2em] leading-none mt-0.5 transition-colors duration-300 ${
+                isHome && !scrolled ? 'text-white/80' : 'text-[#1B3A5C]'
+              }`}>AMÉNAGEMENT</span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -114,13 +122,14 @@ export function Header({ locale }: { locale: string }) {
               <SheetContent side="right" className="w-80 bg-white p-0">
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
                 <div className="flex items-center justify-between p-6 border-b border-[#E5E7EB]">
-                  <Image
-                    src="/images/logo-dam.svg"
-                    alt="Dakhla Aménagement"
-                    width={160}
-                    height={40}
-                    className="h-8 w-auto"
-                  />
+                  <div className="flex items-center gap-2">
+                    <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
+                    <span className="w-[2px] h-5 rounded-full bg-[#E8B84B]/50" />
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none text-[#1B3A5C]">DAKHLA</span>
+                      <span className="text-[10px] font-bold tracking-[0.2em] leading-none mt-0.5 text-[#1B3A5C]">AMÉNAGEMENT</span>
+                    </div>
+                  </div>
                   <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
                     <X className="h-5 w-5" />
                   </Button>

@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 export function Footer({ locale }: { locale: string }) {
@@ -14,14 +13,13 @@ export function Footer({ locale }: { locale: string }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="mb-6">
-              <Image
-                src="/images/logo-dam.svg"
-                alt="Dakhla Aménagement"
-                width={180}
-                height={44}
-                className="h-9 w-auto"
-              />
+            <div className="flex items-center gap-2 mb-6">
+              <span className="text-xl font-bold tracking-wider text-[#E8B84B]">DA</span>
+              <span className="w-[2px] h-6 rounded-full bg-[#E8B84B]/50" />
+              <div className="flex flex-col">
+                <span className="text-[11px] font-bold tracking-[0.2em] leading-none text-[#1B3A5C]">DAKHLA</span>
+                <span className="text-[11px] font-bold tracking-[0.2em] leading-none mt-0.5 text-[#1B3A5C]">AMÉNAGEMENT</span>
+              </div>
             </div>
             <p className="text-sm text-[#6B7280] leading-relaxed max-w-xs">
               {t('description')}

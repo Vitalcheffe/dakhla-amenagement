@@ -23,7 +23,7 @@
       "type": "image/png"
     },
     {
-      "src": "/images/logo-dam.png",
+      "src": "/images/logo-dam-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
