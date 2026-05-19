@@ -17,9 +17,16 @@
     "cta": "Découvrir nos solutions",
     "ctaSecondary": "Voir le processus"
   },
+  "homePill": {
+    "title": "Des solutions cimentières pour chaque besoin",
+    "tabProducts": "Nos Produits",
+    "tabProcess": "Process de Broyage",
+    "tabEco": "ECOShield",
+    "tabQuality": "Qualité"
+  },
   "homeAnchor": {
-    "title": "Ancrage Régional",
-    "text": "Investissement stratégique dans les Provinces du Sud. Avec une capacité de 100 000 tonnes par an, notre centre de broyage de Lassargua est le poumon industriel de la région Dakhla-Oued Ed-Dahab.",
+    "title": "Un investissement stratégique dans les Provinces du Sud, au service du développement régional.",
+    "text": "Avec une capacité de 100 000 tonnes par an, notre centre de broyage de Lassargua est le poumon industriel de la région Dakhla-Oued Ed-Dahab.",
     "cta": "Nos solutions",
     "ctaSecondary": "Voir le processus",
     "stat1": "100 000 Tonnes/an",
@@ -47,6 +54,11 @@
     "story3Desc": "Environnement et biodiversité",
     "story4Title": "Gestion Circulaire",
     "story4Desc": "Économie circulaire et réduction des déchets"
+  },
+  "homeCta": {
+    "title": "Un projet ? Parlons-en.",
+    "subtitle": "Contactez notre équipe commerciale pour obtenir un devis personnalisé ou des conseils techniques.",
+    "cta": "Nous contacter"
   },
   "about": {
     "title": "À Propos",
@@ -475,12 +487,14 @@
     }
   },
   "footer": {
-    "description": "Ciment DAM — Centre de broyage de clinker. Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
-    "company": "L'Entreprise",
+    "description": "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction.",
+    "company": "Navigation",
     "products": "Produits",
     "rse": "RSE & Durable",
     "resources": "Ressources",
-    "legal": "Mentions Légales",
+    "legal": "Légal",
+    "contact": "Contact",
+    "capital": "Capital : 30 100 000 DHS",
     "sitemap": "Plan du Site",
     "rights": "Tous droits réservés.",
     "madeIn": "Fait au Maroc",

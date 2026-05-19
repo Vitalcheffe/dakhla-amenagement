@@ -3,10 +3,9 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { PageHero } from '@/components/shared/PageHero';
-import { ScrollReveal, FadeIn } from '@/components/shared/Animations';
-import { Timeline } from '@/components/shared/Timeline';
-import { Card, CardContent } from '@/components/ui/card';
-import { Building2, FileText, MapPin, Users, Shield, Heart, Lightbulb, Factory, Cog, Warehouse, FlaskConical } from 'lucide-react';
+import { ScrollReveal } from '@/components/shared/Animations';
+import { motion } from 'framer-motion';
+import { Building2, FileText, MapPin, Users, Factory, Cog, Warehouse, FlaskConical } from 'lucide-react';
 
 export default function AboutPage() {
   const t = useTranslations('about');
@@ -46,102 +45,131 @@ export default function AboutPage() {
 
   return (
     <>
-      <PageHero title={t('title')} subtitle={t('subtitle')} image="/images/factory-exterior.png" />
+      <PageHero title={t('title')} subtitle={t('subtitle')} sectionCounter="/1.0" />
 
-      {/* Section 1: Genèse — History Timeline */}
-      <section className="bg-anthracite py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Section 1: Genèse — Timeline */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            <span className="section-counter">/1.1</span>
+          </ScrollReveal>
+          <ScrollReveal delay={0.05}>
+            <h2 className="mt-4 text-[clamp(1.75rem,4vw,3rem)] font-bold tracking-[-0.02em] leading-[1.15]">
               {t('genesis.title')}
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <p className="mt-4 text-lg text-white/60 max-w-2xl leading-relaxed">
+            <p className="mt-4 text-[clamp(1rem,1.5vw,1.25rem)] text-black/50 max-w-2xl leading-relaxed">
               {t('genesis.text')}
             </p>
           </ScrollReveal>
-          <div className="mt-16">
-            <Timeline items={timelineItems} />
+
+          {/* Timeline */}
+          <div className="mt-16 relative">
+            <div className="absolute left-4 lg:left-1/2 top-0 bottom-0 w-px bg-black/10" />
+            <div className="space-y-12">
+              {timelineItems.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: '-50px' }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className={`relative flex items-start gap-6 lg:gap-0 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+                >
+                  <div className="absolute left-4 lg:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-[#0A0A0A] border-2 border-white z-10 mt-1.5" />
+                  <div className={`ml-10 lg:ml-0 lg:w-1/2 ${i % 2 === 0 ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}`}>
+                    <div className={`inline-block bg-[#F5F5F5] rounded-xl px-6 py-5 ${i % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}>
+                      <span className="font-mono text-2xl font-bold text-[#0A0A0A]">{item.year}</span>
+                      <p className="mt-2 text-sm text-black/50 leading-relaxed">{item.text}</p>
+                    </div>
+                  </div>
+                  <div className="hidden lg:block lg:w-1/2" />
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2: Dakhla Aménagement — Company Description */}
-      <section className="bg-gris-clair py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Section 2: Company Description */}
+      <section className="py-20 md:py-32 bg-[#F5F5F5]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
               <ScrollReveal>
-                <h2 className="font-heading text-3xl sm:text-4xl font-bold text-anthracite tracking-tight">
+                <span className="section-counter">/1.2</span>
+              </ScrollReveal>
+              <ScrollReveal delay={0.05}>
+                <h2 className="mt-4 text-[clamp(1.75rem,4vw,3rem)] font-bold tracking-[-0.02em] leading-[1.15]">
                   {t('company.title')}
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
-                <p className="mt-6 text-acier leading-relaxed text-lg">
+                <p className="mt-6 text-black/50 leading-relaxed text-lg">
                   {t('company.text')}
                 </p>
               </ScrollReveal>
             </div>
             <ScrollReveal delay={0.2}>
-              <Card className="bg-white border-anthracite/5 shadow-sm">
-                <CardContent className="p-6 lg:p-8">
-                  <h3 className="font-heading text-lg font-bold text-anthracite mb-6">{t('company.title')}</h3>
-                  <div className="space-y-4">
-                    {legalItems.map((item, i) => (
-                      <div key={i} className="flex items-start gap-3">
-                        <item.icon className="w-4 h-4 text-bleu-ocean shrink-0 mt-1" />
-                        <p className="text-sm font-medium text-anthracite/80">{item.text}</p>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
+              <div className="bg-white rounded-xl p-6 lg:p-8">
+                <h3 className="font-bold text-lg text-[#0A0A0A] mb-6">{t('company.title')}</h3>
+                <div className="space-y-4">
+                  {legalItems.map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <item.icon className="w-4 h-4 text-black/30 shrink-0 mt-1" />
+                      <p className="text-sm font-medium text-black/60">{item.text}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
       {/* Section 3: Gouvernance */}
-      <section className="bg-white py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-32 bg-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <ScrollReveal>
-              <h2 className="font-heading text-3xl font-bold text-anthracite tracking-tight">
+              <span className="section-counter">/1.3</span>
+              <h2 className="mt-4 text-[clamp(1.75rem,4vw,3rem)] font-bold tracking-[-0.02em] leading-[1.15]">
                 {t('governance.title')}
               </h2>
-              <p className="mt-6 text-acier leading-relaxed text-lg">
+              <p className="mt-6 text-black/50 leading-relaxed text-lg">
                 {t('governance.text')}
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <Card className="bg-gris-clair border-anthracite/5">
-                <CardContent className="p-6 space-y-4">
-                  {governanceRoles.map((role) => (
-                    <div key={role} className="flex items-center gap-3 p-3 rounded-lg bg-white">
-                      <div className="w-10 h-10 rounded-lg bg-bleu-ocean/10 flex items-center justify-center shrink-0">
-                        <Users className="w-5 h-5 text-bleu-ocean" />
-                      </div>
-                      <p className="text-sm font-medium text-anthracite">{t(`governance.${role}`)}</p>
+              <div className="bg-[#F5F5F5] rounded-xl p-6 space-y-4">
+                {governanceRoles.map((role) => (
+                  <div key={role} className="flex items-center gap-3 p-3 rounded-lg bg-white">
+                    <div className="w-10 h-10 rounded-lg bg-[#0A0A0A]/5 flex items-center justify-center shrink-0">
+                      <Users className="w-5 h-5 text-black/40" />
                     </div>
-                  ))}
-                </CardContent>
-              </Card>
+                    <p className="text-sm font-medium text-[#0A0A0A]">{t(`governance.${role}`)}</p>
+                  </div>
+                ))}
+              </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
       {/* Section 4: Installations */}
-      <section className="bg-anthracite py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 md:py-32 bg-[#0A0A0A] text-white">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            <span className="section-counter text-white/20">/1.4</span>
+          </ScrollReveal>
+          <ScrollReveal delay={0.05}>
+            <h2 className="mt-4 text-[clamp(1.75rem,4vw,3rem)] font-bold tracking-[-0.02em] leading-[1.15]">
               {t('facilities.title')}
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <p className="mt-4 text-lg text-white/60 max-w-2xl leading-relaxed">
+            <p className="mt-4 text-[clamp(1rem,1.5vw,1.25rem)] text-white/50 max-w-2xl leading-relaxed">
               {t('facilities.text')}
             </p>
           </ScrollReveal>
@@ -149,9 +177,9 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {facilityItems.map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-bleu-ocean/40 transition-colors">
-                  <item.icon className="w-8 h-8 text-bleu-ocean mb-4" />
-                  <p className="text-sm font-medium text-white/80">{item.text}</p>
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:border-white/20 transition-colors">
+                  <item.icon className="w-8 h-8 text-white/40 mb-4" />
+                  <p className="text-sm font-medium text-white/70">{item.text}</p>
                 </div>
               </ScrollReveal>
             ))}
@@ -160,9 +188,9 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {equipmentItems.map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-vert-energie/30 transition-colors">
-                  <item.icon className="w-6 h-6 text-vert-energie shrink-0 mt-0.5" />
-                  <p className="text-sm text-white/70">{item.text}</p>
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-[#2ECC71] shrink-0 mt-0.5" />
+                  <p className="text-sm text-white/60">{item.text}</p>
                 </div>
               </ScrollReveal>
             ))}

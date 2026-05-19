@@ -58,7 +58,7 @@ export default async function LocaleLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-white text-anthracite font-sans">
+      <body className="min-h-full flex flex-col bg-white text-foreground font-sans">
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           <main className="flex-1">{children}</main>

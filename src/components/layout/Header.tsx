@@ -4,150 +4,159 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
-import { motion } from 'framer-motion';
 
 const navItems = [
   { key: 'about', href: '/about' },
   { key: 'solutions', href: '/solutions' },
   { key: 'sustainability', href: '/sustainability' },
   { key: 'medias', href: '/medias' },
-  { key: 'investors', href: '/investors' },
   { key: 'careers', href: '/careers' },
-  { key: 'contact', href: '/contact' },
+  { key: 'investors', href: '/investors' },
 ];
 
 export function Header({ locale }: { locale: string }) {
   const t = useTranslations('nav');
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const otherLocale = locale === 'fr' ? 'en' : 'fr';
-  const switchPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
-
-  const isActive = (href: string) => {
-    return pathname === `/${locale}${href}` || pathname.startsWith(`/${locale}${href}/`);
-  };
+  const [open, setOpen] = useState(false);
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const otherLocale = locale === 'fr' ? 'en' : 'fr';
+  const switchPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+
+  const headerBg = isHome && !scrolled
+    ? 'bg-transparent'
+    : 'bg-white/95 backdrop-blur-sm border-b border-border';
+  const logoColor = isHome && !scrolled ? 'text-white' : 'text-[#0A0A0A]';
+  const logoBoxBg = isHome && !scrolled ? 'bg-white' : 'bg-[#0A0A0A]';
+  const logoLetter = isHome && !scrolled ? 'text-[#0A0A0A]' : 'text-white';
+
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-anthracite/95 backdrop-blur-md shadow-lg border-b border-white/5'
-          : 'bg-transparent'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${headerBg}`}>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href={`/${locale}`} className="flex items-center gap-3 shrink-0 group">
+          <Link href={`/${locale}`} className="flex items-center gap-2">
+            <div className={`w-8 h-8 ${logoBoxBg} rounded-sm flex items-center justify-center transition-colors duration-300`}>
+              <span className={`${logoLetter} font-mono font-bold text-sm transition-colors duration-300`}>D</span>
+            </div>
             <div className="flex flex-col">
-              <span className="font-heading text-2xl font-bold tracking-wider text-white group-hover:text-bleu-ocean transition-colors leading-tight">
-                DAM
-              </span>
-              <span className="text-[10px] font-medium tracking-[0.3em] uppercase text-bleu-ocean -mt-0.5">
-                CIMENT
-              </span>
+              <span className={`text-sm font-bold tracking-[0.15em] ${logoColor} leading-none transition-colors duration-300`}>DAM</span>
+              <span className={`text-[8px] font-medium tracking-[0.25em] uppercase leading-none mt-0.5 ${isHome && !scrolled ? 'text-white/50' : 'text-black/40'} transition-colors duration-300`}>CIMENT</span>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => {
               const href = `/${locale}${item.href}`;
+              const isActive = pathname.startsWith(href);
               return (
                 <Link
                   key={item.key}
                   href={href}
-                  className={`relative px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                    isActive(item.href)
-                      ? 'text-white'
-                      : 'text-white/60 hover:text-white hover:bg-white/5'
+                  className={`px-3 py-2 text-[13px] font-medium rounded-full transition-all duration-300 ${
+                    isActive
+                      ? `${isHome && !scrolled ? 'bg-white/15 text-white' : 'bg-[#0A0A0A] text-white'}`
+                      : `${isHome && !scrolled ? 'text-white/70 hover:text-white hover:bg-white/10' : 'text-black/60 hover:text-black hover:bg-black/5'}`
                   }`}
                 >
                   {t(item.key)}
-                  {isActive(item.href) && (
-                    <motion.div
-                      layoutId="nav-indicator"
-                      className="absolute bottom-0 left-2 right-2 h-0.5 bg-bleu-ocean rounded-full"
-                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                    />
-                  )}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Right side: Language Switch + Mobile Menu */}
-          <div className="flex items-center gap-2">
+          {/* Right side */}
+          <div className="flex items-center gap-3">
             <Link
               href={switchPath}
-              className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white/50 hover:text-white rounded-md hover:bg-white/5 transition-colors"
+              className={`flex items-center gap-1.5 px-3 py-1.5 text-[13px] font-medium rounded-full transition-all duration-300 ${
+                isHome && !scrolled
+                  ? 'text-white/70 hover:text-white hover:bg-white/10'
+                  : 'text-black/60 hover:text-black hover:bg-black/5'
+              }`}
             >
-              <Globe className="w-4 h-4" />
+              <Globe className="w-3.5 h-3.5" />
               <span className="uppercase">{otherLocale}</span>
             </Link>
 
-            {/* Mobile Menu */}
+            <Link
+              href={`/${locale}/contact`}
+              className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-[13px] font-semibold rounded-full transition-all duration-300 ${
+                isHome && !scrolled
+                  ? 'bg-white text-[#0A0A0A] hover:bg-white/90'
+                  : 'bg-[#0A0A0A] text-white hover:bg-[#0A0A0A]/90'
+              }`}
+            >
+              {t('contact')}
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </Link>
+
+            {/* Mobile menu */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger className="lg:hidden">
-                <Button variant="ghost" size="icon" aria-label="Menu">
-                  <Menu className="h-5 w-5 text-white" />
+                <Button variant="ghost" size="icon" aria-label="Menu" className={isHome && !scrolled ? 'text-white hover:bg-white/10' : ''}>
+                  <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80 bg-anthracite border-white/10 p-0">
+              <SheetContent side="right" className="w-80 bg-white p-0">
                 <SheetTitle className="sr-only">Navigation</SheetTitle>
-                <div className="flex items-center justify-between p-4 border-b border-white/10">
-                  <div className="flex flex-col">
-                    <span className="font-heading text-2xl font-bold tracking-wider text-white leading-tight">
-                      DAM
-                    </span>
-                    <span className="text-[10px] font-medium tracking-[0.3em] uppercase text-bleu-ocean">
-                      CIMENT
-                    </span>
+                <div className="flex items-center justify-between p-6 border-b border-border">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-[#0A0A0A] rounded-sm flex items-center justify-center">
+                      <span className="text-white font-mono font-bold text-sm">D</span>
+                    </div>
+                    <span className="text-sm font-bold tracking-[0.15em]">DAM</span>
                   </div>
-                  <Button variant="ghost" size="icon" onClick={() => setOpen(false)} aria-label="Close">
-                    <X className="h-5 w-5 text-white" />
+                  <Button variant="ghost" size="icon" onClick={() => setOpen(false)}>
+                    <X className="h-5 w-5" />
                   </Button>
                 </div>
-                <nav className="p-4 space-y-1 max-h-[calc(100vh-80px)] overflow-y-auto custom-scrollbar">
+                <nav className="p-6 space-y-1">
                   {navItems.map((item) => {
                     const href = `/${locale}${item.href}`;
+                    const isActive = pathname.startsWith(href);
                     return (
                       <Link
                         key={item.key}
                         href={href}
                         onClick={() => setOpen(false)}
                         className={`block px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
-                          isActive(item.href)
-                            ? 'text-white bg-white/10'
-                            : 'text-white/60 hover:text-white hover:bg-white/5'
+                          isActive ? 'bg-[#0A0A0A] text-white' : 'text-black/60 hover:text-black hover:bg-black/5'
                         }`}
                       >
                         {t(item.key)}
                       </Link>
                     );
                   })}
-                  {/* Language switcher in mobile nav */}
-                  <div className="pt-4 mt-4 border-t border-white/10">
+                  <div className="pt-4 border-t border-border mt-4">
+                    <Link
+                      href={`/${locale}/contact`}
+                      onClick={() => setOpen(false)}
+                      className="flex items-center justify-center gap-2 px-5 py-3 bg-[#0A0A0A] text-white text-sm font-semibold rounded-full"
+                    >
+                      {t('contact')}
+                      <ArrowUpRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                  <div className="pt-4">
                     <Link
                       href={switchPath}
                       onClick={() => setOpen(false)}
-                      className="flex items-center gap-2 px-4 py-3 text-sm font-medium text-white/60 hover:text-white rounded-lg hover:bg-white/5 transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-black/60"
                     >
                       <Globe className="w-4 h-4" />
-                      <span className="uppercase">{otherLocale}</span>
+                      {otherLocale.toUpperCase()}
                     </Link>
                   </div>
                 </nav>

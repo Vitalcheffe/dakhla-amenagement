@@ -2,135 +2,88 @@
 
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { MapPin, Phone, Mail } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+
+const footerNavItems = [
+  { key: 'about', href: '/about' },
+  { key: 'solutions', href: '/solutions' },
+  { key: 'sustainability', href: '/sustainability' },
+  { key: 'medias', href: '/medias' },
+  { key: 'careers', href: '/careers' },
+  { key: 'investors', href: '/investors' },
+  { key: 'contact', href: '/contact' },
+];
 
 export function Footer({ locale }: { locale: string }) {
   const t = useTranslations('footer');
   const tNav = useTranslations('nav');
-  const tContact = useTranslations('contact');
-
-  const companyLinks = [
-    { key: 'about', href: `/${locale}/about` },
-    { key: 'investors', href: `/${locale}/investors` },
-    { key: 'careers', href: `/${locale}/careers` },
-  ];
-
-  const productLinks = [
-    { key: 'solutions', href: `/${locale}/solutions` },
-    { key: 'sustainability', href: `/${locale}/sustainability` },
-    { key: 'medias', href: `/${locale}/medias` },
-  ];
-
-  const resourceLinks = [
-    { key: 'contact', href: `/${locale}/contact` },
-    { key: 'legal', href: `/${locale}/legal` },
-    { key: 'sitemap', href: `/${locale}/sitemap` },
-  ];
 
   return (
-    <footer className="bg-anthracite text-white mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+    <footer className="bg-[#0A0A0A] text-white">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
-            <div className="flex flex-col mb-4">
-              <span className="font-heading text-2xl font-bold tracking-wider text-white leading-tight">
-                DAM
-              </span>
-              <span className="text-[10px] font-medium tracking-[0.3em] uppercase text-bleu-ocean -mt-0.5">
-                CIMENT
-              </span>
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
+                <span className="text-[#0A0A0A] font-mono font-bold text-sm">D</span>
+              </div>
+              <div>
+                <span className="text-sm font-bold tracking-[0.15em]">DAM</span>
+                <span className="text-[8px] tracking-[0.25em] text-white/40 ml-2">CIMENT</span>
+              </div>
             </div>
-            <p className="text-sm text-white/50 leading-relaxed max-w-sm">{t('description')}</p>
-            <div className="mt-4 space-y-1">
-              <p className="text-xs text-white/30">{t('rc')}</p>
-              <p className="text-xs text-white/30">{t('ice')}</p>
-              <p className="text-xs text-white/30">{t('if')}</p>
-            </div>
+            <p className="text-sm text-white/50 leading-relaxed max-w-xs">
+              {t('description')}
+            </p>
           </div>
 
-          {/* Company Links */}
+          {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('company')}
-            </h3>
+            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('company')}</h4>
             <ul className="space-y-2.5">
-              {companyLinks.map((link) => (
-                <li key={link.key}>
+              {footerNavItems.map((item) => (
+                <li key={item.key}>
                   <Link
-                    href={link.href}
+                    href={`/${locale}${item.href}`}
                     className="text-sm text-white/50 hover:text-white transition-colors"
                   >
-                    {tNav(link.key)}
+                    {tNav(item.key)}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Product Links */}
+          {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('products')}
-            </h3>
-            <ul className="space-y-2.5">
-              {productLinks.map((link) => (
-                <li key={link.key}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/50 hover:text-white transition-colors"
-                  >
-                    {tNav(link.key)}
-                  </Link>
-                </li>
-              ))}
+            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('contact')}</h4>
+            <ul className="space-y-2.5 text-sm text-white/50">
+              <li>Angle rue Lagouira, Av. El Walae</li>
+              <li>Dakhla, Maroc</li>
+              <li>contact@dakhla-amenagement.ma</li>
+              <li>+212 5XX-XXXXXX</li>
             </ul>
           </div>
 
-          {/* Resources & Contact */}
+          {/* Legal */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              {t('resources')}
-            </h3>
-            <ul className="space-y-2.5">
-              {resourceLinks.map((link) => (
-                <li key={link.key}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/50 hover:text-white transition-colors"
-                  >
-                    {link.key === 'legal' ? t('legal') : link.key === 'sitemap' ? t('sitemap') : tNav(link.key)}
-                  </Link>
-                </li>
-              ))}
+            <h4 className="text-xs font-semibold tracking-[0.2em] uppercase text-white/30 mb-4">{t('legal')}</h4>
+            <ul className="space-y-2.5 text-sm text-white/50">
+              <li>RC: 7207</li>
+              <li>ICE: 001726721000031</li>
+              <li>IF: 46377920</li>
+              <li>{t('capital')}</li>
             </ul>
-            <div className="mt-6 space-y-2">
-              <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-bleu-ocean shrink-0" />
-                <span className="text-xs text-white/40">{tContact('phoneValue')}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-bleu-ocean shrink-0" />
-                <span className="text-xs text-white/40">contact@ciment-dam.com</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-bleu-ocean shrink-0 mt-0.5" />
-                <span className="text-xs text-white/40">
-                  {tContact('address.line1')}, {tContact('address.line2')}
-                </span>
-              </div>
-            </div>
           </div>
         </div>
 
-        <Separator className="my-8 bg-white/10" />
-
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30">
-            © 2026 Ciment DAM — Dakhla Aménagement S.A. {t('rights')}
-          </p>
-          <p className="text-xs text-white/30">{t('madeIn')}</p>
+        <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/30">&copy; 2026 Dakhla Aménagement S.A. {t('rights')}</p>
+          <div className="flex items-center gap-6">
+            <Link href={`/${locale}/legal`} className="text-xs text-white/30 hover:text-white/60 transition-colors">{tNav('legal')}</Link>
+            <Link href={`/${locale}/sitemap`} className="text-xs text-white/30 hover:text-white/60 transition-colors">{tNav('sitemap')}</Link>
+            <span className="text-xs text-white/30">{t('madeIn')}</span>
+          </div>
         </div>
       </div>
     </footer>

@@ -17,9 +17,16 @@
     "cta": "Discover our solutions",
     "ctaSecondary": "View the process"
   },
+  "homePill": {
+    "title": "Cement solutions for every need",
+    "tabProducts": "Our Products",
+    "tabProcess": "Grinding Process",
+    "tabEco": "ECOShield",
+    "tabQuality": "Quality"
+  },
   "homeAnchor": {
-    "title": "Regional Anchor",
-    "text": "Strategic investment in the Southern Provinces. With a capacity of 100,000 tonnes per year, our Lassargua grinding center is the industrial engine of the Dakhla-Oued Ed-Dahab region.",
+    "title": "A strategic investment in the Southern Provinces, serving regional development.",
+    "text": "With a capacity of 100,000 tonnes per year, our Lassargua grinding center is the industrial engine of the Dakhla-Oued Ed-Dahab region.",
     "cta": "Our solutions",
     "ctaSecondary": "View the process",
     "stat1": "100,000 Tonnes/year",
@@ -47,6 +54,11 @@
     "story3Desc": "Environment and biodiversity",
     "story4Title": "Circular Management",
     "story4Desc": "Circular economy and waste reduction"
+  },
+  "homeCta": {
+    "title": "Have a project? Let's talk.",
+    "subtitle": "Contact our sales team for a custom quote or technical advice.",
+    "cta": "Contact us"
   },
   "about": {
     "title": "About",
@@ -475,12 +487,14 @@
     }
   },
   "footer": {
-    "description": "Ciment DAM — Clinker grinding center. Production, packaging and marketing of premium construction materials in Dakhla, Morocco.",
-    "company": "Company",
+    "description": "Clinker grinding center — Production, packaging and marketing of premium construction materials.",
+    "company": "Navigation",
     "products": "Products",
     "rse": "CSR & Sustainability",
     "resources": "Resources",
-    "legal": "Legal Notice",
+    "legal": "Legal",
+    "contact": "Contact",
+    "capital": "Capital: 30,100,000 MAD",
     "sitemap": "Sitemap",
     "rights": "All rights reserved.",
     "madeIn": "Made in Morocco",

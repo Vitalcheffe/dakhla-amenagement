@@ -125,29 +125,25 @@ export function CountUp({
   );
 }
 
-export function ParallaxSection({
+export function ScrollReveal({
   children,
   className,
-  speed = 0.3,
-  imageUrl,
+  delay = 0,
 }: {
   children: React.ReactNode;
   className?: string;
-  speed?: number;
-  imageUrl?: string;
+  delay?: number;
 }) {
   return (
-    <section
-      className={`relative overflow-hidden ${className || ''}`}
-      style={{
-        backgroundImage: imageUrl ? `url(${imageUrl})` : undefined,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.8, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={className}
     >
-      {imageUrl && <div className="absolute inset-0 bg-anthracite/85" />}
-      <div className="relative z-10">{children}</div>
-    </section>
+      {children}
+    </motion.div>
   );
 }
 
@@ -167,19 +163,19 @@ export function VideoModal({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-anthracite/95 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0A0A0A]/95 backdrop-blur-sm"
       onClick={onClose}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="relative w-full max-w-4xl mx-4 aspect-video bg-anthracite rounded-xl overflow-hidden"
+        className="relative w-full max-w-4xl mx-4 aspect-video bg-[#0A0A0A] rounded-xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-anthracite/80 text-white hover:bg-anthracite transition-colors"
+          className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#0A0A0A]/80 text-white hover:bg-[#0A0A0A] transition-colors"
           aria-label="Close"
         >
           ✕
@@ -204,28 +200,6 @@ export function VideoModal({
           </div>
         )}
       </motion.div>
-    </motion.div>
-  );
-}
-
-export function ScrollReveal({
-  children,
-  className,
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.7, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className={className}
-    >
-      {children}
     </motion.div>
   );
 }
