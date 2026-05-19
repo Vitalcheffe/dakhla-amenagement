@@ -1318,138 +1318,248 @@
   },
   "press": {
     "title": "Espace Presse",
-    "subtitle": "Communiqués, ressources et contacts pour les médias",
+    "subtitle": "Communiqués, ressources et contacts pour les médias — Dakhla Aménagement S.A.",
     "releases": {
       "title": "Communiqués de Presse",
+      "readMore": "Lire plus",
       "r1": {
-        "date": "15 Mars 2026",
-        "title": "Dakhla Aménagement dépasse les 100 000 tonnes de capacité annuelle",
-        "excerpt": "Le centre de broyage de Lassargua franchit un cap stratégique avec une capacité de production renforcée pour répondre à la demande croissante du marché du Sud marocain et de la Mauritanie."
+        "date": "Janvier 2026",
+        "title": "Lancement de la production — DAM entre dans une nouvelle ère industrielle",
+        "excerpt": "Dakhla Aménagement annonce le lancement officiel de sa production de ciment CPJ 45 et CPJ 55 au centre de broyage de Lassargua, marquant une étape majeure pour l'industrie cimentière du Sud marocain."
       },
       "r2": {
-        "date": "20 Janvier 2026",
-        "title": "Lancement du programme d'efficacité énergétique 2026",
-        "excerpt": "Dakhla Aménagement annonce un investissement significatif dans l'optimisation énergétique de ses installations de broyage, réduisant la consommation électrique par tonne produite."
+        "date": "Décembre 2025",
+        "title": "DAM dépasse 100 000 tonnes de capacité annuelle",
+        "excerpt": "Le centre de broyage de Lassargua franchit un cap stratégique avec une capacité de production renforcée pour répondre à la demande croissante du marché du Sud marocain et de la Mauritanie."
       },
       "r3": {
-        "date": "5 Novembre 2025",
-        "title": "Certification EN 197-1 : un gage de qualité international",
-        "excerpt": "Nos ciments CPJ 45 et CPJ 55 obtiennent la certification à la norme européenne EN 197-1, confirmant leur conformité aux standards internationaux de qualité."
+        "date": "Octobre 2025",
+        "title": "Certification ISO 9001 : l'excellence qualité certifiée",
+        "excerpt": "Dakhla Aménagement obtient la certification ISO 9001 pour son système de management qualité, confirmant son engagement envers les standards internationaux les plus exigeants."
       },
       "r4": {
-        "date": "15 Septembre 2025",
-        "title": "Dakhla Aménagement participe au Salon BTP de Dakhla",
-        "excerpt": "L'entreprise sera présente au Salon du Bâtiment et Travaux Publics de Dakhla pour présenter ses solutions cimentières et rencontrer les acteurs du secteur."
+        "date": "Juillet 2025",
+        "title": "Nouvelle ligne de conditionnement — Investissement stratégique",
+        "excerpt": "DAM inaugure une nouvelle ligne de conditionnement automatisée, renforçant sa capacité de mise en sacs et de big bags pour répondre à la diversité des besoins de ses 120 clients."
+      },
+      "r5": {
+        "date": "Mars 2025",
+        "title": "Partenariat avec le port de Dakhla — Logistique optimisée",
+        "excerpt": "Dakhla Aménagement signe un accord stratégique avec l'Agence Portuaire pour l'optimisation de la réception du clinker et l'expédition du ciment, garantissant des délais de livraison raccourcis."
       }
     },
     "kit": {
       "title": "Kit Presse",
       "subtitle": "Ressources téléchargeables pour les médias",
-      "logo": "Logo DAM (vectoriel + PNG haute résolution)",
-      "photos": "Photos HD de l'usine et des produits",
-      "charte": "Charte graphique DAM",
-      "fiche": "Fiche entreprise PDF"
+      "download": "Télécharger",
+      "pressKit": {
+        "name": "Kit Presse PDF",
+        "desc": "Présentation de l'entreprise, chiffres clés, organigramme et photos sélectionnées pour la presse.",
+        "size": "PDF — 4,2 Mo"
+      },
+      "logoPack": {
+        "name": "Pack Logo DAM",
+        "desc": "Logos officiels en format SVG, PNG haute résolution et variante blanche sur fond sombre.",
+        "size": "ZIP — 1,8 Mo"
+      },
+      "photoGallery": {
+        "name": "Galerie Photos HD",
+        "desc": "Sélection de photos haute résolution de l'usine, des produits et des équipes pour usage presse.",
+        "size": "ZIP — 28 Mo"
+      }
+    },
+    "gallery": {
+      "title": "Galerie Photos HD",
+      "subtitle": "Photos haute résolution pour usage presse — Cliquez pour agrandir",
+      "view": "Agrandir",
+      "note": "Toutes les photos sont libres de droits pour usage éditorial. Crédit : Dakhla Aménagement S.A.",
+      "img1": "Vue extérieure de l'usine",
+      "img2": "Intérieur du centre de broyage",
+      "img3": "Gamme de produits cimentiers",
+      "img4": "Laboratoire qualité",
+      "img5": "Vue aérienne du site",
+      "img6": "Équipe DAM au travail"
     },
     "contact": {
       "title": "Contact Presse",
       "name": "Service Communication",
-      "email": "presse@ciment-dam.com",
-      "phone": "+212 658-265685"
+      "email": "contact@ciment-dam.com",
+      "phone": "+212 658-265685",
+      "availability": "Lun-Ven 8h-17h",
+      "cta": "Nous contacter"
     }
   },
   "investors": {
     "title": "Relations Investisseurs",
-    "subtitle": "Informations financières et gouvernance de Dakhla Aménagement S.A.",
+    "subtitle": "Informations financières, gouvernance et perspectives de croissance de Dakhla Aménagement S.A.",
     "keyFigures": {
       "title": "Chiffres Clés Financiers",
       "capital": {
         "label": "Capital Social",
-        "value": "30 100 000 DHS"
+        "value": "30.1M DHS"
       },
       "capacity": {
         "label": "Capacité de Production",
-        "value": "100K+ T/an"
+        "unit": "Tonnes/an",
+        "value": "+100K T/an"
+      },
+      "clients": {
+        "label": "Clients Actifs",
+        "value": "+120"
       },
       "creation": {
         "label": "Année de Création",
         "value": "2015"
+      }
+    },
+    "overview": {
+      "title": "Positionnement de DAM",
+      "text": "Dakhla Aménagement S.A. occupe une position stratégique unique dans le marché cimentier marocain. En tant que seul centre de broyage de clinker dans les Provinces du Sud, l'entreprise répond à une demande régionale croissante, soutenue par les grands chantiers d'infrastructure et le développement accéléré de la région de Dakhla.",
+      "ownership": {
+        "title": "100% Mauritanien",
+        "desc": "Actionnariat entièrement mauritanien"
       },
-      "shareholding": {
-        "label": "Actionnariat",
-        "value": "100% Mauritanien"
+      "location": {
+        "title": "Dakhla, Maroc",
+        "desc": "Position stratégique dans le Sud marocain"
+      },
+      "market": {
+        "title": "Marché en croissance",
+        "desc": "Demande régionale en forte expansion"
+      },
+      "facility": {
+        "title": "Installation moderne",
+        "desc": "Centre de broyage haute performance"
+      },
+      "highlights": {
+        "title": "Atouts Compétitifs",
+        "h1": "Monopole régional de la production cimentière dans les Provinces du Sud",
+        "h2": "Proximité avec les chantiers majeurs : réduction des délais et coûts logistiques",
+        "h3": "Croissance du marché portée par le Programme de Développement des Provinces du Sud",
+        "h4": "Certifications NM 10.1.004 et EN 197-1 garantissant la conformité aux normes"
       }
     },
     "governance": {
       "title": "Gouvernance",
-      "subtitle": "Une gestion rigoureuse et transparente",
-      "board": {
-        "title": "Conseil d'Administration",
-        "desc": "Le Conseil d'Administration de Dakhla Aménagement S.A. est composé de professionnels expérimentés issus du secteur industriel et financier, garantissant une vision stratégique à long terme et une gestion transparente de l'entreprise."
+      "subtitle": "Une direction expérimentée au service de la performance",
+      "pdg": {
+        "title": "Président Directeur Général",
+        "role": "Direction Générale",
+        "desc": "Pilote la vision stratégique et le développement à long terme de Dakhla Aménagement S.A., en garantissant la création de valeur pour l'ensemble des parties prenantes."
       },
-      "management": {
-        "title": "Direction Générale",
-        "desc": "La Direction Générale assure la mise en œuvre de la stratégie définie par le Conseil d'Administration et le pilotage opérationnel quotidien du centre de broyage, avec une attention particulière portée à la qualité, la sécurité et la performance industrielle."
+      "dg": {
+        "title": "Directeur Général",
+        "role": "Opérations",
+        "desc": "Assure la mise en œuvre de la stratégie et le pilotage opérationnel quotidien du centre de broyage, avec une attention particulière portée à la qualité et la performance industrielle."
       },
-      "orgchart": {
-        "title": "Organisation",
-        "desc": "L'entreprise est structurée autour de trois directions opérationnelles : Direction Industrielle (production, maintenance, qualité), Direction Commerciale (ventes, logistique, service client) et Direction Administrative et Financière (comptabilité, RH, juridique)."
+      "df": {
+        "title": "Directeur Financier",
+        "role": "Finance",
+        "desc": "Supervise la gestion financière, la comptabilité, le contrôle de gestion et les relations avec les partenaires bancaires et financiers de l'entreprise."
+      },
+      "dc": {
+        "title": "Directeur Commercial",
+        "role": "Commercial",
+        "desc": "Dirige la stratégie commerciale, le développement du portefeuille clients et la logistique de distribution sur l'ensemble du territoire du Sud marocain et au-delà."
       }
     },
     "documents": {
-      "title": "Documents Financiers",
-      "subtitle": "Rapports et bilans téléchargeables",
-      "comingSoon": "Les rapports financiers seront disponibles prochainement. Contactez-nous pour toute demande d'information."
+      "title": "Rapports Financiers",
+      "subtitle": "Accédez à nos documents financiers et rapports annuels",
+      "download": "Télécharger",
+      "rapport2025": {
+        "name": "Rapport Annuel 2025",
+        "info": "PDF — 2.4 MB — Exercice 2025"
+      },
+      "rapport2024": {
+        "name": "Rapport Annuel 2024",
+        "info": "PDF — 2.1 MB — Exercice 2024"
+      },
+      "financiers2025": {
+        "name": "États Financiers 2025",
+        "info": "PDF — 1.8 MB — Bilan et compte de résultat"
+      }
     },
     "contact": {
       "title": "Contact Investisseurs",
-      "email": "investisseurs@ciment-dam.com"
+      "subtitle": "Pour toute question relative aux relations investisseurs, aux rapports financiers ou aux opportunités de partenariat, n'hésitez pas à nous contacter.",
+      "email": "contact@ciment-dam.com",
+      "phone": "+212 658-265685",
+      "address": "Quartier Lassargua, Dakhla, Morocco",
+      "cta": "Nous contacter"
     }
   },
   "documents": {
-    "title": "Documents & Réglementation",
-    "subtitle": "Accédez à nos documents techniques, réglementaires et contractuels",
-    "technical": {
+    "title": "Documents Réglementaires",
+    "subtitle": "Accédez à l'ensemble de nos documents techniques, réglementaires et contractuels",
+    "download": "Télécharger",
+    "comingSoon": "Bientôt disponible",
+    "generalConditions": {
+      "title": "Conditions Générales",
+      "cgv": {
+        "title": "CGV — Conditions Générales de Vente",
+        "desc": "Conditions générales de vente applicables à toutes les commandes de ciment CPJ 45 et CPJ 55, vrac et conditionné.",
+        "fileSize": "PDF — 245 Ko",
+        "updatedAt": "Mis à jour : Janvier 2025"
+      },
+      "cga": {
+        "title": "CGA — Conditions Générales d'Achat",
+        "desc": "Conditions générales d'achat applicables aux fournisseurs et prestataires de Dakhla Aménagement S.A.",
+        "fileSize": "PDF — 198 Ko",
+        "updatedAt": "Mis à jour : Mars 2025"
+      }
+    },
+    "technicalSheets": {
       "title": "Fiches Techniques",
-      "f1": {
-        "name": "Fiche technique CPJ 45",
-        "desc": "Caractéristiques physiques et chimiques complètes du CPJ 45"
+      "cpj45": {
+        "title": "Fiche Technique CPJ 45",
+        "badge": "NM 10.1.004",
+        "composition": "Ciment Portland Composé — Clinker, gypse, calcaire et constituants secondaires. Finesse Blaine ≥ 350 m²/kg.",
+        "resistance": "Résistance 45 MPa (28 jours)"
       },
-      "f2": {
-        "name": "Fiche technique CPJ 55",
-        "desc": "Caractéristiques physiques et chimiques complètes du CPJ 55"
-      },
-      "f3": {
-        "name": "Fiche de sécurité du ciment",
-        "desc": "Informations de sécurité et précautions d'usage du ciment"
+      "cpj55": {
+        "title": "Fiche Technique CPJ 55",
+        "badge": "NM 10.1.004",
+        "composition": "Ciment Portland Composé — Clinker, gypse, calcaire et constituants secondaires. Finesse Blaine ≥ 400 m²/kg.",
+        "resistance": "Résistance 55 MPa (28 jours)"
       }
     },
     "certificates": {
-      "title": "Certificats & Conformités",
-      "c1": {
-        "name": "Certificat NM 10.1.004",
-        "desc": "Conformité à la norme marocaine du ciment"
+      "title": "Certificats & Conformité",
+      "statusCertified": "Certifié",
+      "statusPending": "En cours",
+      "nm": {
+        "title": "Certificat NM 10.1.004",
+        "badge": "Conformité à la norme marocaine NM 10.1.004 — Ciment Portland composé"
       },
-      "c2": {
-        "name": "Certificat EN 197-1",
-        "desc": "Conformité à la norme européenne du ciment"
+      "iso": {
+        "title": "Certificat ISO 9001",
+        "badge": "Système de management qualité certifié ISO 9001:2015"
+      },
+      "conformity": {
+        "title": "Certificat de Conformité",
+        "badge": "Certificat de conformité en cours d'obtention — Laboratoire agréé"
       }
     },
-    "legal": {
-      "title": "Documents Contractuels",
-      "l1": {
-        "name": "Conditions générales de vente",
-        "desc": "CGV applicables à toutes les commandes de ciment et clinker"
+    "safety": {
+      "title": "Sécurité & Environnement",
+      "fds": {
+        "title": "Fiche de Sécurité (FDS)",
+        "desc": "Fiche de Données de Sécurité conforme au règlement REACH — Informations sur les dangers, précautions d'emploi et mesures de premiers secours."
       },
-      "l2": {
-        "name": "Conditions générales d'achat",
-        "desc": "CGA applicables aux fournisseurs et prestataires"
-      },
-      "l3": {
-        "name": "Attestation de régularité fiscale",
-        "desc": "Attestation de conformité fiscale de l'entreprise"
+      "environmental": {
+        "title": "Déclaration Environnementale",
+        "desc": "Déclaration environnementale de produit (EPD) — Impact environnemental de la production de ciment, de l'extraction à la livraison."
       }
     },
-    "download": "Télécharger",
-    "comingSoon": "Document bientôt disponible"
+    "notice": {
+      "title": "Avis important",
+      "text": "Seuls les documents portant le sceau officiel de Dakhla Aménagement S.A. et signés par le Directeur Général font foi. Les documents téléchargés depuis ce site sont fournis à titre informatif et ne remplacent pas les originaux. Pour obtenir des copies certifiées conformes, veuillez contacter notre service administratif."
+    },
+    "request": {
+      "title": "Besoin d'un document spécifique ?",
+      "desc": "Notre service administratif peut vous fournir tout document réglementaire ou contractuel sur demande. Contactez-nous par email et précisez vos besoins.",
+      "cta": "Demander un document"
+    }
   }
 }

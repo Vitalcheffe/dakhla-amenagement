@@ -1318,138 +1318,248 @@
   },
   "press": {
     "title": "Press Room",
-    "subtitle": "Press releases, resources and media contacts",
+    "subtitle": "Press releases, resources and media contacts — Dakhla Aménagement S.A.",
     "releases": {
       "title": "Press Releases",
+      "readMore": "Read more",
       "r1": {
-        "date": "March 15, 2026",
-        "title": "Dakhla Aménagement surpasses 100,000 tonnes of annual capacity",
-        "excerpt": "The Lassargua grinding center reaches a strategic milestone with increased production capacity to meet the growing demand of the Southern Moroccan and Mauritanian markets."
+        "date": "January 2026",
+        "title": "Production launch — DAM enters a new industrial era",
+        "excerpt": "Dakhla Aménagement announces the official launch of its CPJ 45 and CPJ 55 cement production at the Lassargua grinding center, marking a major milestone for the cement industry in Southern Morocco."
       },
       "r2": {
-        "date": "January 20, 2026",
-        "title": "Launch of the 2026 energy efficiency program",
-        "excerpt": "Dakhla Aménagement announces a significant investment in energy optimization of its grinding facilities, reducing electricity consumption per tonne produced."
+        "date": "December 2025",
+        "title": "DAM surpasses 100,000 tonnes of annual capacity",
+        "excerpt": "The Lassargua grinding center reaches a strategic milestone with increased production capacity to meet the growing demand of the Southern Moroccan and Mauritanian markets."
       },
       "r3": {
-        "date": "November 5, 2025",
-        "title": "EN 197-1 certification: a guarantee of international quality",
-        "excerpt": "Our CPJ 45 and CPJ 55 cements have obtained certification to the European standard EN 197-1, confirming their compliance with international quality standards."
+        "date": "October 2025",
+        "title": "ISO 9001 Certification — Certified quality excellence",
+        "excerpt": "Dakhla Aménagement obtains ISO 9001 certification for its quality management system, confirming its commitment to the most demanding international standards."
       },
       "r4": {
-        "date": "September 15, 2025",
-        "title": "Dakhla Aménagement participates in the Dakhla BTP Fair",
-        "excerpt": "The company will be present at the Dakhla Building and Public Works Fair to present its cement solutions and meet industry players."
+        "date": "July 2025",
+        "title": "New packaging line — Strategic investment",
+        "excerpt": "DAM inaugurates a new automated packaging line, strengthening its bagging and big bag capacity to meet the diverse needs of its 120 clients."
+      },
+      "r5": {
+        "date": "March 2025",
+        "title": "Partnership with the Port of Dakhla — Optimized logistics",
+        "excerpt": "Dakhla Aménagement signs a strategic agreement with the Port Authority for the optimization of clinker reception and cement shipment, guaranteeing shortened delivery times."
       }
     },
     "kit": {
       "title": "Press Kit",
       "subtitle": "Downloadable resources for the media",
-      "logo": "DAM Logo (vector + high-resolution PNG)",
-      "photos": "HD photos of the factory and products",
-      "charte": "DAM graphic charter",
-      "fiche": "Company factsheet PDF"
+      "download": "Download",
+      "pressKit": {
+        "name": "Press Kit PDF",
+        "desc": "Company presentation, key figures, organization chart and selected photos for the press.",
+        "size": "PDF — 4.2 MB"
+      },
+      "logoPack": {
+        "name": "DAM Logo Pack",
+        "desc": "Official logos in SVG format, high-resolution PNG and white variant on dark background.",
+        "size": "ZIP — 1.8 MB"
+      },
+      "photoGallery": {
+        "name": "HD Photo Gallery",
+        "desc": "Selection of high-resolution photos of the factory, products and teams for press use.",
+        "size": "ZIP — 28 MB"
+      }
+    },
+    "gallery": {
+      "title": "HD Photo Gallery",
+      "subtitle": "High-resolution photos for press use — Click to enlarge",
+      "view": "Enlarge",
+      "note": "All photos are royalty-free for editorial use. Credit: Dakhla Aménagement S.A.",
+      "img1": "Factory exterior view",
+      "img2": "Grinding center interior",
+      "img3": "Cement product range",
+      "img4": "Quality laboratory",
+      "img5": "Aerial view of the site",
+      "img6": "DAM team at work"
     },
     "contact": {
       "title": "Press Contact",
       "name": "Communications Department",
-      "email": "presse@ciment-dam.com",
-      "phone": "+212 658-265685"
+      "email": "contact@ciment-dam.com",
+      "phone": "+212 658-265685",
+      "availability": "Mon-Fri 8am-5pm",
+      "cta": "Contact us"
     }
   },
   "investors": {
     "title": "Investor Relations",
-    "subtitle": "Financial information and governance of Dakhla Aménagement S.A.",
+    "subtitle": "Financial information, governance and growth prospects of Dakhla Aménagement S.A.",
     "keyFigures": {
       "title": "Key Financial Figures",
       "capital": {
         "label": "Share Capital",
-        "value": "30,100,000 MAD"
+        "value": "30.1M MAD"
       },
       "capacity": {
         "label": "Production Capacity",
-        "value": "100K+ T/year"
+        "unit": "Tonnes/year",
+        "value": "+100K T/year"
+      },
+      "clients": {
+        "label": "Active Clients",
+        "value": "+120"
       },
       "creation": {
         "label": "Year Founded",
         "value": "2015"
+      }
+    },
+    "overview": {
+      "title": "DAM's Position",
+      "text": "Dakhla Aménagement S.A. holds a unique strategic position in the Moroccan cement market. As the only clinker grinding center in the Southern Provinces, the company meets a growing regional demand, driven by major infrastructure projects and the accelerated development of the Dakhla region.",
+      "ownership": {
+        "title": "100% Mauritanian",
+        "desc": "Entirely Mauritanian shareholding"
       },
-      "shareholding": {
-        "label": "Shareholding",
-        "value": "100% Mauritanian"
+      "location": {
+        "title": "Dakhla, Morocco",
+        "desc": "Strategic position in Southern Morocco"
+      },
+      "market": {
+        "title": "Growing Market",
+        "desc": "Strongly expanding regional demand"
+      },
+      "facility": {
+        "title": "Modern Facility",
+        "desc": "High-performance grinding center"
+      },
+      "highlights": {
+        "title": "Competitive Advantages",
+        "h1": "Regional monopoly in cement production in the Southern Provinces",
+        "h2": "Proximity to major construction sites: reduced lead times and logistics costs",
+        "h3": "Market growth driven by the Southern Provinces Development Program",
+        "h4": "NM 10.1.004 and EN 197-1 certifications ensuring standards compliance"
       }
     },
     "governance": {
       "title": "Governance",
-      "subtitle": "Rigorous and transparent management",
-      "board": {
-        "title": "Board of Directors",
-        "desc": "The Board of Directors of Dakhla Aménagement S.A. is composed of experienced professionals from the industrial and financial sectors, ensuring a long-term strategic vision and transparent management of the company."
+      "subtitle": "Experienced leadership driving performance",
+      "pdg": {
+        "title": "Chairman & CEO",
+        "role": "Executive Management",
+        "desc": "Drives the strategic vision and long-term development of Dakhla Aménagement S.A., ensuring value creation for all stakeholders."
       },
-      "management": {
-        "title": "General Management",
-        "desc": "General Management ensures the implementation of the strategy defined by the Board of Directors and the daily operational management of the grinding center, with particular attention to quality, safety and industrial performance."
+      "dg": {
+        "title": "General Manager",
+        "role": "Operations",
+        "desc": "Ensures the implementation of strategy and daily operational management of the grinding center, with particular attention to quality and industrial performance."
       },
-      "orgchart": {
-        "title": "Organization",
-        "desc": "The company is structured around three operational departments: Industrial Department (production, maintenance, quality), Commercial Department (sales, logistics, customer service) and Administrative & Financial Department (accounting, HR, legal)."
+      "df": {
+        "title": "Chief Financial Officer",
+        "role": "Finance",
+        "desc": "Oversees financial management, accounting, management control and relations with the company's banking and financial partners."
+      },
+      "dc": {
+        "title": "Commercial Director",
+        "role": "Commercial",
+        "desc": "Leads the commercial strategy, client portfolio development and distribution logistics across the entire Southern Moroccan territory and beyond."
       }
     },
     "documents": {
-      "title": "Financial Documents",
-      "subtitle": "Downloadable reports and balance sheets",
-      "comingSoon": "Financial reports will be available soon. Contact us for any information request."
+      "title": "Financial Reports",
+      "subtitle": "Access our financial documents and annual reports",
+      "download": "Download",
+      "rapport2025": {
+        "name": "Annual Report 2025",
+        "info": "PDF — 2.4 MB — Fiscal Year 2025"
+      },
+      "rapport2024": {
+        "name": "Annual Report 2024",
+        "info": "PDF — 2.1 MB — Fiscal Year 2024"
+      },
+      "financiers2025": {
+        "name": "Financial Statements 2025",
+        "info": "PDF — 1.8 MB — Balance sheet and income statement"
+      }
     },
     "contact": {
       "title": "Investor Contact",
-      "email": "investisseurs@ciment-dam.com"
+      "subtitle": "For any questions regarding investor relations, financial reports or partnership opportunities, please do not hesitate to contact us.",
+      "email": "contact@ciment-dam.com",
+      "phone": "+212 658-265685",
+      "address": "Quartier Lassargua, Dakhla, Morocco",
+      "cta": "Contact us"
     }
   },
   "documents": {
-    "title": "Documents & Regulations",
-    "subtitle": "Access our technical, regulatory and contractual documents",
-    "technical": {
+    "title": "Regulatory Documents",
+    "subtitle": "Access all our technical, regulatory and contractual documents",
+    "download": "Download",
+    "comingSoon": "Coming soon",
+    "generalConditions": {
+      "title": "General Conditions",
+      "cgv": {
+        "title": "GTC — General Terms and Conditions of Sale",
+        "desc": "General terms and conditions of sale applicable to all CPJ 45 and CPJ 55 cement orders, bulk and packaged.",
+        "fileSize": "PDF — 245 KB",
+        "updatedAt": "Updated: January 2025"
+      },
+      "cga": {
+        "title": "GTC — General Terms and Conditions of Purchase",
+        "desc": "General terms and conditions of purchase applicable to suppliers and service providers of Dakhla Aménagement S.A.",
+        "fileSize": "PDF — 198 KB",
+        "updatedAt": "Updated: March 2025"
+      }
+    },
+    "technicalSheets": {
       "title": "Technical Data Sheets",
-      "f1": {
-        "name": "CPJ 45 technical data sheet",
-        "desc": "Complete physical and chemical characteristics of CPJ 45"
+      "cpj45": {
+        "title": "Technical Data Sheet CPJ 45",
+        "badge": "NM 10.1.004",
+        "composition": "Composite Portland Cement — Clinker, gypsum, limestone and secondary constituents. Blaine fineness ≥ 350 m²/kg.",
+        "resistance": "Strength 45 MPa (28 days)"
       },
-      "f2": {
-        "name": "CPJ 55 technical data sheet",
-        "desc": "Complete physical and chemical characteristics of CPJ 55"
-      },
-      "f3": {
-        "name": "Cement safety data sheet",
-        "desc": "Safety information and precautions for cement use"
+      "cpj55": {
+        "title": "Technical Data Sheet CPJ 55",
+        "badge": "NM 10.1.004",
+        "composition": "Composite Portland Cement — Clinker, gypsum, limestone and secondary constituents. Blaine fineness ≥ 400 m²/kg.",
+        "resistance": "Strength 55 MPa (28 days)"
       }
     },
     "certificates": {
       "title": "Certificates & Compliance",
-      "c1": {
-        "name": "NM 10.1.004 Certificate",
-        "desc": "Compliance with the Moroccan cement standard"
+      "statusCertified": "Certified",
+      "statusPending": "In progress",
+      "nm": {
+        "title": "NM 10.1.004 Certificate",
+        "badge": "Compliance with Moroccan standard NM 10.1.004 — Composite Portland cement"
       },
-      "c2": {
-        "name": "EN 197-1 Certificate",
-        "desc": "Compliance with the European cement standard"
+      "iso": {
+        "title": "ISO 9001 Certificate",
+        "badge": "Quality management system certified ISO 9001:2015"
+      },
+      "conformity": {
+        "title": "Certificate of Conformity",
+        "badge": "Certificate of conformity being obtained — Approved laboratory"
       }
     },
-    "legal": {
-      "title": "Contractual Documents",
-      "l1": {
-        "name": "General terms and conditions of sale",
-        "desc": "GTC applicable to all cement and clinker orders"
+    "safety": {
+      "title": "Safety & Environment",
+      "fds": {
+        "title": "Safety Data Sheet (SDS)",
+        "desc": "Safety Data Sheet compliant with REACH regulation — Information on hazards, handling precautions and first aid measures."
       },
-      "l2": {
-        "name": "General terms and conditions of purchase",
-        "desc": "GTC applicable to suppliers and service providers"
-      },
-      "l3": {
-        "name": "Tax compliance certificate",
-        "desc": "Certificate of tax compliance of the company"
+      "environmental": {
+        "title": "Environmental Declaration",
+        "desc": "Environmental Product Declaration (EPD) — Environmental impact of cement production, from extraction to delivery."
       }
     },
-    "download": "Download",
-    "comingSoon": "Document coming soon"
+    "notice": {
+      "title": "Important Notice",
+      "text": "Only documents bearing the official seal of Dakhla Aménagement S.A. and signed by the Chief Executive Officer are authentic. Documents downloaded from this website are provided for informational purposes only and do not replace originals. To obtain certified copies, please contact our administrative department."
+    },
+    "request": {
+      "title": "Need a specific document?",
+      "desc": "Our administrative department can provide any regulatory or contractual document upon request. Contact us by email and specify your needs.",
+      "cta": "Request a document"
+    }
   }
 }
