@@ -2,20 +2,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
-  description: "Dakhla Aménagement SA — Centre de broyage de clinker. Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc. CPJ 45, CPJ 55.",
+  title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55 | Livraison Sud Maroc",
+  description: "Dakhla Aménagement S.A. — Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag. Prix ciment Maroc, devis gratuit.",
   metadataBase: new URL('https://www.ciment-dam.com'),
   keywords: [
-    "ciment",
-    "Dakhla",
-    "Maroc",
-    "cimenterie",
-    "broyage clinker",
-    "CPJ 45",
-    "CPJ 55",
-    "Dakhla Aménagement",
-    "matériaux construction",
     "ciment Maroc",
+    "ciment",
+    "prix ciment Maroc",
+    "CPJ 45 Maroc",
+    "CPJ 55 Maroc",
+    "cimenterie Maroc",
+    "broyage clinker Maroc",
+    "ciment Dakhla",
+    "Dakhla Aménagement",
+    "achat ciment Maroc",
+    "ciment vrac Maroc",
+    "ciment sacs 50kg",
+    "matériaux construction Maroc",
+    "béton Maroc",
+    "fournisseur ciment Maroc",
+    "centre de broyage Maroc",
   ],
   icons: {
     icon: [
@@ -29,8 +35,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
-    description: "Centre de broyage de clinker — Production, conditionnement et commercialisation de ciment de qualité supérieure à Dakhla, Maroc.",
+    title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55",
+    description: "Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage à Dakhla. Livraison vrac, sacs, big bag. Devis gratuit.",
     url: "https://www.ciment-dam.com",
     siteName: "Dakhla Aménagement S.A.",
     locale: "fr_MA",
@@ -45,9 +51,9 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
-    title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
-    description: "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
+    card: "summary_large_image",
+    title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55",
+    description: "Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage à Dakhla. Devis gratuit.",
     images: ["/images/logo-dam-512.png"],
   },
 };
