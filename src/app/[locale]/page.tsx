@@ -77,7 +77,6 @@ export default function HomePage() {
       {/* ====== HERO — Full-Screen Background Video ====== */}
       <HeroVideo
         src="/videos/hero.mp4"
-        poster="/images/real/factory/factory-2.jpg"
         overlay="dark"
         height="h-[100dvh]"
         parallax={true}

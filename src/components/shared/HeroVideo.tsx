@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 interface HeroVideoProps {
   src: string;
-  poster: string;
+  poster?: string;
   overlay?: 'dark' | 'navy' | 'gradient-bottom' | 'gradient-left';
   children: React.ReactNode;
   className?: string;
@@ -63,7 +63,7 @@ export function HeroVideo({
         style={enableParallax ? { scale } : undefined}
         className="absolute inset-0"
       >
-        {videoError ? (
+        {videoError && poster ? (
           <div className="absolute inset-0">
             <Image
               src={poster}
@@ -80,7 +80,7 @@ export function HeroVideo({
             loop
             playsInline
             className="w-full h-full object-cover"
-            poster={poster}
+            {...(poster ? { poster } : {})}
             onError={() => setVideoError(true)}
           >
             <source src={src} type="video/mp4" />
