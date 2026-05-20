@@ -44,12 +44,8 @@ const allPhotos: GalleryPhoto[] = [
   { key: 'p14', src: '/images/real/lab/lab-2.jpg', cat: 'lab', aspect: 'landscape' },
   { key: 'p15', src: '/images/real/lab/lab-3.jpg', cat: 'lab', aspect: 'square' },
   { key: 'p16', src: '/images/real/lab/lab-4.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p17', src: '/images/real/lab/lab-5.jpg', cat: 'lab', aspect: 'landscape' },
-  { key: 'p18', src: '/images/real/lab/lab-6.jpg', cat: 'lab', aspect: 'portrait' },
   // Lab - Stock
   { key: 'p19', src: '/images/lab/lab-compression-test.jpg', cat: 'lab', aspect: 'landscape' },
-  // Products - Real
-  { key: 'p20', src: '/images/real/products/cement-bags-1.jpg', cat: 'products', aspect: 'landscape' },
   // Products - Stock
   { key: 'p21', src: '/images/products/cpj45-bags.jpg', cat: 'products', aspect: 'portrait' },
   { key: 'p22', src: '/images/products/cpj55-bags.jpg', cat: 'products', aspect: 'portrait' },

@@ -195,7 +195,7 @@
       "rc": "RC : 7207",
       "ice": "ICE : 001726721000031",
       "if": "IF : 46377920",
-      "capital": "Capital social : 30 100 000 DHS",
+      "capital": "Capital social : 30 100 000 DH",
       "hq": "Siège social : Quartier Lassargua, 1 et 1 angle rue Lagouira, Avenue El Walae, Dakhla, Maroc",
       "investors": "Actionnariat : 100% investisseurs mauritaniens"
     }
@@ -256,11 +256,11 @@
       "dakhlaVille": "Dakhla Ville",
       "dakhlaVilleDesc": "Gratuit",
       "dakhlaRegion": "Région Dakhla",
-      "dakhlaRegionDesc": "+50 MAD/T",
+      "dakhlaRegionDesc": "+50 DH/T",
       "sudMaroc": "Sud Maroc",
-      "sudMarocDesc": "+150 MAD/T",
+      "sudMarocDesc": "+150 DH/T",
       "mauritanie": "Mauritanie",
-      "mauritanieDesc": "+250 MAD/T",
+      "mauritanieDesc": "+250 DH/T",
       "address": "Adresse de livraison",
       "addressPlaceholder": "Entrez l'adresse de livraison...",
       "urgency": "Délai de livraison",
@@ -313,7 +313,7 @@
       "tva": "TVA (20%)",
       "totalTtc": "Total TTC",
       "ht": "Total HT",
-      "mad": "MAD",
+      "mad": "DH",
       "perTonne": "/T",
       "downloadPdf": "Télécharger le PDF",
       "sendWhatsApp": "Envoyer par WhatsApp",
@@ -461,7 +461,7 @@
         "title": "Comment devenir revendeur de ciment DAM",
         "excerpt": "Processus d'inscription, avantages commerciaux et zones d'exclusivité : tout savoir sur le programme revendeur Dakhla Aménagement.",
         "date": "1 Mars 2025",
-        "category": "Entreprise"
+        "category": "Actualités"
       },
       "article16": {
         "title": "Le transport de ciment : logistique et sécurité",
@@ -685,7 +685,7 @@
     "company": {
       "title": "Éditeur du Site",
       "name": "Dakhla Aménagement S.A.",
-      "form": "Société Anonyme au capital de 30 100 000 DHS",
+      "form": "Société Anonyme au capital de 30 100 000 DH",
       "rc": "Registre du Commerce : 7207",
       "ice": "Identifiant Commun de l'Entreprise : 001726721000031",
       "if": "Identifiant Fiscal : 46377920",
@@ -878,7 +878,7 @@
       },
       "d2": {
         "q": "Quelles zones de livraison couvrez-vous ?",
-        "a": "Nous livrons dans la région de Dakhla et dans un rayon de 200 km : Dakhla Ville (gratuit), Région de Dakhla (+50 MAD/T), Sud Marocain (+150 MAD/T) et Mauritanie (+250 MAD/T). La livraison express est disponible en urgence."
+        "a": "Nous livrons dans la région de Dakhla et dans un rayon de 200 km : Dakhla Ville (gratuit), Région de Dakhla (+50 DH/T), Sud Marocain (+150 DH/T) et Mauritanie (+250 DH/T). La livraison express est disponible en urgence."
       },
       "d3": {
         "q": "Quel est le délai de livraison ?",
@@ -1136,18 +1136,24 @@
       "training": {
         "title": "Formation Continue",
         "desc": "Nous investissons dans le développement de nos collaborateurs avec des programmes de formation technique, sécurité et management. Chaque employé bénéficie d'un plan de formation personnalisé annuel.",
-        "stat1Value": "",
-        "stat1Label": "",
-        "stat2Value": "",
-        "stat2Label": ""
+        "stat1Value": "100%",
+        "stat1Label": "Formation intégrée",
+        "stat2Value": "40h",
+        "stat2Label": "Formation annuelle",
+        "stat3Value": "5",
+        "stat3Label": "Certifications internes"
       },
       "social": {
         "title": "Avantages Sociaux",
         "desc": "Couverture médicale, transport, restauration, primes de productivité et avantages liés à la région. Nous veillons au bien-être de chaque membre de l'équipe.",
-        "stat1Value": "",
-        "stat1Label": "",
-        "stat2Value": "",
-        "stat2Label": ""
+        "stat1Value": "100%",
+        "stat1Label": "Couverture médicale",
+        "stat2Value": "22",
+        "stat2Label": "Jours de congé",
+        "stat3Value": "100%",
+        "stat3Label": "Mutuelle santé",
+        "stat4Value": "5+",
+        "stat4Label": "Activités sociales/an"
       },
       "impact": {
         "title": "Impact Local",
@@ -1363,8 +1369,8 @@
       },
       "r3": {
         "date": "Octobre 2025",
-        "title": "Certification ISO 9001 : l'excellence qualité certifiée",
-        "excerpt": "Dakhla Aménagement obtient la certification ISO 9001 pour son système de management qualité, confirmant son engagement envers les standards internationaux les plus exigeants."
+        "title": "Certification ISO 9001 : vers l'excellence qualité",
+        "excerpt": "Dakhla Aménagement engage la démarche de certification ISO 9001 pour son système de management qualité, confirmant son ambition d'atteindre les standards internationaux les plus exigeants."
       },
       "r4": {
         "date": "Juillet 2025",
@@ -1425,7 +1431,7 @@
       "title": "Chiffres Clés Financiers",
       "capital": {
         "label": "Capital Social",
-        "value": "30.1M DHS"
+        "value": "30.1M DH"
       },
       "capacity": {
         "label": "Capacité de Production",
@@ -1563,7 +1569,7 @@
       },
       "iso": {
         "title": "Certificat ISO 9001",
-        "badge": "Système de management qualité certifié ISO 9001:2015"
+        "badge": "Système de management qualité — Certification ISO 9001 en cours d'obtention"
       },
       "conformity": {
         "title": "Certificat de Conformité",

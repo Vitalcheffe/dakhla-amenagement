@@ -195,7 +195,7 @@
       "rc": "RC: 7207",
       "ice": "ICE: 001726721000031",
       "if": "IF: 46377920",
-      "capital": "Share capital: 30,100,000 MAD",
+      "capital": "Share capital: 30,100,000 DH",
       "hq": "Headquarters: Lassargua District, 1 and 1 corner Lagouira St., El Walae Ave., Dakhla, Morocco",
       "investors": "Shareholding: 100% Mauritanian investors"
     }
@@ -256,11 +256,11 @@
       "dakhlaVille": "Dakhla City",
       "dakhlaVilleDesc": "Free",
       "dakhlaRegion": "Dakhla Region",
-      "dakhlaRegionDesc": "+50 MAD/T",
+      "dakhlaRegionDesc": "+50 DH/T",
       "sudMaroc": "Southern Morocco",
-      "sudMarocDesc": "+150 MAD/T",
+      "sudMarocDesc": "+150 DH/T",
       "mauritanie": "Mauritania",
-      "mauritanieDesc": "+250 MAD/T",
+      "mauritanieDesc": "+250 DH/T",
       "address": "Delivery address",
       "addressPlaceholder": "Enter the delivery address...",
       "urgency": "Delivery timeline",
@@ -313,7 +313,7 @@
       "tva": "VAT (20%)",
       "totalTtc": "Total incl. tax",
       "ht": "Total excl. tax",
-      "mad": "MAD",
+      "mad": "DH",
       "perTonne": "/T",
       "downloadPdf": "Download PDF",
       "sendWhatsApp": "Send via WhatsApp",
@@ -461,7 +461,7 @@
         "title": "How to Become a DAM Cement Reseller",
         "excerpt": "Registration process, commercial advantages and exclusivity zones: everything you need to know about the Dakhla Aménagement reseller program.",
         "date": "March 1, 2025",
-        "category": "Company"
+        "category": "News"
       },
       "article16": {
         "title": "Cement Transport: Logistics and Safety",
@@ -685,7 +685,7 @@
     "company": {
       "title": "Website Publisher",
       "name": "Dakhla Aménagement S.A.",
-      "form": "Public limited company with capital of 30,100,000 MAD",
+      "form": "Public limited company with capital of 30,100,000 DH",
       "rc": "Trade Register: 7207",
       "ice": "Common Enterprise Identifier: 001726721000031",
       "if": "Tax Identifier: 46377920",
@@ -878,7 +878,7 @@
       },
       "d2": {
         "q": "What delivery zones do you cover?",
-        "a": "We deliver in the Dakhla region and within a 200 km radius: Dakhla City (free), Dakhla Region (+50 MAD/T), Southern Morocco (+150 MAD/T) and Mauritania (+250 MAD/T). Express delivery is available for urgent orders."
+        "a": "We deliver in the Dakhla region and within a 200 km radius: Dakhla City (free), Dakhla Region (+50 DH/T), Southern Morocco (+150 DH/T) and Mauritania (+250 DH/T). Express delivery is available for urgent orders."
       },
       "d3": {
         "q": "What is the delivery timeframe?",
@@ -1136,18 +1136,24 @@
       "training": {
         "title": "Continuous Training",
         "desc": "We invest in the development of our employees with technical, safety and management training programs. Each employee benefits from a personalized annual training plan.",
-        "stat1Value": "",
-        "stat1Label": "",
-        "stat2Value": "",
-        "stat2Label": ""
+        "stat1Value": "100%",
+        "stat1Label": "Integrated training",
+        "stat2Value": "40h",
+        "stat2Label": "Annual training",
+        "stat3Value": "5",
+        "stat3Label": "Internal certifications"
       },
       "social": {
         "title": "Social Benefits",
         "desc": "Medical coverage, transportation, meals, productivity bonuses and regional benefits. We ensure the well-being of every team member.",
-        "stat1Value": "",
-        "stat1Label": "",
-        "stat2Value": "",
-        "stat2Label": ""
+        "stat1Value": "100%",
+        "stat1Label": "Medical coverage",
+        "stat2Value": "22",
+        "stat2Label": "Vacation days",
+        "stat3Value": "100%",
+        "stat3Label": "Health insurance",
+        "stat4Value": "5+",
+        "stat4Label": "Social events/year"
       },
       "impact": {
         "title": "Local Impact",
@@ -1363,8 +1369,8 @@
       },
       "r3": {
         "date": "October 2025",
-        "title": "ISO 9001 Certification — Certified quality excellence",
-        "excerpt": "Dakhla Aménagement obtains ISO 9001 certification for its quality management system, confirming its commitment to the most demanding international standards."
+        "title": "ISO 9001 Certification — Towards quality excellence",
+        "excerpt": "Dakhla Aménagement initiates the ISO 9001 certification process for its quality management system, confirming its ambition to meet the most demanding international standards."
       },
       "r4": {
         "date": "July 2025",
@@ -1425,7 +1431,7 @@
       "title": "Key Financial Figures",
       "capital": {
         "label": "Share Capital",
-        "value": "30.1M MAD"
+        "value": "30.1M DH"
       },
       "capacity": {
         "label": "Production Capacity",
@@ -1563,7 +1569,7 @@
       },
       "iso": {
         "title": "ISO 9001 Certificate",
-        "badge": "Quality management system certified ISO 9001:2015"
+        "badge": "Quality management system — ISO 9001 certification in progress"
       },
       "conformity": {
         "title": "Certificate of Conformity",

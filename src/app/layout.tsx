@@ -35,6 +35,20 @@ export const metadata: Metadata = {
     siteName: "Dakhla Aménagement S.A.",
     locale: "fr_MA",
     type: "website",
+    images: [
+      {
+        url: "/images/logo-dam-512.png",
+        width: 512,
+        height: 512,
+        alt: "DAM — Dakhla Aménagement S.A.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Dakhla Aménagement | Ciment de Qualité au Maroc",
+    description: "Centre de broyage de clinker — Production, conditionnement et commercialisation de matériaux de construction de qualité supérieure à Dakhla, Maroc.",
+    images: ["/images/logo-dam-512.png"],
   },
 };
 

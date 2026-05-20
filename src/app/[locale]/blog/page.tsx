@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
@@ -58,8 +59,17 @@ export default function BlogPage() {
   const t = useTranslations();
   const params = useParams();
   const locale = (params?.locale as string) || 'fr';
+  const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = ['all', 'technical', 'news', 'projects', 'regulation', 'sustainability'];
+
+  const articleNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+  const filteredArticles = activeCategory === 'all'
+    ? articleNumbers
+    : articleNumbers.filter(
+        (i) => t(`blog.articles.article${i}.category`) === t(`blog.categories.${activeCategory}`)
+      );
 
   return (
     <>
@@ -71,19 +81,24 @@ export default function BlogPage() {
           <ScrollReveal>
             <div className="flex flex-wrap gap-3 mb-12">
               {categories.map((cat) => (
-                <span
+                <button
                   key={cat}
-                  className="px-4 py-2 text-sm font-medium rounded-full bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C] hover:text-white cursor-pointer transition-colors"
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-4 py-2 text-sm font-medium rounded-full cursor-pointer transition-colors ${
+                    activeCategory === cat
+                      ? 'bg-[#1B3A5C] text-white'
+                      : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C] hover:text-white'
+                  }`}
                 >
                   {t(`blog.categories.${cat}`)}
-                </span>
+                </button>
               ))}
             </div>
           </ScrollReveal>
 
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20].map((i) => {
+            {filteredArticles.map((i) => {
               const slug = articleSlugs[i - 1];
               return (
                 <ScrollReveal key={i} delay={(i - 1) * 0.05}>
