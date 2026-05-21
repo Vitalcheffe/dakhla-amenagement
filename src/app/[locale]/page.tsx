@@ -60,7 +60,7 @@ export default function HomePage() {
   const galleryImages = [
     { src: '/images/real/factory/factory-2.jpg', alt: 'Usine Dakhla Aménagement' },
     { src: '/images/real/lab/lab-1.jpg', alt: 'Laboratoire qualité' },
-    { src: '/images/real/products/cement-bags-1.jpg', alt: 'Sacs de ciment DAM' },
+    { src: '/images/products/cpj45-bags.jpg', alt: 'Sacs de ciment DAM' },
     { src: '/images/real/delivery/delivery-1.jpg', alt: 'Livraison ciment' },
     { src: '/images/real/construction/construction-1.jpg', alt: 'Chantier construction' },
     { src: '/images/real/team/team-1.jpg', alt: 'Équipe DAM' },
@@ -143,10 +143,11 @@ export default function HomePage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+              <span className="inline-block px-4 py-1.5 bg-[#1B3A5C]/5 text-[#1B3A5C] text-xs font-semibold rounded-full tracking-wide uppercase mb-4">{t('products.title')}</span>
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15] heading-accent heading-accent-center">
                 {t('products.title')}
               </h2>
-              <p className="mt-4 text-[#6B7280] text-[clamp(1rem,1.5vw,1.2rem)] max-w-2xl mx-auto">
+              <p className="mt-6 text-[#6B7280] text-[clamp(1rem,1.5vw,1.2rem)] max-w-2xl mx-auto">
                 {t('products.subtitle')}
               </p>
             </div>
@@ -155,16 +156,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* CPJ 45 */}
             <ScrollReveal delay={0.1}>
-              <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
-                <div className="relative h-56 md:h-64">
+              <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
+                <div className="relative h-56 md:h-64 overflow-hidden">
                   <Image
                     src="/images/products/cpj45-bags.jpg"
                     alt={t('products.cpj45.full')}
                     fill
                     quality={90}
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 right-4 bg-[#E8B84B] text-[#1A1A2E] text-xs font-bold px-3 py-1 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute top-4 right-4 bg-[#E8B84B] text-[#1A1A2E] text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                     {t('products.cpj45.badge')}
                   </div>
                 </div>
@@ -212,16 +214,17 @@ export default function HomePage() {
 
             {/* CPJ 55 */}
             <ScrollReveal delay={0.2}>
-              <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
-                <div className="relative h-56 md:h-64">
+              <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
+                <div className="relative h-56 md:h-64 overflow-hidden">
                   <Image
                     src="/images/products/cpj55-bags.jpg"
                     alt={t('products.cpj55.full')}
                     fill
                     quality={90}
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 right-4 bg-[#6B7280] text-white text-xs font-bold px-3 py-1 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute top-4 right-4 bg-[#1B3A5C] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                     {t('products.cpj55.badge')}
                   </div>
                 </div>
@@ -275,10 +278,11 @@ export default function HomePage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15]">
+              <span className="inline-block px-4 py-1.5 bg-[#E8B84B]/10 text-[#1B3A5C] text-xs font-semibold rounded-full tracking-wide uppercase mb-4">{t('process.title')}</span>
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] leading-[1.15] heading-accent heading-accent-center">
                 {t('process.title')}
               </h2>
-              <p className="mt-4 text-[#6B7280] text-[clamp(1rem,1.5vw,1.2rem)] max-w-2xl mx-auto">
+              <p className="mt-6 text-[#6B7280] text-[clamp(1rem,1.5vw,1.2rem)] max-w-2xl mx-auto">
                 {t('process.subtitle')}
               </p>
             </div>
@@ -287,9 +291,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="card-lift bg-white rounded-2xl p-6 md:p-8 text-center relative">
-                  <div className="absolute top-4 right-4 text-5xl font-bold text-[#1B3A5C]/5">
+                <div className="card-lift bg-white rounded-2xl p-6 md:p-8 text-center relative overflow-hidden">
+                  <div className="absolute top-4 right-4 text-5xl font-bold text-[#1B3A5C]/[0.03]">
                     {String(i + 1).padStart(2, '0')}
+                  </div>
+                  {/* Step number badge */}
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1B3A5C] to-[#1B3A5C]/80 text-white text-xs font-bold flex items-center justify-center mx-auto mb-4 shadow-md">
+                    {i + 1}
                   </div>
                   <div className="w-14 h-14 rounded-xl bg-[#1B3A5C]/10 flex items-center justify-center mx-auto mb-5">
                     <step.icon className="w-6 h-6 text-[#1B3A5C]" />
@@ -335,12 +343,12 @@ export default function HomePage() {
             quality={90}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-white/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-white/95 via-white/90 to-[#F7F8FA]/85" />
         </div>
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
           <ScrollReveal>
             <div className="text-center mb-14">
-              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em]">
+              <h2 className="text-[clamp(1.75rem,4vw,3rem)] font-bold text-[#1B3A5C] tracking-[-0.02em] heading-accent heading-accent-center">
                 {t('numbers.title')}
               </h2>
             </div>
@@ -349,7 +357,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="bg-white/80 backdrop-blur-sm border border-[#E5E7EB] rounded-2xl p-6 lg:p-8 text-center card-lift">
+                <div className="bg-white/80 backdrop-blur-sm border border-[#E5E7EB]/50 rounded-2xl p-6 lg:p-8 text-center card-lift">
                   <div className="text-3xl sm:text-4xl font-bold text-[#1B3A5C]">
                     <CountUp end={stat.value} suffix={stat.suffix} />
                   </div>
@@ -639,8 +647,10 @@ export default function HomePage() {
             quality={90}
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-[#1B3A5C]/85" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1B3A5C]/90 via-[#1B3A5C]/85 to-[#0f2440]/90" />
         </div>
+        {/* Decorative gold accent line */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-[#E8B84B] to-transparent" />
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center relative z-10">
           <ScrollReveal>
             <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white tracking-[-0.02em] leading-[1.1]">
@@ -648,7 +658,7 @@ export default function HomePage() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <p className="mt-6 text-[clamp(1rem,1.5vw,1.25rem)] text-white/60 max-w-xl mx-auto leading-relaxed">
+            <p className="mt-6 text-[clamp(1rem,1.5vw,1.25rem)] text-white/70 max-w-xl mx-auto leading-relaxed">
               {t('cta.subtitle')}
             </p>
           </ScrollReveal>
@@ -657,7 +667,7 @@ export default function HomePage() {
               <Link href={`/${locale}/devis`}>
                 <Button
                   size="lg"
-                  className="bg-[#C1272D] text-white hover:bg-[#C1272D]/90 font-semibold px-8 h-12 text-[15px] rounded-full"
+                  className="glow-cta bg-[#C1272D] text-white hover:bg-[#C1272D]/90 font-semibold px-8 h-12 text-[15px] rounded-full shadow-lg shadow-[#C1272D]/25"
                 >
                   {t('cta.primary')}
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -667,7 +677,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 font-medium px-8 h-12 text-[15px] rounded-full bg-transparent"
+                  className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-medium px-8 h-12 text-[15px] rounded-full bg-transparent transition-all duration-300"
                 >
                   {t('cta.secondary')}
                 </Button>
