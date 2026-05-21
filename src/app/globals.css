@@ -158,13 +158,14 @@
   background: linear-gradient(to bottom, rgba(27,58,92,0.5) 0%, rgba(27,58,92,0.3) 50%, rgba(27,58,92,0.6) 100%);
 }
 
-/* Card hover lift */
+/* Card hover lift — more refined shadow & subtle border glow */
 .card-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.35s cubic-bezier(.4,0,.2,1), box-shadow 0.35s cubic-bezier(.4,0,.2,1), border-color 0.35s ease;
+  border: 1px solid transparent;
 }
 .card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(27,58,92,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(27,58,92,0.12), 0 0 0 1px rgba(27,58,92,0.04);
 }
 
 /* Ken Burns zoom effect for hero images */
@@ -219,4 +220,135 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+/* ====== AESTHETIC ENHANCEMENTS ====== */
+
+/* Smooth image reveal on load */
+@keyframes image-reveal {
+  0% { opacity: 0; filter: blur(8px) saturate(0.8); transform: scale(1.02); }
+  100% { opacity: 1; filter: blur(0) saturate(1); transform: scale(1); }
+}
+
+/* Gold accent underline for headings */
+.heading-accent {
+  position: relative;
+  display: inline-block;
+}
+.heading-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, #E8B84B, #C1272D);
+  border-radius: 2px;
+}
+.heading-accent-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Smooth gradient divider */
+.gradient-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #E8B84B, #C1272D, #1B3A5C, transparent);
+  border: none;
+  margin: 0;
+}
+
+/* Glowing CTA button effect */
+.glow-cta {
+  position: relative;
+  overflow: hidden;
+}
+.glow-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(232,184,75,0.15) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.glow-cta:hover::before {
+  opacity: 1;
+}
+
+/* Subtle glass morphism for overlays */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Smooth section transitions */
+section {
+  position: relative;
+}
+
+/* Elegant selection color */
+::selection {
+  background: rgba(27, 58, 92, 0.15);
+  color: #1B3A5C;
+}
+
+/* Refined focus styles */
+:focus-visible {
+  outline: 2px solid #E8B84B;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Shimmer loading animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Smooth page transitions */
+@keyframes page-enter {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+main {
+  animation: page-enter 0.5s ease-out;
+}
+
+/* Better horizontal scrollbar hiding */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Image hover zoom with smooth transition */
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+.img-zoom:hover {
+  transform: scale(1.08);
+}
+
+/* Elegant text balance for headings */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* Better paragraph spacing */
+p {
+  text-wrap: pretty;
 }
