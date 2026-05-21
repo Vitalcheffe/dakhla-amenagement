@@ -58,15 +58,15 @@ export default function HomePage() {
   const previewArticles = ['article1', 'article2', 'article5'];
 
   const galleryImages = [
-    { src: '/images/real/factory/factory-2.jpg', alt: 'Usine Dakhla Aménagement' },
-    { src: '/images/real/IMG_9420.jpg', alt: 'Usine DAM - Production' },
-    { src: '/images/real/lab/lab-1.jpg', alt: 'Laboratoire qualité' },
-    { src: '/images/real/IMG_9587.jpg', alt: 'Contrôle qualité ciment' },
-    { src: '/images/real/delivery/delivery-1.jpg', alt: 'Livraison ciment' },
-    { src: '/images/real/team/team-1.jpg', alt: 'Équipe DAM' },
-    { src: '/images/real/IMG_9603.jpg', alt: 'Équipe DAM en action' },
-    { src: '/images/real/IMG_9597.jpg', alt: 'Chantier construction' },
-    { src: '/images/real/construction/construction-1.jpg', alt: 'Projet immobilier' },
+    { src: '/images/factory/factory-exterior.jpg', alt: 'Usine Dakhla Aménagement' },
+    { src: '/images/factory/factory-aerial.jpg', alt: 'Usine DAM - Vue aérienne' },
+    { src: '/images/factory/factory-silos.jpg', alt: 'Silo de ciment DAM' },
+    { src: '/images/quality-lab.jpg', alt: 'Laboratoire qualité' },
+    { src: '/images/delivery/delivery-fleet.jpg', alt: 'Livraison ciment' },
+    { src: '/images/factory/control-room.jpg', alt: 'Salle de contrôle' },
+    { src: '/images/construction-site.jpg', alt: 'Chantier construction' },
+    { src: '/images/products/cpj45-bags.jpg', alt: 'Sacs de ciment CPJ 45' },
+    { src: '/images/projects/residential-construction.jpg', alt: 'Projet immobilier' },
   ];
 
   const articleImages: Record<string, string> = {

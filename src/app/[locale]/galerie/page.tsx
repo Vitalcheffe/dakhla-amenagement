@@ -24,67 +24,49 @@ interface GalleryPhoto {
 }
 
 const allPhotos: GalleryPhoto[] = [
-  // ===== FACTORY - Real photos from DAM factory =====
-  { key: 'p1', src: '/images/real/factory/factory-2.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p2', src: '/images/real/factory/factory-1.jpg', cat: 'factory', aspect: 'landscape' },
-  { key: 'p3', src: '/images/real/IMG_9420.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p4', src: '/images/real/IMG_9421.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p5', src: '/images/real/IMG_9429.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p6', src: '/images/real/IMG_9430.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p7', src: '/images/real/IMG_9431.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p8', src: '/images/real/IMG_9432.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p9', src: '/images/real/IMG_9433.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p10', src: '/images/real/IMG_9434.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p11', src: '/images/real/IMG_9435.jpg', cat: 'factory', aspect: 'portrait' },
-  { key: 'p12', src: '/images/real/IMG_9436.jpg', cat: 'factory', aspect: 'portrait' },
-  // ===== LAB - Real photos from DAM lab =====
-  { key: 'p13', src: '/images/real/lab/lab-1.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p14', src: '/images/real/lab/lab-2.jpg', cat: 'lab', aspect: 'landscape' },
-  { key: 'p15', src: '/images/real/lab/lab-3.jpg', cat: 'lab', aspect: 'square' },
-  { key: 'p16', src: '/images/real/lab/lab-4.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p17', src: '/images/real/IMG_9587.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p18', src: '/images/real/IMG_9588.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p19', src: '/images/real/IMG_9589.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p20', src: '/images/real/IMG_9590.jpg', cat: 'lab', aspect: 'portrait' },
-  { key: 'p21', src: '/images/real/IMG_9591.jpg', cat: 'lab', aspect: 'portrait' },
-  // ===== PRODUCTS - Real photos + Stock cement-specific =====
-  { key: 'p22', src: '/images/real/IMG_9592.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p23', src: '/images/real/IMG_9593.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p24', src: '/images/real/IMG_9594.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p25', src: '/images/real/IMG_9595.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p26', src: '/images/real/IMG_9596.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p27', src: '/images/products/cpj45-bags.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p28', src: '/images/products/cpj55-bags.jpg', cat: 'products', aspect: 'portrait' },
-  { key: 'p29', src: '/images/products/big-bag-cement.jpg', cat: 'products', aspect: 'landscape' },
-  { key: 'p30', src: '/images/products/bulk-cement-truck.jpg', cat: 'products', aspect: 'landscape' },
-  { key: 'p31', src: '/images/products/cement-powder-closeup.jpg', cat: 'products', aspect: 'square' },
-  // ===== DELIVERY - Real photos =====
-  { key: 'p32', src: '/images/real/delivery/delivery-1.jpg', cat: 'delivery', aspect: 'landscape' },
-  { key: 'p33', src: '/images/real/IMG_9597.jpg', cat: 'delivery', aspect: 'portrait' },
-  { key: 'p34', src: '/images/real/IMG_9598.jpg', cat: 'delivery', aspect: 'portrait' },
-  { key: 'p35', src: '/images/real/IMG_9599.jpg', cat: 'delivery', aspect: 'portrait' },
-  { key: 'p36', src: '/images/delivery/concrete-delivery.jpg', cat: 'delivery', aspect: 'portrait' },
-  // ===== PROJECTS - Real photos + Stock construction =====
-  { key: 'p37', src: '/images/real/construction/construction-1.jpg', cat: 'projects', aspect: 'landscape' },
-  { key: 'p38', src: '/images/real/IMG_9600.jpg', cat: 'projects', aspect: 'portrait' },
-  { key: 'p39', src: '/images/real/IMG_9601.jpg', cat: 'projects', aspect: 'portrait' },
-  { key: 'p40', src: '/images/real/IMG_9602.jpg', cat: 'projects', aspect: 'portrait' },
+  // ===== FACTORY - Cement plant & industrial facilities =====
+  { key: 'p1', src: '/images/factory/factory-exterior.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p2', src: '/images/factory/factory-aerial.jpg', cat: 'factory', aspect: 'portrait' },
+  { key: 'p3', src: '/images/factory/factory-silos.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p4', src: '/images/factory/factory-interior.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p5', src: '/images/factory/control-room.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p6', src: '/images/factory/warehouse.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p7', src: '/images/real/factory/factory-1.jpg', cat: 'factory', aspect: 'landscape' },
+  { key: 'p8', src: '/images/real/factory/factory-2.jpg', cat: 'factory', aspect: 'portrait' },
+  // ===== LAB - Quality control & testing =====
+  { key: 'p13', src: '/images/quality-lab.jpg', cat: 'lab', aspect: 'landscape' },
+  { key: 'p14', src: '/images/lab/lab-compression-test.jpg', cat: 'lab', aspect: 'portrait' },
+  { key: 'p15', src: '/images/real/lab/lab-1.jpg', cat: 'lab', aspect: 'portrait' },
+  { key: 'p16', src: '/images/real/lab/lab-2.jpg', cat: 'lab', aspect: 'landscape' },
+  { key: 'p17', src: '/images/real/lab/lab-3.jpg', cat: 'lab', aspect: 'square' },
+  { key: 'p18', src: '/images/real/lab/lab-4.jpg', cat: 'lab', aspect: 'portrait' },
+  // ===== PRODUCTS - Cement products & packaging =====
+  { key: 'p22', src: '/images/products/cpj45-bags.jpg', cat: 'products', aspect: 'portrait' },
+  { key: 'p23', src: '/images/products/cpj55-bags.jpg', cat: 'products', aspect: 'portrait' },
+  { key: 'p24', src: '/images/products/big-bag-cement.jpg', cat: 'products', aspect: 'landscape' },
+  { key: 'p25', src: '/images/products/bulk-cement-truck.jpg', cat: 'products', aspect: 'landscape' },
+  { key: 'p26', src: '/images/products/cement-powder-closeup.jpg', cat: 'products', aspect: 'portrait' },
+  { key: 'p27', src: '/images/cement-bags.jpg', cat: 'products', aspect: 'landscape' },
+  // ===== DELIVERY - Transport & logistics =====
+  { key: 'p32', src: '/images/delivery/delivery-fleet.jpg', cat: 'delivery', aspect: 'landscape' },
+  { key: 'p33', src: '/images/delivery/concrete-delivery.jpg', cat: 'delivery', aspect: 'landscape' },
+  { key: 'p34', src: '/images/real/delivery/delivery-1.jpg', cat: 'delivery', aspect: 'landscape' },
+  // ===== PROJECTS - Construction projects =====
+  { key: 'p37', src: '/images/projects/residential-construction.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p38', src: '/images/projects/infrastructure-road.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p39', src: '/images/projects/port-construction.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p40', src: '/images/projects/school-construction.jpg', cat: 'projects', aspect: 'landscape' },
   { key: 'p41', src: '/images/projects/villa-construction.jpg', cat: 'projects', aspect: 'portrait' },
-  { key: 'p42', src: '/images/projects/infrastructure-road.jpg', cat: 'projects', aspect: 'landscape' },
-  { key: 'p43', src: '/images/projects/port-construction.jpg', cat: 'projects', aspect: 'landscape' },
-  // ===== TEAM - Real photos =====
+  { key: 'p42', src: '/images/construction-site.jpg', cat: 'projects', aspect: 'landscape' },
+  { key: 'p43', src: '/images/real/construction/construction-1.jpg', cat: 'projects', aspect: 'landscape' },
+  // ===== TEAM - Our team & operations =====
   { key: 'p44', src: '/images/real/team/team-1.jpg', cat: 'team', aspect: 'landscape' },
   { key: 'p45', src: '/images/real/office/office-1.jpg', cat: 'team', aspect: 'landscape' },
-  { key: 'p46', src: '/images/real/IMG_9603.jpg', cat: 'team', aspect: 'portrait' },
-  { key: 'p47', src: '/images/real/IMG_9604.jpg', cat: 'team', aspect: 'portrait' },
-  { key: 'p48', src: '/images/real/IMG_9605.jpg', cat: 'team', aspect: 'portrait' },
-  { key: 'p49', src: '/images/real/IMG_9606.jpg', cat: 'team', aspect: 'portrait' },
-  { key: 'p50', src: '/images/real/IMG_9617.jpg', cat: 'team', aspect: 'portrait' },
-  // ===== DAKHLA =====
-  { key: 'p51', src: '/images/real/IMG_9626.jpg', cat: 'dakhla', aspect: 'portrait' },
-  { key: 'p52', src: '/images/real/IMG_9627.jpg', cat: 'dakhla', aspect: 'portrait' },
-  { key: 'p53', src: '/images/dakhla-aerial.jpg', cat: 'dakhla', aspect: 'landscape' },
-  { key: 'p54', src: '/images/sustainability.jpg', cat: 'dakhla', aspect: 'landscape' },
+  { key: 'p46', src: '/images/factory/control-room.jpg', cat: 'team', aspect: 'landscape' },
+  // ===== DAKHLA - Region & sustainability =====
+  { key: 'p51', src: '/images/dakhla-aerial.jpg', cat: 'dakhla', aspect: 'landscape' },
+  { key: 'p52', src: '/images/sustainability.jpg', cat: 'dakhla', aspect: 'landscape' },
+  { key: 'p53', src: '/images/solar-industrial.jpg', cat: 'dakhla', aspect: 'landscape' },
 ];
 
 // Category badge colors matching the design system

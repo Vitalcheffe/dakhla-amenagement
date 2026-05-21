@@ -34,7 +34,7 @@ const galleryImages = [
     altKey: 'gallery.img2',
   },
   {
-    src: '/images/real/products/cement-bags-1.jpg',
+    src: '/images/products/cpj45-bags.jpg',
     altKey: 'gallery.img3',
   },
   {
