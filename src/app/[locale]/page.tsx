@@ -59,11 +59,14 @@ export default function HomePage() {
 
   const galleryImages = [
     { src: '/images/real/factory/factory-2.jpg', alt: 'Usine Dakhla Aménagement' },
+    { src: '/images/real/IMG_9420.jpg', alt: 'Usine DAM - Production' },
     { src: '/images/real/lab/lab-1.jpg', alt: 'Laboratoire qualité' },
-    { src: '/images/products/cpj45-bags.jpg', alt: 'Sacs de ciment DAM' },
+    { src: '/images/real/IMG_9587.jpg', alt: 'Contrôle qualité ciment' },
     { src: '/images/real/delivery/delivery-1.jpg', alt: 'Livraison ciment' },
-    { src: '/images/real/construction/construction-1.jpg', alt: 'Chantier construction' },
     { src: '/images/real/team/team-1.jpg', alt: 'Équipe DAM' },
+    { src: '/images/real/IMG_9603.jpg', alt: 'Équipe DAM en action' },
+    { src: '/images/real/IMG_9597.jpg', alt: 'Chantier construction' },
+    { src: '/images/real/construction/construction-1.jpg', alt: 'Projet immobilier' },
   ];
 
   const articleImages: Record<string, string> = {
@@ -532,11 +535,11 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {galleryImages.map((img, i) => (
-              <ScrollReveal key={i} delay={i * 0.05}>
+              <ScrollReveal key={i} delay={i * 0.04}>
                 <Link href={`/${locale}/galerie`}>
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer">
+                  <div className="relative aspect-[3/4] md:aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer">
                     <Image
                       src={img.src}
                       alt={img.alt}
