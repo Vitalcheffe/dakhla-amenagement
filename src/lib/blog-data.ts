@@ -164,3 +164,110 @@ export const ARTICLE_HOWTO: Record<string, { name: string; text: string }[]> = {
     { name: 'Vérifier les normes', text: 'Conformité NM 10.1.004 obligatoire. Demandez les fiches techniques et certificats.' },
   ],
 };
+
+/**
+ * Internal links from blog articles to relevant landing pages.
+ * Maps article slug → array of { label, href } for contextual internal linking.
+ * Improves PageRank distribution and topical authority.
+ */
+export const ARTICLE_INTERNAL_LINKS: Record<string, { label: string; href: string }[]> = {
+  'choisir-ciment-projet': [
+    { label: 'Ciment CPJ 45', href: '/cpj-45' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55' },
+    { label: 'Comparer CPJ 45 vs CPJ 55', href: '/produits' },
+    { label: 'Demander un devis', href: '/devis' },
+  ],
+  'capacite-500k-tonnes': [
+    { label: 'Notre processus de fabrication', href: '/processus' },
+    { label: 'À propos de Dakhla Aménagement', href: '/a-propos' },
+    { label: 'Nos réalisations', href: '/realisations' },
+  ],
+  'normes-ciment-maroc': [
+    { label: 'Ciment Maroc — Guide complet', href: '/ciment-maroc' },
+    { label: 'Nos produits CPJ 45 & CPJ 55', href: '/produits' },
+    { label: 'Documents & certifications', href: '/documents' },
+  ],
+  'construction-durable-ciment': [
+    { label: 'Durabilité & RSE', href: '/durabilite' },
+    { label: 'Ciment Maroc — Guide complet', href: '/ciment-maroc' },
+  ],
+  'projet-infrastructure-dakhla': [
+    { label: 'Génie civil & ciment', href: '/genie-civil-ciment' },
+    { label: 'Nos réalisations', href: '/realisations' },
+    { label: 'Ciment Dakhla', href: '/ciment-dakhla' },
+  ],
+  'stockage-ciment-chantier': [
+    { label: 'Ciment en sacs 50kg', href: '/ciment-sacs' },
+    { label: 'Ciment Big Bag 1T', href: '/ciment-big-bag' },
+    { label: 'Nos produits', href: '/produits' },
+  ],
+  'cpj45-vs-cpj55-guide': [
+    { label: 'Ciment CPJ 45', href: '/cpj-45' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55' },
+    { label: 'Prix du ciment', href: '/prix-ciment' },
+    { label: 'Demander un devis', href: '/devis' },
+  ],
+  'calculer-quantite-ciment': [
+    { label: 'Béton armé au Maroc', href: '/beton-arme-maroc' },
+    { label: 'Prix du ciment', href: '/prix-ciment' },
+    { label: 'Demander un devis', href: '/devis' },
+  ],
+  'beton-arme-maroc': [
+    { label: 'Béton armé — Guide complet', href: '/beton-arme-maroc' },
+    { label: 'Ciment CPJ 45', href: '/cpj-45' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55' },
+  ],
+  'dakhla-pole-developpement': [
+    { label: 'Ciment Dakhla', href: '/ciment-dakhla' },
+    { label: 'Construction à Dakhla', href: '/construction-dakhla' },
+    { label: 'Ciment Sud Maroc', href: '/ciment-sud-maroc' },
+  ],
+  'role-gypse-ciment': [
+    { label: 'Notre processus de fabrication', href: '/processus' },
+    { label: 'Lexique du ciment', href: '/lexique-ciment' },
+  ],
+  'conditionnement-vrac': [
+    { label: 'Ciment en vrac', href: '/ciment-vrac' },
+    { label: 'Ciment en sacs', href: '/ciment-sacs' },
+    { label: 'Ciment Big Bag', href: '/ciment-big-bag' },
+    { label: 'Livraison ciment', href: '/livraison-ciment' },
+  ],
+  'construction-zone-cotiere': [
+    { label: 'Construction à Dakhla', href: '/construction-dakhla' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55' },
+    { label: 'Génie civil & ciment', href: '/genie-civil-ciment' },
+  ],
+  '10-ans-excellence': [
+    { label: 'À propos de Dakhla Aménagement', href: '/a-propos' },
+    { label: 'Nos réalisations', href: '/realisations' },
+  ],
+  'devenir-revendeur': [
+    { label: 'Fournisseur ciment Maroc', href: '/fournisseur-ciment-maroc' },
+    { label: 'Contactez-nous', href: '/contact' },
+  ],
+  'transport-ciment-logistique': [
+    { label: 'Livraison ciment', href: '/livraison-ciment' },
+    { label: 'Ciment en vrac', href: '/ciment-vrac' },
+    { label: 'Zones de livraison', href: '/ciment-sud-maroc' },
+  ],
+  'rse-communaute-dakhla': [
+    { label: 'Durabilité & RSE', href: '/durabilite' },
+    { label: 'Ciment Dakhla', href: '/ciment-dakhla' },
+  ],
+  'essais-resistance-ciment': [
+    { label: 'Notre processus de fabrication', href: '/processus' },
+    { label: 'Documents & certifications', href: '/documents' },
+    { label: 'Lexique du ciment', href: '/lexique-ciment' },
+  ],
+  'big-bag-vs-sacs': [
+    { label: 'Ciment en sacs 50kg', href: '/ciment-sacs' },
+    { label: 'Ciment Big Bag 1T', href: '/ciment-big-bag' },
+    { label: 'Ciment en vrac', href: '/ciment-vrac' },
+    { label: 'Prix du ciment', href: '/prix-ciment' },
+  ],
+  '5-erreurs-ciment': [
+    { label: 'Stockage du ciment', href: '/blog/stockage-ciment-chantier' },
+    { label: 'CPJ 45 vs CPJ 55', href: '/blog/cpj45-vs-cpj55-guide' },
+    { label: 'Lexique du ciment', href: '/lexique-ciment' },
+  ],
+};

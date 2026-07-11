@@ -6,6 +6,7 @@ import {
   collectionPageSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
 import BlogPageClient from './BlogPageClient';
 
@@ -99,6 +100,7 @@ export default async function BlogPage({
   return (
     <>
       <JsonLdScript schema={schemas} />
+      <Breadcrumbs items={[{ name: 'Blog', path: '/blog' }]} locale={locale} />
       <BlogPageClient />
     </>
   );

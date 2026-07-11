@@ -11,8 +11,8 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
-import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, getArticle } from '@/lib/blog-data';
-import { ArrowRight, Clock, Calendar, Tag, Share2, ListChecks } from 'lucide-react';
+import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, ARTICLE_INTERNAL_LINKS, getArticle } from '@/lib/blog-data';
+import { ArrowRight, Clock, Calendar, Tag, Share2, ListChecks, Link2, TrendingUp } from 'lucide-react';
 import BlogArticlePageClient from './BlogArticlePageClient';
 
 /** Pre-generate all blog article pages for both locales (SSG for SEO) */
@@ -117,6 +117,14 @@ export default async function BlogArticlePage({
   // Reading time estimate (based on excerpt length + average article body ~800 words)
   const readingTime = Math.max(3, Math.ceil((excerpt.split(/\s+/).length + 800) / 200));
 
+  // Internal links for this article (contextual links to landing pages)
+  const internalLinks = ARTICLE_INTERNAL_LINKS[slug] ?? [];
+
+  // Popular articles: pick 5 most recent (excluding current)
+  const popularArticles = BLOG_ARTICLES
+    .filter((a) => a.slug !== slug)
+    .slice(0, 5);
+
   return (
     <>
       <JsonLdScript schema={schemas} />
@@ -218,6 +226,76 @@ export default async function BlogArticlePage({
           </div>
         </div>
       </section>
+
+      {/* Internal Links + Popular Articles Sidebar — contextual linking for SEO */}
+      {internalLinks.length > 0 && (
+        <section className="py-12 md:py-16 bg-white border-t border-[#E5E7EB]">
+          <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {/* Internal links to landing pages */}
+              <div className="lg:col-span-2">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-[#1B3A5C]/5 flex items-center justify-center">
+                    <Link2 className="w-5 h-5 text-[#1B3A5C]" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold text-[#1B3A5C]">
+                    {loc === 'fr' ? 'Ressources liées' : 'Related resources'}
+                  </h2>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {internalLinks.map((link, i) => (
+                    <Link
+                      key={i}
+                      href={`/${locale}${link.href}`}
+                      className="group flex items-center gap-3 px-4 py-3 bg-[#F7F8FA] border border-[#E5E7EB] rounded-xl hover:border-[#E8B84B] hover:shadow-md transition-all"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-[#E8B84B] group-hover:scale-150 transition-transform" />
+                      <span className="text-sm font-medium text-[#1B3A5C] group-hover:text-[#C1272D] transition-colors">
+                        {link.label}
+                      </span>
+                      <ArrowRight className="w-3.5 h-3.5 text-[#C1272D] ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Popular articles sidebar */}
+              <aside>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-full bg-[#C1272D]/5 flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-[#C1272D]" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold text-[#1B3A5C]">
+                    {loc === 'fr' ? 'Articles populaires' : 'Popular articles'}
+                  </h2>
+                </div>
+                <div className="space-y-3">
+                  {popularArticles.map((pop, i) => {
+                    const popTitle = t(`blog.articles.article${pop.number}.title`);
+                    return (
+                      <Link
+                        key={pop.slug}
+                        href={`/${locale}/blog/${pop.slug}`}
+                        className="group flex gap-3 items-start p-3 rounded-lg hover:bg-[#F7F8FA] transition-colors"
+                      >
+                        <span className="shrink-0 w-6 h-6 rounded-full bg-[#1B3A5C]/5 text-[#1B3A5C] text-xs font-bold flex items-center justify-center">
+                          {i + 1}
+                        </span>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-sm font-medium text-[#1B3A5C] group-hover:text-[#C1272D] transition-colors line-clamp-2 leading-snug">
+                            {popTitle}
+                          </p>
+                          <p className="text-xs text-[#6B7280] mt-1">{pop.dateDisplay}</p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Related Articles Section — improves internal linking + reduces bounce */}
       <section className="py-16 md:py-20 bg-[#F7F8FA]">
