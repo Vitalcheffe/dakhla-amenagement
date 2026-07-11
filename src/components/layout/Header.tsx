@@ -26,13 +26,38 @@ const navItems: NavItem[] = [
     key: 'solutions',
     href: '/produits',
     dropdownItems: [
-      { key: 'cpj45', href: '/produits', badge: '1 500 DH/T' },
-      { key: 'cpj55', href: '/produits', badge: '1 600 DH/T' },
+      { key: 'cpj45', href: '/cpj-45', badge: '1 500 DH/T' },
+      { key: 'cpj55', href: '/cpj-55', badge: '1 600 DH/T' },
+      { key: 'cimentVrac', href: '/ciment-vrac' },
+      { key: 'cimentSacs', href: '/ciment-sacs' },
+      { key: 'cimentBigBag', href: '/ciment-big-bag' },
       { key: 'comparison', href: '/produits' },
       { key: 'quote', href: '/devis' },
+    ],
+  },
+  {
+    key: 'guides',
+    href: '/ciment-maroc',
+    dropdownItems: [
       { key: 'cimentMaroc', href: '/ciment-maroc' },
       { key: 'prixCiment', href: '/prix-ciment' },
       { key: 'livraison', href: '/livraison-ciment' },
+      { key: 'betonArme', href: '/beton-arme-maroc' },
+      { key: 'genieCivil', href: '/genie-civil-ciment' },
+      { key: 'constructionDakhla', href: '/construction-dakhla' },
+      { key: 'fournisseur', href: '/fournisseur-ciment-maroc' },
+      { key: 'lexique', href: '/lexique-ciment' },
+    ],
+  },
+  {
+    key: 'zones',
+    href: '/ciment-sud-maroc',
+    dropdownItems: [
+      { key: 'cimentDakhla', href: '/ciment-dakhla' },
+      { key: 'cimentLaayoune', href: '/ciment-laayoune' },
+      { key: 'cimentBoujdour', href: '/ciment-boujdour' },
+      { key: 'cimentSudMaroc', href: '/ciment-sud-maroc' },
+      { key: 'cimentMauritanie', href: '/ciment-mauritanie' },
     ],
   },
   { key: 'process', href: '/processus' },
@@ -114,11 +139,24 @@ export function Header({ locale }: { locale: string }) {
     const keyMap: Record<string, string> = {
       cpj45: 'cpj45',
       cpj55: 'cpj55',
+      cimentVrac: 'cimentVrac',
+      cimentSacs: 'cimentSacs',
+      cimentBigBag: 'cimentBigBag',
       comparison: 'comparison',
       quote: 'quote',
       cimentMaroc: 'cimentMaroc',
       prixCiment: 'prixCiment',
       livraison: 'livraison',
+      betonArme: 'betonArme',
+      genieCivil: 'genieCivil',
+      constructionDakhla: 'constructionDakhla',
+      fournisseur: 'fournisseur',
+      lexique: 'lexique',
+      cimentDakhla: 'cimentDakhla',
+      cimentLaayoune: 'cimentLaayoune',
+      cimentBoujdour: 'cimentBoujdour',
+      cimentSudMaroc: 'cimentSudMaroc',
+      cimentMauritanie: 'cimentMauritanie',
       history: 'history',
       sustainability: 'sustainability',
       careers: 'careers',
@@ -150,7 +188,7 @@ export function Header({ locale }: { locale: string }) {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-0.5">
             {navItems.map((item) => {
               const href = resolveHref(item.href);
               const isActive = isItemActive(item);
@@ -167,7 +205,7 @@ export function Header({ locale }: { locale: string }) {
                   >
                     <Link
                       href={href}
-                      className={`relative px-3 py-2 text-[13px] font-medium transition-all duration-300 flex items-center gap-1 ${
+                      className={`relative px-2.5 py-2 text-[12.5px] font-medium transition-all duration-300 flex items-center gap-1 ${
                         isActive || isDropdownActive
                           ? isHome && !scrolled
                             ? 'text-white'
@@ -223,7 +261,7 @@ export function Header({ locale }: { locale: string }) {
                 <Link
                   key={item.key}
                   href={href}
-                  className={`relative px-3 py-2 text-[13px] font-medium transition-all duration-300 ${
+                  className={`relative px-2.5 py-2 text-[12.5px] font-medium transition-all duration-300 ${
                     isActive
                       ? isHome && !scrolled
                         ? 'text-white after:absolute after:bottom-0 after:left-3 after:right-3 after:h-[2px] after:bg-[#E8B84B]'
@@ -264,7 +302,7 @@ export function Header({ locale }: { locale: string }) {
             {/* Mobile menu */}
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger
-                className="lg:hidden inline-flex items-center justify-center h-9 w-9 rounded-md transition-colors"
+                className="xl:hidden inline-flex items-center justify-center h-9 w-9 rounded-md transition-colors"
                 aria-label="Menu"
               >
                 <Menu className={`h-5 w-5 ${isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'}`} />

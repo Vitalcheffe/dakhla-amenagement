@@ -25,7 +25,22 @@
     "cpj55": "CPJ 55",
     "cimentMaroc": "Cement Morocco",
     "prixCiment": "Cement Prices",
-    "livraison": "Delivery"
+    "livraison": "Delivery",
+    "cimentVrac": "Bulk Cement",
+    "cimentSacs": "50kg Bags",
+    "cimentBigBag": "Big Bag 1T",
+    "guides": "Guides",
+    "betonArme": "Reinforced Concrete",
+    "genieCivil": "Civil Engineering",
+    "constructionDakhla": "Construction Dakhla",
+    "fournisseur": "BTP Supplier",
+    "lexique": "Glossary",
+    "zones": "Zones",
+    "cimentDakhla": "Cement Dakhla",
+    "cimentLaayoune": "Cement Laayoune",
+    "cimentBoujdour": "Cement Boujdour",
+    "cimentSudMaroc": "Cement South Morocco",
+    "cimentMauritanie": "Cement Mauritania"
   },
   "hero": {
     "title": "Trusted Cement in Morocco",

@@ -25,7 +25,22 @@
     "cpj55": "CPJ 55",
     "cimentMaroc": "Ciment Maroc",
     "prixCiment": "Prix Ciment",
-    "livraison": "Livraison"
+    "livraison": "Livraison",
+    "cimentVrac": "Ciment Vrac",
+    "cimentSacs": "Sacs 50kg",
+    "cimentBigBag": "Big Bag 1T",
+    "guides": "Guides",
+    "betonArme": "Béton Armé",
+    "genieCivil": "Génie Civil",
+    "constructionDakhla": "Construction Dakhla",
+    "fournisseur": "Fournisseur BTP",
+    "lexique": "Lexique",
+    "zones": "Zones",
+    "cimentDakhla": "Ciment Dakhla",
+    "cimentLaayoune": "Ciment Laâyoune",
+    "cimentBoujdour": "Ciment Boujdour",
+    "cimentSudMaroc": "Ciment Sud Maroc",
+    "cimentMauritanie": "Ciment Mauritanie"
   },
   "hero": {
     "title": "Ciment de Qualité au Maroc",
