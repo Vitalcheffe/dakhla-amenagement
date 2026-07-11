@@ -57,7 +57,7 @@ export default function TemoignagesPageClient() {
     role: t(`items.${key}.role`),
     company: t(`items.${key}.company`),
     type: t(`items.${key}.type`) as string,
-    stars: Number(t(`items.${key}.stars`)),
+    stars: Number(t.raw(`items.${key}.stars`)),
     text: t(`items.${key}.text`),
   }));
 

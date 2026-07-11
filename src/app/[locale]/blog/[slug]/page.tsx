@@ -6,11 +6,12 @@ import {
   webPageSchema,
   breadcrumbSchema,
   blogPostingSchema,
+  howToSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
-import { BLOG_ARTICLES, ARTICLE_KEYWORDS, getArticle } from '@/lib/blog-data';
+import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, getArticle } from '@/lib/blog-data';
 import { ArrowRight } from 'lucide-react';
 import BlogArticlePageClient from './BlogArticlePageClient';
 
@@ -98,6 +99,20 @@ export default async function BlogArticlePage({
       keywords: ARTICLE_KEYWORDS[slug] ?? [],
     }),
   ];
+
+  // Add HowTo schema for guide-type articles (enables featured snippets)
+  const howtoSteps = ARTICLE_HOWTO[slug];
+  if (howtoSteps && howtoSteps.length > 0) {
+    schemas.push(
+      howToSchema({
+        name: title,
+        description: excerpt,
+        path: `/blog/${slug}`,
+        locale: loc,
+        steps: howtoSteps,
+      }),
+    );
+  }
 
   return (
     <>

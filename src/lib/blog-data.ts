@@ -87,3 +87,38 @@ export const ARTICLE_KEYWORDS: Record<string, string[]> = {
   'big-bag-vs-sacs': ['big bag ciment', 'sacs ciment 50kg', 'conditionnement ciment Maroc'],
   '5-erreurs-ciment': ['erreurs ciment', 'utilisation ciment', 'conseils ciment'],
 };
+
+/**
+ * HowTo steps for guide articles — enables Google featured snippets.
+ * Only guide-type articles have HowTo data.
+ */
+export const ARTICLE_HOWTO: Record<string, { name: string; text: string }[]> = {
+  'choisir-ciment-projet': [
+    { name: 'Identifier le type de projet', text: 'Déterminez si votre projet est du béton armé courant, un dallage, une fondation, ou un ouvrage de génie civil exigeant.' },
+    { name: 'Choisir la classe de résistance', text: 'Sélectionnez CPJ 45 (45 MPa) pour le courant, ou CPJ 55 (55 MPa) pour les ouvrages exigeants et zones côtières.' },
+    { name: 'Vérifier la conformité aux normes', text: 'Assurez-vous que le ciment est conforme à NM 10.1.004 et EN 197-1. Demandez les fiches techniques.' },
+    { name: 'Choisir le conditionnement', text: 'Vrac pour gros chantiers (min. 30T), sacs 50kg pour la maçonnerie, big bag 1T pour chantiers moyens.' },
+    { name: 'Demander un devis', text: 'Contactez le producteur pour un devis personnalisé incluant prix et livraison.' },
+  ],
+  'calculer-quantite-ciment': [
+    { name: 'Déterminer le volume de béton', text: 'Calculez le volume en m³ : longueur × largeur × épaisseur de l\'ouvrage à couler.' },
+    { name: 'Appliquer le dosage', text: 'Utilisez 350 kg/m³ pour du béton armé courant, 400 kg/m³ pour haute résistance, 300 kg/m³ pour fondations.' },
+    { name: 'Calculer la quantité de ciment', text: 'Multipliez le volume par le dosage : Quantité (kg) = Volume (m³) × Dosage (kg/m³).' },
+    { name: 'Convertir en tonnes', text: 'Divisez par 1000 pour obtenir des tonnes. Ajoutez 5-10% de marge pour les pertes.' },
+    { name: 'Commander le ciment', text: 'Commandez la quantité arrondie à la tonne supérieure auprès de Dakhla Aménagement.' },
+  ],
+  'stockage-ciment-chantier': [
+    { name: 'Choisir un local sec', text: 'Stockez le ciment dans un local fermé, sec et ventilé, à l\'abri de l\'humidité et de la pluie.' },
+    { name: 'Surélever les sacs', text: 'Placez les sacs sur des palettes en bois, à au moins 10 cm du sol et 30 cm des murs.' },
+    { name: 'Empiler correctement', text: 'Empilez les sacs à plat, maximum 10 couches, pour éviter l\'écrasement et faciliter la manutention.' },
+    { name: 'Respecter le FIFO', text: 'Utilisez le ciment selon le principe Premier Entré, Premier Sorti pour respecter la date de péremption (3 mois).' },
+    { name: 'Vérifier avant usage', text: 'Avant utilisation, vérifiez l\'absence de grumeaux. Un ciment pris en masse doit être rejeté.' },
+  ],
+  'cpj45-vs-cpj55-guide': [
+    { name: 'Comparer la résistance', text: 'CPJ 45 offre 45 MPa, idéal pour béton armé courant. CPJ 55 offre 55 MPa, pour ouvrages exigeants.' },
+    { name: 'Évaluer l\'usage', text: 'CPJ 45 : dallages, fondations, maçonnerie. CPJ 55 : génie civil, infrastructure, zone côtière.' },
+    { name: 'Considérer le prix', text: 'CPJ 45 : dès 1 500 DH/T. CPJ 55 : dès 1 600 DH/T. Le surcoût est justifié pour les ouvrages exigeants.' },
+    { name: 'Vérifier les normes', text: 'Les deux sont conformes NM 10.1.004 et EN 197-1, testés en laboratoire.' },
+    { name: 'Choisir selon l\'environnement', text: 'Zone côtière ou agressive : CPJ 55. Construction courante : CPJ 45 suffit.' },
+  ],
+};

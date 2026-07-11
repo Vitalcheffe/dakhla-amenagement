@@ -486,3 +486,104 @@ export function schemaGraph(schemas: JsonLd[]): JsonLd {
     '@graph': schemas,
   };
 }
+
+/* ------------------------------------------------------------------ */
+/*  HOW-TO (for guide articles — enables featured snippets)           */
+/* ------------------------------------------------------------------ */
+
+export function howToSchema(params: {
+  name: string;
+  description: string;
+  path: string;
+  locale: 'fr' | 'en';
+  steps: { name: string; text: string }[];
+  totalTime?: string;
+  estimatedCost?: { currency: string; value: string };
+}): JsonLd {
+  return {
+    '@context': SCHEMA,
+    '@type': 'HowTo',
+    '@id': `${SITE.url}${params.path}#howto`,
+    name: params.name,
+    description: params.description,
+    inLanguage: params.locale,
+    totalTime: params.totalTime,
+    estimatedCost: params.estimatedCost
+      ? {
+          '@type': 'MonetaryAmount',
+          currency: params.estimatedCost.currency,
+          value: params.estimatedCost.value,
+        }
+      : undefined,
+    step: params.steps.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/*  SPEAKABLE (for voice search / Google Assistant)                   */
+/* ------------------------------------------------------------------ */
+
+export function speakableSchema(params: {
+  path: string;
+  locale: 'fr' | 'en';
+  cssSelectors: string[];
+}): JsonLd {
+  return {
+    '@context': SCHEMA,
+    '@type': 'WebPage',
+    '@id': `${SITE.url}/${params.locale}${params.path === '' ? '' : params.path}#speakable`,
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: params.cssSelectors,
+    },
+    inLanguage: params.locale,
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/*  REVIEW (individual customer review)                               */
+/* ------------------------------------------------------------------ */
+
+export function reviewSchema(params: {
+  author: string;
+  datePublished: string;
+  reviewBody: string;
+  ratingValue: string;
+  itemReviewed: string;
+}): JsonLd {
+  return {
+    '@context': SCHEMA,
+    '@type': 'Review',
+    author: { '@type': 'Person', name: params.author },
+    datePublished: params.datePublished,
+    reviewBody: params.reviewBody,
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: params.ratingValue,
+      bestRating: '5',
+      worstRating: '1',
+    },
+    itemReviewed: {
+      '@type': 'Product',
+      name: params.itemReviewed,
+    },
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/*  SITE NAVIGATION ELEMENT (helps Google understand site structure)  */
+/* ------------------------------------------------------------------ */
+
+export function siteNavigationSchema(navItems: { name: string; url: string }[]): JsonLd {
+  return {
+    '@context': SCHEMA,
+    '@type': 'SiteNavigationElement',
+    name: navItems.map((item) => item.name),
+    url: navItems.map((item) => item.url),
+  };
+}

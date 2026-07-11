@@ -165,6 +165,7 @@ export default function HomePageClient() {
                     src="/images/products/cpj45-bags.jpg"
                     alt={t('products.cpj45.full')}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     quality={90}
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -223,6 +224,7 @@ export default function HomePageClient() {
                     src="/images/products/cpj55-bags.jpg"
                     alt={t('products.cpj55.full')}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     quality={90}
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -326,6 +328,7 @@ export default function HomePageClient() {
                     src={img.src}
                     alt={img.alt}
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     quality={90}
                     className="object-cover"
                   />
@@ -343,6 +346,7 @@ export default function HomePageClient() {
             src="/images/factory/factory-silos.jpg"
             alt="Dakhla Aménagement factory silos"
             fill
+            sizes="100vw"
             quality={90}
             className="object-cover"
           />
@@ -430,7 +434,7 @@ export default function HomePageClient() {
               <ScrollReveal key={key} delay={i * 0.1}>
                 <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8">
                   <div className="flex gap-1 mb-4">
-                    {Array.from({ length: Number(t(`testimonials.items.${key}.stars`)) }).map((_, si) => (
+                    {Array.from({ length: Number(t.raw(`testimonials.items.${key}.stars`)) }).map((_, si) => (
                       <Star key={si} className="w-4 h-4 fill-[#E8B84B] text-[#E8B84B]" />
                     ))}
                   </div>
@@ -489,6 +493,7 @@ export default function HomePageClient() {
                           src={articleImages[key] || '/images/factory/factory-exterior.jpg'}
                           alt={t(`blog.articles.${key}.title`)}
                           fill
+                          sizes="(max-width: 768px) 100vw, 25vw"
                           quality={90}
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
@@ -544,6 +549,7 @@ export default function HomePageClient() {
                       src={img.src}
                       alt={img.alt}
                       fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
                       quality={90}
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
@@ -573,6 +579,7 @@ export default function HomePageClient() {
             src="/images/factory/factory-silos.jpg"
             alt="Factory silos"
             fill
+            sizes="100vw"
             quality={90}
             className="object-cover"
           />
@@ -647,6 +654,7 @@ export default function HomePageClient() {
             src="/images/factory/factory-aerial.jpg"
             alt="Aerial view of Dakhla Aménagement plant"
             fill
+            sizes="100vw"
             quality={90}
             className="object-cover"
           />
