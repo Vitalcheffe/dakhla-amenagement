@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
 import { SITE } from '@/lib/seo';
 import { MOROCCAN_CITIES } from '@/lib/moroccan-cities';
+import { CEMENT_USAGES } from '@/lib/cement-usages';
 
 type ChangeFreq = 'daily' | 'weekly' | 'monthly' | 'yearly';
 
@@ -170,6 +171,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
           },
         });
       }
+    }
+  }
+
+  // Programmatic usage pages — 50 usages × 2 locales
+  for (const locale of SITE.locales) {
+    for (const usage of CEMENT_USAGES) {
+      entries.push({
+        url: `${SITE.url}/${locale}/ciment-pour/${usage.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as ChangeFreq,
+        priority: 0.75,
+        alternates: {
+          languages: {
+            fr: `${SITE.url}/fr/ciment-pour/${usage.slug}`,
+            en: `${SITE.url}/en/ciment-pour/${usage.slug}`,
+            'x-default': `${SITE.url}/fr/ciment-pour/${usage.slug}`,
+          },
+        },
+      });
     }
   }
 
