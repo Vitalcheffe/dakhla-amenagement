@@ -9,7 +9,7 @@
 
 import { SITE } from './seo';
 
-type JsonLd = Record<string, unknown>;
+export type JsonLd = Record<string, unknown>;
 
 const SCHEMA = 'https://schema.org';
 

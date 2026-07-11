@@ -236,13 +236,12 @@ export function buildMetadata({
         alt: title,
       },
     ],
+    ...(type === 'article' && {
+      publishedTime,
+      modifiedTime,
+      authors: author ? [author] : undefined,
+    }),
   };
-
-  if (type === 'article') {
-    openGraph.publishedTime = publishedTime;
-    openGraph.modifiedTime = modifiedTime;
-    openGraph.authors = author ? [author] : undefined;
-  }
 
   return {
     title: { absolute: title },
