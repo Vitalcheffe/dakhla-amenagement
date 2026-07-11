@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { buildMetadata, KEYWORDS } from '@/lib/seo';
 import {
   organizationSchema,
@@ -8,6 +9,7 @@ import {
   faqSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { ArrowRight } from 'lucide-react';
 import HomePageClient from './HomePageClient';
 
 export async function generateMetadata({
@@ -133,10 +135,90 @@ export default async function HomePage({
     faqSchema(faqItems),
   ];
 
+  const isFr = loc === 'fr';
+
+  // Keyword cluster navigation — boosts internal linking for SEO
+  const keywordClusters = [
+    {
+      title: isFr ? 'Nos Ciments' : 'Our Cements',
+      links: [
+        { label: 'CPJ 45', href: '/cpj-45' },
+        { label: 'CPJ 55', href: '/cpj-55' },
+        { label: 'Ciment en Vrac', href: '/ciment-vrac' },
+        { label: 'Sacs 50kg', href: '/ciment-sacs' },
+        { label: 'Big Bag 1T', href: '/ciment-big-bag' },
+      ],
+    },
+    {
+      title: isFr ? 'Guide & Prix' : 'Guide & Prices',
+      links: [
+        { label: 'Ciment Maroc', href: '/ciment-maroc' },
+        { label: 'Prix Ciment', href: '/prix-ciment' },
+        { label: 'Livraison', href: '/livraison-ciment' },
+        { label: 'Devis Gratuit', href: '/devis' },
+      ],
+    },
+    {
+      title: isFr ? 'Applications' : 'Applications',
+      links: [
+        { label: 'Béton Armé', href: '/beton-arme-maroc' },
+        { label: 'Génie Civil', href: '/genie-civil-ciment' },
+        { label: 'Construction Dakhla', href: '/construction-dakhla' },
+        { label: 'Fournisseur BTP', href: '/fournisseur-ciment-maroc' },
+      ],
+    },
+    {
+      title: isFr ? 'Zones de Livraison' : 'Delivery Zones',
+      links: [
+        { label: 'Ciment Dakhla', href: '/ciment-dakhla' },
+        { label: 'Ciment Laâyoune', href: '/ciment-laayoune' },
+        { label: 'Ciment Boujdour', href: '/ciment-boujdour' },
+        { label: 'Sud Maroc', href: '/ciment-sud-maroc' },
+        { label: 'Mauritanie', href: '/ciment-mauritanie' },
+      ],
+    },
+  ];
+
   return (
     <>
       <JsonLdScript schema={schemas} />
       <HomePageClient />
+
+      {/* Keyword Cluster Navigation — internal linking for SEO */}
+      <section className="py-16 md:py-20 bg-[#F7F8FA] border-t border-[#E5E7EB]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1B3A5C] mb-2 text-center">
+            {isFr ? 'Explorez nos ressources ciment' : 'Explore our cement resources'}
+          </h2>
+          <p className="text-center text-[#6B7280] mb-10 max-w-2xl mx-auto">
+            {isFr
+              ? 'Tout ce dont vous avez besoin sur le ciment au Maroc : produits, prix, applications, zones de livraison.'
+              : 'Everything you need about cement in Morocco: products, prices, applications, delivery zones.'}
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {keywordClusters.map((cluster, i) => (
+              <div key={i}>
+                <h3 className="text-xs font-semibold tracking-[0.15em] uppercase text-[#E8B84B] mb-4">
+                  {cluster.title}
+                </h3>
+                <ul className="space-y-2.5">
+                  {cluster.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={`/${locale}${link.href}`}
+                        className="group inline-flex items-center gap-1.5 text-sm text-[#1B3A5C] hover:text-[#C1272D] transition-colors"
+                      >
+                        <ArrowRight className="w-3 h-3 text-[#E8B84B] group-hover:translate-x-0.5 transition-transform" />
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

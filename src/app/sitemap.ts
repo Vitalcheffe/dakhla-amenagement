@@ -36,6 +36,23 @@ const STATIC_PAGES: PageEntry[] = [
   { path: '/ciment-maroc', priority: 0.95, changeFrequency: 'weekly', images: ['/images/dakhla-aerial.jpg'] },
   { path: '/prix-ciment', priority: 0.9, changeFrequency: 'weekly', images: ['/images/cement-bags.jpg'] },
   { path: '/livraison-ciment', priority: 0.85, changeFrequency: 'monthly', images: ['/images/delivery/delivery-fleet.jpg'] },
+  // Product landing pages
+  { path: '/cpj-45', priority: 0.9, changeFrequency: 'monthly', images: ['/images/products/cpj45-bags.jpg'] },
+  { path: '/cpj-55', priority: 0.9, changeFrequency: 'monthly', images: ['/images/products/cpj55-bags.jpg'] },
+  { path: '/ciment-vrac', priority: 0.85, changeFrequency: 'monthly', images: ['/images/products/bulk-cement-truck.jpg'] },
+  { path: '/ciment-sacs', priority: 0.85, changeFrequency: 'monthly', images: ['/images/products/cpj45-bags.jpg'] },
+  { path: '/ciment-big-bag', priority: 0.85, changeFrequency: 'monthly', images: ['/images/products/big-bag-cement.jpg'] },
+  // Application landing pages
+  { path: '/beton-arme-maroc', priority: 0.8, changeFrequency: 'monthly', images: ['/images/projects/residential-construction.jpg'] },
+  { path: '/genie-civil-ciment', priority: 0.8, changeFrequency: 'monthly', images: ['/images/projects/port-construction.jpg'] },
+  { path: '/construction-dakhla', priority: 0.8, changeFrequency: 'monthly', images: ['/images/dakhla-aerial.jpg'] },
+  { path: '/fournisseur-ciment-maroc', priority: 0.8, changeFrequency: 'monthly', images: ['/images/factory-exterior.jpg'] },
+  // Regional landing pages (local SEO)
+  { path: '/ciment-dakhla', priority: 0.85, changeFrequency: 'monthly', images: ['/images/dakhla-aerial.jpg'] },
+  { path: '/ciment-laayoune', priority: 0.75, changeFrequency: 'monthly' },
+  { path: '/ciment-boujdour', priority: 0.75, changeFrequency: 'monthly' },
+  { path: '/ciment-sud-maroc', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/ciment-mauritanie', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/devis', priority: 0.9, changeFrequency: 'monthly', images: ['/images/cement-bags.jpg'] },
   {
     path: '/blog',
