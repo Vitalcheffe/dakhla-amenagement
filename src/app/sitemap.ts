@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BLOG_ARTICLES } from '@/lib/blog-data';
 import { SITE } from '@/lib/seo';
+import { MOROCCAN_CITIES } from '@/lib/moroccan-cities';
 
 type ChangeFreq = 'daily' | 'weekly' | 'monthly' | 'yearly';
 
@@ -141,6 +142,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
           },
         },
       });
+    }
+  }
+
+  // Programmatic city pages — 5 types × 82 cities × 2 locales
+  const CITY_PAGE_TYPES = [
+    { prefix: '/ciment-ville', priority: 0.85 },
+    { prefix: '/prix-ciment-ville', priority: 0.8 },
+    { prefix: '/livraison-ciment-ville', priority: 0.75 },
+    { prefix: '/cpj45-ville', priority: 0.8 },
+    { prefix: '/cpj55-ville', priority: 0.8 },
+  ];
+  for (const locale of SITE.locales) {
+    for (const pageType of CITY_PAGE_TYPES) {
+      for (const city of MOROCCAN_CITIES) {
+        entries.push({
+          url: `${SITE.url}/${locale}${pageType.prefix}/${city.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as ChangeFreq,
+          priority: pageType.priority,
+          alternates: {
+            languages: {
+              fr: `${SITE.url}/fr${pageType.prefix}/${city.slug}`,
+              en: `${SITE.url}/en${pageType.prefix}/${city.slug}`,
+              'x-default': `${SITE.url}/fr${pageType.prefix}/${city.slug}`,
+            },
+          },
+        });
+      }
     }
   }
 
