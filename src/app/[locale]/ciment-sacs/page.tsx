@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { PRODUCT_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, Package, Truck, Factory, Beaker, Warehouse, Hand, Hammer, Home, Boxes } from 'lucide-react';
 
@@ -507,6 +508,10 @@ export default async function CimentSacsPage({
       </section>
 
       <RelatedLinks links={PRODUCT_RELATED} locale={locale} title={isFr ? 'Produits liés' : 'Related products'} />
+      <RelatedArticles
+        articleSlugs={['stockage-ciment-chantier', 'big-bag-vs-sacs', 'conditionnement-vrac']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment en sacs 50kg au Maroc ?' : 'Need 50kg bag cement in Morocco?'}

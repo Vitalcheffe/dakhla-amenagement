@@ -98,6 +98,7 @@ export default async function BlogArticlePage({
       locale: loc,
       datePublished: new Date(article.datePublished).toISOString(),
       keywords: ARTICLE_KEYWORDS[slug] ?? [],
+      articleBody: excerpt,
     }),
   ];
 
@@ -142,31 +143,66 @@ export default async function BlogArticlePage({
       {/* HowTo Steps Visual Section — only for guide articles */}
       {howtoSteps && howtoSteps.length > 0 && (
         <section className="py-12 md:py-16 bg-white border-t border-[#E5E7EB]">
-          <div className="max-w-3xl mx-auto px-6 md:px-12">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-10 rounded-full bg-[#E8B84B]/15 flex items-center justify-center">
-                <ListChecks className="w-5 h-5 text-[#E8B84B]" />
-              </div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#1B3A5C]">
-                {loc === 'fr' ? 'Étapes clés' : 'Key steps'}
-              </h2>
-            </div>
-            <ol className="space-y-4">
-              {howtoSteps.map((step, index) => (
-                <li
-                  key={index}
-                  className="flex gap-4 bg-[#F7F8FA] border border-[#E5E7EB] rounded-xl p-5 hover:border-[#E8B84B] transition-colors"
-                >
-                  <span className="shrink-0 w-8 h-8 rounded-full bg-[#1B3A5C] text-white text-sm font-bold flex items-center justify-center">
-                    {index + 1}
-                  </span>
-                  <div>
-                    <h3 className="font-semibold text-[#1B3A5C] mb-1">{step.name}</h3>
-                    <p className="text-sm text-[#6B7280] leading-relaxed">{step.text}</p>
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              {/* TOC Sidebar */}
+              <aside className="hidden lg:block">
+                <div className="sticky top-24">
+                  <div className="flex items-center gap-2 mb-4 pb-3 border-b border-[#E5E7EB]">
+                    <ListChecks className="w-4 h-4 text-[#E8B84B]" />
+                    <h3 className="text-sm font-semibold uppercase tracking-wider text-[#1B3A5C]">
+                      {loc === 'fr' ? 'Sommaire' : 'Contents'}
+                    </h3>
                   </div>
-                </li>
-              ))}
-            </ol>
+                  <nav>
+                    <ol className="space-y-2">
+                      {howtoSteps.map((step, index) => (
+                        <li key={index}>
+                          <a
+                            href={`#step-${index + 1}`}
+                            className="group flex items-start gap-2 text-sm text-[#6B7280] hover:text-[#1B3A5C] transition-colors"
+                          >
+                            <span className="shrink-0 w-5 h-5 rounded-full bg-[#F7F8FA] text-[#1B3A5C] text-xs font-bold flex items-center justify-center group-hover:bg-[#1B3A5C] group-hover:text-white transition-colors">
+                              {index + 1}
+                            </span>
+                            <span className="leading-snug">{step.name}</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                  </nav>
+                </div>
+              </aside>
+
+              {/* Steps Content */}
+              <div className="lg:col-span-3">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-10 h-10 rounded-full bg-[#E8B84B]/15 flex items-center justify-center">
+                    <ListChecks className="w-5 h-5 text-[#E8B84B]" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold text-[#1B3A5C]">
+                    {loc === 'fr' ? 'Étapes clés' : 'Key steps'}
+                  </h2>
+                </div>
+                <ol className="space-y-4">
+                  {howtoSteps.map((step, index) => (
+                    <li
+                      key={index}
+                      id={`step-${index + 1}`}
+                      className="flex gap-4 bg-[#F7F8FA] border border-[#E5E7EB] rounded-xl p-5 hover:border-[#E8B84B] transition-colors scroll-mt-24"
+                    >
+                      <span className="shrink-0 w-8 h-8 rounded-full bg-[#1B3A5C] text-white text-sm font-bold flex items-center justify-center">
+                        {index + 1}
+                      </span>
+                      <div>
+                        <h3 className="font-semibold text-[#1B3A5C] mb-1">{step.name}</h3>
+                        <p className="text-sm text-[#6B7280] leading-relaxed">{step.text}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
           </div>
         </section>
       )}

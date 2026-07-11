@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { APPLICATION_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, Building2, HardHat, Beaker, Layers } from 'lucide-react';
 
@@ -608,6 +609,10 @@ export default async function BetonArmeMarocPage({
       />
 
       {/* CTA */}
+      <RelatedArticles
+        articleSlugs={['beton-arme-maroc', 'calculer-quantite-ciment', '5-erreurs-ciment']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment pour béton armé ?' : 'Need cement for reinforced concrete?'}

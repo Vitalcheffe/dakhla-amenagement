@@ -331,6 +331,7 @@ export function blogPostingSchema(params: {
   dateModified?: string;
   author?: string;
   keywords?: string[];
+  articleBody?: string;
 }): JsonLd {
   return {
     '@context': SCHEMA,
@@ -361,6 +362,7 @@ export function blogPostingSchema(params: {
     keywords: params.keywords?.join(', '),
     articleSection: 'Construction & Cement',
     wordCount: params.description.split(/\s+/).length + 800,
+    articleBody: params.articleBody,
   };
 }
 

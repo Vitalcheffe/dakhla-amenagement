@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { REGIONAL_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, MapPin, Truck, Clock, Phone } from 'lucide-react';
 
@@ -389,6 +390,10 @@ export default async function CimentBoujdourPage({
         locale={locale}
       />
 
+      <RelatedArticles
+        articleSlugs={['dakhla-pole-developpement', 'transport-ciment-logistique', 'construction-zone-cotiere']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment à Boujdour ?' : 'Need cement in Boujdour?'}

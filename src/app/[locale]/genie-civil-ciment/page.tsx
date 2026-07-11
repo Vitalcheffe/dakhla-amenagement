@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { APPLICATION_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, Building2, Droplets, Anchor, Route, Truck, Waves } from 'lucide-react';
 
@@ -639,6 +640,10 @@ export default async function GenieCivilCimentPage({
       />
 
       {/* CTA */}
+      <RelatedArticles
+        articleSlugs={['projet-infrastructure-dakhla', 'construction-zone-cotiere', 'essais-resistance-ciment']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? "Projet d'infrastructure ou de génie civil ?" : 'Infrastructure or civil-engineering project?'}

@@ -7,6 +7,7 @@ import {
   productSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { ArrowRight, Truck, Package, Container } from 'lucide-react';
 
@@ -250,6 +251,10 @@ export default async function PrixCimentPage({
           </Link>
         </div>
       </section>
+      <RelatedArticles
+        articleSlugs={['cpj45-vs-cpj55-guide', 'big-bag-vs-sacs', 'calculer-quantite-ciment']}
+        locale={locale}
+      />
     </>
   );
 }

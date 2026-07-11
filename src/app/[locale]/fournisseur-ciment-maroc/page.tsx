@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { BUSINESS_RELATED } from '@/lib/internal-links';
 import {
   CheckCircle,
@@ -670,6 +671,10 @@ export default async function FournisseurCimentMarocPage({
       />
 
       {/* CTA */}
+      <RelatedArticles
+        articleSlugs={['devenir-revendeur', 'capacite-500k-tonnes', 'transport-ciment-logistique']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Devenez client pro DAM' : 'Become a DAM pro client'}

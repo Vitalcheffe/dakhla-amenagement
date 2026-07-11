@@ -6,6 +6,7 @@ import {
   localBusinessSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { MapPin, Truck, ArrowRight, Clock } from 'lucide-react';
 
@@ -204,6 +205,10 @@ export default async function LivraisonCimentPage({
           </Link>
         </div>
       </section>
+      <RelatedArticles
+        articleSlugs={['transport-ciment-logistique', 'conditionnement-vrac', 'dakhla-pole-developpement']}
+        locale={locale}
+      />
     </>
   );
 }

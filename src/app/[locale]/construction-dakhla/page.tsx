@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { REGIONAL_RELATED } from '@/lib/internal-links';
 import {
   CheckCircle,
@@ -659,6 +660,10 @@ export default async function ConstructionDakhlaPage({
       />
 
       {/* CTA */}
+      <RelatedArticles
+        articleSlugs={['construction-zone-cotiere', 'dakhla-pole-developpement', 'projet-infrastructure-dakhla']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Préparez votre construction à Dakhla ?' : 'Planning your construction in Dakhla?'}

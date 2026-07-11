@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { REGIONAL_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, MapPin, Truck, Clock, Phone, Globe } from 'lucide-react';
 
@@ -414,6 +415,10 @@ export default async function CimentMauritaniePage({
         locale={locale}
       />
 
+      <RelatedArticles
+        articleSlugs={['transport-ciment-logistique', 'dakhla-pole-developpement']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin d\'exporter du ciment vers la Mauritanie ?' : 'Need to export cement to Mauritania?'}

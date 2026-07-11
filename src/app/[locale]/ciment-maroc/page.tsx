@@ -9,6 +9,7 @@ import {
   speakableSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CheckCircle, ArrowRight, Factory, Truck, Beaker, MapPin } from 'lucide-react';
 
@@ -396,6 +397,10 @@ export default async function CimentMarocPage({
           </Link>
         </div>
       </section>
+      <RelatedArticles
+        articleSlugs={['choisir-ciment-projet', 'normes-ciment-maroc', 'cpj45-vs-cpj55-guide', 'dakhla-pole-developpement']}
+        locale={locale}
+      />
     </>
   );
 }

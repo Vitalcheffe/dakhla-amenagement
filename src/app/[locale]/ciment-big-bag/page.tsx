@@ -9,6 +9,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { PRODUCT_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, Container, Truck, Factory, Beaker, ShieldCheck, Package, Anchor, Droplets } from 'lucide-react';
 
@@ -602,6 +603,10 @@ export default async function CimentBigBagPage({
       </section>
 
       <RelatedLinks links={PRODUCT_RELATED} locale={locale} title={isFr ? 'Produits liés' : 'Related products'} />
+      <RelatedArticles
+        articleSlugs={['big-bag-vs-sacs', 'stockage-ciment-chantier', 'conditionnement-vrac']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment en big bag 1T au Maroc ?' : 'Need 1T big bag cement in Morocco?'}

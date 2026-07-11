@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { REGIONAL_RELATED } from '@/lib/internal-links';
 import { CheckCircle, ArrowRight, MapPin, Truck, Clock, Factory, Beaker, Phone } from 'lucide-react';
 
@@ -501,6 +502,10 @@ export default async function CimentDakhlaPage({
         locale={locale}
       />
 
+      <RelatedArticles
+        articleSlugs={['dakhla-pole-developpement', 'projet-infrastructure-dakhla', 'rse-communaute-dakhla']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment à Dakhla ?' : 'Need cement in Dakhla?'}
