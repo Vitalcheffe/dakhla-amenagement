@@ -11,6 +11,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { ReadingProgress } from '@/components/shared/ReadingProgress';
 import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, ARTICLE_INTERNAL_LINKS, getArticle } from '@/lib/blog-data';
 import { ArrowRight, Clock, Calendar, Tag, Share2, ListChecks, Link2, TrendingUp } from 'lucide-react';
 import BlogArticlePageClient from './BlogArticlePageClient';
@@ -127,6 +128,7 @@ export default async function BlogArticlePage({
 
   return (
     <>
+      <ReadingProgress />
       <JsonLdScript schema={schemas} />
       <Breadcrumbs
         items={[

@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Search, X, FileQuestion } from 'lucide-react';
+import { ArrowRight, Search, X, FileQuestion, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
@@ -56,6 +56,7 @@ const articleSlugs = [
 ];
 
 const ARTICLE_NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const ARTICLES_PER_PAGE = 9;
 
 export default function BlogPageClient() {
   const t = useTranslations();
@@ -63,6 +64,7 @@ export default function BlogPageClient() {
   const locale = (params?.locale as string) || 'fr';
   const [activeCategory, setActiveCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
 
   const categories = ['all', 'technical', 'news', 'projects', 'regulation', 'sustainability'];
 
@@ -93,8 +95,47 @@ export default function BlogPageClient() {
     return result;
   }, [activeCategory, searchQuery, t]);
 
+  // Reset to page 1 when filters change (called from handlers, not effect)
+  const handleCategoryChange = (cat: string) => {
+    setActiveCategory(cat);
+    setCurrentPage(1);
+  };
+
+  const handleSearchChange = (value: string) => {
+    setSearchQuery(value);
+    setCurrentPage(1);
+  };
+
+  const handleReset = () => {
+    setSearchQuery('');
+    setActiveCategory('all');
+    setCurrentPage(1);
+  };
+
   const hasResults = filteredArticles.length > 0;
   const totalArticles = ARTICLE_NUMBERS.length;
+  const totalPages = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
+  const paginatedArticles = filteredArticles.slice(
+    (currentPage - 1) * ARTICLES_PER_PAGE,
+    currentPage * ARTICLES_PER_PAGE,
+  );
+
+  // Pagination page numbers to display (show up to 5 pages with ellipsis)
+  const pageNumbers = useMemo(() => {
+    const pages: (number | 'ellipsis')[] = [];
+    if (totalPages <= 5) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      pages.push(1);
+      if (currentPage > 3) pages.push('ellipsis');
+      const start = Math.max(2, currentPage - 1);
+      const end = Math.min(totalPages - 1, currentPage + 1);
+      for (let i = start; i <= end; i++) pages.push(i);
+      if (currentPage < totalPages - 2) pages.push('ellipsis');
+      pages.push(totalPages);
+    }
+    return pages;
+  }, [currentPage, totalPages]);
 
   return (
     <>
@@ -111,14 +152,14 @@ export default function BlogPageClient() {
                 <input
                   type="text"
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => handleSearchChange(e.target.value)}
                   placeholder={isFr ? 'Rechercher un article... (ciment, CPJ, béton, Dakhla)' : 'Search an article... (cement, CPJ, concrete, Dakhla)'}
                   className="w-full pl-12 pr-12 py-3.5 rounded-full bg-[#F7F8FA] border border-[#E5E7EB] text-[#1A1A2E] text-sm focus:outline-none focus:ring-2 focus:ring-[#E8B84B] focus:border-transparent transition-all"
                   aria-label={isFr ? 'Rechercher dans le blog' : 'Search the blog'}
                 />
                 {searchQuery && (
                   <button
-                    onClick={() => setSearchQuery('')}
+                    onClick={() => handleSearchChange('')}
                     className="absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#E5E7EB] hover:bg-[#C1272D] hover:text-white text-[#6B7280] flex items-center justify-center transition-colors"
                     aria-label={isFr ? 'Effacer la recherche' : 'Clear search'}
                   >
@@ -138,7 +179,7 @@ export default function BlogPageClient() {
                   return (
                     <button
                       key={cat}
-                      onClick={() => setActiveCategory(cat)}
+                      onClick={() => handleCategoryChange(cat)}
                       className={`px-4 py-2 text-sm font-medium rounded-full cursor-pointer transition-all ${
                         activeCategory === cat
                           ? 'bg-[#1B3A5C] text-white shadow-md'
@@ -177,46 +218,122 @@ export default function BlogPageClient() {
 
           {/* Articles Grid or Empty State */}
           {hasResults ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredArticles.map((i, idx) => {
-                const slug = articleSlugs[i - 1];
-                return (
-                  <ScrollReveal key={i} delay={Math.min(idx, 6) * 0.05}>
-                    <Link href={`/${locale}/blog/${slug}`} className="group block h-full">
-                      <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden h-full flex flex-col">
-                        <div className="relative h-48">
-                          <Image
-                            src={articleImages[i - 1]}
-                            alt={t(`blog.articles.article${i}.title`)}
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                            className="object-cover transition-transform duration-500 group-hover:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                        </div>
-                        <div className="p-6 flex flex-col flex-1">
-                          <div className="flex items-center gap-2 mb-3">
-                            <span className="text-xs font-medium text-[#1B3A5C] bg-[#1B3A5C]/5 px-2.5 py-1 rounded-full">
-                              {t(`blog.articles.article${i}.category`)}
-                            </span>
-                            <span className="text-xs text-[#6B7280]">{t(`blog.articles.article${i}.date`)}</span>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {paginatedArticles.map((i, idx) => {
+                  const slug = articleSlugs[i - 1];
+                  return (
+                    <ScrollReveal key={i} delay={Math.min(idx, 6) * 0.05}>
+                      <Link href={`/${locale}/blog/${slug}`} className="group block h-full">
+                        <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden h-full flex flex-col">
+                          <div className="relative h-48">
+                            <Image
+                              src={articleImages[i - 1]}
+                              alt={t(`blog.articles.article${i}.title`)}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                              className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                           </div>
-                          <h3 className="font-bold text-[#1B3A5C] text-lg leading-tight group-hover:text-[#C1272D] transition-colors">
-                            {t(`blog.articles.article${i}.title`)}
-                          </h3>
-                          <p className="mt-3 text-sm text-[#6B7280] leading-relaxed line-clamp-3 flex-1">
-                            {t(`blog.articles.article${i}.excerpt`)}
-                          </p>
-                          <span className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-[#C1272D] group-hover:gap-2 transition-all">
-                            {t('blog.readMore')} <ArrowRight className="w-3.5 h-3.5" />
-                          </span>
+                          <div className="p-6 flex flex-col flex-1">
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className="text-xs font-medium text-[#1B3A5C] bg-[#1B3A5C]/5 px-2.5 py-1 rounded-full">
+                                {t(`blog.articles.article${i}.category`)}
+                              </span>
+                              <span className="text-xs text-[#6B7280]">{t(`blog.articles.article${i}.date`)}</span>
+                            </div>
+                            <h3 className="font-bold text-[#1B3A5C] text-lg leading-tight group-hover:text-[#C1272D] transition-colors">
+                              {t(`blog.articles.article${i}.title`)}
+                            </h3>
+                            <p className="mt-3 text-sm text-[#6B7280] leading-relaxed line-clamp-3 flex-1">
+                              {t(`blog.articles.article${i}.excerpt`)}
+                            </p>
+                            <span className="inline-flex items-center gap-1 mt-4 text-sm font-medium text-[#C1272D] group-hover:gap-2 transition-all">
+                              {t('blog.readMore')} <ArrowRight className="w-3.5 h-3.5" />
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    </Link>
-                  </ScrollReveal>
-                );
-              })}
-            </div>
+                      </Link>
+                    </ScrollReveal>
+                  );
+                })}
+              </div>
+
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <nav
+                  className="flex items-center justify-center gap-2 mt-12"
+                  aria-label={isFr ? 'Pagination' : 'Pagination'}
+                >
+                  {/* Previous button */}
+                  <button
+                    onClick={() => {
+                      setCurrentPage((p) => Math.max(1, p - 1));
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    disabled={currentPage === 1}
+                    className="inline-flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-full border border-[#E5E7EB] text-[#1B3A5C] hover:bg-[#1B3A5C] hover:text-white disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[#1B3A5C] transition-all"
+                    aria-label={isFr ? 'Page précédente' : 'Previous page'}
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                    <span className="hidden sm:inline">{isFr ? 'Précédent' : 'Prev'}</span>
+                  </button>
+
+                  {/* Page numbers */}
+                  {pageNumbers.map((page, idx) =>
+                    page === 'ellipsis' ? (
+                      <span
+                        key={`ellipsis-${idx}`}
+                        className="px-3 py-2 text-sm text-[#6B7280]"
+                      >
+                        …
+                      </span>
+                    ) : (
+                      <button
+                        key={page}
+                        onClick={() => {
+                          setCurrentPage(page);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
+                        className={`w-10 h-10 text-sm font-medium rounded-full transition-all ${
+                          currentPage === page
+                            ? 'bg-[#1B3A5C] text-white shadow-md'
+                            : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C]/10'
+                        }`}
+                        aria-label={isFr ? `Page ${page}` : `Page ${page}`}
+                        aria-current={currentPage === page ? 'page' : undefined}
+                      >
+                        {page}
+                      </button>
+                    ),
+                  )}
+
+                  {/* Next button */}
+                  <button
+                    onClick={() => {
+                      setCurrentPage((p) => Math.min(totalPages, p + 1));
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    disabled={currentPage === totalPages}
+                    className="inline-flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-full border border-[#E5E7EB] text-[#1B3A5C] hover:bg-[#1B3A5C] hover:text-white disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-[#1B3A5C] transition-all"
+                    aria-label={isFr ? 'Page suivante' : 'Next page'}
+                  >
+                    <span className="hidden sm:inline">{isFr ? 'Suivant' : 'Next'}</span>
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+                </nav>
+              )}
+
+              {/* Page indicator */}
+              {totalPages > 1 && (
+                <p className="text-center text-xs text-[#6B7280] mt-4">
+                  {isFr
+                    ? `Page ${currentPage} sur ${totalPages}`
+                    : `Page ${currentPage} of ${totalPages}`}
+                </p>
+              )}
+            </>
           ) : (
             <div className="text-center py-16 max-w-md mx-auto">
               <div className="w-16 h-16 rounded-full bg-[#F7F8FA] flex items-center justify-center mx-auto mb-6">
@@ -231,10 +348,7 @@ export default function BlogPageClient() {
                   : 'Try other keywords or browse all categories.'}
               </p>
               <button
-                onClick={() => {
-                  setSearchQuery('');
-                  setActiveCategory('all');
-                }}
+                onClick={handleReset}
                 className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#1B3A5C] text-white text-sm font-medium rounded-full hover:bg-[#1B3A5C]/90 transition-colors"
               >
                 <X className="w-4 h-4" />

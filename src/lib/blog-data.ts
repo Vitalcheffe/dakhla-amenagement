@@ -271,3 +271,25 @@ export const ARTICLE_INTERNAL_LINKS: Record<string, { label: string; href: strin
     { label: 'Lexique du ciment', href: '/lexique-ciment' },
   ],
 };
+
+/**
+ * Reverse mapping: landing page path → relevant blog article slugs.
+ * Used for bidirectional internal linking from landing pages back to blog articles.
+ */
+export const LANDING_PAGE_ARTICLES: Record<string, string[]> = {
+  '/cpj-45': ['choisir-ciment-projet', 'cpj45-vs-cpj55-guide', 'calculer-quantite-ciment', 'beton-arme-maroc'],
+  '/cpj-55': ['choisir-ciment-projet', 'cpj45-vs-cpj55-guide', 'construction-zone-cotiere', 'essais-resistance-ciment'],
+  '/ciment-vrac': ['conditionnement-vrac', 'transport-ciment-logistique', 'big-bag-vs-sacs'],
+  '/ciment-sacs': ['stockage-ciment-chantier', 'big-bag-vs-sacs', 'conditionnement-vrac'],
+  '/ciment-big-bag': ['big-bag-vs-sacs', 'stockage-ciment-chantier', 'conditionnement-vrac'],
+  '/ciment-maroc': ['choisir-ciment-projet', 'normes-ciment-maroc', 'cpj45-vs-cpj55-guide', 'dakhla-pole-developpement'],
+  '/prix-ciment': ['cpj45-vs-cpj55-guide', 'big-bag-vs-sacs', 'calculer-quantite-ciment'],
+  '/livraison-ciment': ['transport-ciment-logistique', 'conditionnement-vrac', 'dakhla-pole-developpement'],
+  '/beton-arme-maroc': ['beton-arme-maroc', 'calculer-quantite-ciment', '5-erreurs-ciment'],
+  '/genie-civil-ciment': ['projet-infrastructure-dakhla', 'construction-zone-cotiere', 'essais-resistance-ciment'],
+  '/construction-dakhla': ['construction-zone-cotiere', 'dakhla-pole-developpement', 'projet-infrastructure-dakhla'],
+  '/fournisseur-ciment-maroc': ['devenir-revendeur', 'capacite-500k-tonnes', 'transport-ciment-logistique'],
+  '/ciment-dakhla': ['dakhla-pole-developpement', 'projet-infrastructure-dakhla', 'rse-communaute-dakhla'],
+  '/ciment-sud-maroc': ['dakhla-pole-developpement', 'transport-ciment-logistique', 'projet-infrastructure-dakhla'],
+  '/ciment-mauritanie': ['transport-ciment-logistique', 'dakhla-pole-developpement'],
+};
