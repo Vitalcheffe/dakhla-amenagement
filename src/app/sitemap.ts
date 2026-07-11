@@ -3,6 +3,7 @@ import { BLOG_ARTICLES } from '@/lib/blog-data';
 import { SITE } from '@/lib/seo';
 import { MOROCCAN_CITIES } from '@/lib/moroccan-cities';
 import { CEMENT_USAGES } from '@/lib/cement-usages';
+import { COMPARISONS } from '@/lib/comparisons';
 
 type ChangeFreq = 'daily' | 'weekly' | 'monthly' | 'yearly';
 
@@ -187,6 +188,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
             fr: `${SITE.url}/fr/ciment-pour/${usage.slug}`,
             en: `${SITE.url}/en/ciment-pour/${usage.slug}`,
             'x-default': `${SITE.url}/fr/ciment-pour/${usage.slug}`,
+          },
+        },
+      });
+    }
+  }
+
+  // Comparison pages × 2 locales
+  for (const locale of SITE.locales) {
+    for (const comp of COMPARISONS) {
+      entries.push({
+        url: `${SITE.url}/${locale}/comparer/${comp.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as ChangeFreq,
+        priority: 0.8,
+        alternates: {
+          languages: {
+            fr: `${SITE.url}/fr/comparer/${comp.slug}`,
+            en: `${SITE.url}/en/comparer/${comp.slug}`,
+            'x-default': `${SITE.url}/fr/comparer/${comp.slug}`,
           },
         },
       });
