@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Search, X, FileQuestion, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, Search, X, FileQuestion, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
 
@@ -169,7 +169,7 @@ export default function BlogPageClient() {
               </div>
 
               {/* Category filters */}
-              <div className="flex flex-wrap gap-2 justify-center">
+              <div className="flex flex-wrap gap-2 justify-center items-center">
                 {categories.map((cat) => {
                   const count = cat === 'all'
                     ? totalArticles
@@ -177,17 +177,28 @@ export default function BlogPageClient() {
                         (i) => t(`blog.articles.article${i}.category`) === t(`blog.categories.${cat}`)
                       ).length;
                   return (
-                    <button
-                      key={cat}
-                      onClick={() => handleCategoryChange(cat)}
-                      className={`px-4 py-2 text-sm font-medium rounded-full cursor-pointer transition-all ${
-                        activeCategory === cat
-                          ? 'bg-[#1B3A5C] text-white shadow-md'
-                          : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C]/10'
-                      }`}
-                    >
-                      {t(`blog.categories.${cat}`)} <span className="opacity-60">({count})</span>
-                    </button>
+                    <div key={cat} className="flex items-center gap-1">
+                      <button
+                        onClick={() => handleCategoryChange(cat)}
+                        className={`px-4 py-2 text-sm font-medium rounded-full cursor-pointer transition-all ${
+                          activeCategory === cat
+                            ? 'bg-[#1B3A5C] text-white shadow-md'
+                            : 'bg-[#F7F8FA] text-[#1B3A5C] hover:bg-[#1B3A5C]/10'
+                        }`}
+                      >
+                        {t(`blog.categories.${cat}`)} <span className="opacity-60">({count})</span>
+                      </button>
+                      {cat !== 'all' && (
+                        <Link
+                          href={`/${locale}/blog/categorie/${cat}`}
+                          className="text-[#C1272D] hover:text-[#1B3A5C] transition-colors p-1"
+                          aria-label={isFr ? `Voir tous les articles ${t(`blog.categories.${cat}`)}` : `View all ${t(`blog.categories.${cat}`)} articles`}
+                          title={isFr ? 'Page catégorie dédiée' : 'Dedicated category page'}
+                        >
+                          <ExternalLink className="w-3.5 h-3.5" />
+                        </Link>
+                      )}
+                    </div>
                   );
                 })}
               </div>

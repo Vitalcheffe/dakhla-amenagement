@@ -124,5 +124,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Blog category pages — for each locale
+  const BLOG_CATEGORIES = ['technical', 'news', 'projects', 'regulation', 'sustainability'];
+  for (const locale of SITE.locales) {
+    for (const category of BLOG_CATEGORIES) {
+      entries.push({
+        url: `${SITE.url}/${locale}/blog/categorie/${category}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as ChangeFreq,
+        priority: 0.65,
+        alternates: {
+          languages: {
+            fr: `${SITE.url}/fr/blog/categorie/${category}`,
+            en: `${SITE.url}/en/blog/categorie/${category}`,
+            'x-default': `${SITE.url}/fr/blog/categorie/${category}`,
+          },
+        },
+      });
+    }
+  }
+
   return entries;
 }

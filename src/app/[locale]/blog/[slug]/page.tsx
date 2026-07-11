@@ -13,6 +13,7 @@ import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
 import { ReadingProgress } from '@/components/shared/ReadingProgress';
 import { RelatedProducts } from '@/components/shared/RelatedProducts';
+import { CalculatorCta } from '@/components/shared/CalculatorCta';
 import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, ARTICLE_INTERNAL_LINKS, ARTICLE_PRODUCTS, getArticle } from '@/lib/blog-data';
 import { ArrowRight, Clock, Calendar, Tag, Share2, ListChecks, Link2, TrendingUp } from 'lucide-react';
 import BlogArticlePageClient from './BlogArticlePageClient';
@@ -273,6 +274,11 @@ export default async function BlogArticlePage({
           </div>
         </div>
       </section>
+
+      {/* Calculator CTA — only on calculation/dosage-related articles */}
+      {['calculer-quantite-ciment', 'beton-arme-maroc', 'cpj45-vs-cpj55-guide', 'choisir-ciment-projet', '5-erreurs-ciment', 'big-bag-vs-sacs'].includes(slug) && (
+        <CalculatorCta locale={locale} />
+      )}
 
       {/* Related Products — styled cards with icons, descriptions, badges */}
       {productLinks.length > 0 && (
