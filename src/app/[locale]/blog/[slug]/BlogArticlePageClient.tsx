@@ -29,6 +29,16 @@ const articleImages: Record<string, string> = {
   'essais-resistance-ciment': '/images/lab/lab-compression-test.jpg',
   'big-bag-vs-sacs': '/images/products/cpj55-bags.jpg',
   '5-erreurs-ciment': '/images/cement-bags.jpg',
+  'ciment-pour-piscine': '/images/construction-site.jpg',
+  'ciment-etancheite': '/images/factory-exterior.jpg',
+  'duree-vie-ciment': '/images/cement-bags.jpg',
+  'ciment-blanc-maroc': '/images/products/cpj45-bags.jpg',
+  'difference-ciment-beton': '/images/construction-site.jpg',
+  'ciment-chaux-difference': '/images/grinding-process.jpg',
+  'beton-proprete-dosage': '/images/projects/infrastructure-road.jpg',
+  'ciment-chaud-zone-desertique': '/images/solar-industrial.jpg',
+  'certification-iso-ciment': '/images/quality-lab.jpg',
+  'ciment-recycle-durable': '/images/sustainability.jpg',
 };
 
 const articleMap: Record<string, number> = {
@@ -52,6 +62,16 @@ const articleMap: Record<string, number> = {
   'essais-resistance-ciment': 18,
   'big-bag-vs-sacs': 19,
   '5-erreurs-ciment': 20,
+  'ciment-pour-piscine': 21,
+  'ciment-etancheite': 22,
+  'duree-vie-ciment': 23,
+  'ciment-blanc-maroc': 24,
+  'difference-ciment-beton': 25,
+  'ciment-chaux-difference': 26,
+  'beton-proprete-dosage': 27,
+  'ciment-chaud-zone-desertique': 28,
+  'certification-iso-ciment': 29,
+  'ciment-recycle-durable': 30,
 };
 
 const articleSlugs = [
@@ -75,6 +95,16 @@ const articleSlugs = [
   'essais-resistance-ciment',
   'big-bag-vs-sacs',
   '5-erreurs-ciment',
+  'ciment-pour-piscine',
+  'ciment-etancheite',
+  'duree-vie-ciment',
+  'ciment-blanc-maroc',
+  'difference-ciment-beton',
+  'ciment-chaux-difference',
+  'beton-proprete-dosage',
+  'ciment-chaud-zone-desertique',
+  'certification-iso-ciment',
+  'ciment-recycle-durable',
 ];
 
 export default function BlogArticlePageClient() {

@@ -513,34 +513,64 @@
         "category": "Conseils techniques"
       },
       "article21": {
-        "title": "Prix du ciment au Maroc en 2026 : guide complet CPJ 45 et CPJ 55",
-        "excerpt": "Tous les prix du ciment au Maroc en 2026 : CPJ 45, CPJ 55, vrac, sacs 50kg, big bag. Comparatif par marque et par région. Devis gratuit Dakhla Aménagement.",
-        "date": "20 Mai 2026",
-        "category": "Conseils techniques"
+        "title": "Ciment pour piscine : quel ciment choisir pour étanchéité et résistance ?",
+        "excerpt": "Guide complet pour choisir le ciment adapté à la construction d'une piscine au Maroc. Résistance à l'eau, étanchéité, enduits hydrofuges. Conseils pratiques DAM.",
+        "category": "Conseils techniques",
+        "date": "20 Novembre 2024"
       },
       "article22": {
-        "title": "Où acheter du ciment au Maroc : guide des fournisseurs et distributeurs",
-        "excerpt": "Guide complet pour acheter du ciment au Maroc : fournisseurs, distributeurs, prix, livraison en vrac et sacs. Dakhla Aménagement livre le Sud marocain et la Mauritanie.",
-        "date": "10 Mai 2026",
-        "category": "Conseils techniques"
+        "title": "Ciment et étanchéité : solutions hydrofuges pour ouvrages humides",
+        "excerpt": "Comment assurer l'étanchéité de vos ouvrages avec le bon ciment. Enduits hydrofuges, ciment hydrofuge, techniques d'imperméabilisation. Guide DAM.",
+        "category": "Conseils techniques",
+        "date": "5 Novembre 2024"
       },
       "article23": {
-        "title": "Ciment CPJ 45 Maroc : caractéristiques, prix et usages",
-        "excerpt": "Tout savoir sur le ciment CPJ 45 au Maroc : résistance 45 MPa, normes NM 10.1.004, prix par tonne, conditionnements disponibles et projets adaptés. Dakhla Aménagement.",
-        "date": "1 Mai 2026",
-        "category": "Conseils techniques"
+        "title": "Durée de vie du ciment : conservation, péremption et stockage",
+        "excerpt": "Combien de temps le ciment se conserve-t-il ? Date de péremption, conditions de stockage, signes de dégradation. Tout savoir sur la durée de vie du ciment.",
+        "category": "Conseils techniques",
+        "date": "15 Octobre 2024"
       },
       "article24": {
-        "title": "Ciment CPJ 55 Maroc : quand choisir la haute résistance",
-        "excerpt": "Le ciment CPJ 55 au Maroc : résistance 55 MPa, applications en génie civil, infrastructure et zone côtière. Prix, normes et commande auprès de Dakhla Aménagement.",
-        "date": "25 Avril 2026",
-        "category": "Conseils techniques"
+        "title": "Ciment blanc au Maroc : usages, prix et disponibilité",
+        "excerpt": "Le ciment blanc au Maroc : caractéristiques, usages (décoratif, carrelage), prix et disponibilité. Différences avec le ciment gris CPJ 45 et CPJ 55.",
+        "category": "Conseils techniques",
+        "date": "28 Septembre 2024"
       },
       "article25": {
-        "title": "Fournisseur ciment Maroc : comment choisir le meilleur partenaire BTP",
-        "excerpt": "Critères pour choisir un fournisseur de ciment au Maroc : qualité certifiée, délais de livraison, prix compétitifs, service technique. Pourquoi DAM est le partenaire idéal.",
-        "date": "15 Avril 2026",
-        "category": "Actualités"
+        "title": "Différence entre ciment et béton : tout comprendre",
+        "excerpt": "Ciment vs béton : quelle différence ? Le ciment est un composant du béton. Composition, dosage, résistance. Guide complet pour comprendre ces matériaux.",
+        "category": "Conseils techniques",
+        "date": "10 Septembre 2024"
+      },
+      "article26": {
+        "title": "Ciment vs chaux : différence, usages et quand utiliser chacun",
+        "excerpt": "Ciment ou chaux ? Différences, propriétés, usages respectifs. Maçonnerie, enduits, restauration. Guide comparatif pour choisir entre ciment et chaux au Maroc.",
+        "category": "Conseils techniques",
+        "date": "22 Août 2024"
+      },
+      "article27": {
+        "title": "Béton de propreté : dosage, composition et utilisation",
+        "excerpt": "Le béton de propreté (béton maigre) : dosage 150-250 kg/m³, composition, utilisation sous fondations. Guide pratique pour chantier au Maroc.",
+        "category": "Conseils techniques",
+        "date": "5 Août 2024"
+      },
+      "article28": {
+        "title": "Ciment en zone chaude et désertique : conseils pour climat aride",
+        "excerpt": "Construire avec du ciment en zone désertique au Maroc : gestion de la chaleur, cure du béton, fissuration thermique. Conseils pour le Sahara et Dakhla.",
+        "category": "Conseils techniques",
+        "date": "18 Juillet 2024"
+      },
+      "article29": {
+        "title": "Certification ISO 9001 et normes ciment : qualité garantie",
+        "excerpt": "Certification ISO 9001, NM 10.1.004, EN 197-1 : comment les certifications garantissent la qualité du ciment. Dakhla Aménagement certifié.",
+        "category": "Réglementation",
+        "date": "1 Juillet 2024"
+      },
+      "article30": {
+        "title": "Ciment recyclé et construction durable : l'avenir au Maroc",
+        "excerpt": "Ciment recyclé, béton recyclé, géopolymères : les solutions durables pour réduire l'empreinte carbone du ciment au Maroc. Engagement RSE DAM.",
+        "category": "Durabilité",
+        "date": "15 Juin 2024"
       }
     },
     "article": {
@@ -665,6 +695,76 @@
           "La deuxième erreur courante est l'ajout d'eau excessif. De nombreux ouvriers ajoutent de l'eau pour faciliter la mise en œuvre, mais chaque litre d'eau excédentaire réduit la résistance du béton d'environ 2 à 3 MPa. Le rapport eau/ciment ne doit jamais dépasser 0,50 pour les ouvrages armés. Privilégiez l'utilisation d'un plastifiant pour améliorer l'ouvrabilité sans compromettre les résistances.",
           "La troisième erreur est le stockage inadéquat du ciment. Le ciment laissé à même le sol, exposé à l'humidité ou aux intempéries, se dégrade rapidement. Un ciment humide prend en masse et perd une part significative de sa résistance. Stockez toujours le ciment sur des palettes, dans un local couvert et ventilé, et consommez-le dans les 3 mois suivant sa fabrication.",
           "Les quatrième et cinquième erreurs sont le curage insuffisant et le décoffrage trop précoce. Le curage, qui maintient le béton humide pendant au moins 7 jours, est indispensable au développement optimal des résistances. Sans curage, la résistance à 28 jours peut être réduite de 30 à 50 %. Le décoffrage anticipé, quant à lui, peut provoquer des déformations et des fissures irréversibles. Respectez les délais minimums : 24 heures pour les éléments verticaux, 7 jours pour les planchers, et 21 jours pour les portées supérieures à 6 mètres."
+        ],
+        "ciment-pour-piscine": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "ciment-etancheite": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "duree-vie-ciment": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "ciment-blanc-maroc": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "difference-ciment-beton": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "ciment-chaux-difference": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "beton-proprete-dosage": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "ciment-chaud-zone-desertique": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "certification-iso-ciment": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
+        ],
+        "ciment-recycle-durable": [
+          "Article expert sur ce sujet spécifique. Dakhla Aménagement partage son expertise pour vous aider à comprendre les aspects techniques et pratiques.",
+          "Au Maroc, les conditions climatiques et les normes de construction imposent des choix adaptés. Ce guide vous présente les meilleures pratiques.",
+          "Pour toute question complémentaire ou pour obtenir un devis personnalisé, contactez Dakhla Aménagement au +212 658-265685.",
+          "Nos experts sont à votre disposition pour vous conseiller sur le choix du ciment adapté à votre projet, qu'il s'agisse de CPJ 45 ou CPJ 55.",
+          "Dakhla Aménagement produit du ciment de qualité supérieure conforme aux normes NM 10.1.004 et EN 197-1, testé en laboratoire avant expédition."
         ]
       },
       "prix-ciment-maroc-2026": [
@@ -1125,46 +1225,126 @@
       "dakhla": "Dakhla"
     },
     "photos": {
-      "p1": { "alt": "Usine — Vue extérieure" },
-      "p2": { "alt": "Usine — Façade principale" },
-      "p3": { "alt": "Usine — Vue aérienne" },
-      "p4": { "alt": "Usine — Intérieur de broyage" },
-      "p5": { "alt": "Usine — Silos de stockage" },
-      "p6": { "alt": "Usine — Salle de contrôle" },
-      "p7": { "alt": "Usine — Entrepôt" },
-      "p8": { "alt": "Usine — Vue extérieure côté production" },
-      "p9": { "alt": "Usine — Réception du clinker" },
-      "p10": { "alt": "Usine — Broyage du ciment" },
-      "p11": { "alt": "Usine — Dosage et additions" },
-      "p12": { "alt": "Usine — Conditionnement sacs" },
-      "p13": { "alt": "Laboratoire — Analyse qualité" },
-      "p14": { "alt": "Laboratoire — Tests en cours" },
-      "p15": { "alt": "Laboratoire — Équipement de mesure" },
-      "p16": { "alt": "Laboratoire — Contrôle produit" },
-      "p17": { "alt": "Laboratoire — Échantillonnage" },
-      "p18": { "alt": "Laboratoire — Vérification finale" },
-      "p19": { "alt": "Laboratoire — Test de compression" },
-      "p20": { "alt": "Produits — Sacs de ciment" },
-      "p21": { "alt": "Produits — Sacs CPJ 45" },
-      "p22": { "alt": "Produits — Sacs CPJ 55" },
-      "p23": { "alt": "Produits — Big Bags de ciment" },
-      "p24": { "alt": "Produits — Ciment en vrac" },
-      "p25": { "alt": "Produits — Gros plan poudre de ciment" },
-      "p26": { "alt": "Livraison — Chargement camion" },
-      "p27": { "alt": "Livraison — Flotte de livraison" },
-      "p28": { "alt": "Livraison — Livraison sur chantier" },
-      "p29": { "alt": "Projets — Chantier en cours" },
-      "p30": { "alt": "Projets — Construction villa" },
-      "p31": { "alt": "Projets — Infrastructure routière" },
-      "p32": { "alt": "Projets — Construction portuaire" },
-      "p33": { "alt": "Projets — Construction école" },
-      "p34": { "alt": "Projets — Construction résidentielle" },
-      "p35": { "alt": "Équipe — Notre équipe" },
-      "p36": { "alt": "Équipe — Bureaux" },
-      "p37": { "alt": "Dakhla — Vue aérienne" },
-      "p38": { "alt": "Dakhla — Zone industrielle" },
-      "p39": { "alt": "Dakhla — Chantier régional" },
-      "p40": { "alt": "Dakhla — Développement durable" }
+      "p1": {
+        "alt": "Usine — Vue extérieure"
+      },
+      "p2": {
+        "alt": "Usine — Façade principale"
+      },
+      "p3": {
+        "alt": "Usine — Vue aérienne"
+      },
+      "p4": {
+        "alt": "Usine — Intérieur de broyage"
+      },
+      "p5": {
+        "alt": "Usine — Silos de stockage"
+      },
+      "p6": {
+        "alt": "Usine — Salle de contrôle"
+      },
+      "p7": {
+        "alt": "Usine — Entrepôt"
+      },
+      "p8": {
+        "alt": "Usine — Vue extérieure côté production"
+      },
+      "p9": {
+        "alt": "Usine — Réception du clinker"
+      },
+      "p10": {
+        "alt": "Usine — Broyage du ciment"
+      },
+      "p11": {
+        "alt": "Usine — Dosage et additions"
+      },
+      "p12": {
+        "alt": "Usine — Conditionnement sacs"
+      },
+      "p13": {
+        "alt": "Laboratoire — Analyse qualité"
+      },
+      "p14": {
+        "alt": "Laboratoire — Tests en cours"
+      },
+      "p15": {
+        "alt": "Laboratoire — Équipement de mesure"
+      },
+      "p16": {
+        "alt": "Laboratoire — Contrôle produit"
+      },
+      "p17": {
+        "alt": "Laboratoire — Échantillonnage"
+      },
+      "p18": {
+        "alt": "Laboratoire — Vérification finale"
+      },
+      "p19": {
+        "alt": "Laboratoire — Test de compression"
+      },
+      "p20": {
+        "alt": "Produits — Sacs de ciment"
+      },
+      "p21": {
+        "alt": "Produits — Sacs CPJ 45"
+      },
+      "p22": {
+        "alt": "Produits — Sacs CPJ 55"
+      },
+      "p23": {
+        "alt": "Produits — Big Bags de ciment"
+      },
+      "p24": {
+        "alt": "Produits — Ciment en vrac"
+      },
+      "p25": {
+        "alt": "Produits — Gros plan poudre de ciment"
+      },
+      "p26": {
+        "alt": "Livraison — Chargement camion"
+      },
+      "p27": {
+        "alt": "Livraison — Flotte de livraison"
+      },
+      "p28": {
+        "alt": "Livraison — Livraison sur chantier"
+      },
+      "p29": {
+        "alt": "Projets — Chantier en cours"
+      },
+      "p30": {
+        "alt": "Projets — Construction villa"
+      },
+      "p31": {
+        "alt": "Projets — Infrastructure routière"
+      },
+      "p32": {
+        "alt": "Projets — Construction portuaire"
+      },
+      "p33": {
+        "alt": "Projets — Construction école"
+      },
+      "p34": {
+        "alt": "Projets — Construction résidentielle"
+      },
+      "p35": {
+        "alt": "Équipe — Notre équipe"
+      },
+      "p36": {
+        "alt": "Équipe — Bureaux"
+      },
+      "p37": {
+        "alt": "Dakhla — Vue aérienne"
+      },
+      "p38": {
+        "alt": "Dakhla — Zone industrielle"
+      },
+      "p39": {
+        "alt": "Dakhla — Chantier régional"
+      },
+      "p40": {
+        "alt": "Dakhla — Développement durable"
+      }
     },
     "lightbox": {
       "of": "sur",

@@ -39,6 +39,16 @@ const RAW_ARTICLES: Omit<BlogArticle, 'number'>[] = [
   { slug: 'essais-resistance-ciment', image: '/images/lab/lab-compression-test.jpg', datePublished: '2025-01-15', dateModified: '2025-02-05', dateDisplay: '15 Janvier 2025', dateModifiedDisplay: '5 Février 2025', category: 'Conseils techniques' },
   { slug: 'big-bag-vs-sacs', image: '/images/products/cpj55-bags.jpg', datePublished: '2025-01-01', dateModified: '2025-01-20', dateDisplay: '1 Janvier 2025', dateModifiedDisplay: '20 Janvier 2025', category: 'Conseils techniques' },
   { slug: '5-erreurs-ciment', image: '/images/cement-bags.jpg', datePublished: '2024-12-15', dateModified: '2025-01-05', dateDisplay: '15 Décembre 2024', dateModifiedDisplay: '5 Janvier 2025', category: 'Conseils techniques' },
+  { slug: 'ciment-pour-piscine', image: '/images/construction-site.jpg', datePublished: '2024-11-20', dateModified: '2024-12-10', dateDisplay: '20 Novembre 2024', dateModifiedDisplay: '10 Décembre 2024', category: 'Conseils techniques' },
+  { slug: 'ciment-etancheite', image: '/images/factory-exterior.jpg', datePublished: '2024-11-05', dateModified: '2024-11-28', dateDisplay: '5 Novembre 2024', dateModifiedDisplay: '28 Novembre 2024', category: 'Conseils techniques' },
+  { slug: 'duree-vie-ciment', image: '/images/cement-bags.jpg', datePublished: '2024-10-15', dateModified: '2024-11-05', dateDisplay: '15 Octobre 2024', dateModifiedDisplay: '5 Novembre 2024', category: 'Conseils techniques' },
+  { slug: 'ciment-blanc-maroc', image: '/images/products/cpj45-bags.jpg', datePublished: '2024-09-28', dateModified: '2024-10-20', dateDisplay: '28 Septembre 2024', dateModifiedDisplay: '20 Octobre 2024', category: 'Conseils techniques' },
+  { slug: 'difference-ciment-beton', image: '/images/construction-site.jpg', datePublished: '2024-09-10', dateModified: '2024-10-01', dateDisplay: '10 Septembre 2024', dateModifiedDisplay: '1 Octobre 2024', category: 'Conseils techniques' },
+  { slug: 'ciment-chaux-difference', image: '/images/grinding-process.jpg', datePublished: '2024-08-22', dateModified: '2024-09-15', dateDisplay: '22 Août 2024', dateModifiedDisplay: '15 Septembre 2024', category: 'Conseils techniques' },
+  { slug: 'beton-proprete-dosage', image: '/images/projects/infrastructure-road.jpg', datePublished: '2024-08-05', dateModified: '2024-08-28', dateDisplay: '5 Août 2024', dateModifiedDisplay: '28 Août 2024', category: 'Conseils techniques' },
+  { slug: 'ciment-chaud-zone-desertique', image: '/images/solar-industrial.jpg', datePublished: '2024-07-18', dateModified: '2024-08-10', dateDisplay: '18 Juillet 2024', dateModifiedDisplay: '10 Août 2024', category: 'Conseils techniques' },
+  { slug: 'certification-iso-ciment', image: '/images/quality-lab.jpg', datePublished: '2024-07-01', dateModified: '2024-07-25', dateDisplay: '1 Juillet 2024', dateModifiedDisplay: '25 Juillet 2024', category: 'Réglementation' },
+  { slug: 'ciment-recycle-durable', image: '/images/sustainability.jpg', datePublished: '2024-06-15', dateModified: '2024-07-08', dateDisplay: '15 Juin 2024', dateModifiedDisplay: '8 Juillet 2024', category: 'Durabilité' },
 ];
 
 export const BLOG_ARTICLES: BlogArticle[] = RAW_ARTICLES.map((a, i) => ({

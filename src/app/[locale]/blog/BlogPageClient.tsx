@@ -30,6 +30,16 @@ const articleImages = [
   '/images/lab/lab-compression-test.jpg',
   '/images/products/cpj55-bags.jpg',
   '/images/cement-bags.jpg',
+  '/images/construction-site.jpg',
+  '/images/factory-exterior.jpg',
+  '/images/cement-bags.jpg',
+  '/images/products/cpj45-bags.jpg',
+  '/images/construction-site.jpg',
+  '/images/grinding-process.jpg',
+  '/images/projects/infrastructure-road.jpg',
+  '/images/solar-industrial.jpg',
+  '/images/quality-lab.jpg',
+  '/images/sustainability.jpg',
 ];
 
 const articleSlugs = [
@@ -53,9 +63,19 @@ const articleSlugs = [
   'essais-resistance-ciment',
   'big-bag-vs-sacs',
   '5-erreurs-ciment',
+  'ciment-pour-piscine',
+  'ciment-etancheite',
+  'duree-vie-ciment',
+  'ciment-blanc-maroc',
+  'difference-ciment-beton',
+  'ciment-chaux-difference',
+  'beton-proprete-dosage',
+  'ciment-chaud-zone-desertique',
+  'certification-iso-ciment',
+  'ciment-recycle-durable',
 ];
 
-const ARTICLE_NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const ARTICLE_NUMBERS = Array.from({ length: 30 }, (_, i) => i + 1);
 const ARTICLES_PER_PAGE = 9;
 
 export default function BlogPageClient() {
