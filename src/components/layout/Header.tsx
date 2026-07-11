@@ -30,6 +30,9 @@ const navItems: NavItem[] = [
       { key: 'cpj55', href: '/produits', badge: '1 600 DH/T' },
       { key: 'comparison', href: '/produits' },
       { key: 'quote', href: '/devis' },
+      { key: 'cimentMaroc', href: '/ciment-maroc' },
+      { key: 'prixCiment', href: '/prix-ciment' },
+      { key: 'livraison', href: '/livraison-ciment' },
     ],
   },
   { key: 'process', href: '/processus' },
@@ -113,6 +116,9 @@ export function Header({ locale }: { locale: string }) {
       cpj55: 'cpj55',
       comparison: 'comparison',
       quote: 'quote',
+      cimentMaroc: 'cimentMaroc',
+      prixCiment: 'prixCiment',
+      livraison: 'livraison',
       history: 'history',
       sustainability: 'sustainability',
       careers: 'careers',
@@ -257,15 +263,11 @@ export function Header({ locale }: { locale: string }) {
 
             {/* Mobile menu */}
             <Sheet open={open} onOpenChange={setOpen}>
-              <SheetTrigger className="lg:hidden">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  aria-label="Menu"
-                  className={isHome && !scrolled ? 'text-white hover:bg-white/10' : ''}
-                >
-                  <Menu className="h-5 w-5" />
-                </Button>
+              <SheetTrigger
+                className="lg:hidden inline-flex items-center justify-center h-9 w-9 rounded-md transition-colors"
+                aria-label="Menu"
+              >
+                <Menu className={`h-5 w-5 ${isHome && !scrolled ? 'text-white' : 'text-[#1B3A5C]'}`} />
               </SheetTrigger>
               <SheetContent side="right" className="w-80 bg-white p-0">
                 <SheetTitle className="sr-only">Navigation</SheetTitle>

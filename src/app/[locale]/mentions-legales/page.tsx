@@ -1,48 +1,80 @@
-'use client';
+import { buildMetadata } from '@/lib/seo';
+import { webPageSchema, breadcrumbSchema } from '@/lib/structured-data';
+import { JsonLdScript } from '@/components/shared/JsonLd';
+import MentionsLegalesPageClient from './MentionsLegalesPageClient';
 
-import { useTranslations } from 'next-intl';
-import { ScrollReveal } from '@/components/shared/Animations';
-import { PageHero } from '@/components/shared/PageHero';
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
 
-export default function MentionsLegalesPage() {
-  const t = useTranslations();
+  const title =
+    loc === 'fr'
+      ? 'Mentions Légales — Dakhla Aménagement S.A. | Ciment Maroc'
+      : 'Legal Notice — Dakhla Aménagement S.A. | Morocco Cement';
 
-  const sections = [
-    { key: 'company', title: t('legal.company.title') },
-    { key: 'director', title: t('legal.director.title') },
-    { key: 'hosting', title: t('legal.hosting.title') },
-    { key: 'ip', title: t('legal.ip.title') },
-    { key: 'privacy', title: t('legal.privacy.title') },
-    { key: 'cookies', title: t('legal.cookies.title') },
-  ] as const;
+  const description =
+    loc === 'fr'
+      ? 'Mentions légales de Dakhla Aménagement S.A. — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
+      : 'Legal notice for Dakhla Aménagement S.A. — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
+
+  // Minimal keywords for legal page (low priority SEO)
+  const keywords =
+    loc === 'fr'
+      ? ['mentions légales', 'Dakhla Aménagement', 'ciment-dam.com']
+      : ['legal notice', 'Dakhla Aménagement', 'ciment-dam.com'];
+
+  return buildMetadata({
+    locale: loc,
+    path: '/mentions-legales',
+    title,
+    description,
+    keywords,
+    noIndex: false, // kept indexable but lower SEO priority
+  });
+}
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+
+  const name =
+    loc === 'fr'
+      ? 'Mentions Légales — Dakhla Aménagement S.A.'
+      : 'Legal Notice — Dakhla Aménagement S.A.';
+  const description =
+    loc === 'fr'
+      ? 'Mentions légales de Dakhla Aménagement S.A. — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
+      : 'Legal notice for Dakhla Aménagement S.A. — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
+
+  const breadcrumbs = [
+    {
+      name: loc === 'fr' ? 'Mentions Légales' : 'Legal Notice',
+      path: '/mentions-legales',
+    },
+  ];
+
+  const schemas = [
+    webPageSchema({
+      name,
+      description,
+      path: '/mentions-legales',
+      locale: loc,
+    }),
+    breadcrumbSchema(breadcrumbs, loc),
+  ];
 
   return (
     <>
-      <PageHero title={t('legal.title')} subtitle="" sectionCounter="/08" />
-
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-6 md:px-12">
-          {sections.map((section, i) => (
-            <ScrollReveal key={section.key} delay={i * 0.05}>
-              <div className="mb-10">
-                <h2 className="text-xl font-bold text-[#1B3A5C] mb-4">{section.title}</h2>
-                {section.key === 'company' ? (
-                  <div className="space-y-2 text-sm text-[#6B7280]">
-                    <p><strong className="text-[#1A1A2E]">{t('legal.company.name')}</strong></p>
-                    <p>{t('legal.company.form')}</p>
-                    <p>{t('legal.company.rc')}</p>
-                    <p>{t('legal.company.ice')}</p>
-                    <p>{t('legal.company.if')}</p>
-                    <p>{t('legal.company.hq')}</p>
-                  </div>
-                ) : (
-                  <p className="text-[#6B7280] leading-relaxed">{t(`legal.${section.key}.text`)}</p>
-                )}
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
-      </section>
+      <JsonLdScript schema={schemas} />
+      <MentionsLegalesPageClient />
     </>
   );
 }

@@ -1,63 +1,108 @@
-'use client';
+import { buildMetadata, KEYWORDS } from '@/lib/seo';
+import {
+  webPageSchema,
+  breadcrumbSchema,
+  collectionPageSchema,
+} from '@/lib/structured-data';
+import { JsonLdScript } from '@/components/shared/JsonLd';
+import RealisationsPageClient from './RealisationsPageClient';
 
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import { MapPin } from 'lucide-react';
-import { ScrollReveal } from '@/components/shared/Animations';
-import { PageHero } from '@/components/shared/PageHero';
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const loc = locale === 'en' ? 'en' : 'fr';
 
-const projectImages = [
-  '/images/projects/residential-construction.jpg',
-  '/images/projects/infrastructure-road.jpg',
-  '/images/projects/port-construction.jpg',
-  '/images/projects/school-construction.jpg',
-  '/images/projects/villa-construction.jpg',
-];
+  if (loc === 'en') {
+    return buildMetadata({
+      locale: 'en',
+      path: '/realisations',
+      title: 'Projects & Realizations — DAM Cement in Morocco | Dakhla Aménagement',
+      description:
+        'Discover projects built with DAM cement: residential construction, road infrastructure, port, school, villa in Dakhla and Southern Morocco. Reinforced concrete and civil engineering.',
+      keywords: [...KEYWORDS.application, ...KEYWORDS.regional, 'realizations projects'],
+    });
+  }
 
-export default function RealisationsPage() {
-  const t = useTranslations();
+  return buildMetadata({
+    locale: 'fr',
+    path: '/realisations',
+    title: 'Réalisations & Projets — Ciment DAM au Maroc | Dakhla Aménagement',
+    description:
+      'Découvrez les projets réalisés avec le ciment DAM : construction résidentielle, infrastructures routières, port, école, villa à Dakhla et au Sud Maroc. béton armé et génie civil.',
+    keywords: [
+      ...KEYWORDS.application,
+      ...KEYWORDS.regional,
+      'réalisations projets',
+      'projets ciment Maroc',
+      'construction Dakhla',
+    ],
+  });
+}
 
-  const projects = [
-    { key: 'project1', image: projectImages[0] },
-    { key: 'project2', image: projectImages[1] },
-    { key: 'project3', image: projectImages[2] },
-    { key: 'project4', image: projectImages[3] },
-    { key: 'project5', image: projectImages[4] },
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+
+  const name =
+    loc === 'fr'
+      ? 'Réalisations & Projets — Dakhla Aménagement'
+      : 'Projects & Realizations — Dakhla Aménagement';
+  const description =
+    loc === 'fr'
+      ? 'Découvrez les projets réalisés avec le ciment DAM : construction résidentielle, infrastructures routières, port, école, villa à Dakhla et au Sud Maroc. béton armé et génie civil.'
+      : 'Discover projects built with DAM cement: residential construction, road infrastructure, port, school, villa in Dakhla and Southern Morocco. Reinforced concrete and civil engineering.';
+
+  const projectItems =
+    loc === 'fr'
+      ? [
+          { name: 'Construction résidentielle', url: `/fr/realisations#project1` },
+          { name: 'Infrastructure routière', url: `/fr/realisations#project2` },
+          { name: 'Construction portuaire', url: `/fr/realisations#project3` },
+          { name: 'Construction scolaire', url: `/fr/realisations#project4` },
+          { name: 'Villa moderne', url: `/fr/realisations#project5` },
+        ]
+      : [
+          { name: 'Residential construction', url: `/en/realisations#project1` },
+          { name: 'Road infrastructure', url: `/en/realisations#project2` },
+          { name: 'Port construction', url: `/en/realisations#project3` },
+          { name: 'School construction', url: `/en/realisations#project4` },
+          { name: 'Modern villa', url: `/en/realisations#project5` },
+        ];
+
+  const schemas = [
+    webPageSchema({
+      name,
+      description,
+      path: '/realisations',
+      locale: loc,
+      breadcrumbs: [
+        { name: loc === 'fr' ? 'Réalisations' : 'Projects', path: '/realisations' },
+      ],
+    }),
+    breadcrumbSchema(
+      [{ name: loc === 'fr' ? 'Réalisations' : 'Projects', path: '/realisations' }],
+      loc,
+    ),
+    collectionPageSchema({
+      name,
+      description,
+      path: '/realisations',
+      locale: loc,
+      items: projectItems,
+    }),
   ];
 
   return (
     <>
-      <PageHero title={t('realisations.title')} subtitle={t('realisations.subtitle')} sectionCounter="/06" />
-
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.map((project, i) => (
-              <ScrollReveal key={project.key} delay={i * 0.1}>
-                <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden">
-                  <div className="relative h-56 md:h-64">
-                    <Image
-                      src={project.image}
-                      alt={t(`realisations.${project.key}.title`)}
-                      fill
-                      quality={90}
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6 md:p-8">
-                    <h3 className="text-xl font-bold text-[#1B3A5C]">{t(`realisations.${project.key}.title`)}</h3>
-                    <p className="mt-3 text-[#6B7280] leading-relaxed">{t(`realisations.${project.key}.desc`)}</p>
-                    <div className="mt-4 flex items-center gap-2 text-sm text-[#6B7280]">
-                      <MapPin className="w-4 h-4 text-[#1B3A5C]" />
-                      {t(`realisations.${project.key}.location`)}
-                    </div>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <JsonLdScript schema={schemas} />
+      <RealisationsPageClient />
     </>
   );
 }

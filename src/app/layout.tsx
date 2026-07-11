@@ -1,61 +1,16 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55 | Livraison Sud Maroc",
-  description: "Dakhla Aménagement S.A. — Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag. Prix ciment Maroc, devis gratuit.",
   metadataBase: new URL('https://www.ciment-dam.com'),
-  keywords: [
-    "ciment Maroc",
-    "ciment",
-    "prix ciment Maroc",
-    "CPJ 45 Maroc",
-    "CPJ 55 Maroc",
-    "cimenterie Maroc",
-    "broyage clinker Maroc",
-    "ciment Dakhla",
-    "Dakhla Aménagement",
-    "achat ciment Maroc",
-    "ciment vrac Maroc",
-    "ciment sacs 50kg",
-    "matériaux construction Maroc",
-    "béton Maroc",
-    "fournisseur ciment Maroc",
-    "centre de broyage Maroc",
-  ],
-  icons: {
-    icon: [
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: [
-      { url: '/images/apple-icon-180x180.png', sizes: '180x180', type: 'image/png' },
-    ],
+  title: {
+    default: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+    template: '%s | Dakhla Aménagement — Ciment Maroc',
   },
-  manifest: '/manifest.json',
-  openGraph: {
-    title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55",
-    description: "Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage à Dakhla. Livraison vrac, sacs, big bag. Devis gratuit.",
-    url: "https://www.ciment-dam.com",
-    siteName: "Dakhla Aménagement S.A.",
-    locale: "fr_MA",
-    type: "website",
-    images: [
-      {
-        url: "/images/logo-dam-512.png",
-        width: 512,
-        height: 512,
-        alt: "DAM — Dakhla Aménagement S.A.",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Ciment Maroc — Dakhla Aménagement | CPJ 45 & CPJ 55",
-    description: "Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage à Dakhla. Devis gratuit.",
-    images: ["/images/logo-dam-512.png"],
-  },
+  applicationName: 'Dakhla Aménagement S.A.',
+  authors: [{ name: 'Dakhla Aménagement S.A.' }],
+  creator: 'Dakhla Aménagement S.A.',
+  publisher: 'Dakhla Aménagement S.A.',
 };
 
 export default function RootLayout({

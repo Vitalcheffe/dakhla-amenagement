@@ -13,7 +13,8 @@ export function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem(COOKIE_CONSENT_KEY);
     if (!consent) {
-      setShowBanner(true);
+      const id = requestAnimationFrame(() => setShowBanner(true));
+      return () => cancelAnimationFrame(id);
     }
   }, []);
 
