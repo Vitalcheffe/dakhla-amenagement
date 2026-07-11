@@ -12,7 +12,8 @@ import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
 import { ReadingProgress } from '@/components/shared/ReadingProgress';
-import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, ARTICLE_INTERNAL_LINKS, getArticle } from '@/lib/blog-data';
+import { RelatedProducts } from '@/components/shared/RelatedProducts';
+import { BLOG_ARTICLES, ARTICLE_KEYWORDS, ARTICLE_HOWTO, ARTICLE_INTERNAL_LINKS, ARTICLE_PRODUCTS, getArticle } from '@/lib/blog-data';
 import { ArrowRight, Clock, Calendar, Tag, Share2, ListChecks, Link2, TrendingUp } from 'lucide-react';
 import BlogArticlePageClient from './BlogArticlePageClient';
 
@@ -52,7 +53,7 @@ export async function generateMetadata({
     image: article?.image ?? '/images/og-banner.jpg',
     type: 'article',
     publishedTime: article ? new Date(article.datePublished).toISOString() : undefined,
-    modifiedTime: article ? new Date(article.datePublished).toISOString() : undefined,
+    modifiedTime: article ? new Date(article.dateModified).toISOString() : undefined,
     author: SITE.name,
   });
 }
@@ -97,6 +98,7 @@ export default async function BlogArticlePage({
       path: `/blog/${slug}`,
       locale: loc,
       datePublished: new Date(article.datePublished).toISOString(),
+      dateModified: new Date(article.dateModified).toISOString(),
       keywords: ARTICLE_KEYWORDS[slug] ?? [],
       articleBody: excerpt,
     }),
@@ -121,6 +123,9 @@ export default async function BlogArticlePage({
 
   // Internal links for this article (contextual links to landing pages)
   const internalLinks = ARTICLE_INTERNAL_LINKS[slug] ?? [];
+
+  // Product cards for this article (styled cards with icons + descriptions)
+  const productLinks = ARTICLE_PRODUCTS[slug] ?? [];
 
   // Popular articles: pick 5 most recent (excluding current)
   const popularArticles = BLOG_ARTICLES
@@ -215,6 +220,10 @@ export default async function BlogArticlePage({
               <Calendar className="w-4 h-4" />
               {article.dateDisplay}
             </span>
+            <span className="flex items-center gap-1.5 text-[#E8B84B]">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              {loc === 'fr' ? `Mis à jour le ${article.dateModifiedDisplay}` : `Updated ${article.dateModifiedDisplay}`}
+            </span>
             <span className="flex items-center gap-1.5">
               <Tag className="w-4 h-4" />
               {article.category}
@@ -264,6 +273,15 @@ export default async function BlogArticlePage({
           </div>
         </div>
       </section>
+
+      {/* Related Products — styled cards with icons, descriptions, badges */}
+      {productLinks.length > 0 && (
+        <RelatedProducts
+          products={productLinks}
+          locale={locale}
+          title={loc === 'fr' ? 'Produits & Services liés' : 'Related Products & Services'}
+        />
+      )}
 
       {/* Internal Links + Popular Articles Sidebar — contextual linking for SEO */}
       {internalLinks.length > 0 && (

@@ -9,32 +9,36 @@ export interface BlogArticle {
   image: string;
   /** ISO 8601 date for schema.org / sitemap lastmod */
   datePublished: string;
+  /** ISO 8601 date of last update for schema.org dateModified */
+  dateModified: string;
   /** Human-readable date (FR) */
   dateDisplay: string;
+  /** Human-readable last updated date (FR) */
+  dateModifiedDisplay: string;
   category: string;
 }
 
 const RAW_ARTICLES: Omit<BlogArticle, 'number'>[] = [
-  { slug: 'choisir-ciment-projet', image: '/images/cement-bags.jpg', datePublished: '2026-01-15', dateDisplay: '15 Janvier 2026', category: 'Conseils techniques' },
-  { slug: 'capacite-500k-tonnes', image: '/images/factory-exterior.jpg', datePublished: '2025-12-20', dateDisplay: '20 Décembre 2025', category: 'Actualités' },
-  { slug: 'normes-ciment-maroc', image: '/images/quality-lab.jpg', datePublished: '2025-11-05', dateDisplay: '5 Novembre 2025', category: 'Réglementation' },
-  { slug: 'construction-durable-ciment', image: '/images/sustainability.jpg', datePublished: '2025-10-10', dateDisplay: '10 Octobre 2025', category: 'Durabilité' },
-  { slug: 'projet-infrastructure-dakhla', image: '/images/construction-site.jpg', datePublished: '2025-09-25', dateDisplay: '25 Septembre 2025', category: 'Projets' },
-  { slug: 'stockage-ciment-chantier', image: '/images/grinding-process.jpg', datePublished: '2025-08-12', dateDisplay: '12 Août 2025', category: 'Conseils techniques' },
-  { slug: 'cpj45-vs-cpj55-guide', image: '/images/products/cpj45-bags.jpg', datePublished: '2025-07-01', dateDisplay: '1 Juillet 2025', category: 'Conseils techniques' },
-  { slug: 'calculer-quantite-ciment', image: '/images/construction-site.jpg', datePublished: '2025-06-15', dateDisplay: '15 Juin 2025', category: 'Conseils techniques' },
-  { slug: 'beton-arme-maroc', image: '/images/projects/villa-construction.jpg', datePublished: '2025-06-01', dateDisplay: '1 Juin 2025', category: 'Conseils techniques' },
-  { slug: 'dakhla-pole-developpement', image: '/images/dakhla-aerial.jpg', datePublished: '2025-05-20', dateDisplay: '20 Mai 2025', category: 'Actualités' },
-  { slug: 'role-gypse-ciment', image: '/images/process/step2-grinding.jpg', datePublished: '2025-05-05', dateDisplay: '5 Mai 2025', category: 'Conseils techniques' },
-  { slug: 'conditionnement-vrac', image: '/images/products/bulk-cement-truck.jpg', datePublished: '2025-04-15', dateDisplay: '15 Avril 2025', category: 'Conseils techniques' },
-  { slug: 'construction-zone-cotiere', image: '/images/projects/port-construction.jpg', datePublished: '2025-04-01', dateDisplay: '1 Avril 2025', category: 'Conseils techniques' },
-  { slug: '10-ans-excellence', image: '/images/factory/factory-exterior.jpg', datePublished: '2025-03-15', dateDisplay: '15 Mars 2025', category: 'Actualités' },
-  { slug: 'devenir-revendeur', image: '/images/products/big-bag-cement.jpg', datePublished: '2025-03-01', dateDisplay: '1 Mars 2025', category: 'Actualités' },
-  { slug: 'transport-ciment-logistique', image: '/images/delivery/concrete-delivery.jpg', datePublished: '2025-02-15', dateDisplay: '15 Février 2025', category: 'Conseils techniques' },
-  { slug: 'rse-communaute-dakhla', image: '/images/sustainability.jpg', datePublished: '2025-02-01', dateDisplay: '1 Février 2025', category: 'Durabilité' },
-  { slug: 'essais-resistance-ciment', image: '/images/lab/lab-compression-test.jpg', datePublished: '2025-01-15', dateDisplay: '15 Janvier 2025', category: 'Conseils techniques' },
-  { slug: 'big-bag-vs-sacs', image: '/images/products/cpj55-bags.jpg', datePublished: '2025-01-01', dateDisplay: '1 Janvier 2025', category: 'Conseils techniques' },
-  { slug: '5-erreurs-ciment', image: '/images/cement-bags.jpg', datePublished: '2024-12-15', dateDisplay: '15 Décembre 2024', category: 'Conseils techniques' },
+  { slug: 'choisir-ciment-projet', image: '/images/cement-bags.jpg', datePublished: '2026-01-15', dateModified: '2026-02-10', dateDisplay: '15 Janvier 2026', dateModifiedDisplay: '10 Février 2026', category: 'Conseils techniques' },
+  { slug: 'capacite-500k-tonnes', image: '/images/factory-exterior.jpg', datePublished: '2025-12-20', dateModified: '2026-01-08', dateDisplay: '20 Décembre 2025', dateModifiedDisplay: '8 Janvier 2026', category: 'Actualités' },
+  { slug: 'normes-ciment-maroc', image: '/images/quality-lab.jpg', datePublished: '2025-11-05', dateModified: '2025-12-01', dateDisplay: '5 Novembre 2025', dateModifiedDisplay: '1 Décembre 2025', category: 'Réglementation' },
+  { slug: 'construction-durable-ciment', image: '/images/sustainability.jpg', datePublished: '2025-10-10', dateModified: '2025-11-05', dateDisplay: '10 Octobre 2025', dateModifiedDisplay: '5 Novembre 2025', category: 'Durabilité' },
+  { slug: 'projet-infrastructure-dakhla', image: '/images/construction-site.jpg', datePublished: '2025-09-25', dateModified: '2025-10-20', dateDisplay: '25 Septembre 2025', dateModifiedDisplay: '20 Octobre 2025', category: 'Projets' },
+  { slug: 'stockage-ciment-chantier', image: '/images/grinding-process.jpg', datePublished: '2025-08-12', dateModified: '2025-09-10', dateDisplay: '12 Août 2025', dateModifiedDisplay: '10 Septembre 2025', category: 'Conseils techniques' },
+  { slug: 'cpj45-vs-cpj55-guide', image: '/images/products/cpj45-bags.jpg', datePublished: '2025-07-01', dateModified: '2025-08-05', dateDisplay: '1 Juillet 2025', dateModifiedDisplay: '5 Août 2025', category: 'Conseils techniques' },
+  { slug: 'calculer-quantite-ciment', image: '/images/construction-site.jpg', datePublished: '2025-06-15', dateModified: '2025-07-10', dateDisplay: '15 Juin 2025', dateModifiedDisplay: '10 Juillet 2025', category: 'Conseils techniques' },
+  { slug: 'beton-arme-maroc', image: '/images/projects/villa-construction.jpg', datePublished: '2025-06-01', dateModified: '2025-06-28', dateDisplay: '1 Juin 2025', dateModifiedDisplay: '28 Juin 2025', category: 'Conseils techniques' },
+  { slug: 'dakhla-pole-developpement', image: '/images/dakhla-aerial.jpg', datePublished: '2025-05-20', dateModified: '2025-06-15', dateDisplay: '20 Mai 2025', dateModifiedDisplay: '15 Juin 2025', category: 'Actualités' },
+  { slug: 'role-gypse-ciment', image: '/images/process/step2-grinding.jpg', datePublished: '2025-05-05', dateModified: '2025-06-01', dateDisplay: '5 Mai 2025', dateModifiedDisplay: '1 Juin 2025', category: 'Conseils techniques' },
+  { slug: 'conditionnement-vrac', image: '/images/products/bulk-cement-truck.jpg', datePublished: '2025-04-15', dateModified: '2025-05-10', dateDisplay: '15 Avril 2025', dateModifiedDisplay: '10 Mai 2025', category: 'Conseils techniques' },
+  { slug: 'construction-zone-cotiere', image: '/images/projects/port-construction.jpg', datePublished: '2025-04-01', dateModified: '2025-04-28', dateDisplay: '1 Avril 2025', dateModifiedDisplay: '28 Avril 2025', category: 'Conseils techniques' },
+  { slug: '10-ans-excellence', image: '/images/factory/factory-exterior.jpg', datePublished: '2025-03-15', dateModified: '2025-04-10', dateDisplay: '15 Mars 2025', dateModifiedDisplay: '10 Avril 2025', category: 'Actualités' },
+  { slug: 'devenir-revendeur', image: '/images/products/big-bag-cement.jpg', datePublished: '2025-03-01', dateModified: '2025-03-28', dateDisplay: '1 Mars 2025', dateModifiedDisplay: '28 Mars 2025', category: 'Actualités' },
+  { slug: 'transport-ciment-logistique', image: '/images/delivery/concrete-delivery.jpg', datePublished: '2025-02-15', dateModified: '2025-03-10', dateDisplay: '15 Février 2025', dateModifiedDisplay: '10 Mars 2025', category: 'Conseils techniques' },
+  { slug: 'rse-communaute-dakhla', image: '/images/sustainability.jpg', datePublished: '2025-02-01', dateModified: '2025-02-25', dateDisplay: '1 Février 2025', dateModifiedDisplay: '25 Février 2025', category: 'Durabilité' },
+  { slug: 'essais-resistance-ciment', image: '/images/lab/lab-compression-test.jpg', datePublished: '2025-01-15', dateModified: '2025-02-05', dateDisplay: '15 Janvier 2025', dateModifiedDisplay: '5 Février 2025', category: 'Conseils techniques' },
+  { slug: 'big-bag-vs-sacs', image: '/images/products/cpj55-bags.jpg', datePublished: '2025-01-01', dateModified: '2025-01-20', dateDisplay: '1 Janvier 2025', dateModifiedDisplay: '20 Janvier 2025', category: 'Conseils techniques' },
+  { slug: '5-erreurs-ciment', image: '/images/cement-bags.jpg', datePublished: '2024-12-15', dateModified: '2025-01-05', dateDisplay: '15 Décembre 2024', dateModifiedDisplay: '5 Janvier 2025', category: 'Conseils techniques' },
 ];
 
 export const BLOG_ARTICLES: BlogArticle[] = RAW_ARTICLES.map((a, i) => ({
@@ -292,4 +296,99 @@ export const LANDING_PAGE_ARTICLES: Record<string, string[]> = {
   '/ciment-dakhla': ['dakhla-pole-developpement', 'projet-infrastructure-dakhla', 'rse-communaute-dakhla'],
   '/ciment-sud-maroc': ['dakhla-pole-developpement', 'transport-ciment-logistique', 'projet-infrastructure-dakhla'],
   '/ciment-mauritanie': ['transport-ciment-logistique', 'dakhla-pole-developpement'],
+};
+
+/**
+ * Product links with icons and descriptions for blog article "Related Products" section.
+ * Maps article slug → array of product links (styled cards).
+ * Reverse of RelatedArticles: shows landing page cards on blog articles.
+ */
+export const ARTICLE_PRODUCTS: Record<string, { label: string; href: string; description: string; icon: 'cement' | 'package' | 'truck' | 'price' | 'building'; badge?: string }[]> = {
+  'choisir-ciment-projet': [
+    { label: 'Ciment CPJ 45', href: '/cpj-45', description: '45 MPa — béton armé, dallages, fondations. Dès 1 500 DH/T.', icon: 'cement', badge: '1 500 DH/T' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55', description: '55 MPa — génie civil, infrastructure, zone côtière. Dès 1 600 DH/T.', icon: 'cement', badge: '1 600 DH/T' },
+    { label: 'Prix du Ciment', href: '/prix-ciment', description: 'Tableau complet des prix par conditionnement.', icon: 'price' },
+    { label: 'Demander un Devis', href: '/devis', description: 'Devis gratuit personnalisé sous 24h.', icon: 'package' },
+  ],
+  'cpj45-vs-cpj55-guide': [
+    { label: 'Ciment CPJ 45', href: '/cpj-45', description: '45 MPa pour béton armé courant.', icon: 'cement', badge: '1 500 DH/T' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55', description: '55 MPa pour ouvrages exigeants.', icon: 'cement', badge: '1 600 DH/T' },
+    { label: 'Prix du Ciment', href: '/prix-ciment', description: 'Comparez les prix CPJ 45 et CPJ 55.', icon: 'price' },
+  ],
+  'calculer-quantite-ciment': [
+    { label: 'Demander un Devis', href: '/devis', description: 'Calcul du prix selon votre quantité.', icon: 'package' },
+    { label: 'Prix du Ciment', href: '/prix-ciment', description: 'Tarifs par tonne et conditionnement.', icon: 'price' },
+  ],
+  'conditionnement-vrac': [
+    { label: 'Ciment en Vrac', href: '/ciment-vrac', description: 'Livraison camion-citerne, min. 30T.', icon: 'truck' },
+    { label: 'Ciment en Sacs', href: '/ciment-sacs', description: 'Sacs 50kg, palettes 1T.', icon: 'package' },
+    { label: 'Big Bag 1T', href: '/ciment-big-bag', description: 'Manutention par grue ou chariot.', icon: 'package' },
+  ],
+  'big-bag-vs-sacs': [
+    { label: 'Ciment en Sacs', href: '/ciment-sacs', description: 'Sacs 50kg pour maçonnerie.', icon: 'package' },
+    { label: 'Big Bag 1T', href: '/ciment-big-bag', description: 'Pour chantiers moyens.', icon: 'package' },
+    { label: 'Ciment en Vrac', href: '/ciment-vrac', description: 'Pour gros chantiers.', icon: 'truck' },
+  ],
+  'stockage-ciment-chantier': [
+    { label: 'Ciment en Sacs', href: '/ciment-sacs', description: 'Sacs 50kg avec palettes.', icon: 'package' },
+    { label: 'Big Bag 1T', href: '/ciment-big-bag', description: 'Protection humidité intégrée.', icon: 'package' },
+  ],
+  'beton-arme-maroc': [
+    { label: 'Ciment CPJ 45', href: '/cpj-45', description: 'Idéal pour béton armé courant.', icon: 'cement', badge: '1 500 DH/T' },
+    { label: 'Ciment CPJ 55', href: '/cpj-55', description: 'Pour béton haute résistance.', icon: 'cement', badge: '1 600 DH/T' },
+    { label: 'Béton Armé Maroc', href: '/beton-arme-maroc', description: 'Guide complet béton armé.', icon: 'building' },
+  ],
+  'construction-zone-cotiere': [
+    { label: 'Ciment CPJ 55', href: '/cpj-55', description: 'Recommandé pour zone côtière.', icon: 'cement', badge: '1 600 DH/T' },
+    { label: 'Construction Dakhla', href: '/construction-dakhla', description: 'Guide construction côtière.', icon: 'building' },
+  ],
+  'transport-ciment-logistique': [
+    { label: 'Livraison Ciment', href: '/livraison-ciment', description: 'Zones et délais de livraison.', icon: 'truck' },
+    { label: 'Ciment en Vrac', href: '/ciment-vrac', description: 'Camion-citerne avec pompage.', icon: 'truck' },
+  ],
+  'dakhla-pole-developpement': [
+    { label: 'Ciment Dakhla', href: '/ciment-dakhla', description: 'Producteur local à Dakhla.', icon: 'cement' },
+    { label: 'Construction Dakhla', href: '/construction-dakhla', description: 'Guide construction locale.', icon: 'building' },
+  ],
+  'normes-ciment-maroc': [
+    { label: 'Ciment Maroc', href: '/ciment-maroc', description: 'Guide complet du ciment au Maroc.', icon: 'cement' },
+    { label: 'Nos Produits', href: '/produits', description: 'CPJ 45 et CPJ 55 conformes.', icon: 'package' },
+  ],
+  'devenir-revendeur': [
+    { label: 'Fournisseur Ciment', href: '/fournisseur-ciment-maroc', description: 'Solutions B2B et comptes pro.', icon: 'building' },
+    { label: 'Contact', href: '/contact', description: 'Contactez notre équipe commerciale.', icon: 'package' },
+  ],
+  'essais-resistance-ciment': [
+    { label: 'Notre Processus', href: '/processus', description: 'Fabrication et contrôle qualité.', icon: 'cement' },
+    { label: 'Documents', href: '/documents', description: 'Fiches techniques et certificats.', icon: 'package' },
+  ],
+  'projet-infrastructure-dakhla': [
+    { label: 'Génie Civil', href: '/genie-civil-ciment', description: 'Ciment pour grands ouvrages.', icon: 'building' },
+    { label: 'Nos Réalisations', href: '/realisations', description: 'Projets infrastructure.', icon: 'building' },
+  ],
+  'capacite-500k-tonnes': [
+    { label: 'Notre Processus', href: '/processus', description: 'Centre de broyage 500K T/an.', icon: 'cement' },
+    { label: 'À Propos', href: '/a-propos', description: 'Dakhla Aménagement depuis 2015.', icon: 'building' },
+  ],
+  'construction-durable-ciment': [
+    { label: 'Durabilité', href: '/durabilite', description: 'Engagement RSE et éco-responsable.', icon: 'building' },
+    { label: 'Ciment Maroc', href: '/ciment-maroc', description: 'Guide complet du ciment.', icon: 'cement' },
+  ],
+  'role-gypse-ciment': [
+    { label: 'Notre Processus', href: '/processus', description: 'Broyage clinker et additions.', icon: 'cement' },
+    { label: 'Lexique', href: '/lexique-ciment', description: 'Définitions techniques.', icon: 'package' },
+  ],
+  'rse-communaute-dakhla': [
+    { label: 'Durabilité', href: '/durabilite', description: 'Engagement RSE communautaire.', icon: 'building' },
+    { label: 'Ciment Dakhla', href: '/ciment-dakhla', description: 'Présence locale à Dakhla.', icon: 'cement' },
+  ],
+  '5-erreurs-ciment': [
+    { label: 'CPJ 45 vs CPJ 55', href: '/blog/cpj45-vs-cpj55-guide', description: 'Guide comparatif complet.', icon: 'cement' },
+    { label: 'Stockage du Ciment', href: '/blog/stockage-ciment-chantier', description: 'Bonnes pratiques stockage.', icon: 'package' },
+    { label: 'Lexique', href: '/lexique-ciment', description: 'Termes techniques.', icon: 'package' },
+  ],
+  '10-ans-excellence': [
+    { label: 'À Propos', href: '/a-propos', description: 'Notre histoire depuis 2015.', icon: 'building' },
+    { label: 'Réalisations', href: '/realisations', description: 'Nos projets marquants.', icon: 'building' },
+  ],
 };

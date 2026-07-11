@@ -12,6 +12,7 @@ import { CookieConsent } from '@/components/shared/CookieConsent';
 import { buildMetadata, SITE } from '@/lib/seo';
 import { organizationSchema, websiteSchema, localBusinessSchema, siteNavigationSchema } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
+import { BackToTop } from '@/components/shared/BackToTop';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
           <Header locale={locale} />
           <main className="flex-1">{children}</main>
           <WhatsAppButton />
+          <BackToTop />
           <CookieConsent />
           <Footer locale={locale} />
         </NextIntlClientProvider>
