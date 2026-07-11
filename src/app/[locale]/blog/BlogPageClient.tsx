@@ -8,74 +8,12 @@ import Link from 'next/link';
 import { ArrowRight, Search, X, FileQuestion, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { ScrollReveal } from '@/components/shared/Animations';
 import { PageHero } from '@/components/shared/PageHero';
+import { BLOG_ARTICLES } from '@/lib/blog-data';
 
-const articleImages = [
-  '/images/cement-bags.jpg',
-  '/images/factory-exterior.jpg',
-  '/images/quality-lab.jpg',
-  '/images/sustainability.jpg',
-  '/images/construction-site.jpg',
-  '/images/grinding-process.jpg',
-  '/images/products/cpj45-bags.jpg',
-  '/images/construction-site.jpg',
-  '/images/projects/villa-construction.jpg',
-  '/images/dakhla-aerial.jpg',
-  '/images/process/step2-grinding.jpg',
-  '/images/products/bulk-cement-truck.jpg',
-  '/images/projects/port-construction.jpg',
-  '/images/factory/factory-exterior.jpg',
-  '/images/products/big-bag-cement.jpg',
-  '/images/delivery/concrete-delivery.jpg',
-  '/images/sustainability.jpg',
-  '/images/lab/lab-compression-test.jpg',
-  '/images/products/cpj55-bags.jpg',
-  '/images/cement-bags.jpg',
-  '/images/construction-site.jpg',
-  '/images/factory-exterior.jpg',
-  '/images/cement-bags.jpg',
-  '/images/products/cpj45-bags.jpg',
-  '/images/construction-site.jpg',
-  '/images/grinding-process.jpg',
-  '/images/projects/infrastructure-road.jpg',
-  '/images/solar-industrial.jpg',
-  '/images/quality-lab.jpg',
-  '/images/sustainability.jpg',
-];
+const articleSlugs = BLOG_ARTICLES.map((a) => a.slug);
+const articleImages = BLOG_ARTICLES.map((a) => a.image);
 
-const articleSlugs = [
-  'choisir-ciment-projet',
-  'capacite-500k-tonnes',
-  'normes-ciment-maroc',
-  'construction-durable-ciment',
-  'projet-infrastructure-dakhla',
-  'stockage-ciment-chantier',
-  'cpj45-vs-cpj55-guide',
-  'calculer-quantite-ciment',
-  'beton-arme-maroc',
-  'dakhla-pole-developpement',
-  'role-gypse-ciment',
-  'conditionnement-vrac',
-  'construction-zone-cotiere',
-  '10-ans-excellence',
-  'devenir-revendeur',
-  'transport-ciment-logistique',
-  'rse-communaute-dakhla',
-  'essais-resistance-ciment',
-  'big-bag-vs-sacs',
-  '5-erreurs-ciment',
-  'ciment-pour-piscine',
-  'ciment-etancheite',
-  'duree-vie-ciment',
-  'ciment-blanc-maroc',
-  'difference-ciment-beton',
-  'ciment-chaux-difference',
-  'beton-proprete-dosage',
-  'ciment-chaud-zone-desertique',
-  'certification-iso-ciment',
-  'ciment-recycle-durable',
-];
-
-const ARTICLE_NUMBERS = Array.from({ length: 30 }, (_, i) => i + 1);
+const ARTICLE_NUMBERS = Array.from({ length: BLOG_ARTICLES.length }, (_, i) => i + 1);
 const ARTICLES_PER_PAGE = 9;
 
 export default function BlogPageClient() {

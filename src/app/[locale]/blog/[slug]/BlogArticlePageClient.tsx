@@ -7,105 +7,16 @@ import Link from 'next/link';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollReveal } from '@/components/shared/Animations';
+import { BLOG_ARTICLES } from '@/lib/blog-data';
 
-const articleImages: Record<string, string> = {
-  'choisir-ciment-projet': '/images/cement-bags.jpg',
-  'capacite-500k-tonnes': '/images/factory-exterior.jpg',
-  'normes-ciment-maroc': '/images/quality-lab.jpg',
-  'construction-durable-ciment': '/images/sustainability.jpg',
-  'projet-infrastructure-dakhla': '/images/construction-site.jpg',
-  'stockage-ciment-chantier': '/images/grinding-process.jpg',
-  'cpj45-vs-cpj55-guide': '/images/products/cpj45-bags.jpg',
-  'calculer-quantite-ciment': '/images/construction-site.jpg',
-  'beton-arme-maroc': '/images/projects/villa-construction.jpg',
-  'dakhla-pole-developpement': '/images/dakhla-aerial.jpg',
-  'role-gypse-ciment': '/images/process/step2-grinding.jpg',
-  'conditionnement-vrac': '/images/products/bulk-cement-truck.jpg',
-  'construction-zone-cotiere': '/images/projects/port-construction.jpg',
-  '10-ans-excellence': '/images/factory/factory-exterior.jpg',
-  'devenir-revendeur': '/images/products/big-bag-cement.jpg',
-  'transport-ciment-logistique': '/images/delivery/concrete-delivery.jpg',
-  'rse-communaute-dakhla': '/images/sustainability.jpg',
-  'essais-resistance-ciment': '/images/lab/lab-compression-test.jpg',
-  'big-bag-vs-sacs': '/images/products/cpj55-bags.jpg',
-  '5-erreurs-ciment': '/images/cement-bags.jpg',
-  'ciment-pour-piscine': '/images/construction-site.jpg',
-  'ciment-etancheite': '/images/factory-exterior.jpg',
-  'duree-vie-ciment': '/images/cement-bags.jpg',
-  'ciment-blanc-maroc': '/images/products/cpj45-bags.jpg',
-  'difference-ciment-beton': '/images/construction-site.jpg',
-  'ciment-chaux-difference': '/images/grinding-process.jpg',
-  'beton-proprete-dosage': '/images/projects/infrastructure-road.jpg',
-  'ciment-chaud-zone-desertique': '/images/solar-industrial.jpg',
-  'certification-iso-ciment': '/images/quality-lab.jpg',
-  'ciment-recycle-durable': '/images/sustainability.jpg',
-};
-
-const articleMap: Record<string, number> = {
-  'choisir-ciment-projet': 1,
-  'capacite-500k-tonnes': 2,
-  'normes-ciment-maroc': 3,
-  'construction-durable-ciment': 4,
-  'projet-infrastructure-dakhla': 5,
-  'stockage-ciment-chantier': 6,
-  'cpj45-vs-cpj55-guide': 7,
-  'calculer-quantite-ciment': 8,
-  'beton-arme-maroc': 9,
-  'dakhla-pole-developpement': 10,
-  'role-gypse-ciment': 11,
-  'conditionnement-vrac': 12,
-  'construction-zone-cotiere': 13,
-  '10-ans-excellence': 14,
-  'devenir-revendeur': 15,
-  'transport-ciment-logistique': 16,
-  'rse-communaute-dakhla': 17,
-  'essais-resistance-ciment': 18,
-  'big-bag-vs-sacs': 19,
-  '5-erreurs-ciment': 20,
-  'ciment-pour-piscine': 21,
-  'ciment-etancheite': 22,
-  'duree-vie-ciment': 23,
-  'ciment-blanc-maroc': 24,
-  'difference-ciment-beton': 25,
-  'ciment-chaux-difference': 26,
-  'beton-proprete-dosage': 27,
-  'ciment-chaud-zone-desertique': 28,
-  'certification-iso-ciment': 29,
-  'ciment-recycle-durable': 30,
-};
-
-const articleSlugs = [
-  'choisir-ciment-projet',
-  'capacite-500k-tonnes',
-  'normes-ciment-maroc',
-  'construction-durable-ciment',
-  'projet-infrastructure-dakhla',
-  'stockage-ciment-chantier',
-  'cpj45-vs-cpj55-guide',
-  'calculer-quantite-ciment',
-  'beton-arme-maroc',
-  'dakhla-pole-developpement',
-  'role-gypse-ciment',
-  'conditionnement-vrac',
-  'construction-zone-cotiere',
-  '10-ans-excellence',
-  'devenir-revendeur',
-  'transport-ciment-logistique',
-  'rse-communaute-dakhla',
-  'essais-resistance-ciment',
-  'big-bag-vs-sacs',
-  '5-erreurs-ciment',
-  'ciment-pour-piscine',
-  'ciment-etancheite',
-  'duree-vie-ciment',
-  'ciment-blanc-maroc',
-  'difference-ciment-beton',
-  'ciment-chaux-difference',
-  'beton-proprete-dosage',
-  'ciment-chaud-zone-desertique',
-  'certification-iso-ciment',
-  'ciment-recycle-durable',
-];
+// Derive article data from centralized blog-data.ts
+const articleImages: Record<string, string> = Object.fromEntries(
+  BLOG_ARTICLES.map((a) => [a.slug, a.image]),
+);
+const articleMap: Record<string, number> = Object.fromEntries(
+  BLOG_ARTICLES.map((a) => [a.slug, a.number]),
+);
+const articleSlugs = BLOG_ARTICLES.map((a) => a.slug);
 
 export default function BlogArticlePageClient() {
   const t = useTranslations();
