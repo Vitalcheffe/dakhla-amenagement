@@ -47,6 +47,7 @@ const navItems: NavItem[] = [
       { key: 'constructionDakhla', href: '/construction-dakhla' },
       { key: 'fournisseur', href: '/fournisseur-ciment-maroc' },
       { key: 'lexique', href: '/lexique-ciment' },
+      { key: 'calculateur', href: '/calculateur-ciment', badge: 'Outil' },
     ],
   },
   {
@@ -152,6 +153,7 @@ export function Header({ locale }: { locale: string }) {
       constructionDakhla: 'constructionDakhla',
       fournisseur: 'fournisseur',
       lexique: 'lexique',
+      calculateur: 'calculateur',
       cimentDakhla: 'cimentDakhla',
       cimentLaayoune: 'cimentLaayoune',
       cimentBoujdour: 'cimentBoujdour',

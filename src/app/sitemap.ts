@@ -54,6 +54,7 @@ const STATIC_PAGES: PageEntry[] = [
   { path: '/ciment-sud-maroc', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/ciment-mauritanie', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/lexique-ciment', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/calculateur-ciment', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/devis', priority: 0.9, changeFrequency: 'monthly', images: ['/images/cement-bags.jpg'] },
   {
     path: '/blog',
