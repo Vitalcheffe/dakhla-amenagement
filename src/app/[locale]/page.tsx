@@ -7,6 +7,7 @@ import {
   webPageSchema,
   productSchema,
   faqSchema,
+  speakableSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { ArrowRight } from 'lucide-react';
@@ -133,6 +134,11 @@ export default async function HomePage({
       reviewCount: 64,
     }),
     faqSchema(faqItems),
+    speakableSchema({
+      path: '',
+      locale: loc,
+      cssSelectors: ['h1', '.hero-subtitle', '.stat-value', '.faq-question'],
+    }),
   ];
 
   const isFr = loc === 'fr';

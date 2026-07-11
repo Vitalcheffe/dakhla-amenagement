@@ -9,8 +9,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppButton } from '@/components/shared/WhatsAppButton';
 import { CookieConsent } from '@/components/shared/CookieConsent';
-import { buildMetadata } from '@/lib/seo';
-import { organizationSchema, websiteSchema, localBusinessSchema } from '@/lib/structured-data';
+import { buildMetadata, SITE } from '@/lib/seo';
+import { organizationSchema, websiteSchema, localBusinessSchema, siteNavigationSchema } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 
 const inter = Inter({
@@ -57,6 +57,27 @@ export default async function LocaleLayout({
   const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
   const messages = await getMessages();
 
+  // SiteNavigationElement schema — helps Google understand site structure
+  const navItems = [
+    { name: loc === 'fr' ? 'Accueil' : 'Home', url: `${SITE.url}/${loc}` },
+    { name: loc === 'fr' ? 'Produits' : 'Products', url: `${SITE.url}/${loc}/produits` },
+    { name: 'CPJ 45', url: `${SITE.url}/${loc}/cpj-45` },
+    { name: 'CPJ 55', url: `${SITE.url}/${loc}/cpj-55` },
+    { name: loc === 'fr' ? 'Ciment Maroc' : 'Cement Morocco', url: `${SITE.url}/${loc}/ciment-maroc` },
+    { name: loc === 'fr' ? 'Prix Ciment' : 'Cement Prices', url: `${SITE.url}/${loc}/prix-ciment` },
+    { name: loc === 'fr' ? 'Livraison' : 'Delivery', url: `${SITE.url}/${loc}/livraison-ciment` },
+    { name: loc === 'fr' ? 'Lexique' : 'Glossary', url: `${SITE.url}/${loc}/lexique-ciment` },
+    { name: loc === 'fr' ? 'Ciment Dakhla' : 'Cement Dakhla', url: `${SITE.url}/${loc}/ciment-dakhla` },
+    { name: loc === 'fr' ? 'Processus' : 'Process', url: `${SITE.url}/${loc}/processus` },
+    { name: loc === 'fr' ? 'À Propos' : 'About', url: `${SITE.url}/${loc}/a-propos` },
+    { name: loc === 'fr' ? 'Réalisations' : 'Projects', url: `${SITE.url}/${loc}/realisations` },
+    { name: 'Blog', url: `${SITE.url}/${loc}/blog` },
+    { name: 'FAQ', url: `${SITE.url}/${loc}/faq` },
+    { name: loc === 'fr' ? 'Témoignages' : 'Testimonials', url: `${SITE.url}/${loc}/temoignages` },
+    { name: loc === 'fr' ? 'Contact' : 'Contact', url: `${SITE.url}/${loc}/contact` },
+    { name: loc === 'fr' ? 'Devis' : 'Quote', url: `${SITE.url}/${loc}/devis` },
+  ];
+
   return (
     <html lang={locale} className={`${inter.variable} h-full antialiased`}>
       <head>
@@ -70,6 +91,7 @@ export default async function LocaleLayout({
             organizationSchema(),
             websiteSchema(loc),
             localBusinessSchema(),
+            siteNavigationSchema(navItems),
           ]}
         />
       </head>

@@ -6,6 +6,7 @@ import {
   faqSchema,
   serviceSchema,
   productSchema,
+  speakableSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
@@ -124,6 +125,11 @@ export default async function CimentMarocPage({
       reviewCount: 64,
     }),
     faqSchema(faqItems),
+    speakableSchema({
+      path: '/ciment-maroc',
+      locale: loc,
+      cssSelectors: ['h1', '.hero-subtitle', '.cement-type-card', '.faq-question'],
+    }),
   ];
 
   const features = isFr

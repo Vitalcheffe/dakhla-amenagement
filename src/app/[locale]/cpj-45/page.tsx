@@ -6,6 +6,7 @@ import {
   serviceSchema,
   productSchema,
   faqSchema,
+  speakableSchema,
 } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
@@ -280,6 +281,11 @@ export default async function Cpj45Page({
       reviewCount: 87,
     }),
     faqSchema(faqItems),
+    speakableSchema({
+      path: '/cpj-45',
+      locale: loc,
+      cssSelectors: ['h1', '.hero-title', '.product-price', '.faq-question'],
+    }),
   ];
 
   return (
