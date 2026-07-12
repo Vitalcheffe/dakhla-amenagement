@@ -85,7 +85,7 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#1B3A5C" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.ciment-dam.com" />
+        <link rel="dns-prefetch" href="https://ciment-dam.com" />
         <link rel="alternate" type="application/rss+xml" title="Blog — Dakhla Aménagement Ciment Maroc" href="/feed.xml" />
         <JsonLdScript
           schema={[

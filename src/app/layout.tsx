@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ciment-dam.com'),
+  metadataBase: new URL('https://ciment-dam.com'),
   title: {
     default: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD',
     template: '%s | Dakhla Aménagement et Développement — Ciment Maroc',

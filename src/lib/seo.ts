@@ -20,7 +20,7 @@ export const SITE = {
   shortName: 'DAD',
   legalName: 'Société Dakhla Aménagement et Développement S.A.',
   alternateName: 'Dakhla Aménagement et Développement — SDAD',
-  url: 'https://www.ciment-dam.com',
+  url: 'https://ciment-dam.com',
   defaultLocale: 'fr' as const,
   locales: ['fr', 'en'] as const,
   phone: '+212658265685',

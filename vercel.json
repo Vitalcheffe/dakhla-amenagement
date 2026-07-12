@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.ciment-dam.com"
+        }
+      ],
+      "destination": "https://ciment-dam.com/:path*",
+      "permanent": true
+    }
+  ]
+}

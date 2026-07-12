@@ -64,27 +64,27 @@ export default async function Page({
   const collectionItems = [
     {
       name: loc === 'fr' ? 'Usine de broyage' : 'Grinding plant',
-      url: `https://www.ciment-dam.com/${loc}/galerie#factory`,
+      url: `https://ciment-dam.com/${loc}/galerie#factory`,
     },
     {
       name: loc === 'fr' ? 'Laboratoire qualité' : 'Quality lab',
-      url: `https://www.ciment-dam.com/${loc}/galerie#lab`,
+      url: `https://ciment-dam.com/${loc}/galerie#lab`,
     },
     {
       name: loc === 'fr' ? 'Produits ciment' : 'Cement products',
-      url: `https://www.ciment-dam.com/${loc}/galerie#products`,
+      url: `https://ciment-dam.com/${loc}/galerie#products`,
     },
     {
       name: loc === 'fr' ? 'Livraison & logistique' : 'Delivery & logistics',
-      url: `https://www.ciment-dam.com/${loc}/galerie#delivery`,
+      url: `https://ciment-dam.com/${loc}/galerie#delivery`,
     },
     {
       name: loc === 'fr' ? 'Chantiers' : 'Construction sites',
-      url: `https://www.ciment-dam.com/${loc}/galerie#projects`,
+      url: `https://ciment-dam.com/${loc}/galerie#projects`,
     },
     {
       name: loc === 'fr' ? 'Dakhla & région' : 'Dakhla & region',
-      url: `https://www.ciment-dam.com/${loc}/galerie#dakhla`,
+      url: `https://ciment-dam.com/${loc}/galerie#dakhla`,
     },
   ];
 
