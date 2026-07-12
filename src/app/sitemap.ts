@@ -58,6 +58,8 @@ const STATIC_PAGES: PageEntry[] = [
   { path: '/ciment-mauritanie', priority: 0.75, changeFrequency: 'monthly' },
   { path: '/lexique-ciment', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/calculateur-ciment', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/calculateur-resistance', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/expertise-certifications', priority: 0.85, changeFrequency: 'monthly' },
   { path: '/devis', priority: 0.9, changeFrequency: 'monthly', images: ['/images/cement-bags.jpg'] },
   {
     path: '/blog',
