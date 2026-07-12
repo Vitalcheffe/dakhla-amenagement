@@ -13,8 +13,8 @@ export async function generateMetadata({
 
   const title =
     loc === 'fr'
-      ? 'Investisseurs — Dakhla Aménagement S.A. | Ciment Maroc, Croissance BTP'
-      : 'Investors — Dakhla Aménagement S.A. | Morocco Cement, BTP Growth';
+      ? 'Investisseurs — Dakhla Aménagement et Développement | Ciment Maroc, Croissance BTP'
+      : 'Investors — Dakhla Aménagement et Développement | Morocco Cement, BTP Growth';
 
   const description =
     loc === 'fr'
@@ -57,8 +57,8 @@ export default async function Page({
 
   const name =
     loc === 'fr'
-      ? 'Investisseurs — Dakhla Aménagement S.A.'
-      : 'Investors — Dakhla Aménagement S.A.';
+      ? 'Investisseurs — Dakhla Aménagement et Développement'
+      : 'Investors — Dakhla Aménagement et Développement';
   const description =
     loc === 'fr'
       ? 'Information investisseurs : marché du ciment au Maroc, croissance BTP Sud Maroc, performance financière, opportunités d\'investissement cimenterie.'

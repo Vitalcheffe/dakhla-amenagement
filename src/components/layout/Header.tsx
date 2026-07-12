@@ -184,7 +184,7 @@ export function Header({ locale }: { locale: string }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={isHome && !scrolled ? '/images/logo-dam-white.svg' : '/images/logo-dam.svg'}
-              alt="DAM - Dakhla Aménagement"
+              alt="DAD - Dakhla Aménagement et Développement"
               className="h-10 md:h-12 w-auto transition-all duration-300"
             />
           </Link>
@@ -316,7 +316,7 @@ export function Header({ locale }: { locale: string }) {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/logo-dam.svg"
-                      alt="DAM - Dakhla Aménagement"
+                      alt="DAD - Dakhla Aménagement et Développement"
                       className="h-9 w-auto"
                     />
                   </div>

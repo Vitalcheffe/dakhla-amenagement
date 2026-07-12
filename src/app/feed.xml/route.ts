@@ -32,7 +32,7 @@ export async function GET() {
     <title>${escapeXml(SITE.name)} — Blog Ciment Maroc</title>
     <link>${SITE.url}/fr/blog</link>
     <atom:link href="${SITE.url}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>Articles experts sur le ciment au Maroc : CPJ 45, CPJ 55, prix, normes, construction durable. Dakhla Aménagement S.A.</description>
+    <description>Articles experts sur le ciment au Maroc : CPJ 45, CPJ 55, prix, normes, construction durable. Dakhla Aménagement et Développement</description>
     <language>fr</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <managingEditor>${SITE.email} (${SITE.name})</managingEditor>

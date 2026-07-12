@@ -16,10 +16,10 @@ import type { Metadata } from 'next';
 /* ------------------------------------------------------------------ */
 
 export const SITE = {
-  name: 'Dakhla Aménagement S.A.',
-  shortName: 'DAM',
-  legalName: 'Dakhla Aménagement S.A.',
-  alternateName: 'DAM Ciment Maroc',
+  name: 'Dakhla Aménagement et Développement',
+  shortName: 'DAD',
+  legalName: 'Société Dakhla Aménagement et Développement S.A.',
+  alternateName: 'Dakhla Aménagement et Développement — SDAD',
   url: 'https://www.ciment-dam.com',
   defaultLocale: 'fr' as const,
   locales: ['fr', 'en'] as const,
@@ -69,18 +69,28 @@ export const SITE = {
 
 export const KEYWORDS = {
   core: [
+    'Dakhla Aménagement et Développement',
+    'SDAD',
+    'Société Dakhla Aménagement et Développement',
     'ciment Maroc',
     'ciment',
     'cimenterie Maroc',
     'ciment Dakhla',
     'Dakhla Aménagement',
-    'DAM ciment',
+    'DAD ciment',
     'producteur ciment Maroc',
     'fabricant ciment Maroc',
     'fournisseur ciment Maroc',
     'centre de broyage Maroc',
     'broyage clinker Maroc',
     'usine ciment Maroc',
+    'génie civil Dakhla',
+    'construction Dakhla',
+    'aménagement urbain Dakhla',
+    'développement local Dakhla',
+    'assainissement Dakhla',
+    'voirie Dakhla',
+    'terrassement Dakhla',
   ],
   products: [
     'CPJ 45 Maroc',

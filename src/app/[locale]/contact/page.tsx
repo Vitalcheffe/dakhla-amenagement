@@ -22,7 +22,7 @@ export async function generateMetadata({
       path: '/contact',
       title: 'Contact — Dakhla Aménagement Cement Morocco | Phone, Email, Address',
       description:
-        'Contact Dakhla Aménagement S.A. in Dakhla, Morocco. Phone +212 658-265685, email contact@ciment-dam.com. Address: Quartier Lassargua, Avenue El Walae, Dakhla. Free cement quote.',
+        'Contact Dakhla Aménagement et Développement in Dakhla, Morocco. Phone +212 658-265685, email contact@ciment-dam.com. Address: Quartier Lassargua, Avenue El Walae, Dakhla. Free cement quote.',
       keywords: [
         ...KEYWORDS.core,
         'contact Dakhla Aménagement',
@@ -42,7 +42,7 @@ export async function generateMetadata({
     path: '/contact',
     title: 'Contact — Dakhla Aménagement Ciment Maroc | Téléphone, Email, Adresse',
     description:
-      'Contactez Dakhla Aménagement S.A. à Dakhla, Maroc. Téléphone +212 658-265685, email contact@ciment-dam.com. Adresse: Quartier Lassargua, Avenue El Walae, Dakhla. Devis ciment gratuit.',
+      'Contactez Dakhla Aménagement et Développement à Dakhla, Maroc. Téléphone +212 658-265685, email contact@ciment-dam.com. Adresse: Quartier Lassargua, Avenue El Walae, Dakhla. Devis ciment gratuit.',
     keywords: [
       ...KEYWORDS.core,
       'contact Dakhla Aménagement',
@@ -77,8 +77,8 @@ export default async function ContactPage({
           : 'Contact — Dakhla Aménagement Cement Morocco',
       description:
         loc === 'fr'
-          ? 'Contactez Dakhla Aménagement S.A. à Dakhla, Maroc. Téléphone +212 658-265685, email contact@ciment-dam.com. Adresse: Quartier Lassargua, Avenue El Walae, Dakhla. Devis ciment gratuit.'
-          : 'Contact Dakhla Aménagement S.A. in Dakhla, Morocco. Phone +212 658-265685, email contact@ciment-dam.com. Address: Quartier Lassargua, Avenue El Walae, Dakhla. Free cement quote.',
+          ? 'Contactez Dakhla Aménagement et Développement à Dakhla, Maroc. Téléphone +212 658-265685, email contact@ciment-dam.com. Adresse: Quartier Lassargua, Avenue El Walae, Dakhla. Devis ciment gratuit.'
+          : 'Contact Dakhla Aménagement et Développement in Dakhla, Morocco. Phone +212 658-265685, email contact@ciment-dam.com. Address: Quartier Lassargua, Avenue El Walae, Dakhla. Free cement quote.',
       path: '/contact',
       locale: loc,
       breadcrumbs,

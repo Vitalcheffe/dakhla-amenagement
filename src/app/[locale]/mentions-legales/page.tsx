@@ -13,13 +13,13 @@ export async function generateMetadata({
 
   const title =
     loc === 'fr'
-      ? 'Mentions Légales — Dakhla Aménagement S.A. | Ciment Maroc'
-      : 'Legal Notice — Dakhla Aménagement S.A. | Morocco Cement';
+      ? 'Mentions Légales — Dakhla Aménagement et Développement | Ciment Maroc'
+      : 'Legal Notice — Dakhla Aménagement et Développement | Morocco Cement';
 
   const description =
     loc === 'fr'
-      ? 'Mentions légales de Dakhla Aménagement S.A. — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
-      : 'Legal notice for Dakhla Aménagement S.A. — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
+      ? 'Mentions légales de Dakhla Aménagement et Développement — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
+      : 'Legal notice for Dakhla Aménagement et Développement — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
 
   // Minimal keywords for legal page (low priority SEO)
   const keywords =
@@ -47,12 +47,12 @@ export default async function Page({
 
   const name =
     loc === 'fr'
-      ? 'Mentions Légales — Dakhla Aménagement S.A.'
-      : 'Legal Notice — Dakhla Aménagement S.A.';
+      ? 'Mentions Légales — Dakhla Aménagement et Développement'
+      : 'Legal Notice — Dakhla Aménagement et Développement';
   const description =
     loc === 'fr'
-      ? 'Mentions légales de Dakhla Aménagement S.A. — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
-      : 'Legal notice for Dakhla Aménagement S.A. — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
+      ? 'Mentions légales de Dakhla Aménagement et Développement — éditeur du site ciment-dam.com. Informations légales, propriété intellectuelle, RGPD, gestion des cookies.'
+      : 'Legal notice for Dakhla Aménagement et Développement — publisher of ciment-dam.com. Legal information, intellectual property, GDPR, cookie management.';
 
   const breadcrumbs = [
     {

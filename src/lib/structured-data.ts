@@ -34,7 +34,7 @@ export function organizationSchema(): JsonLd {
     },
     image: `${SITE.url}${SITE.ogImage}`,
     description:
-      'Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla — livraison vrac, sacs 50kg, big bag dans tout le Sud marocain et la Mauritanie.',
+      'Société Dakhla Aménagement et Développement (SDAD) — Producteur de ciment CPJ 45 et CPJ 55, travaux de génie civil, bâtiments d\'habitation et industriels, terrassements généraux, assainissement, voiries, réseaux divers, routes. Basé à Dakhla, Maroc.',
     foundingDate: SITE.founded,
     dissolutionDate: undefined,
     founders: undefined,
@@ -127,6 +127,17 @@ export function organizationSchema(): JsonLd {
       'NM 10.1.004',
       'EN 197-1',
       'Construction au Maroc',
+      'Travaux de génie civil',
+      'Bâtiments d\'habitation et industriels',
+      'Terrassements généraux',
+      'Assainissement',
+      'Voiries',
+      'Réseaux divers',
+      'Routes',
+      'Drainage des eaux pluviales',
+      'Aménagement urbain',
+      'Développement local',
+      'Systèmes autonomes d\'assainissement',
     ],
   };
 }

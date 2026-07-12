@@ -18,8 +18,8 @@ export async function generateMetadata({
 
   const description =
     loc === 'fr'
-      ? 'Communiqués de presse, kit média, contacts presse de Dakhla Aménagement S.A. Actualités de la cimenterie au Maroc, croissance, investissements, RSE.'
-      : 'Press releases, media kit, press contacts for Dakhla Aménagement S.A. Cement industry news in Morocco, growth, investments, CSR.';
+      ? 'Communiqués de presse, kit média, contacts presse de Dakhla Aménagement et Développement Actualités de la cimenterie au Maroc, croissance, investissements, RSE.'
+      : 'Press releases, media kit, press contacts for Dakhla Aménagement et Développement Cement industry news in Morocco, growth, investments, CSR.';
 
   const keywords =
     loc === 'fr'
@@ -62,8 +62,8 @@ export default async function Page({
       : 'Press Room — Dakhla Aménagement';
   const description =
     loc === 'fr'
-      ? 'Communiqués de presse, kit média, contacts presse de Dakhla Aménagement S.A. Actualités de la cimenterie au Maroc.'
-      : 'Press releases, media kit, press contacts for Dakhla Aménagement S.A. Cement industry news in Morocco.';
+      ? 'Communiqués de presse, kit média, contacts presse de Dakhla Aménagement et Développement Actualités de la cimenterie au Maroc.'
+      : 'Press releases, media kit, press contacts for Dakhla Aménagement et Développement Cement industry news in Morocco.';
 
   const breadcrumbs = [
     { name: loc === 'fr' ? 'Presse' : 'Press', path: '/presse' },

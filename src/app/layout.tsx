@@ -4,13 +4,13 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.ciment-dam.com'),
   title: {
-    default: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement',
-    template: '%s | Dakhla Aménagement — Ciment Maroc',
+    default: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD',
+    template: '%s | Dakhla Aménagement et Développement — Ciment Maroc',
   },
-  applicationName: 'Dakhla Aménagement S.A.',
-  authors: [{ name: 'Dakhla Aménagement S.A.' }],
-  creator: 'Dakhla Aménagement S.A.',
-  publisher: 'Dakhla Aménagement S.A.',
+  applicationName: 'Dakhla Aménagement et Développement',
+  authors: [{ name: 'Dakhla Aménagement et Développement' }],
+  creator: 'Dakhla Aménagement et Développement',
+  publisher: 'Dakhla Aménagement et Développement',
 };
 
 export default function RootLayout({

@@ -1248,7 +1248,7 @@ function StepSummary({ quote, calc, quoteNumber, t }: { quote: QuoteData; calc: 
           <div className="bg-gradient-to-r from-[#1B3A5C] to-[#2D5F8A] px-6 py-6">
             <div className="flex items-start justify-between">
               <div>
-                <h3 className="text-white font-extrabold text-xl tracking-wide">Dakhla Aménagement S.A.</h3>
+                <h3 className="text-white font-extrabold text-xl tracking-wide">Dakhla Aménagement et Développement</h3>
                 <p className="text-white/50 text-xs mt-1">Ciment de Qualité au Maroc</p>
                 <div className="flex items-center gap-3 mt-3">
                   <span className="inline-flex items-center gap-1 text-[10px] text-white/40">

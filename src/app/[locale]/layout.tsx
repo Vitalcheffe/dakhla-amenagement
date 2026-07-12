@@ -33,12 +33,12 @@ export async function generateMetadata({
     path: '',
     title:
       loc === 'fr'
-        ? 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement | Livraison Sud Maroc'
-        : 'Cement Morocco — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+        ? 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD'
+        : 'Cement Morocco — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement',
     description:
       loc === 'fr'
-        ? 'Dakhla Aménagement S.A. — Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag. Prix ciment Maroc, devis gratuit.'
-        : 'Dakhla Aménagement S.A. — CPJ 45 and CPJ 55 cement producer in Morocco. Clinker grinding plant in Dakhla. Bulk, 50kg bags, big bag delivery. Free quote.',
+        ? 'Dakhla Aménagement et Développement — Producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag. Prix ciment Maroc, devis gratuit.'
+        : 'Dakhla Aménagement et Développement — CPJ 45 and CPJ 55 cement producer in Morocco. Clinker grinding plant in Dakhla. Bulk, 50kg bags, big bag delivery. Free quote.',
   });
 }
 

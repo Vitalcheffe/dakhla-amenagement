@@ -26,9 +26,9 @@ const VIDEOS: VideoEntry[] = [
     titleFr: 'Dakhla Aménagement — Ciment de Qualité au Maroc',
     titleEn: 'Dakhla Aménagement — Quality Cement in Morocco',
     descFr:
-      "Vidéo de présentation de Dakhla Aménagement S.A., producteur de ciment CPJ 45 et CPJ 55 à Dakhla, Maroc. Centre de broyage de clinker moderne, livraison vrac, sacs et big bag dans tout le Sud marocain.",
+      "Vidéo de présentation de Dakhla Aménagement et Développement, producteur de ciment CPJ 45 et CPJ 55 à Dakhla, Maroc. Centre de broyage de clinker moderne, livraison vrac, sacs et big bag dans tout le Sud marocain.",
     descEn:
-      'Presentation video of Dakhla Aménagement S.A., CPJ 45 and CPJ 55 cement producer in Dakhla, Morocco. Modern clinker grinding plant, bulk, bags and big bag delivery across Southern Morocco.',
+      'Presentation video of Dakhla Aménagement et Développement, CPJ 45 and CPJ 55 cement producer in Dakhla, Morocco. Modern clinker grinding plant, bulk, bags and big bag delivery across Southern Morocco.',
     thumbnail: '/images/og-banner.jpg',
     duration: 30,
     publicationDate: '2024-01-15',
