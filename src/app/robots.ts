@@ -28,7 +28,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/'],
       },
     ],
-    sitemap: [`${SITE.url}/sitemap-index.xml`, `${SITE.url}/sitemap.xml`, `${SITE.url}/video-sitemap.xml`],
+    sitemap: [`${SITE.url}/sitemap-priority.xml`, `${SITE.url}/sitemap-index.xml`, `${SITE.url}/sitemap.xml`, `${SITE.url}/video-sitemap.xml`],
     host: SITE.url,
   };
 }

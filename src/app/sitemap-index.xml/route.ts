@@ -11,6 +11,10 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
+    <loc>${SITE.url}/sitemap-priority.xml</loc>
+    <lastmod>${today}</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>${SITE.url}/sitemap.xml</loc>
     <lastmod>${today}</lastmod>
   </sitemap>

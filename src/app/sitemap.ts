@@ -149,13 +149,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // Programmatic city pages — 5 types × 82 cities × 2 locales
+  // Programmatic city pages — reduced priority for crawl budget management
   const CITY_PAGE_TYPES = [
-    { prefix: '/ciment-ville', priority: 0.85 },
-    { prefix: '/prix-ciment-ville', priority: 0.8 },
-    { prefix: '/livraison-ciment-ville', priority: 0.75 },
-    { prefix: '/cpj45-ville', priority: 0.8 },
-    { prefix: '/cpj55-ville', priority: 0.8 },
+    { prefix: '/ciment-ville', priority: 0.4 },
+    { prefix: '/prix-ciment-ville', priority: 0.3 },
+    { prefix: '/livraison-ciment-ville', priority: 0.3 },
+    { prefix: '/cpj45-ville', priority: 0.3 },
+    { prefix: '/cpj55-ville', priority: 0.3 },
   ];
   for (const locale of SITE.locales) {
     for (const pageType of CITY_PAGE_TYPES) {
@@ -184,7 +184,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${SITE.url}/${locale}/ciment-pour/${usage.slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as ChangeFreq,
-        priority: 0.75,
+        priority: 0.3,
         alternates: {
           languages: {
             fr: `${SITE.url}/fr/ciment-pour/${usage.slug}`,
