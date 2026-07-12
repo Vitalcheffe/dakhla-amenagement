@@ -152,7 +152,8 @@ export function websiteSchema(locale: 'fr' | 'en'): JsonLd {
     '@type': 'WebSite',
     '@id': `${SITE.url}/#website`,
     url: SITE.url,
-    name: locale === 'fr' ? `${SITE.name} — Ciment Maroc` : `${SITE.name} — Morocco Cement`,
+    name: SITE.name,
+    alternateName: 'SDAD',
     description:
       locale === 'fr'
         ? 'Producteur de ciment CPJ 45 et CPJ 55 à Dakhla, Maroc. Devis gratuit, livraison vrac, sacs et big bag.'
