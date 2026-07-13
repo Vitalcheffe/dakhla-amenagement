@@ -26,6 +26,7 @@ const navItems: NavItem[] = [
     key: 'solutions',
     href: '/produits',
     dropdownItems: [
+      { key: 'cpj35', href: '/cpj-35', badge: '1 400 DH/T' },
       { key: 'cpj45', href: '/cpj-45', badge: '1 500 DH/T' },
       { key: 'cpj55', href: '/cpj-55', badge: '1 600 DH/T' },
       { key: 'cimentVrac', href: '/ciment-vrac' },
@@ -138,6 +139,7 @@ export function Header({ locale }: { locale: string }) {
   // Translation key mapping for dropdown items
   const getDropdownLabel = (key: string): string => {
     const keyMap: Record<string, string> = {
+      cpj35: 'cpj35',
       cpj45: 'cpj45',
       cpj55: 'cpj55',
       cimentVrac: 'cimentVrac',

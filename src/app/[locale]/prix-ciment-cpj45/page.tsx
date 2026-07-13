@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { PriceTypeLinks } from '@/components/shared/PriceTypeLinks';
 import {
   CheckCircle,
   ArrowRight,
@@ -649,6 +650,7 @@ export default async function PrixCimentCpj45Page({
       </section>
 
       <RelatedLinks links={relatedLinks} locale={locale} title={isFr ? 'Pages liées' : 'Related pages'} />
+      <PriceTypeLinks currentType="CPJ 45" locale={locale} />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Demandez votre devis CPJ 45 gratuit' : 'Request your free CPJ 45 quote'}
