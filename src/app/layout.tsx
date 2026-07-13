@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   },
   category: 'Construction & Cement',
   classification: 'Building Materials, Cement, Construction',
+  icons: {
+    icon: '/images/logo-dam.svg',
+    apple: '/images/logo-dam.svg',
+  },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({

@@ -1,62 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" width="180" height="160">
-  <!-- DAM Logo — 3 buildings, minimalist -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140">
+  <!-- DAM Logo — transparent background, minimalist 3 buildings -->
 
-  <!-- Left building (short) -->
-  <rect x="25" y="45" width="28" height="60" fill="#1B3A5C"/>
-  <!-- Left windows -->
-  <rect x="30" y="52" width="7" height="5" fill="white"/>
-  <rect x="30" y="62" width="7" height="5" fill="white"/>
-  <rect x="30" y="72" width="7" height="5" fill="white"/>
-  <rect x="30" y="82" width="7" height="5" fill="white"/>
-  <rect x="41" y="52" width="7" height="5" fill="white"/>
-  <rect x="41" y="62" width="7" height="5" fill="white"/>
-  <rect x="41" y="72" width="7" height="5" fill="white"/>
-  <rect x="41" y="82" width="7" height="5" fill="white"/>
+  <!-- Building 1 (left, short) -->
+  <rect x="20" y="50" width="25" height="50" fill="#1B3A5C"/>
+  <rect x="25" y="56" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="64" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="72" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="80" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="56" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="64" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="72" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="80" width="6" height="4" fill="#fff"/>
 
-  <!-- Middle building (tallest) -->
-  <rect x="62" y="25" width="40" height="80" fill="#1B3A5C"/>
-  <!-- Middle windows row 1 -->
-  <rect x="68" y="32" width="7" height="5" fill="white"/>
-  <rect x="68" y="42" width="7" height="5" fill="white"/>
-  <rect x="68" y="52" width="7" height="5" fill="white"/>
-  <rect x="68" y="62" width="7" height="5" fill="white"/>
-  <rect x="68" y="72" width="7" height="5" fill="white"/>
-  <rect x="68" y="82" width="7" height="5" fill="white"/>
-  <rect x="68" y="92" width="7" height="5" fill="white"/>
-  <!-- Middle windows row 2 -->
-  <rect x="79" y="32" width="7" height="5" fill="white"/>
-  <rect x="79" y="42" width="7" height="5" fill="white"/>
-  <rect x="79" y="52" width="7" height="5" fill="white"/>
-  <rect x="79" y="62" width="7" height="5" fill="white"/>
-  <rect x="79" y="72" width="7" height="5" fill="white"/>
-  <rect x="79" y="82" width="7" height="5" fill="white"/>
-  <rect x="79" y="92" width="7" height="5" fill="white"/>
-  <!-- Middle windows row 3 -->
-  <rect x="90" y="32" width="7" height="5" fill="white"/>
-  <rect x="90" y="42" width="7" height="5" fill="white"/>
-  <rect x="90" y="52" width="7" height="5" fill="white"/>
-  <rect x="90" y="62" width="7" height="5" fill="white"/>
-  <rect x="90" y="72" width="7" height="5" fill="white"/>
-  <rect x="90" y="82" width="7" height="5" fill="white"/>
-  <rect x="90" y="92" width="7" height="5" fill="white"/>
+  <!-- Building 2 (center, tall) -->
+  <rect x="55" y="25" width="40" height="75" fill="#1B3A5C"/>
+  <rect x="61" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="87" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="87" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="87" width="6" height="4" fill="#fff"/>
 
-  <!-- Right building (medium) -->
-  <rect x="111" y="35" width="32" height="70" fill="#1B3A5C"/>
-  <!-- Right windows -->
-  <rect x="117" y="42" width="7" height="5" fill="white"/>
-  <rect x="117" y="52" width="7" height="5" fill="white"/>
-  <rect x="117" y="62" width="7" height="5" fill="white"/>
-  <rect x="117" y="72" width="7" height="5" fill="white"/>
-  <rect x="117" y="82" width="7" height="5" fill="white"/>
-  <rect x="128" y="42" width="7" height="5" fill="white"/>
-  <rect x="128" y="52" width="7" height="5" fill="white"/>
-  <rect x="128" y="62" width="7" height="5" fill="white"/>
-  <rect x="128" y="72" width="7" height="5" fill="white"/>
-  <rect x="128" y="82" width="7" height="5" fill="white"/>
+  <!-- Building 3 (right, medium) -->
+  <rect x="105" y="38" width="30" height="62" fill="#1B3A5C"/>
+  <rect x="111" y="44" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="52" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="60" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="68" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="76" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="84" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="44" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="52" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="60" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="68" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="76" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="84" width="6" height="4" fill="#fff"/>
 
-  <!-- Base -->
-  <rect x="20" y="105" width="130" height="6" fill="#1B3A5C"/>
+  <!-- Base line -->
+  <rect x="15" y="100" width="125" height="5" fill="#1B3A5C"/>
 
   <!-- DAM text -->
-  <text x="84" y="145" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#1B3A5C" text-anchor="middle" letter-spacing="4">DAM</text>
+  <text x="77" y="128" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#1B3A5C" text-anchor="middle" letter-spacing="3">DAM</text>
 </svg>

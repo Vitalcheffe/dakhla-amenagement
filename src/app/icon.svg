@@ -1,42 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- DAM Icon for favicon - Navy circle with building + DAM text -->
-  <circle cx="100" cy="100" r="100" fill="#1B3A5C"/>
-  
-  <!-- Left Tower -->
-  <rect x="40" y="30" width="20" height="80" fill="#E8B84B" rx="1"/>
-  <rect x="44" y="36" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="44" y="44" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="44" y="52" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="51" y="36" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="51" y="44" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="51" y="52" width="5" height="4" fill="white" rx="0.5"/>
-  
-  <!-- Middle Tower (tallest) -->
-  <rect x="75" y="15" width="25" height="95" fill="#E8B84B" rx="1"/>
-  <rect x="80" y="21" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="80" y="29" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="80" y="37" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="80" y="45" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="89" y="21" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="89" y="29" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="89" y="37" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="89" y="45" width="5" height="4" fill="white" rx="0.5"/>
-  
-  <!-- Right Tower -->
-  <rect x="115" y="22" width="22" height="88" fill="#E8B84B" rx="1"/>
-  <rect x="120" y="28" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="120" y="36" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="120" y="44" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="128" y="28" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="128" y="36" width="5" height="4" fill="white" rx="0.5"/>
-  <rect x="128" y="44" width="5" height="4" fill="white" rx="0.5"/>
-  
-  <!-- Base -->
-  <rect x="35" y="105" width="110" height="8" fill="#E8B84B" rx="1"/>
-  
-  <!-- Foundation arc -->
-  <path d="M 35 113 Q 90 135 145 113" fill="none" stroke="#E8B84B" stroke-width="3" stroke-linecap="round"/>
-  
-  <!-- Text "DAM" -->
-  <text x="100" y="162" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="5">DAM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140">
+  <!-- DAM favicon — same as logo, transparent background -->
+
+  <rect x="20" y="50" width="25" height="50" fill="#1B3A5C"/>
+  <rect x="25" y="56" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="64" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="72" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="80" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="56" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="64" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="72" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="80" width="6" height="4" fill="#fff"/>
+
+  <rect x="55" y="25" width="40" height="75" fill="#1B3A5C"/>
+  <rect x="61" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="87" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="87" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="31" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="87" width="6" height="4" fill="#fff"/>
+
+  <rect x="105" y="38" width="30" height="62" fill="#1B3A5C"/>
+  <rect x="111" y="44" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="52" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="60" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="68" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="76" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="84" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="44" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="52" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="60" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="68" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="76" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="84" width="6" height="4" fill="#fff"/>
+
+  <rect x="15" y="100" width="125" height="5" fill="#1B3A5C"/>
+
+  <text x="77" y="128" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold" fill="#1B3A5C" text-anchor="middle" letter-spacing="3">DAM</text>
 </svg>
