@@ -280,6 +280,8 @@ export function buildMetadata({
     openGraph,
     twitter: {
       card: 'summary_large_image',
+      site: '@SDAD_Dakhla',
+      creator: '@SDAD_Dakhla',
       title,
       description,
       images: [imageUrl],
