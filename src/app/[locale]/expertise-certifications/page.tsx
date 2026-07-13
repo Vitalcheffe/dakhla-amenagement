@@ -22,8 +22,8 @@ export async function generateMetadata({
     locale: loc,
     path: '/expertise-certifications',
     title: loc === 'fr'
-      ? 'Expertise & Certifications — NM 10.1.004, EN 197-1, ISO 9001 | SDAD'
-      : 'Expertise & Certifications — NM 10.1.004, EN 197-1, ISO 9001 | SDAD',
+      ? 'Certifications Ciment — NM/EN/ISO | SDAD'
+      : 'Certifications Ciment — NM/EN/ISO | SDAD',
     description: loc === 'fr'
       ? "Expertise reconnue de Dakhla Aménagement et Développement: certifications NM 10.1.004, EN 197-1, ISO 9001. Laboratoire qualité, contrôle chaque lot. Équipe d'ingénieurs expérimentés."
       : "Recognized expertise of Dakhla Aménagement et Développement: NM 10.1.004, EN 197-1, ISO 9001 certifications. Quality lab, batch control. Experienced engineering team.",

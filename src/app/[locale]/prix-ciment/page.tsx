@@ -23,7 +23,7 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/prix-ciment',
-      title: 'Cement Prices Morocco 2025 — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+      title: 'Cement Prices Morocco 2026 — CPJ 45 & CPJ 55 | Dakhla Aménagement',
       description:
         'Cement prices in Morocco: CPJ 45 from 1,500 DH/T, CPJ 55 from 1,600 DH/T. Bulk, 50kg bags, big bag pricing. Free quote for Southern Morocco delivery. DAM cement.',
       keywords: [...KEYWORDS.pricing, 'cement price Morocco', 'CPJ 45 price', 'CPJ 55 price'],
@@ -33,10 +33,10 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/prix-ciment',
-    title: 'Prix Ciment Maroc 2025 — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+    title: 'Prix Ciment Maroc 2026 — CPJ 35/45/55 | SDAD — CPJ 45 & CPJ 55 | Dakhla Aménagement',
     description:
       'Prix du ciment au Maroc : CPJ 45 dès 1 500 DH/T, CPJ 55 dès 1 600 DH/T. Tarifs vrac, sacs 50kg, big bag. Devis gratuit pour livraison Sud Maroc. Ciment DAM.',
-    keywords: [...KEYWORDS.pricing, 'prix ciment Maroc 2025', 'tarif ciment', 'ciment pas cher'],
+    keywords: [...KEYWORDS.pricing, 'prix ciment Maroc 2026', 'tarif ciment', 'ciment pas cher'],
   });
 }
 
@@ -74,7 +74,7 @@ export default async function PrixCimentPage({
 
   const schemas = [
     webPageSchema({
-      name: isFr ? 'Prix Ciment Maroc 2025' : 'Cement Prices Morocco 2025',
+      name: isFr ? 'Prix Ciment Maroc 2026 — CPJ 35/45/55 | SDAD' : 'Cement Prices Morocco 2026',
       description: isFr
         ? 'Prix du ciment CPJ 45 et CPJ 55 au Maroc. Tarifs vrac, sacs, big bag.'
         : 'CPJ 45 and CPJ 55 cement prices in Morocco. Bulk, bags, big bag rates.',
@@ -133,7 +133,7 @@ export default async function PrixCimentPage({
       <section className="bg-gradient-to-br from-[#1B3A5C] to-[#0f1f33] text-white py-20 md:py-28">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <span className="inline-block px-4 py-1.5 bg-[#E8B84B]/20 text-[#E8B84B] text-sm font-medium rounded-full mb-6">
-            {isFr ? 'Tarifs 2025' : '2025 Rates'}
+            {isFr ? 'Tarifs 2026' : '2026 Rates'}
           </span>
           <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.1] mb-6">
             {isFr ? 'Prix du ciment au Maroc' : 'Cement prices in Morocco'}

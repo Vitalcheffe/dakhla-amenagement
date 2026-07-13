@@ -49,7 +49,7 @@ const faqItems = [
       'Au Maroc, le choix du ciment dépend de votre projet : CPJ 45 (45 MPa) pour le béton armé courant, dallages et fondations ; CPJ 55 (55 MPa) pour les grands ouvrages de génie civil, infrastructures et zones côtières. Dakhla Aménagement produit les deux qualités conformes à la norme NM 10.1.004.',
   },
   {
-    question: 'Quel est le prix du ciment au Maroc en 2025 ?',
+    question: 'Quel est le prix du ciment au Maroc en 2026 ?',
     answer:
       'Le prix du ciment au Maroc varie selon le type et le conditionnement : CPJ 45 à partir de 1 500 DH/T et CPJ 55 à partir de 1 600 DH/T chez Dakhla Aménagement. Le conditionnement en vrac, sacs 50kg ou big bag influence le prix final. Demandez un devis pour un tarif personnalisé.',
   },
@@ -169,7 +169,7 @@ export default async function CimentMarocPage({
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="max-w-4xl">
             <span className="inline-block px-4 py-1.5 bg-[#E8B84B]/20 text-[#E8B84B] text-sm font-medium rounded-full mb-6">
-              {isFr ? 'Guide Ciment Maroc 2025' : 'Morocco Cement Guide 2025'}
+              {isFr ? 'Guide Ciment Maroc 2026' : 'Morocco Cement Guide 2026'}
             </span>
             <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.1] mb-6">
               {isFr ? 'Ciment Maroc — Tout ce qu\'il faut savoir' : 'Cement Morocco — Everything you need to know'}

@@ -25,9 +25,9 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '',
-      title: 'Cement Morocco — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD',
+      title: 'Cement Morocco — CPJ 35/45/55, Prices & Quote | SDAD',
       description:
-        'Dakhla Aménagement et Développement — leading CPJ 45 and CPJ 55 cement producer in Morocco. Clinker grinding plant in Dakhla. Bulk, 50kg bags, big bag delivery across Southern Morocco and Mauritania. Free quote.',
+        'SDAD — CPJ 35, 45, 55 cement producer in Morocco. Grinding plant in Dakhla. Bulk, 50kg bags, big bag. Prices from 70 DH/bag. Free quote.',
       keywords: [
         'cement Morocco',
         'CPJ 45 Morocco',
@@ -45,9 +45,9 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '',
-    title: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD',
+    title: 'Ciment Maroc — CPJ 35/45/55, Prix & Devis | SDAD',
     description:
-      'Dakhla Aménagement et Développement — producteur de ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag dans tout le Sud marocain et la Mauritanie. Prix ciment Maroc dès 1 500 DH/T. Devis gratuit.',
+      'Ciment CPJ 35, 45, 55 au Maroc. Prix dès 70 DH/sac. Centre de broyage Dakhla. Livraison vrac, sacs, big bag. SDAD — devis gratuit sous 24h.',
     keywords: [
       ...KEYWORDS.core,
       ...KEYWORDS.products,

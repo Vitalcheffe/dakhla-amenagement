@@ -497,8 +497,8 @@ export default async function FournisseurCimentMarocPage({
           </div>
           <p className="text-center text-sm text-[#6B7280] mt-6 max-w-2xl mx-auto">
             {isFr
-              ? "* Tarifs indicatifs 2025, départ usine Dakhla, hors livraison. Remise supplémentaire de 1 % pour paiement comptant. Tarifs contractuels sur devis pour volumes ≥ 1 000 T/an."
-              : '* Indicative 2025 prices, ex-works Dakhla, excluding delivery. Additional 1% discount for cash payment. Contractual prices on quote for volumes ≥ 1,000 T/year.'}
+              ? "* Tarifs indicatifs 2026, départ usine Dakhla, hors livraison. Remise supplémentaire de 1 % pour paiement comptant. Tarifs contractuels sur devis pour volumes ≥ 1 000 T/an."
+              : '* Indicative 2026 prices, ex-works Dakhla, excluding delivery. Additional 1% discount for cash payment. Contractual prices on quote for volumes ≥ 1,000 T/year.'}
           </p>
         </div>
       </section>

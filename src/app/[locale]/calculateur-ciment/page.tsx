@@ -22,7 +22,7 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/calculateur-ciment',
-      title: 'Cement Dosage Calculator — Free Online Tool | Dakhla Aménagement',
+      title: 'Cement Dosage Calculator — Free | SDAD',
       description:
         'Free cement dosage calculator. Enter dimensions, choose structure type, get exact cement quantity in tons, cost estimate and packaging suggestions. CPJ 45 & CPJ 55 Morocco.',
       keywords: ['cement calculator', 'cement dosage', 'concrete calculator', 'cement quantity', ...KEYWORDS.core],
@@ -32,7 +32,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/calculateur-ciment',
-    title: 'Calculateur de Dosage Ciment — Outil Gratuit | Dakhla Aménagement',
+    title: 'Calculateur Dosage Ciment — Gratuit | SDAD',
     description:
       "Calculateur de dosage ciment gratuit. Entrez les dimensions, choisissez le type d'ouvrage, obtenez la quantité exacte en tonnes, l'estimation du coût et les conditionnements suggérés. CPJ 45 & CPJ 55 Maroc.",
     keywords: ['calculateur ciment', 'dosage ciment', 'calcul quantité ciment', 'calculateur béton', ...KEYWORDS.core, ...KEYWORDS.application],

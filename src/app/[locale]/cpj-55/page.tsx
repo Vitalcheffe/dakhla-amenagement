@@ -27,9 +27,9 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/cpj-55',
-      title: 'CPJ 55 Cement Morocco — 55 MPa, Price 1,600 DH/T | Dakhla Aménagement',
+      title: 'CPJ 55 Cement Morocco — 55 MPa, 1600 DH/T | SDAD',
       description:
-        'CPJ 55 cement (Composite Portland 55 MPa) in Morocco. Ultra high strength for civil engineering and infrastructure. NM 10.1.004 compliant. From 1,600 DH/T. Coastal zones. Free quote.',
+        'CPJ 55 cement in Morocco — 55 MPa for civil engineering. From 80 DH/bag (1,600 DH/T). Bulk, bags, big bag. NM 10.1.004 compliant. Free quote.',
       keywords: [
         'CPJ 55',
         'CPJ 55 cement Morocco',
@@ -45,7 +45,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/cpj-55',
-    title: 'Ciment CPJ 55 Maroc — 55 MPa, Prix 1 600 DH/T | Dakhla Aménagement',
+    title: 'Ciment CPJ 55 Maroc — 55 MPa, 1600 DH/T | SDAD',
     description:
       'Ciment CPJ 55 (Portland Composé 55 MPa) au Maroc. Ultra haute résistance pour génie civil et infrastructure. Conforme NM 10.1.004. Prix dès 1 600 DH/T. Zone côtière. Devis gratuit.',
     keywords: [

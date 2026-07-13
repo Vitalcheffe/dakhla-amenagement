@@ -58,7 +58,7 @@ export async function generateMetadata({
     path: '/cpj-35',
     title: 'Ciment CPJ 35 Maroc — 35 MPa, Prix 70-75 DH/sac | SDAD',
     description:
-      "Ciment CPJ 35 (Portland Composé 35 MPa) au Maroc. Maçonnerie courante, dallages simples. Conforme NM 10.1.004. Prix dès 70 DH/sac (1 400 DH/T). Sac 50kg, vrac, big bag. Devis gratuit.",
+      "Ciment CPJ 35 au Maroc — 35 MPa pour maçonnerie courante. Prix dès 70 DH/sac (1 400 DH/T). Sac 50kg, vrac, big bag. Conforme NM 10.1.004. Devis gratuit.",
     keywords: [
       'CPJ 35',
       'ciment CPJ 35 Maroc',

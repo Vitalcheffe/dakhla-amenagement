@@ -84,7 +84,7 @@ export default async function BetonPretEmploiPage({
           </h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-3xl">
             {isFr
-              ? "Béton prêt à l'emploi livré par toupie à Dakhla. CPJ 35, CPJ 45, CPJ 55. Pompage, dosage sur mesure. Sac de ciment 50kg dès 70 DH. Devis gratuit."
+              ? "Béton prêt à l'emploi à Dakhla. Toupie, pompage. CPJ 35/45/55. Dès 1 500 DH/m³. Sac ciment 50kg dès 70 DH. SDAD — devis gratuit."
               : 'Ready-mix concrete delivered by mixer truck in Dakhla. CPJ 35, CPJ 45, CPJ 55. Pumping, custom dosage. 50kg cement bag from 70 DH.'}
           </p>
           <Link href={`/${locale}/devis`} className="inline-flex items-center gap-2 px-6 py-3 bg-[#C1272D] text-white font-semibold rounded-full hover:bg-[#C1272D]/90 transition-colors">

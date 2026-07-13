@@ -332,7 +332,7 @@ export default async function BetonArmeMarocPage({
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <div className="max-w-4xl">
             <span className="inline-block px-4 py-1.5 bg-[#E8B84B]/20 text-[#E8B84B] text-sm font-medium rounded-full mb-6">
-              {isFr ? 'Guide Béton Armé Maroc 2025' : 'Morocco Reinforced Concrete Guide 2025'}
+              {isFr ? 'Guide Béton Armé Maroc 2026' : 'Morocco Reinforced Concrete Guide 2025'}
             </span>
             <h1 className="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-[1.1] mb-6">
               {isFr ? 'Béton Armé au Maroc — Ciment CPJ, Dosage & Techniques' : 'Reinforced Concrete in Morocco — CPJ Cement, Dosage & Techniques'}

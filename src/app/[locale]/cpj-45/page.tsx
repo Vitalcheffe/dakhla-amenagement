@@ -27,7 +27,7 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/cpj-45',
-      title: 'CPJ 45 Cement Morocco — 45 MPa, Price 1,500 DH/T | Dakhla Aménagement',
+      title: 'CPJ 45 Cement Morocco — 45 MPa, 1500 DH/T | SDAD',
       description:
         'CPJ 45 cement (Composite Portland 45 MPa) in Morocco. Reinforced concrete, slabs, foundations. NM 10.1.004/EN 197-1 compliant. From 1,500 DH/T. Bulk, bags, big bag. Free quote.',
       keywords: [
@@ -45,9 +45,9 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/cpj-45',
-    title: 'Ciment CPJ 45 Maroc — 45 MPa, Prix 1 500 DH/T | Dakhla Aménagement',
+    title: 'Ciment CPJ 45 Maroc — 45 MPa, 1500 DH/T | SDAD',
     description:
-      'Ciment CPJ 45 (Portland Composé 45 MPa) au Maroc. Béton armé, dallages, fondations. Conforme NM 10.1.004/EN 197-1. Prix dès 1 500 DH/T. Livraison vrac, sacs, big bag. Devis gratuit.',
+      'Ciment CPJ 45 au Maroc — 45 MPa pour béton armé. Prix dès 75 DH/sac (1 500 DH/T). Vrac, sacs, big bag. Conforme NM 10.1.004. Devis gratuit.',
     keywords: [
       'CPJ 45',
       'ciment CPJ 45 Maroc',
