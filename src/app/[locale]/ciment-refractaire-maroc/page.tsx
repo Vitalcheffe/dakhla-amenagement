@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -548,6 +549,10 @@ export default async function CimentRefractaireMarocPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['essais-resistance-ciment', 'normes-ciment-maroc', 'ciment-chaud-zone-desertique']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment réfractaire au Maroc ?' : 'Need refractory cement in Morocco?'}

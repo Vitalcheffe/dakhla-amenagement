@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -557,6 +558,10 @@ export default async function CimentPriseRapideMarocPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['5-erreurs-ciment', 'stockage-ciment-chantier', 'ciment-chaud-zone-desertique']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment à prise rapide au Maroc ?' : 'Need rapid-set cement in Morocco?'}

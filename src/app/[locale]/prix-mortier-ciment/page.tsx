@@ -11,6 +11,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -622,6 +623,10 @@ export default async function PrixMortierCimentPage({
       </section>
 
       <RelatedLinks links={relatedLinks} locale={locale} title={isFr ? 'Pages liées' : 'Related pages'} />
+      <RelatedArticles
+        articleSlugs={['calculer-quantite-ciment', 'cpj45-vs-cpj55-guide', 'big-bag-vs-sacs']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Demandez votre devis mortier gratuit' : 'Request your free mortar quote'}

@@ -11,6 +11,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -639,6 +640,10 @@ export default async function Cpj35Page({
       </section>
 
       <RelatedLinks links={relatedLinks} locale={locale} title={isFr ? 'Produits liés' : 'Related products'} />
+      <RelatedArticles
+        articleSlugs={['choisir-ciment-projet', 'cpj45-vs-cpj55-guide', 'normes-ciment-maroc']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment CPJ 35 au Maroc ?' : 'Need CPJ 35 cement in Morocco?'}

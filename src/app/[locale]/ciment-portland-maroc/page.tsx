@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -620,6 +621,10 @@ export default async function CimentPortlandMarocPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['normes-ciment-maroc', 'choisir-ciment-projet', 'role-gypse-ciment']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment Portland au Maroc ?' : 'Need Portland cement in Morocco?'}

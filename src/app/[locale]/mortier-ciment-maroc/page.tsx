@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { CheckCircle, ArrowRight, Factory, Beaker, Truck, Layers, Brush, Building2, HardHat, Droplet } from 'lucide-react';
 
 export async function generateMetadata({
@@ -432,6 +433,10 @@ export default async function MortierCimentMarocPage({
       </section>
 
       <RelatedLinks links={relatedLinks} locale={locale} title={isFr ? 'Ressources liées' : 'Related resources'} />
+      <RelatedArticles
+        articleSlugs={['calculer-quantite-ciment', 'beton-arme-maroc', 'role-gypse-ciment']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de mortier de ciment au Maroc ?' : 'Need cement mortar in Morocco?'}

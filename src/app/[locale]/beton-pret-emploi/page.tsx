@@ -4,6 +4,7 @@ import { webPageSchema, breadcrumbSchema, serviceSchema, faqSchema } from '@/lib
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { ArrowRight, Truck, Clock, Beaker, CheckCircle } from 'lucide-react';
 
 export async function generateMetadata({
@@ -196,6 +197,10 @@ export default async function BetonPretEmploiPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['beton-arme-maroc', 'calculer-quantite-ciment', 'transport-ciment-logistique']}
+        locale={locale}
+      />
       <CtaBanner locale={locale} />
     </>
   );

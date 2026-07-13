@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -532,6 +533,10 @@ export default async function CimentHydrofugeMarocPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['ciment-etancheite', 'ciment-pour-piscine', 'construction-zone-cotiere']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment hydrofugé au Maroc ?' : 'Need waterproof cement in Morocco?'}

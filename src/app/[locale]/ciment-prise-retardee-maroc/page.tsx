@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { RelatedLinks, CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import { CheckCircle, ArrowRight, Factory, Beaker, Sun, Clock, HardHat, Building2, Layers } from 'lucide-react';
 
 export async function generateMetadata({
@@ -383,6 +384,10 @@ export default async function CimentPriseRetardeeMarocPage({
       </section>
 
       <RelatedLinks links={relatedLinks} locale={locale} title={isFr ? 'Ressources liées' : 'Related resources'} />
+      <RelatedArticles
+        articleSlugs={['ciment-chaud-zone-desertique', '5-erreurs-ciment', 'beton-arme-maroc']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment à prise retardée au Maroc ?' : 'Need retarded-set cement in Morocco?'}

@@ -10,6 +10,7 @@ import {
 import { JsonLdScript } from '@/components/shared/JsonLd';
 import { Breadcrumbs } from '@/components/shared/Breadcrumbs';
 import { CtaBanner } from '@/components/shared/RelatedLinks';
+import { RelatedArticles } from '@/components/shared/RelatedArticles';
 import {
   CheckCircle,
   ArrowRight,
@@ -531,6 +532,10 @@ export default async function CimentBlancMarocPage({
         </div>
       </section>
 
+      <RelatedArticles
+        articleSlugs={['choisir-ciment-projet', 'difference-ciment-beton', 'ciment-blanc-maroc']}
+        locale={locale}
+      />
       <CtaBanner
         locale={locale}
         title={isFr ? 'Besoin de ciment blanc au Maroc ?' : 'Need white cement in Morocco?'}
