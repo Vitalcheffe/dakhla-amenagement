@@ -42,8 +42,16 @@ interface GlossaryTerm {
 }
 
 const GLOSSARY: GlossaryTerm[] = [
+  { term: 'CPJ 35', category: 'Produit', definition: 'Ciment Portland Composé offrant une résistance de 35 MPa à 28 jours. Utilisé pour la maçonnerie courante, les dallages simples et les fondations non-armées. Prix dès 70 DH/sac. Conforme à NM 10.1.004.' },
   { term: 'CPJ 45', category: 'Produit', definition: 'Ciment Portland Composé offrant une résistance de 45 MPa à 28 jours. Idéal pour le béton armé courant, les dallages et les fondations. Conforme à NM 10.1.004.' },
   { term: 'CPJ 55', category: 'Produit', definition: 'Ciment Portland Composé offrant une résistance de 55 MPa à 28 jours. Recommandé pour les grands ouvrages de génie civil, les infrastructures et les zones côtières.' },
+  { term: 'Ciment Portland', category: 'Produit', definition: 'Type de ciment hydraulique composé principalement de clinker broyé avec du gypse. Les ciments Portland composés (CPJ) contiennent des additions. Conforme NM 10.1.004 et EN 197-1.' },
+  { term: 'Ciment blanc', category: 'Produit', definition: 'Ciment de couleur blanche utilisé pour les applications décoratives (carrelage, sculpture, enduits décoratifs). Plus cher que le ciment gris (3500 DH/T contre 1500 DH/T).' },
+  { term: 'Ciment hydrofuge', category: 'Produit', definition: 'Ciment ou mortier contenant des additifs imperméabilisants. Utilisé pour les piscines, sous-sols, réservoirs et ouvrages enterrés nécessitant une étanchéité.' },
+  { term: 'Ciment réfractaire', category: 'Produit', definition: 'Ciment résistant à des températures très élevées (jusqu\'à 1500°C). Utilisé pour les fours industriels, cheminées et foyers de cheminée.' },
+  { term: 'Ciment à prise rapide', category: 'Produit', definition: 'Ciment dont le début de prise intervient en 5 à 15 minutes. Utilisé pour les réparations urgentes, le scellement et l\'obturation rapide.' },
+  { term: 'Mortier-colle', category: 'Produit', definition: 'Mortier à base de ciment utilisé pour coller carrelage, faïence et pierre. Classé selon EN 12004 (C1, C2, C2TE, S1, S2 selon la résistance et la flexibilité).' },
+  { term: 'Béton prêt à l\'emploi', category: 'Produit', definition: 'Béton préparé en centrale et livré par toupie. Mélange de ciment, sable, gravier, eau et adjuvants. Prix: 1500-2000 DH/m³ selon le dosage.' },
   { term: 'Clinker', category: 'Produit', definition: "Matériau intermédiaire obtenu par cuisson du calcaire et de l'argile à 1450°C. Broyé avec du gypse et des additions, il donne le ciment. DAM importe et broie le clinker à Dakhla." },
   { term: 'Gypse', category: 'Produit', definition: "Minéral ajouté au clinker lors du broyage (3 à 5%) pour réguler le temps de prise du ciment. Sans gypse, le ciment prendrait instantanément au contact de l'eau." },
   { term: 'MPa (Mégapascal)', category: 'Propriété', definition: "Unité de mesure de la résistance à la compression du ciment. 1 MPa ≈ 10 kg/cm². Le CPJ 45 atteint 45 MPa, le CPJ 55 atteint 55 MPa à 28 jours." },

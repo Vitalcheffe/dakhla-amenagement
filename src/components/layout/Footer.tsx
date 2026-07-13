@@ -20,7 +20,9 @@ export function Footer({ locale }: { locale: string }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/logo-dam-white.svg"
-                alt="DAM - Dakhla Aménagement et Développement"
+                alt="DAD - Dakhla Aménagement et Développement"
+                width={196}
+                height={196}
                 className="h-14 w-auto"
               />
             </div>

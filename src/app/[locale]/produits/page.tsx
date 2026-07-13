@@ -20,9 +20,9 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/produits',
-      title: 'CPJ 45 & CPJ 55 Cement Morocco — Prices & Specs | Dakhla Aménagement',
+      title: 'CPJ 35, 45, 55 Cement Morocco — Prices & Specs | SDAD',
       description:
-        'Discover CPJ 45 (1,500 DH/T) and CPJ 55 (1,600 DH/T) cement from Dakhla Aménagement. Resistance, fineness, bulk/bags/big bag packaging. NM 10.1.004 compliant. Free quote.',
+        'CPJ 35, 45, 55 cement in Morocco. Prices from 70 DH/bag. Bulk, bags, big bag. NM 10.1.004 compliant. SDAD — free quote.',
       keywords: [
         ...KEYWORDS.products,
         ...KEYWORDS.pricing,
@@ -38,9 +38,9 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/produits',
-    title: 'Ciment CPJ 45 & CPJ 55 Maroc — Prix, Caractéristiques | Dakhla Aménagement',
+    title: 'Ciment CPJ 35, 45, 55 Maroc — Prix & Specs | SDAD',
     description:
-      'Découvrez le ciment CPJ 45 (1 500 DH/T) et CPJ 55 (1 600 DH/T) de Dakhla Aménagement. Résistance, finesse, conditionnement vrac/sacs/big bag. Conforme NM 10.1.004. Devis gratuit.',
+      'Ciment CPJ 35, 45, 55 au Maroc. Prix dès 70 DH/sac. Vrac, sacs, big bag. Conforme NM 10.1.004. SDAD — devis gratuit.',
     keywords: [
       ...KEYWORDS.products,
       ...KEYWORDS.pricing,

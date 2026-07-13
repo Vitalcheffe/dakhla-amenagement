@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   authors: [{ name: 'Dakhla Aménagement et Développement' }],
   creator: 'Dakhla Aménagement et Développement',
   publisher: 'Dakhla Aménagement et Développement',
+  twitter: {
+    card: 'summary_large_image',
+    site: '@SDAD_Dakhla',
+    creator: '@SDAD_Dakhla',
+  },
+  category: 'Construction & Cement',
+  classification: 'Building Materials, Cement, Construction',
 };
 
 export default function RootLayout({

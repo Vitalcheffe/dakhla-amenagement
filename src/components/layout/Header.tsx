@@ -187,6 +187,8 @@ export function Header({ locale }: { locale: string }) {
             <img
               src={isHome && !scrolled ? '/images/logo-dam-white.svg' : '/images/logo-dam.svg'}
               alt="DAD - Dakhla Aménagement et Développement"
+              width={140}
+              height={140}
               className="h-10 md:h-12 w-auto transition-all duration-300"
             />
           </Link>
@@ -319,6 +321,8 @@ export function Header({ locale }: { locale: string }) {
                     <img
                       src="/images/logo-dam.svg"
                       alt="DAD - Dakhla Aménagement et Développement"
+                      width={126}
+                      height={126}
                       className="h-9 w-auto"
                     />
                   </div>
