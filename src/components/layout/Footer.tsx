@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 
 export function Footer({ locale }: { locale: string }) {
   const t = useTranslations('footer');
+  const isFr = locale === 'fr';
   const tNav = useTranslations('nav');
 
   return (
@@ -63,13 +64,23 @@ export function Footer({ locale }: { locale: string }) {
             <h4 className="text-xs font-semibold tracking-[0.15em] uppercase text-[#E8B84B] mb-4">{t('solutions')}</h4>
             <ul className="space-y-2.5">
               <li>
-                <Link href={`/${locale}/produits`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
+                <Link href={`/${locale}/cpj-35`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
+                  {t('cpj35')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/cpj-45`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
                   {t('cpj45')}
                 </Link>
               </li>
               <li>
-                <Link href={`/${locale}/produits`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
+                <Link href={`/${locale}/cpj-55`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
                   {t('cpj55')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/beton-pret-emploi`} className="text-sm text-white/60 hover:text-[#E8B84B] transition-colors">
+                  {isFr ? 'Béton Prêt à l\'Emploi' : 'Ready-Mix Concrete'}
                 </Link>
               </li>
               <li>
