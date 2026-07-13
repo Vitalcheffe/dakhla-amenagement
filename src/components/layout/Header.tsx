@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
     key: 'solutions',
     href: '/produits',
     dropdownItems: [
-      { key: 'cpj35', href: '/cpj-35', badge: '1 400 DH/T' },
+      { key: 'cpj35', href: '/cpj-35', badge: 'Sur demande' },
       { key: 'cpj45', href: '/cpj-45', badge: '1 500 DH/T' },
       { key: 'cpj55', href: '/cpj-55', badge: '1 600 DH/T' },
       { key: 'cimentVrac', href: '/ciment-vrac' },

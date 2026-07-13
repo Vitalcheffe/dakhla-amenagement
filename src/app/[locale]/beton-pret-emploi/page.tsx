@@ -64,7 +64,7 @@ export default async function BetonPretEmploiPage({
   ];
 
   const pricing = [
-    { type: 'CPJ 35', sac: '70-75 DH', tonne: '1 400 DH/T', usage: isFr ? 'Maçonnerie courante' : 'Standard masonry' },
+    { type: 'CPJ 35', sac: 'Sur demande', tonne: 'Sur demande', usage: isFr ? 'Maçonnerie courante' : 'Standard masonry' },
     { type: 'CPJ 45', sac: '75-85 DH', tonne: '1 500 DH/T', usage: isFr ? 'Béton armé, dallages' : 'Reinforced concrete, slabs' },
     { type: 'CPJ 55', sac: '80-90 DH', tonne: '1 600 DH/T', usage: isFr ? 'Génie civil, infrastructure' : 'Civil engineering' },
   ];

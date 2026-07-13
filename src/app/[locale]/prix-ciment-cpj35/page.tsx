@@ -51,7 +51,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/prix-ciment-cpj35',
-    title: 'Prix Ciment CPJ 35 Maroc — 70-75 DH/sac | SDAD',
+    title: 'Ciment CPJ 35 Maroc — Disponibilité sur Demande | SDAD',
     description:
       "Prix du ciment CPJ 35 au Maroc : 70-75 DH/sac 50kg, 1 400 DH/T. Tableau de prix par conditionnement (sacs, vrac, big bag). Comparaison avec CPJ 45 et CPJ 55. Devis gratuit.",
     keywords: [

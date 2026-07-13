@@ -163,7 +163,7 @@ export default async function HomePage({
       title: isFr ? 'Prix & Tarifs' : 'Prices & Rates',
       links: [
         { label: 'Prix Ciment Maroc', href: '/prix-ciment' },
-        { label: 'Prix CPJ 35 (70 DH)', href: '/prix-ciment-cpj35' },
+        { label: 'CPJ 35 (Sur demande)', href: '/prix-ciment-cpj35' },
         { label: 'Prix CPJ 45 (80 DH)', href: '/prix-ciment-cpj45' },
         { label: 'Prix CPJ 55 (85 DH)', href: '/prix-ciment-cpj55' },
         { label: 'Prix Mortier', href: '/prix-mortier-ciment' },

@@ -37,7 +37,7 @@ export default function ProduitsPageClient() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
           <div className="flex items-center gap-3">
             <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 35</span>
-            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 400 DH/T</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— Sur demande</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-[#1A1A2E]/30" />
           <div className="flex items-center gap-3">

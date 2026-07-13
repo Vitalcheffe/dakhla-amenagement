@@ -37,9 +37,9 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/cpj-35',
-      title: 'CPJ 35 Cement Morocco — 35 MPa, 70 DH/bag | SDAD',
+      title: 'CPJ 35 Cement Morocco — Availability on Request | SDAD',
       description:
-        'CPJ 35 cement (Composite Portland 35 MPa) in Morocco. Standard masonry, simple slabs, unreinforced foundations. NM 10.1.004 compliant. From 70 DH/bag (1,400 DH/T). Bulk, 50kg bags, big bag. Free quote.',
+        'CPJ 35 cement (35 MPa) in Morocco. Availability varies. Contact us to check stock and get a quote. NM 10.1.004 compliant.',
       keywords: [
         'CPJ 35',
         'CPJ 35 cement Morocco',
@@ -56,7 +56,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/cpj-35',
-    title: 'Ciment CPJ 35 Maroc — 35 MPa, Prix 70-75 DH/sac | SDAD',
+    title: 'Ciment CPJ 35 Maroc — Disponibilité sur Demande | SDAD',
     description:
       "Ciment CPJ 35 au Maroc — 35 MPa pour maçonnerie courante. Prix dès 70 DH/sac (1 400 DH/T). Sac 50kg, vrac, big bag. Conforme NM 10.1.004. Devis gratuit.",
     keywords: [
@@ -87,12 +87,12 @@ export default async function Cpj35Page({
         {
           question: 'Quel est le prix du ciment CPJ 35 au Maroc ?',
           answer:
-            "Le ciment CPJ 35 de Dakhla Aménagement est disponible dès 70 DH le sac de 50 kg, soit 1 400 DH la tonne en sacs palette 1T. En vrac (camion-citerne, minimum 30T) le prix démarre à 1 400 DH/T, et en big bag 1T à 1 430 DH/T. Le prix final dépend du volume et de la zone de livraison. Demandez un devis gratuit pour un tarif personnalisé.",
+            "Le ciment CPJ 35 est disponible chez Dakhla Aménagement selon les arrivals de clinker et le planning de production. La disponibilité varie selon les périodes. Contactez-nous au +212 658-265685 pour vérifier le stock actuel et obtenir un devis personnalisé. Nos ciments CPJ 45 et CPJ 55 sont disponibles en permanence.",
         },
         {
           question: 'Quelle différence entre CPJ 35, CPJ 45 et CPJ 55 ?',
           answer:
-            "Le CPJ 35 développe 35 MPa à 28 jours et est destiné à la maçonnerie courante, aux dallages simples et aux fondations non armées — c'est le ciment le plus économique. Le CPJ 45 (45 MPa) couvre le béton armé courant (poutres, dalles, fondations armées). Le CPJ 55 (55 MPa) est réservé aux grands ouvrages de génie civil très sollicités. Plus le chiffre est élevé, plus la résistance et le prix augmentent.",
+            "Le CPJ 35 développe 35 MPa à 28 jours et est destiné à la maçonnerie courante, aux dallages simples et aux fondations non armées — c'est le ciment le plus économique (disponibilité variable). Le CPJ 45 (45 MPa) couvre le béton armé courant (poutres, dalles, fondations armées). Le CPJ 55 (55 MPa) est réservé aux grands ouvrages de génie civil très sollicités. Plus le chiffre est élevé, plus la résistance et le prix augmentent.",
         },
         {
           question: 'Pour quels usages le CPJ 35 est-il recommandé ?',
@@ -114,7 +114,7 @@ export default async function Cpj35Page({
         {
           question: 'What is the price of CPJ 35 cement in Morocco?',
           answer:
-            'Dakhla Aménagement CPJ 35 cement is available from 70 DH per 50kg bag, i.e. 1,400 DH per ton on 1T pallets. In bulk (tanker truck, minimum 30T) the price starts at 1,400 DH/T, and in 1T big bag at 1,430 DH/T. The final price depends on volume and delivery zone. Request a free quote for a personalized rate.',
+            'CPJ 35 cement availability at Dakhla Aménagement depends on clinker arrivals and production schedule. Contact us at +212 658-265685 to check current stock and get a personalized quote. Our CPJ 45 and CPJ 55 cements are always available.',
         },
         {
           question: 'What is the difference between CPJ 35, CPJ 45 and CPJ 55?',
@@ -215,14 +215,14 @@ export default async function Cpj35Page({
         {
           icon: Package,
           title: 'Sacs 50kg',
-          price: '70-75 DH/sac',
+          price: 'Sur demande',
           desc: "Conditionnement classique pour la maçonnerie et petits chantiers. Palette 1T (20 sacs) = 1 400 DH.",
           href: '/ciment-sacs',
         },
         {
           icon: Truck,
           title: 'Vrac',
-          price: 'dès 1 400 DH/T',
+          price: 'Sur demande',
           desc: 'Livraison par camion-citerne avec pompage direct en silo. Minimum 30T.',
           href: '/ciment-vrac',
         },
@@ -238,7 +238,7 @@ export default async function Cpj35Page({
         {
           icon: Package,
           title: '50kg bags',
-          price: '70-75 DH/bag',
+          price: 'On request',
           desc: 'Standard packaging for masonry and small sites. 1T pallet (20 bags) = 1,400 DH.',
           href: '/ciment-sacs',
         },
@@ -263,13 +263,13 @@ export default async function Cpj35Page({
         { icon: Factory, title: 'Production locale', desc: 'Centre de broyage de clinker à Dakhla, capacité 500K tonnes/an' },
         { icon: Beaker, title: 'Qualité certifiée', desc: 'Conforme NM 10.1.004, EN 197-1 — tests laboratoire systématiques' },
         { icon: Truck, title: 'Livraison rapide', desc: 'Sacs 50kg, vrac, big bag — Sud Maroc + Mauritanie' },
-        { icon: CheckCircle, title: 'Le plus économique', desc: 'Dès 70 DH/sac (1 400 DH/T) — idéal maçonnerie et mortiers' },
+        { icon: CheckCircle, title: 'Le plus économique', desc: 'Contactez-nous pour la disponibilité — CPJ 45 et CPJ 55 toujours en stock' },
       ]
     : [
         { icon: Factory, title: 'Local production', desc: 'Clinker grinding plant in Dakhla, 500K tons/year capacity' },
         { icon: Beaker, title: 'Certified quality', desc: 'NM 10.1.004, EN 197-1 compliant — systematic lab tests' },
         { icon: Truck, title: 'Fast delivery', desc: '50kg bags, bulk, big bag — Southern Morocco + Mauritania' },
-        { icon: CheckCircle, title: 'Most economical', desc: 'From 70 DH/bag (1,400 DH/T) — ideal for masonry and mortars' },
+        { icon: CheckCircle, title: 'Most economical', desc: 'Contact us for availability — CPJ 45 and CPJ 55 always in stock' },
       ];
 
   const relatedLinks = isFr
@@ -333,7 +333,7 @@ export default async function Cpj35Page({
         ? "Ciment Portland Composé 35 MPa — maçonnerie courante, dallages simples, mortiers. Conforme NM 10.1.004 / EN 197-1. Prix dès 70 DH/sac (1 400 DH/T)."
         : 'Composite Portland 35 MPa cement — standard masonry, simple slabs, mortars. NM 10.1.004 / EN 197-1 compliant. From 70 DH/bag (1,400 DH/T).',
       sku: 'DAM-CPJ35',
-      price: '1400',
+      price: '0',
       path: '/cpj-35',
       locale: loc,
       image: '/images/products/cement-powder-closeup.jpg',

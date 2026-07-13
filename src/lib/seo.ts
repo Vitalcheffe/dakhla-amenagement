@@ -127,7 +127,7 @@ export const KEYWORDS = {
     'devis ciment Maroc',
     'ciment 1500 DH',
     'ciment 1600 DH',
-    'prix sac ciment 70 DH',
+    
     'prix sac ciment 75 DH',
     'prix sac ciment 80 DH',
     'prix sac ciment 85 DH',
