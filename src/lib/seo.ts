@@ -17,7 +17,7 @@ import type { Metadata } from 'next';
 
 export const SITE = {
   name: 'Dakhla Aménagement et Développement',
-  shortName: 'DAD',
+  shortName: 'DAM',
   legalName: 'Société Dakhla Aménagement et Développement S.A.',
   alternateName: 'Dakhla Aménagement et Développement — SDAD',
   url: 'https://ciment-dam.com',
@@ -77,7 +77,7 @@ export const KEYWORDS = {
     'cimenterie Maroc',
     'ciment Dakhla',
     'Dakhla Aménagement',
-    'DAD ciment',
+    'DAM ciment',
     'producteur ciment Maroc',
     'fabricant ciment Maroc',
     'fournisseur ciment Maroc',
