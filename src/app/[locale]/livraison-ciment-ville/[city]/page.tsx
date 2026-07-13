@@ -19,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; city: string }>;
 }) {
   const { locale, city } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const cityData = getCity(city);
   if (!cityData) return buildMetadata({ locale: loc, path: '', title: 'Not Found', description: '', noIndex: true });
 
@@ -44,7 +44,7 @@ export default async function LivraisonCimentVillePage({
   params: Promise<{ locale: string; city: string }>;
 }) {
   const { locale, city } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const cityData = getCity(city);
   if (!cityData) return null;
 

@@ -17,7 +17,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   if (loc === 'en') {
     return buildMetadata({
@@ -69,7 +69,7 @@ export default async function PrixCimentPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const isFr = loc === 'fr';
 
   const schemas = [

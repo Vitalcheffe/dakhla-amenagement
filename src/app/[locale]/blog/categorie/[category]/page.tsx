@@ -28,7 +28,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; category: string }>;
 }) {
   const { locale, category } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   if (!CATEGORIES.includes(category as Category)) {
     return buildMetadata({
@@ -62,7 +62,7 @@ export default async function BlogCategoryPage({
   params: Promise<{ locale: string; category: string }>;
 }) {
   const { locale, category } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   if (!CATEGORIES.includes(category as Category)) {
     notFound();

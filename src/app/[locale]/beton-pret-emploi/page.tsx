@@ -13,7 +13,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   return buildMetadata({
     locale: loc,
@@ -53,7 +53,7 @@ export default async function BetonPretEmploiPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const isFr = loc === 'fr';
 
   const schemas = [

@@ -11,7 +11,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   return buildMetadata({
     locale: loc,
@@ -47,7 +47,7 @@ export default async function CalculateurResistancePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   const schemas = [
     webPageSchema({ name: 'Calculateur Résistance Béton — SDAD', description: 'Outil de calcul de résistance béton', path: '/calculateur-resistance', locale: loc }),

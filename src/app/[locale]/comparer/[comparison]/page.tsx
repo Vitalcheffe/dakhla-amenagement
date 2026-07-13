@@ -19,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; comparison: string }>;
 }) {
   const { locale, comparison } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const comp = getComparison(comparison);
   if (!comp) return buildMetadata({ locale: loc, path: '', title: 'Not Found', description: '', noIndex: true });
 
@@ -41,7 +41,7 @@ export default async function ComparisonPage({
   params: Promise<{ locale: string; comparison: string }>;
 }) {
   const { locale, comparison } = await params;
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const comp = getComparison(comparison);
   if (!comp) return null;
 

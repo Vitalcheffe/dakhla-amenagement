@@ -22,7 +22,7 @@ export async function RelatedArticles({
 }: RelatedArticlesProps) {
   if (articleSlugs.length === 0) return null;
 
-  const loc: 'fr' | 'en' = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
   const t = await getTranslations({ locale: loc });
   const isFr = loc === 'fr';
   const defaultTitle = isFr ? 'Articles de blog liés' : 'Related blog articles';

@@ -146,7 +146,7 @@ export function organizationSchema(): JsonLd {
 /*  WEBSITE + SEARCH ACTION                                            */
 /* ------------------------------------------------------------------ */
 
-export function websiteSchema(locale: 'fr' | 'en'): JsonLd {
+export function websiteSchema(locale: 'fr' | 'en' | 'ar'): JsonLd {
   return {
     '@context': SCHEMA,
     '@type': 'WebSite',
@@ -239,7 +239,7 @@ export interface BreadcrumbItem {
   path: string;
 }
 
-export function breadcrumbSchema(items: BreadcrumbItem[], locale: 'fr' | 'en'): JsonLd {
+export function breadcrumbSchema(items: BreadcrumbItem[], locale: 'fr' | 'en' | 'ar'): JsonLd {
   return {
     '@context': SCHEMA,
     '@type': 'BreadcrumbList',
@@ -260,7 +260,7 @@ export function serviceSchema(params: {
   name: string;
   description: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   serviceType?: string;
 }): JsonLd {
   return {
@@ -290,7 +290,7 @@ export function productSchema(params: {
   sku: string;
   price: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   image?: string;
   ratingValue?: string;
   reviewCount?: number;
@@ -380,7 +380,7 @@ export function blogPostingSchema(params: {
   description: string;
   image: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   datePublished: string;
   dateModified?: string;
   author?: string;
@@ -449,7 +449,7 @@ export function videoSchema(params: {
   thumbnailUrl: string;
   contentUrl: string;
   uploadDate: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
 }): JsonLd {
   return {
     '@context': SCHEMA,
@@ -472,7 +472,7 @@ export function webPageSchema(params: {
   name: string;
   description: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   breadcrumbs?: BreadcrumbItem[];
 }): JsonLd {
   const schema: JsonLd = {
@@ -501,7 +501,7 @@ export function collectionPageSchema(params: {
   name: string;
   description: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   items: { name: string; url: string }[];
 }): JsonLd {
   return {
@@ -551,7 +551,7 @@ export function howToSchema(params: {
   name: string;
   description: string;
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   steps: { name: string; text: string }[];
   totalTime?: string;
   estimatedCost?: { currency: string; value: string };
@@ -586,7 +586,7 @@ export function howToSchema(params: {
 
 export function speakableSchema(params: {
   path: string;
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar';
   cssSelectors: string[];
 }): JsonLd {
   return {

@@ -40,7 +40,7 @@ export interface LandingPageConfig {
 }
 
 /** Build metadata for a landing page (FR + EN) */
-export function buildLandingMetadata(config: LandingPageConfig, locale: 'fr' | 'en') {
+export function buildLandingMetadata(config: LandingPageConfig, locale: 'fr' | 'en' | 'ar') {
   return buildMetadata({
     locale,
     path: config.path,
@@ -52,7 +52,7 @@ export function buildLandingMetadata(config: LandingPageConfig, locale: 'fr' | '
 }
 
 /** Build JSON-LD schemas for a landing page */
-export function buildLandingSchemas(config: LandingPageConfig, locale: 'fr' | 'en') {
+export function buildLandingSchemas(config: LandingPageConfig, locale: 'fr' | 'en' | 'ar') {
   const breadcrumbs: BreadcrumbItem[] = [
     { name: config.breadcrumbName, path: config.path },
   ];

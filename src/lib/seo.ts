@@ -22,7 +22,7 @@ export const SITE = {
   alternateName: 'Dakhla Aménagement et Développement — SDAD',
   url: 'https://ciment-dam.com',
   defaultLocale: 'fr' as const,
-  locales: ['fr', 'en'] as const,
+  locales: ['fr', 'en', 'ar'] as const,
   phone: '+212658265685',
   phoneDisplay: '+212 658-265685',
   whatsapp: '+212658265685',
@@ -204,7 +204,7 @@ export const ALL_KEYWORDS: string[] = [
 /* ------------------------------------------------------------------ */
 
 export interface BuildMetadataParams {
-  locale: 'fr' | 'en';
+  locale: 'fr' | 'en' | 'ar' | 'ar';
   /** path without locale prefix, e.g. '' for home, '/produits', '/blog/mon-article' */
   path: string;
   title: string;
