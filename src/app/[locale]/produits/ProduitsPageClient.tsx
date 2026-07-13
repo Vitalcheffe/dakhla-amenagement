@@ -34,15 +34,20 @@ export default function ProduitsPageClient() {
 
       {/* ====== PRICE BANNER ====== */}
       <section className="bg-[#E8B84B] py-5">
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-12 text-center">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
+          <div className="flex items-center gap-3">
+            <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 35</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 400 DH/T</span>
+          </div>
+          <div className="hidden sm:block w-px h-8 bg-[#1A1A2E]/30" />
           <div className="flex items-center gap-3">
             <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 45</span>
-            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 500 DH/tonne</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 500 DH/T</span>
           </div>
           <div className="hidden sm:block w-px h-8 bg-[#1A1A2E]/30" />
           <div className="flex items-center gap-3">
             <span className="text-lg font-extrabold text-[#1A1A2E]">CPJ 55</span>
-            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 600 DH/tonne</span>
+            <span className="text-xl font-extrabold text-[#1A1A2E]">— 1 600 DH/T</span>
           </div>
         </div>
       </section>
