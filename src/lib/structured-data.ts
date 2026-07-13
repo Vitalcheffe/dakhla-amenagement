@@ -295,6 +295,7 @@ export function productSchema(params: {
   ratingValue?: string;
   reviewCount?: number;
 }): JsonLd {
+  const imageUrl = params.image ? `${SITE.url}${params.image}` : `${SITE.url}${SITE.ogImage}`;
   return {
     '@context': SCHEMA,
     '@type': 'Product',
@@ -303,10 +304,16 @@ export function productSchema(params: {
     description: params.description,
     sku: params.sku,
     mpn: params.sku,
-    brand: { '@type': 'Brand', name: 'DAM' },
+    brand: { '@type': 'Brand', name: 'SDAD' },
     manufacturer: { '@id': `${SITE.url}/#organization` },
     category: 'Building Materials > Cement',
-    image: params.image ? `${SITE.url}${params.image}` : `${SITE.url}${SITE.ogImage}`,
+    image: {
+      '@type': 'ImageObject',
+      url: imageUrl,
+      width: 1200,
+      height: 630,
+      alt: params.name,
+    },
     offers: {
       '@type': 'Offer',
       url: `${SITE.url}/${params.locale}/devis`,
@@ -316,6 +323,41 @@ export function productSchema(params: {
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       seller: { '@id': `${SITE.url}/#organization` },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'MA',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn',
+      },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0',
+          currency: 'MAD',
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: 'MA',
+        },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 0,
+            maxValue: 1,
+            unitCode: 'DAY',
+          },
+          transitTime: {
+            '@type': 'QuantitativeValue',
+            minValue: 1,
+            maxValue: 4,
+            unitCode: 'DAY',
+          },
+        },
+      },
     },
     aggregateRating: params.ratingValue
       ? {
