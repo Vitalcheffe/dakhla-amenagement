@@ -61,6 +61,22 @@ const STATIC_PAGES: PageEntry[] = [
   { path: '/beton-pret-emploi', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/calculateur-resistance', priority: 0.9, changeFrequency: 'monthly' },
   { path: '/expertise-certifications', priority: 0.85, changeFrequency: 'monthly' },
+  // New product keyword pages
+  { path: '/cpj-35', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/ciment-portland-maroc', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/ciment-blanc-maroc', priority: 0.75, changeFrequency: 'monthly' },
+  { path: '/ciment-refractaire-maroc', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/ciment-hydrofuge-maroc', priority: 0.75, changeFrequency: 'monthly' },
+  { path: '/ciment-prise-rapide-maroc', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/ciment-prise-retardee-maroc', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/ciment-resistant-sulfates', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/mortier-ciment-maroc', priority: 0.75, changeFrequency: 'monthly' },
+  { path: '/mortier-colle-ciment', priority: 0.7, changeFrequency: 'monthly' },
+  // New pricing keyword pages
+  { path: '/prix-ciment-cpj35', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/prix-ciment-cpj45', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/prix-ciment-cpj55', priority: 0.9, changeFrequency: 'monthly' },
+  { path: '/prix-mortier-ciment', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/devis', priority: 0.9, changeFrequency: 'monthly', images: ['/images/cement-bags.jpg'] },
   {
     path: '/blog',
