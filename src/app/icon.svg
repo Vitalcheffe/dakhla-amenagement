@@ -1,72 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 140" width="160" height="140">
-  <!-- DAM favicon — same as logo, transparent background -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 150" width="160" height="150">
+  <!-- DAM Logo — transparent background, minimalist 3 buildings + clear DAM -->
 
-  <rect x="20" y="50" width="25" height="50" fill="#1B3A5C"/>
-  <rect x="25" y="56" width="6" height="4" fill="#fff"/>
-  <rect x="25" y="64" width="6" height="4" fill="#fff"/>
-  <rect x="25" y="72" width="6" height="4" fill="#fff"/>
-  <rect x="25" y="80" width="6" height="4" fill="#fff"/>
-  <rect x="34" y="56" width="6" height="4" fill="#fff"/>
-  <rect x="34" y="64" width="6" height="4" fill="#fff"/>
-  <rect x="34" y="72" width="6" height="4" fill="#fff"/>
-  <rect x="34" y="80" width="6" height="4" fill="#fff"/>
+  <!-- Building 1 (left, short) -->
+  <rect x="20" y="45" width="25" height="50" fill="#1B3A5C"/>
+  <rect x="25" y="51" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="59" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="67" width="6" height="4" fill="#fff"/>
+  <rect x="25" y="75" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="51" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="59" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="67" width="6" height="4" fill="#fff"/>
+  <rect x="34" y="75" width="6" height="4" fill="#fff"/>
 
-  <rect x="55" y="25" width="40" height="75" fill="#1B3A5C"/>
-  <rect x="61" y="31" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="39" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="47" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="55" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="63" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="71" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="79" width="6" height="4" fill="#fff"/>
-  <rect x="61" y="87" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="31" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="39" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="47" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="55" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="63" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="71" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="79" width="6" height="4" fill="#fff"/>
-  <rect x="72" y="87" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="31" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="39" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="47" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="55" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="63" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="71" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="79" width="6" height="4" fill="#fff"/>
-  <rect x="83" y="87" width="6" height="4" fill="#fff"/>
+  <!-- Building 2 (center, tall) -->
+  <rect x="55" y="20" width="40" height="75" fill="#1B3A5C"/>
+  <rect x="61" y="26" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="34" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="42" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="50" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="58" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="66" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="74" width="6" height="4" fill="#fff"/>
+  <rect x="61" y="82" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="26" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="34" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="42" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="50" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="58" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="66" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="74" width="6" height="4" fill="#fff"/>
+  <rect x="72" y="82" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="26" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="34" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="42" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="50" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="58" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="66" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="74" width="6" height="4" fill="#fff"/>
+  <rect x="83" y="82" width="6" height="4" fill="#fff"/>
 
-  <rect x="105" y="38" width="30" height="62" fill="#1B3A5C"/>
-  <rect x="111" y="44" width="6" height="4" fill="#fff"/>
-  <rect x="111" y="52" width="6" height="4" fill="#fff"/>
-  <rect x="111" y="60" width="6" height="4" fill="#fff"/>
-  <rect x="111" y="68" width="6" height="4" fill="#fff"/>
-  <rect x="111" y="76" width="6" height="4" fill="#fff"/>
-  <rect x="111" y="84" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="44" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="52" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="60" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="68" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="76" width="6" height="4" fill="#fff"/>
-  <rect x="122" y="84" width="6" height="4" fill="#fff"/>
+  <!-- Building 3 (right, medium) -->
+  <rect x="105" y="33" width="30" height="62" fill="#1B3A5C"/>
+  <rect x="111" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="111" y="79" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="39" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="47" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="55" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="63" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="71" width="6" height="4" fill="#fff"/>
+  <rect x="122" y="79" width="6" height="4" fill="#fff"/>
 
-  <rect x="15" y="100" width="125" height="5" fill="#1B3A5C"/>
+  <!-- Base line -->
+  <rect x="15" y="95" width="125" height="5" fill="#1B3A5C"/>
 
-  <!-- DAM as clear block letters -->
-  <!-- D -->
-  <rect x="45" y="112" width="4" height="18" fill="#1B3A5C"/>
-  <rect x="45" y="112" width="12" height="4" fill="#1B3A5C"/>
-  <rect x="45" y="126" width="12" height="4" fill="#1B3A5C"/>
-  <rect x="53" y="112" width="4" height="18" fill="#1B3A5C" opacity="0.7"/>
-  <!-- A -->
-  <polygon points="65,112 59,130 63,130 64,126 70,126 71,130 75,130 69,112" fill="#1B3A5C"/>
-  <rect x="63" y="122" width="8" height="3" fill="#1B3A5C"/>
-  <!-- M -->
-  <rect x="79" y="112" width="4" height="18" fill="#1B3A5C"/>
-  <rect x="79" y="112" width="4" height="4" fill="#1B3A5C"/>
-  <polygon points="79,116 83,124 87,116 87,116" fill="#1B3A5C"/>
-  <rect x="83" y="116" width="4" height="14" fill="#1B3A5C" opacity="0.5"/>
-  <rect x="91" y="112" width="4" height="18" fill="#1B3A5C"/>
-  <polygon points="83,116 87,124 91,116" fill="#1B3A5C"/>
+  <!-- DAM text — monospace bold for universal rendering -->
+  <text x="80" y="135" font-family="Courier New, monospace" font-size="26" font-weight="900" fill="#1B3A5C" text-anchor="middle" letter-spacing="2">DAM</text>
 </svg>
