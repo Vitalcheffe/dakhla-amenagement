@@ -185,7 +185,7 @@ export function Header({ locale }: { locale: string }) {
           <Link href={`/${locale}`} className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={isHome && !scrolled ? '/images/logo-dam-white.svg' : '/images/logo-dam.svg'}
+              src={isHome && !scrolled ? '/images/logo-dam-white-v2.svg' : '/images/logo-dam-v2.svg'}
               alt="DAM - Dakhla Aménagement et Développement"
               width={140}
               height={140}
@@ -319,7 +319,7 @@ export function Header({ locale }: { locale: string }) {
                   <div className="flex items-center gap-2">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="/images/logo-dam.svg"
+                      src="/images/logo-dam-v2.svg"
                       alt="DAM - Dakhla Aménagement et Développement"
                       width={126}
                       height={126}

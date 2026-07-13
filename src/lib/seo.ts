@@ -29,7 +29,7 @@ export const SITE = {
   email: 'contact@ciment-dam.com',
   fax: '+212528000000',
   founded: '2015',
-  logo: '/images/logo-dam-512.png',
+  logo: '/images/logo-dam-v2.svg',
   ogImage: '/images/og-banner.jpg',
   address: {
     streetAddress: 'Quartier Lassargua, 1 et 1 angle rue Lagouira, Avenue El Walae',

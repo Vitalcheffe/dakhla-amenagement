@@ -19,7 +19,7 @@ export function Footer({ locale }: { locale: string }) {
             <div className="mb-6">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/logo-dam-white.svg"
+                src="/images/logo-dam-white-v2.svg"
                 alt="DAM - Dakhla Aménagement et Développement"
                 width={196}
                 height={196}
