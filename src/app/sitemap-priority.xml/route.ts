@@ -25,6 +25,7 @@ const PRIORITY_PAGES: PriorityPage[] = [
   { path: '/ciment-big-bag', priority: '0.85', changeFreq: 'monthly' },
   { path: '/livraison-ciment', priority: '0.85', changeFreq: 'monthly' },
   { path: '/calculateur-ciment', priority: '0.9', changeFreq: 'monthly' },
+  { path: '/beton-pret-emploi', priority: '0.9', changeFreq: 'monthly' },
   { path: '/calculateur-resistance', priority: '0.9', changeFreq: 'monthly' },
   { path: '/expertise-certifications', priority: '0.85', changeFreq: 'monthly' },
   { path: '/devis', priority: '0.9', changeFreq: 'monthly' },
