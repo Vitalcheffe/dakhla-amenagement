@@ -1,0 +1,3 @@
+Contact: mailto:contact@ciment-dam.com
+Preferred-Languages: fr, en, ar
+Canonical: https://ciment-dam.com/.well-known/security.txt
