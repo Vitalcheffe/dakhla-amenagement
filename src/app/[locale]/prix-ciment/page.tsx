@@ -23,7 +23,7 @@ export async function generateMetadata({
     return buildMetadata({
       locale: 'en',
       path: '/prix-ciment',
-      title: 'Cement Prices Morocco 2026 — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+      title: 'Cement Prices Morocco 2026 — CPJ 35/45/55 | SDAD',
       description:
         'Cement prices in Morocco: CPJ 45 from 1,500 DH/T, CPJ 55 from 1,600 DH/T. Bulk, 50kg bags, big bag pricing. Free quote for Southern Morocco delivery. DAM cement.',
       keywords: [...KEYWORDS.pricing, 'cement price Morocco', 'CPJ 45 price', 'CPJ 55 price'],
@@ -33,7 +33,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale: 'fr',
     path: '/prix-ciment',
-    title: 'Prix Ciment Maroc 2026 — CPJ 35/45/55 | SDAD — CPJ 45 & CPJ 55 | Dakhla Aménagement',
+    title: 'Prix Ciment Maroc 2026 — CPJ 35/45/55 | SDAD',
     description:
       'Prix du ciment au Maroc : CPJ 45 dès 1 500 DH/T, CPJ 55 dès 1 600 DH/T. Tarifs vrac, sacs 50kg, big bag. Devis gratuit pour livraison Sud Maroc. Ciment DAM.',
     keywords: [...KEYWORDS.pricing, 'prix ciment Maroc 2026', 'tarif ciment', 'ciment pas cher'],
