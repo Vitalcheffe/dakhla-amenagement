@@ -22,8 +22,8 @@ export async function generateMetadata({
       ? 'Béton Prêt à l\'Emploi Dakhla — Livraison Toupie | SDAD'
       : 'Ready-Mix Concrete Dakhla — Mixer Truck Delivery | SDAD',
     description: loc === 'fr'
-      ? "Béton prêt à l'emploi à Dakhla. Livraison par toupie, pompage, béton CPJ 45 et CPJ 55. Dès 1 500 DH/m³. Devis gratuit. SDAD — Dakhla Aménagement et Développement."
-      : "Ready-mix concrete in Dakhla. Mixer truck delivery, pumping, CPJ 45 and CPJ 55 concrete. From 1,500 DH/m³. Free quote. SDAD.",
+      ? "Béton prêt à l'emploi à Dakhla. Toupie, pompage. CPJ 35/45/55. Dès 1 500 DH/m³. Sac ciment 50kg dès 70 DH. SDAD — devis gratuit."
+      : "Ready-mix concrete in Dakhla. Mixer truck, pumping. CPJ 35/45/55. From 1,500 DH/m³. Cement bag from 70 DH. SDAD.",
     keywords: ['béton prêt à l\'emploi Dakhla', 'béton toupie Dakhla', 'béton pompé Dakhla', ...KEYWORDS.core],
   });
 }

@@ -47,7 +47,7 @@ export async function generateMetadata({
     path: '/cpj-55',
     title: 'Ciment CPJ 55 Maroc — 55 MPa, 1600 DH/T | SDAD',
     description:
-      'Ciment CPJ 55 (Portland Composé 55 MPa) au Maroc. Ultra haute résistance pour génie civil et infrastructure. Conforme NM 10.1.004. Prix dès 1 600 DH/T. Zone côtière. Devis gratuit.',
+      'Ciment CPJ 55 au Maroc — 55 MPa pour génie civil. Prix dès 80 DH/sac (1 600 DH/T). Vrac, sacs, big bag. Conforme NM 10.1.004. Devis gratuit.',
     keywords: [
       'CPJ 55',
       'ciment CPJ 55 Maroc',
