@@ -303,8 +303,7 @@ export function productSchema(params: {
     name: params.name,
     description: params.description,
     sku: params.sku,
-    mpn: params.sku,
-    brand: { '@type': 'Brand', name: 'SDAD' },
+    brand: { '@type': 'Brand', name: 'DAM' },
     manufacturer: { '@id': `${SITE.url}/#organization` },
     category: 'Building Materials > Cement',
     image: {
