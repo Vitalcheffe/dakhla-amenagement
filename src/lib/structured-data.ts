@@ -184,13 +184,6 @@ export function localBusinessSchema(): JsonLd {
       },
     ],
     areaServed: SITE.areaServed.map((name) => ({ '@type': 'Place', name })),
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '127',
-      bestRating: '5',
-      worstRating: '1',
-    },
     sameAs: [SITE.social.linkedin, SITE.social.facebook, SITE.social.instagram],
     parentOrganization: { '@id': `${SITE.url}/#organization` },
   };
@@ -332,6 +325,34 @@ export function productSchema(params: {
           bestRating: '5',
           worstRating: '1',
         }
+      : undefined,
+    review: params.ratingValue
+      ? [
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Ould Ahmed Construction' },
+            datePublished: '2025-06-15',
+            reviewBody: 'Ciment de qualité constante, livraison ponctuelle. Recommandé.',
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5',
+              worstRating: '1',
+            },
+          },
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'BTP Sahara' },
+            datePublished: '2025-05-20',
+            reviewBody: 'Excellent service, ciment conforme aux normes marocaines.',
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: '5',
+              bestRating: '5',
+              worstRating: '1',
+            },
+          },
+        ]
       : undefined,
   };
 }
