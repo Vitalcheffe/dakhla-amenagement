@@ -59,40 +59,6 @@ export function organizationSchema(): JsonLd {
       latitude: SITE.geo.latitude,
       longitude: SITE.geo.longitude,
     },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Produits cimentiers DAM',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Product',
-            name: 'Ciment CPJ 45',
-            description:
-              'Ciment Portland Composé 45 MPa — béton armé, dallages, ouvrages de génie civil. Conforme NM 10.1.004 / EN 197-1.',
-          },
-          price: '1500',
-          priceCurrency: 'MAD',
-          priceUnit: 'T',
-          availability: 'https://schema.org/InStock',
-          url: `${SITE.url}/fr/devis`,
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Product',
-            name: 'Ciment CPJ 55',
-            description:
-              'Ciment Portland Composé 55 MPa — ultra haute résistance pour grands ouvrages de génie civil et infrastructure. Conforme NM 10.1.004 / EN 197-1.',
-          },
-          price: '1600',
-          priceCurrency: 'MAD',
-          priceUnit: 'T',
-          availability: 'https://schema.org/InStock',
-          url: `${SITE.url}/fr/devis`,
-        },
-      ],
-    },
     contactPoint: [
       {
         '@type': 'ContactPoint',
