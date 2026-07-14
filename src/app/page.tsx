@@ -19,13 +19,48 @@ const inter = Inter({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  return buildMetadata({
-    locale: 'fr',
-    path: '',
-    title: 'Ciment Maroc — CPJ 45 & CPJ 55 | Dakhla Aménagement et Développement | SDAD',
+  return {
+    metadataBase: new URL('https://ciment-dam.com'),
+    title: 'Ciment Maroc — CPJ 35/45/55, Prix & Devis | SDAD',
     description:
-      'Ciment CPJ 45 et CPJ 55 au Maroc. Centre de broyage de clinker à Dakhla. Livraison vrac, sacs 50kg, big bag. Prix dès 1 500 DH/T. SDAD — devis gratuit.',
-  });
+      'Ciment CPJ 35, 45, 55 au Maroc. Prix dès 70 DH/sac. Centre de broyage Dakhla. Livraison vrac, sacs, big bag. SDAD — devis gratuit sous 24h.',
+    alternates: {
+      canonical: 'https://ciment-dam.com/',
+      languages: {
+        fr: 'https://ciment-dam.com/fr',
+        en: 'https://ciment-dam.com/en',
+        'x-default': 'https://ciment-dam.com/',
+      },
+    },
+    openGraph: {
+      title: 'Ciment Maroc — CPJ 35/45/55, Prix & Devis | SDAD',
+      description: 'Ciment CPJ 35, 45, 55 au Maroc. Prix dès 70 DH/sac. Centre de broyage Dakhla. SDAD — devis gratuit.',
+      url: 'https://ciment-dam.com/',
+      siteName: 'Dakhla Aménagement et Développement',
+      locale: 'fr_MA',
+      type: 'website',
+      images: [{ url: 'https://ciment-dam.com/images/og-banner.jpg', width: 1200, height: 630, alt: 'Ciment Maroc — SDAD' }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '@SDAD_Dakhla',
+      creator: '@SDAD_Dakhla',
+      title: 'Ciment Maroc — CPJ 35/45/55, Prix & Devis | SDAD',
+      description: 'Ciment CPJ 35, 45, 55 au Maroc. Prix dès 70 DH/sac. SDAD — devis gratuit.',
+      images: ['https://ciment-dam.com/images/og-banner.jpg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
+    },
+    other: {
+      'geo.region': 'MA-ODD',
+      'geo.placename': 'Dakhla',
+      'geo.position': '23.6847;-15.958',
+      ICBM: '23.6847, -15.958',
+    },
+  };
 }
 
 /**
