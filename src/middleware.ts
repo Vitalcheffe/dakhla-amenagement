@@ -6,10 +6,14 @@ import { routing } from './i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
+  // Skip middleware for root path — it's handled by src/app/page.tsx directly
+  if (request.nextUrl.pathname === '/') {
+    return NextResponse.next();
+  }
+
   const response = intlMiddleware(request);
 
   // Convert 307 (temporary) redirects to 301 (permanent) for SEO
-  // Google treats 301 as permanent and passes link equity
   if (response.status === 307) {
     const location = response.headers.get('location');
     if (location) {
@@ -26,5 +30,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/', '/(fr|en)/:path*'],
+  matcher: ['/', '/(fr|en|ar)/:path*'],
 };
