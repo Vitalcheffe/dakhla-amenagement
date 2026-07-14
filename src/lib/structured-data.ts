@@ -232,10 +232,6 @@ export function serviceSchema(params: {
     provider: { '@id': `${SITE.url}/#organization` },
     areaServed: SITE.areaServed.map((name) => ({ '@type': 'Place', name })),
     url: `${SITE.url}/${params.locale}${params.path === '' ? '' : params.path}`,
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: params.name,
-    },
   };
 }
 
