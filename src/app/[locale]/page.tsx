@@ -19,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const loc = locale === 'en' ? 'en' : 'fr';
+  const loc: 'fr' | 'en' | 'ar' = (locale === 'en' ? 'en' : locale === 'ar' ? 'ar' : 'fr') as 'fr' | 'en' | 'ar';
 
   if (loc === 'en') {
     return buildMetadata({
@@ -43,7 +43,7 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    locale: 'fr',
+    locale: loc,
     path: '',
     title: 'Ciment Maroc — CPJ 35/45/55, Prix & Devis | SDAD',
     description:
