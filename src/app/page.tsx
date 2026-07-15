@@ -8,7 +8,6 @@ import { Footer } from '@/components/layout/Footer';
 import { WhatsAppButton } from '@/components/shared/WhatsAppButton';
 import { CookieConsent } from '@/components/shared/CookieConsent';
 import { BackToTop } from '@/components/shared/BackToTop';
-import { buildMetadata } from '@/lib/seo';
 import { organizationSchema, websiteSchema, localBusinessSchema, siteNavigationSchema } from '@/lib/structured-data';
 import { JsonLdScript } from '@/components/shared/JsonLd';
 

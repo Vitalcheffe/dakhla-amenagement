@@ -162,6 +162,7 @@ export default function HomePageClient() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
                 <div className="relative h-56 md:h-64 overflow-hidden">
                   <Image
+                    loading="lazy"
                     src="/images/products/cpj45-bags.jpg"
                     alt={t('products.cpj45.full')}
                     fill
@@ -221,6 +222,7 @@ export default function HomePageClient() {
               <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
                 <div className="relative h-56 md:h-64 overflow-hidden">
                   <Image
+                    loading="lazy"
                     src="/images/products/cpj55-bags.jpg"
                     alt={t('products.cpj55.full')}
                     fill
@@ -325,6 +327,7 @@ export default function HomePageClient() {
               <ScrollReveal key={i} delay={i * 0.05}>
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                   <Image
+                    loading="lazy"
                     src={img.src}
                     alt={img.alt}
                     fill
@@ -343,6 +346,7 @@ export default function HomePageClient() {
       <section className="py-20 md:py-28 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
+                    loading="lazy"
             src="/images/factory/factory-silos.jpg"
             alt="Dakhla Aménagement factory silos"
             fill
@@ -490,6 +494,7 @@ export default function HomePageClient() {
                     <div className="card-lift bg-white border border-[#E5E7EB] rounded-2xl overflow-hidden group">
                       <div className="relative h-48">
                         <Image
+                    loading="lazy"
                           src={articleImages[key] || '/images/factory/factory-exterior.jpg'}
                           alt={t(`blog.articles.${key}.title`)}
                           fill
@@ -546,6 +551,7 @@ export default function HomePageClient() {
                 <Link href={`/${locale}/galerie`}>
                   <div className="relative aspect-[3/4] md:aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer">
                     <Image
+                    loading="lazy"
                       src={img.src}
                       alt={img.alt}
                       fill
@@ -576,6 +582,7 @@ export default function HomePageClient() {
       <section className="py-20 md:py-28 relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
+                    loading="lazy"
             src="/images/factory/factory-silos.jpg"
             alt="Factory silos"
             fill
@@ -651,6 +658,7 @@ export default function HomePageClient() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
+                    loading="lazy"
             src="/images/factory/factory-aerial.jpg"
             alt="Aerial view of Dakhla Aménagement plant"
             fill

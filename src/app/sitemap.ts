@@ -103,9 +103,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   // Static pages — for each locale
+  // Note: FR home page is at / (not /fr which redirects to /)
   for (const locale of SITE.locales) {
     for (const page of STATIC_PAGES) {
-      const url = `${SITE.url}/${locale}${page.path}`;
+      // For FR home page, use / instead of /fr
+      const url = locale === 'fr' && page.path === ''
+        ? `${SITE.url}/`
+        : `${SITE.url}/${locale}${page.path}`;
       const lastMod = page.path === '/blog' ? new Date() : new Date('2026-01-15');
 
       entries.push({
@@ -115,9 +119,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: page.priority,
         alternates: {
           languages: {
-            fr: `${SITE.url}/fr${page.path}`,
+            fr: page.path === '' ? `${SITE.url}/` : `${SITE.url}/fr${page.path}`,
             en: `${SITE.url}/en${page.path}`,
-            'x-default': `${SITE.url}/fr${page.path}`,
+            'x-default': page.path === '' ? `${SITE.url}/` : `${SITE.url}/fr${page.path}`,
           },
         },
         images: page.images?.map((img) => `${SITE.url}${img}`),
