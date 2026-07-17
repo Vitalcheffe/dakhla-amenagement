@@ -1,0 +1,32 @@
+$ next dev
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.13.251:3000
+- Environments: .env
+✓ Ready in 437ms
+Warning: Custom Cache-Control headers detected for the following routes:
+  - /_next/static/(.*)
+
+Setting a custom Cache-Control header can break Next.js development behavior.
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+- Experiments (use with caution):
+  · optimizePackageImports
+
+○ Compiling /[locale]/blog/[slug] ...
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 11.4s (next.js: 10.2s, proxy.ts: 106ms, generate-params: 666ms, application-code: 1094ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 1888ms (next.js: 1251ms, proxy.ts: 24ms, generate-params: 50ms, application-code: 614ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 497ms (next.js: 44ms, proxy.ts: 8ms, generate-params: 43µs, application-code: 444ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 261ms (next.js: 5ms, proxy.ts: 4ms, generate-params: 24µs, application-code: 252ms)
+✓ Compiled in 518ms
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 420ms (next.js: 51ms, proxy.ts: 5ms, generate-params: 43ms, application-code: 364ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 256ms (next.js: 6ms, proxy.ts: 4ms, generate-params: 21µs, application-code: 246ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 331ms (next.js: 29ms, proxy.ts: 3ms, generate-params: 25ms, application-code: 299ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 234ms (next.js: 6ms, proxy.ts: 3ms, generate-params: 23µs, application-code: 225ms)
+ GET /fr/blog/geo-harch-atelier-visibilite-ia 200 in 334ms (next.js: 6ms, proxy.ts: 10ms, generate-params: 51µs, application-code: 318ms)
+ GET /en/blog/geo-harch-atelier-visibilite-ia 200 in 281ms (next.js: 30ms, proxy.ts: 3ms, generate-params: 26ms, application-code: 247ms)
+ GET /ar/blog/geo-harch-atelier-visibilite-ia 200 in 242ms (next.js: 9ms, proxy.ts: 4ms, generate-params: 28µs, application-code: 230ms)

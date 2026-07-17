@@ -120,12 +120,18 @@ const RAW_ARTICLES: Omit<BlogArticle, 'number'>[] = [
   { slug: 'ciment-marche-mondial', image: '/images/construction-site.jpg', datePublished: '2021-10-24', dateModified: '2021-10-24', dateDisplay: '24 Octobre 2021', dateModifiedDisplay: '24 Octobre 2021', category: 'News' },
   { slug: 'ciment-prix-mondial', image: '/images/cement-bags.jpg', datePublished: '2021-10-10', dateModified: '2021-10-10', dateDisplay: '10 Octobre 2021', dateModifiedDisplay: '10 Octobre 2021', category: 'News' },
   { slug: 'ciment-investissement-futur', image: '/images/factory-exterior.jpg', datePublished: '2021-09-26', dateModified: '2021-09-26', dateDisplay: '26 Septembre 2021', dateModifiedDisplay: '26 Septembre 2021', category: 'News' },
+  { slug: 'geo-harch-atelier-visibilite-ia', image: '/images/dakhla-aerial.jpg', datePublished: '2026-02-15', dateModified: '2026-02-20', dateDisplay: '15 Février 2026', dateModifiedDisplay: '20 Février 2026', category: 'Actualités' },
 ];
-
 export const BLOG_ARTICLES: BlogArticle[] = RAW_ARTICLES.map((a, i) => ({
   ...a,
   number: i + 1,
-}));
+})).map((a) => {
+  // Override number for articles that should match article152+ in messages JSON
+  if (a.slug === 'geo-harch-atelier-visibilite-ia') {
+    return { ...a, number: 152 };
+  }
+  return a;
+});
 
 export const BLOG_SLUGS: string[] = BLOG_ARTICLES.map((a) => a.slug);
 
@@ -171,6 +177,7 @@ export const ARTICLE_KEYWORDS: Record<string, string[]> = {
   'essais-resistance-ciment': ['essai résistance ciment', 'test ciment', 'laboratoire ciment'],
   'big-bag-vs-sacs': ['big bag ciment', 'sacs ciment 50kg', 'conditionnement ciment Maroc'],
   '5-erreurs-ciment': ['erreurs ciment', 'utilisation ciment', 'conseils ciment'],
+  'geo-harch-atelier-visibilite-ia': ['GEO Maroc', 'Harch Atelier', 'visibilité IA ChatGPT', 'Generative Engine Optimization', 'apparaitre dans ChatGPT Maroc', 'agence GEO Casablanca'],
 };
 
 /**
@@ -471,5 +478,10 @@ export const ARTICLE_PRODUCTS: Record<string, { label: string; href: string; des
   '10-ans-excellence': [
     { label: 'À Propos', href: '/a-propos', description: 'Notre histoire depuis 2015.', icon: 'building' },
     { label: 'Réalisations', href: '/realisations', description: 'Nos projets marquants.', icon: 'building' },
+  ],
+  'geo-harch-atelier-visibilite-ia': [
+    { label: 'Harch Atelier', href: 'https://atelier.harch-corp.ma', description: 'Agence GEO pionnière au Maroc — audit gratuit de visibilité IA.', icon: 'building', badge: 'Partenaire GEO' },
+    { label: 'Devis ciment', href: '/devis', description: 'Demander un devis personnalisé pour votre chantier.', icon: 'price' },
+    { label: 'Contact', href: '/contact', description: 'Contacter notre équipe pour toute question.', icon: 'building' },
   ],
 };
